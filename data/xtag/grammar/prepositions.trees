@@ -1,0 +1,1924 @@
+("nxPnx" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<case> = NP_f.t:<case>
+NP_r.b:<assign-comp> = NP_f.t:<assign-comp>
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<conj> = NP_f.t:<conj>
+
+NP_r.b:<card> = NP_f.t:<card>
+NP_r.b:<const> = NP_f.t:<const>
+NP_r.b:<quan> = NP_f.t:<quan>
+NP_r.b:<decreas> = NP_f.t:<decreas>
+NP_r.b:<definite> = NP_f.t:<definite>
+NP_r.b:<gen> = NP_f.t:<gen>
+PP.b:<assign-case> = P.t:<assign-case>
+PP.b:<assign-case> = NP.t:<case>
+NP:<wh> = -
+NP_f.b:<case> = acc/nom
+NP_f.t:<rel-clause> = NP_r.b:<rel-clause>
+NP_f.t:<gerund> = NP_r.b:<gerund>
+NP_f.t:<compar> = NP_r.b:<compar>
+NP_f.t:<equiv> = NP_r.b:<equiv>
+" :COMMENTS "Prepositional phrase
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("PP" . ""))) (((("P" . "")) :headp T))  (((("NP" . "")) :substp T)) ) ) 
+("vxPnx" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+VP_r.b:<mode> = VP.t:<mode>
+VP_r.b:<agr> = VP.t:<agr>
+VP_r.b:<tense> = VP.t:<tense>
+VP_r.b:<assign-case> = VP.t:<assign-case>
+VP_r.b:<assign-comp> = VP.t:<assign-comp>
+VP_r.b:<passive> = VP.t:<passive>
+PP.b:<assign-case> = P.t:<assign-case>
+PP.b:<assign-case> = NP.t:<case>
+
+VP_r.b:<conj> = VP.t:<conj>
+VP.t:<compar> = P.t:<compar>
+VP.t:<equiv> = P.t:<equiv>
+VP_r.b:<compar> = -
+VP_r.b:<mainv> = VP.t:<mainv>
+VP.t:<mainv> = +
+
+
+" :COMMENTS NIL :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("VP" . "r"))) (((("VP" . "")) :footp T :constraints "NA" :constraint-type :NA))  (((("PP" . "")) :constraints "") (((("P" . "")) :headp T))  (((("NP" . "")) :substp T)) ) ) 
+("Pnxs" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+S.t:<comp> = nil
+S.t:<comp> = S_r.b:<comp>
+S.t:<assign-comp> = S_r.b:<assign-comp>
+S.t:<tense> = S_r.b:<tense>
+S.t:<extracted> = S_r.b:<extracted>
+S.t:<conj> = S_r.b:<conj>
+S.t:<mode> = S_r.b:<mode>
+S.t:<assign-case> = S_r.b:<assign-case>
+S.t:<agr> = S_r.b:<agr>
+
+S_r.b:<wh> = PP.t:<wh>
+PP.b:<wh> = NP:<wh>
+S_r.b:<inv> = S.t:<inv>
+S_r.b:<invlink> = S_r.b:<inv>
+S.b:<comp> = nil
+PP.b:<assign-case> = P.t:<assign-case>
+PP.b:<assign-case> = NP:<case>
+S_r.b:<nocomp-mode> = S.t:<nocomp-mode>
+
+
+
+" :COMMENTS "Sentential adverbial tree
+Adverb on the left of the sentence
+ \"Obviously John loves Mary\"
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("PP" . ""))) (((("P" . "")) :headp T))  (((("NP" . "")) :substp T)) )  (((("S" . "")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("Ps" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+
+S.t:<comp> = nil
+S.t:<comp> = S_r.b:<comp>
+S.t:<assign-comp> = S_r.b:<assign-comp>
+S.t:<tense> = S_r.b:<tense>
+S.t:<mode> = S_r.b:<mode>
+S.t:<assign-case> = S_r.b:<assign-case>
+S.t:<agr> = S_r.b:<agr>
+S.t:<inv> = S_r.b:<inv>
+S.t:<inv> = S_r.b:<invlink>
+S.t:<conj> = S_r.b:<conj>
+S.t:<extracted> = S_r.b:<extracted>
+S_r.b:<wh> = PP.t:<wh>
+PP.b:<wh> = P.t:<wh>
+
+S.b:<comp> = nil
+S_r.b:<nocomp-mode> = S.t:<nocomp-mode>
+
+
+" :COMMENTS "" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("PP" . ""))) (((("P" . "")) :headp T)) )  (((("S" . "")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("nxP" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<case> = NP_f.t:<case>
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<conj> = NP_f.t:<conj>
+NP_f.b:<case> = acc/nom
+
+NP_r.b:<assign-comp> = NP_f.t:<assign-comp>
+NP_r.b:<card> = NP_f.t:<card>
+NP_r.b:<const> = NP_f.t:<const>
+NP_r.b:<quan> = NP_f.t:<quan>
+NP_r.b:<decreas> = NP_f.t:<decreas>
+NP_r.b:<definite> = NP_f.t:<definite>
+NP_r.b:<gen> = NP_f.t:<gen>
+P.t:<wh> = -
+NP_f.t:<rel-clause> = NP_r.b:<rel-clause>
+NP_f.t:<compar> = NP_r.b:<compar>
+NP_f.t:<equiv> = NP_r.b:<equiv>
+" :COMMENTS "Prepositional phrase
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("PP" . ""))) (((("P" . "")) :headp T)) ) ) 
+("vxP" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+VP_r.b:<mode> = VP.t:<mode>
+VP_r.b:<agr> = VP.t:<agr>
+VP_r.b:<tense> = VP.t:<tense>
+VP_r.b:<assign-case> = VP.t:<assign-case>
+VP_r.b:<assign-comp> = VP.t:<assign-comp>
+
+VP_r.b:<passive> = VP.t:<passive>
+VP.t:<conj> = VP_r.b:<conj>
+P.b:<wh> = PP.b:<wh>
+VP.t:<compar> = -
+VP_r.b:<compar> = VP.t:<compar>
+VP_r.b:<mainv> = VP.t:<mainv>
+VP.t:<mainv> = +
+" :COMMENTS NIL :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("VP" . "r")) :constraints "NA" :constraint-type :NA) (((("VP" . "")) :footp T :constraints "NA" :constraint-type :NA))  (((("PP" . "")) :constraints "") (((("P" . "")) :headp T)) ) ) 
+("nxPs" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<case> = NP_f.t:<case>
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<conj> = NP_f.t:<conj>
+NP_f.b:<case> = acc/nom
+
+NP_r.b:<assign-comp> = NP_f.t:<assign-comp>
+NP_r.b:<card> = NP_f.t:<card>
+NP_r.b:<const> = NP_f.t:<const>
+NP_r.b:<quan> = NP_f.t:<quan>
+NP_r.b:<decreas> = NP_f.t:<decreas>
+NP_r.b:<definite> = NP_f.t:<definite>
+NP_r.b:<gen> = NP_f.t:<gen>
+S.t:<mode> = ind/prep/nom
+S.t:<comp> = nil
+NP_f.t:<rel-clause> = NP_r.b:<rel-clause>
+NP_f.t:<compar> = NP_r.b:<compar>
+NP_f.t:<equiv> = NP_r.b:<equiv>
+" :COMMENTS "Prepositional phrase
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("PP" . ""))) (((("P" . "")) :headp T))  (((("S" . "")) :substp T)) ) ) 
+("nxARBPnx" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<case> = NP_f.t:<case>
+NP_r.b:<assign-comp> = NP_f.t:<assign-comp>
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<conj> = NP_f.t:<conj>
+PP.b:<assign-case> = P_1.t:<assign-case>
+PP.b:<assign-case> = NP.t:<case>
+NP:<wh> = -
+NP_f.b:<case> = acc/nom
+
+NP_r.b:<card> = NP_f.t:<card>
+NP_r.b:<const> = NP_f.t:<const>
+NP_r.b:<quan> = NP_f.t:<quan>
+NP_r.b:<decreas> = NP_f.t:<decreas>
+NP_r.b:<definite> = NP_f.t:<definite>
+NP_r.b:<gen> = NP_f.t:<gen>
+NP_f.t:<rel-clause> = NP_r.b:<rel-clause>
+NP_f.t:<compar> = NP_r.b:<compar>
+NP_f.t:<equiv> = NP_r.b:<equiv>
+" :COMMENTS "PP modifying NP
+Two-word P, first word is an Ad
+\"The girl next to the palm just winked at you\"
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("PP" . ""))) (((("P" . "1")) :connector :LINE) (((("Ad" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("P" . "")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("NP" . "")) :substp T)) ) ) 
+("vxARBPnx" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+VP_r.b:<mode> = VP.t:<mode>
+VP_r.b:<agr> = VP.t:<agr>
+VP_r.b:<tense> = VP.t:<tense>
+VP_r.b:<assign-case> = VP.t:<assign-case>
+VP_r.b:<assign-comp> = VP.t:<assign-comp>
+VP_r.b:<passive> = VP.t:<passive>
+PP.b:<assign-case> = P_1.t:<assign-case>
+PP.b:<assign-case> = NP.t:<case>
+
+VP.t:<compar> = -
+VP_r.b:<compar> = VP.t:<compar>
+VP_r.b:<mainv> = VP.t:<mainv>
+VP.t:<mainv> = +
+" :COMMENTS "PP modifying VP
+Two-word P, first word is Ad
+\"Yahoo ran ahead of the pack\"
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("VP" . "r"))) (((("VP" . "")) :footp T :constraints "NA" :constraint-type :NA))  (((("PP" . "")) :constraints "") (((("P" . "1")) :connector :LINE) (((("Ad" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("P" . "")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("NP" . "")) :substp T)) ) ) 
+("ARBPnxs" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+S.t:<comp> = nil
+S.t:<comp> = S_r.b:<comp>
+S.t:<conj> = S_r.b:<conj>
+S.t:<assign-comp> = S_r.b:<assign-comp>
+S.t:<tense> = S_r.b:<tense>
+S.t:<extracted> = S_r.b:<extracted>
+S.t:<mode> = S_r.b:<mode>
+S.t:<assign-case> = S_r.b:<assign-case>
+S.t:<agr> = S_r.b:<agr>
+
+S_r.b:<wh> = PP.t:<wh>
+PP.b:<wh> = NP:<wh>
+S_r.b:<inv> = S.t:<inv>
+S_r.b:<invlink> = S_r.b:<inv>
+S.b:<comp> = nil
+PP.b:<assign-case> = P_1.t:<assign-case>
+PP.b:<assign-case> = NP:<case>
+S_r.b:<nocomp-mode> = S.t:<nocomp-mode>
+
+
+
+" :COMMENTS "PP modifying S
+Two-word P, first word is Ad
+ \"Instead of walking to the dumpster, 
+ he threw his banana peel down the 
+ sewer grate\"
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("PP" . ""))) (((("P" . "1"))) (((("Ad" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("P" . "")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("NP" . "")) :substp T)) )  (((("S" . "")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("nxAPnx" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<case> = NP_f.t:<case>
+NP_r.b:<assign-comp> = NP_f.t:<assign-comp>
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<conj> = NP_f.t:<conj>
+PP.b:<assign-case> = P_1.t:<assign-case>
+PP.b:<assign-case> = NP.t:<case>
+NP:<wh> = -
+NP_f.b:<case> = acc/nom
+
+NP_r.b:<card> = NP_f.t:<card>
+NP_r.b:<const> = NP_f.t:<const>
+NP_r.b:<quan> = NP_f.t:<quan>
+NP_r.b:<decreas> = NP_f.t:<decreas>
+NP_r.b:<definite> = NP_f.t:<definite>
+NP_r.b:<gen> = NP_f.t:<gen>
+NP_f.t:<rel-clause> = NP_r.b:<rel-clause>
+NP_f.t:<gerund> = NP_r.b:<gerund>
+NP_f.t:<compar> = NP_r.b:<compar>
+NP_f.t:<equiv> = NP_r.b:<equiv>
+" :COMMENTS "PP modifying NP
+Two-word P, first word is A
+\"The woman devoid of all hope 
+ began to shout at the people
+ passing by\"
+
+
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("PP" . ""))) (((("P" . "1")) :connector :LINE) (((("A" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("P" . "")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("NP" . "")) :substp T)) ) ) 
+("vxAPnx" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+VP_r.b:<mode> = VP.t:<mode>
+VP_r.b:<agr> = VP.t:<agr>
+VP_r.b:<tense> = VP.t:<tense>
+VP_r.b:<assign-case> = VP.t:<assign-case>
+VP_r.b:<assign-comp> = VP.t:<assign-comp>
+VP_r.b:<passive> = VP.t:<passive>
+PP.b:<assign-case> = P_1.t:<assign-case>
+PP.b:<assign-case> = NP.t:<case>
+
+VP.t:<compar> = -
+VP_r.b:<compar> = VP.t:<compar>
+VP_r.b:<mainv> = VP.t:<mainv>
+VP.t:<mainv> = +
+" :COMMENTS "PP modifying VP
+Two-word P, first word is A
+\"I changed the message prior to leaving
+ the house\"
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("VP" . "r"))) (((("VP" . "")) :footp T :constraints "NA" :constraint-type :NA))  (((("PP" . "")) :constraints "") (((("P" . "1")) :connector :LINE) (((("A" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("P" . "")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("NP" . "")) :substp T)) ) ) 
+("APnxs" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+S.t:<comp> = nil
+S.t:<comp> = S_r.b:<comp>
+S.t:<conj> = S_r.b:<conj>
+S.t:<assign-comp> = S_r.b:<assign-comp>
+S.t:<tense> = S_r.b:<tense>
+S.t:<extracted> = S_r.b:<extracted>
+S.t:<mode> = S_r.b:<mode>
+S.t:<assign-case> = S_r.b:<assign-case>
+S.t:<agr> = S_r.b:<agr>
+
+S_r.b:<wh> = PP.t:<wh>
+PP.b:<wh> = NP:<wh>
+S_r.b:<inv> = S.t:<inv>
+S_r.b:<invlink> = S_r.b:<inv>
+S.b:<comp> = nil
+PP.b:<assign-case> = P_1.t:<assign-case>
+PP.b:<assign-case> = NP:<case>
+S_r.b:<nocomp-mode> = S.t:<nocomp-mode>
+
+
+
+" :COMMENTS "PP modifying S
+Two-word P, first word is A
+\"Preparatory to the exam, the children
+ learned an extensive vocabulary\"
+
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("PP" . ""))) (((("P" . "1"))) (((("A" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("P" . "")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("NP" . "")) :substp T)) )  (((("S" . "")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("nxPPnx" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<case> = NP_f.t:<case>
+NP_r.b:<assign-comp> = NP_f.t:<assign-comp>
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<conj> = NP_f.t:<conj>
+PP.b:<assign-case> = P.t:<assign-case>
+PP.b:<assign-case> = NP.t:<case>
+NP:<wh> = -
+NP_f.b:<case> = acc/nom
+
+NP_r.b:<card> = NP_f.t:<card>
+NP_r.b:<const> = NP_f.t:<const>
+NP_r.b:<quan> = NP_f.t:<quan>
+NP_r.b:<decreas> = NP_f.t:<decreas>
+NP_r.b:<definite> = NP_f.t:<definite>
+NP_r.b:<gen> = NP_f.t:<gen>
+NP_f.t:<rel-clause> = NP_r.b:<rel-clause>
+NP_f.t:<gerund> = NP_r.b:<gerund>
+NP_f.t:<compar> = NP_r.b:<compar>
+NP_f.t:<equiv> = NP_r.b:<equiv>
+" :COMMENTS "PP modifying NP
+Two-word P, first word is a P
+\"The dog inside of that house
+ is going crazy\"
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("PP" . ""))) (((("P" . "")) :connector :LINE) (((("P" . "1")) :headp T :constraints "NA" :constraint-type :NA))  (((("P" . "2")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("NP" . "")) :substp T)) ) ) 
+("vxPPnx" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+VP_r.b:<mode> = VP.t:<mode>
+VP_r.b:<agr> = VP.t:<agr>
+VP_r.b:<tense> = VP.t:<tense>
+VP_r.b:<assign-case> = VP.t:<assign-case>
+VP_r.b:<assign-comp> = VP.t:<assign-comp>
+VP_r.b:<passive> = VP.t:<passive>
+PP.b:<assign-case> = P.t:<assign-case>
+PP.b:<assign-case> = NP.t:<case>
+
+VP.t:<compar> = -
+VP_r.b:<compar> = VP.t:<compar>
+VP_r.b:<mainv> = VP.t:<mainv>
+VP.t:<mainv> = +
+" :COMMENTS "PP modifying VP
+Two-word P, first word is P
+\"The jester walked outside of
+ the building to meet with his
+ death sentence\"
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("VP" . "r"))) (((("VP" . "")) :footp T :constraints "NA" :constraint-type :NA))  (((("PP" . "")) :constraints "") (((("P" . "")) :connector :LINE) (((("P" . "1")) :headp T :constraints "NA" :constraint-type :NA))  (((("P" . "2")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("NP" . "")) :substp T)) ) ) 
+("PPnxs" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+S.t:<comp> = nil
+S.t:<comp> = S_r.b:<comp>
+S.t:<conj> = S_r.b:<conj>
+S.t:<assign-comp> = S_r.b:<assign-comp>
+S.t:<tense> = S_r.b:<tense>
+S.t:<extracted> = S_r.b:<extracted>
+S.t:<mode> = S_r.b:<mode>
+S.t:<assign-case> = S_r.b:<assign-case>
+S.t:<agr> = S_r.b:<agr>
+
+S_r.b:<wh> = PP.t:<wh>
+PP.b:<wh> = NP:<wh>
+S_r.b:<inv> = S.t:<inv>
+S_r.b:<invlink> = S_r.b:<inv>
+S.b:<comp> = nil
+PP.b:<assign-case> = P.t:<assign-case>
+PP.b:<assign-case> = NP:<case>
+S_r.b:<nocomp-mode> = S.t:<nocomp-mode>
+
+
+
+
+" :COMMENTS "PP modifying S
+Two-word P, first word is P
+\"Along with the rest of the 
+ pack, we are going to climb
+ this mountain\"
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("PP" . ""))) (((("P" . ""))) (((("P" . "1")) :headp T :constraints "NA" :constraint-type :NA))  (((("P" . "2")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("NP" . "")) :substp T)) )  (((("S" . "")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("vxNPnx" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+VP_r.b:<mode> = VP.t:<mode>
+VP_r.b:<agr> = VP.t:<agr>
+VP_r.b:<tense> = VP.t:<tense>
+VP_r.b:<assign-case> = VP.t:<assign-case>
+VP_r.b:<assign-comp> = VP.t:<assign-comp>
+VP_r.b:<passive> = VP.t:<passive>
+PP.b:<assign-case> = P_1.t:<assign-case>
+PP.b:<assign-case> = NP.t:<case>
+
+VP.t:<compar> = -
+VP_r.b:<compar> = VP.t:<compar>
+VP_r.b:<mainv> = VP.t:<mainv>
+VP.t:<mainv> = +
+" :COMMENTS "PP modifying VP
+Two-word P, first word is N
+\"We arrived safely thanks to the sunny
+ skies\"
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("VP" . "r"))) (((("VP" . "")) :footp T :constraints "NA" :constraint-type :NA))  (((("PP" . "")) :constraints "") (((("P" . "1")) :connector :LINE) (((("N" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("P" . "")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("NP" . "")) :substp T)) ) ) 
+("NPnxs" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+S.t:<comp> = nil
+S.t:<comp> = S_r.b:<comp>
+S.t:<assign-comp> = S_r.b:<assign-comp>
+S.t:<tense> = S_r.b:<tense>
+S.t:<extracted> = S_r.b:<extracted>
+S.t:<mode> = S_r.b:<mode>
+S.t:<assign-case> = S_r.b:<assign-case>
+S.t:<agr> = S_r.b:<agr>
+
+S_r.b:<wh> = PP.t:<wh>
+PP.b:<wh> = NP:<wh>
+S_r.b:<inv> = S.t:<inv>
+S_r.b:<invlink> = S_r.b:<inv>
+S.b:<comp> = nil
+PP.b:<assign-case> = P_1.t:<assign-case>
+PP.b:<assign-case> = NP:<case>
+S_r.b:<nocomp-mode> = S.t:<nocomp-mode>
+
+
+
+
+" :COMMENTS "PP modifying S
+Two-word P, first word is N
+\"Thanks to you, we won't be able to 
+ leave tonight\"
+ 
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("PP" . ""))) (((("P" . "1"))) (((("N" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("P" . "")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("NP" . "")) :substp T)) )  (((("S" . "")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("nxPNPnx" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<case> = NP_f.t:<case>
+NP_r.b:<assign-comp> = NP_f.t:<assign-comp>
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<conj> = NP_f.t:<conj>
+PP.b:<assign-case> = P.t:<assign-case>
+PP.b:<assign-case> = NP.t:<case>
+NP:<wh> = -
+NP_f.b:<case> = acc/nom
+
+NP_r.b:<card> = NP_f.t:<card>
+NP_r.b:<const> = NP_f.t:<const>
+NP_r.b:<quan> = NP_f.t:<quan>
+NP_r.b:<decreas> = NP_f.t:<decreas>
+NP_r.b:<definite> = NP_f.t:<definite>
+NP_r.b:<gen> = NP_f.t:<gen>
+NP_f.t:<rel-clause> = NP_r.b:<rel-clause>
+NP_f.t:<gerund> = NP_r.b:<gerund>
+NP_f.t:<compar> = NP_r.b:<compar>
+NP_f.t:<equiv> = NP_r.b:<equiv>
+" :COMMENTS "PP modifying NP
+Three-word P
+\"The peasant in need of water just
+ trapsed across the dais\"
+
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("PP" . ""))) (((("P" . "")) :connector :LINE) (((("P" . "1")) :headp T :constraints "NA" :constraint-type :NA))  (((("N" . "")) :headp T))  (((("P" . "2")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("NP" . "")) :substp T)) ) ) 
+("vxPNPnx" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+VP_r.b:<mode> = VP.t:<mode>
+VP_r.b:<agr> = VP.t:<agr>
+VP_r.b:<tense> = VP.t:<tense>
+VP_r.b:<assign-case> = VP.t:<assign-case>
+VP_r.b:<assign-comp> = VP.t:<assign-comp>
+VP_r.b:<passive> = VP.t:<passive>
+PP.b:<assign-case> = P.t:<assign-case>
+PP.b:<assign-case> = NP.t:<case>
+
+VP.t:<compar> = -
+VP_r.b:<compar> = VP.t:<compar>
+VP_r.b:<mainv> = VP.t:<mainv>
+VP.t:<mainv> = +
+" :COMMENTS "PP modifying VP
+Three-word P
+\"She succeeded merely by means of her wit\"
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("VP" . "r"))) (((("VP" . "")) :footp T :constraints "NA" :constraint-type :NA))  (((("PP" . "")) :constraints "") (((("P" . "")) :connector :LINE) (((("P" . "1")) :headp T :constraints "NA" :constraint-type :NA))  (((("N" . "")) :headp T))  (((("P" . "2")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("NP" . "")) :substp T)) ) ) 
+("PNPnxs" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+S.t:<comp> = nil
+S.t:<comp> = S_r.b:<comp>
+S.t:<assign-comp> = S_r.b:<assign-comp>
+S.t:<tense> = S_r.b:<tense>
+S.t:<extracted> = S_r.b:<extracted>
+S.t:<mode> = S_r.b:<mode>
+S.t:<assign-case> = S_r.b:<assign-case>
+S.t:<agr> = S_r.b:<agr>
+
+S_r.b:<wh> = PP.t:<wh>
+PP.b:<wh> = NP:<wh>
+S_r.b:<inv> = S.t:<inv>
+S_r.b:<invlink> = S_r.b:<inv>
+S.b:<comp> = nil
+PP.b:<assign-case> = P.t:<assign-case>
+PP.b:<assign-case> = NP:<case>
+S_r.b:<nocomp-mode> = S.t:<nocomp-mode>
+" :COMMENTS "PP modifying S
+Three-word P
+\"On behalf of all of us here tonight,
+ we would like to thank you for you
+ never-ending generosity\"
+
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("PP" . ""))) (((("P" . ""))) (((("P" . "1")) :headp T :constraints "NA" :constraint-type :NA))  (((("N" . "")) :headp T))  (((("P" . "2")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("NP" . "")) :substp T)) )  (((("S" . "")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("PDNPnxs" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+S.t:<comp> = nil
+S.t:<comp> = S_r.b:<comp>
+S.t:<assign-comp> = S_r.b:<assign-comp>
+S.t:<tense> = S_r.b:<tense>
+S.t:<extracted> = S_r.b:<extracted>
+S.t:<mode> = S_r.b:<mode>
+S.t:<assign-case> = S_r.b:<assign-case>
+S.t:<agr> = S_r.b:<agr>
+
+S_r.b:<wh> = PP.t:<wh>
+PP.b:<wh> = NP_2:<wh>
+S_r.b:<inv> = S.t:<inv>
+S_r.b:<invlink> = S_r.b:<inv>
+S.b:<comp> = nil
+PP.b:<assign-case> = P.t:<assign-case>
+PP.b:<assign-case> = NP_2:<case>
+NP_1.b:<agr> = N.t:<agr>
+NP_1.b:<case> = N.t:<case>
+NP_1.b:<conj> = N.t:<conj>
+NP_1.b:<const> = D.t:<const>
+NP_1.b:<definite> = D.t:<definite>
+NP_1.b:<quan> = D.t:<quan>
+NP_1.b:<card> = D.t:<card>
+NP_1.b:<gen> = D.t:<gen>
+NP_1.b:<decreas> = D.t:<decreas>
+NP_1.b:<wh> = D.t:<wh>
+NP_1.t:<case> = nom/acc
+S_r.b:<nocomp-mode> = S.t:<nocomp-mode>
+
+
+
+" :COMMENTS "PP modifying S
+Three-word P
+The noun can take a determiner,
+ and the determiner is an anchor of the P.  
+\"On the grounds of insufficient proof,  the judge dismissed the case\"
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("PP" . ""))) (((("P" . ""))) (((("P" . "1")) :headp T :constraints "NA" :constraint-type :NA))  (((("NP" . "1"))) (((("D" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("N" . "")) :headp T)) )  (((("P" . "2")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("NP" . "2")) :substp T)) )  (((("S" . "")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("nxPDNPnx" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<case> = NP_f.t:<case>
+NP_r.b:<assign-comp> = NP_f.t:<assign-comp>
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<conj> = NP_f.t:<conj>
+NP_r.b:<card> = NP_f.t:<card>
+NP_r.b:<const> = NP_f.t:<const>
+NP_r.b:<quan> = NP_f.t:<quan>
+NP_r.b:<decreas> = NP_f.t:<decreas>
+NP_r.b:<definite> = NP_f.t:<definite>
+NP_r.b:<gen> = NP_f.t:<gen>
+PP.b:<assign-case> = P.t:<assign-case>
+PP.b:<assign-case> = NP_2.t:<case>
+NP_2:<wh> = -
+NP_f.b:<case> = acc/nom
+
+NP_1.b:<agr> = N.t:<agr>
+NP_1.b:<case> = N.t:<case>
+NP_1.b:<conj> = N.t:<conj>
+NP_1.b:<const> = D.t:<const>
+NP_1.b:<definite> = D.t:<definite>
+NP_1.b:<quan> = D.t:<quan>
+NP_1.b:<card> = D.t:<card>
+NP_1.b:<gen> = D.t:<gen>
+NP_1.b:<decreas> = D.t:<decreas>
+NP_1.b:<wh> = D.t:<wh>
+NP_1.t:<case> = nom/acc
+NP_f.t:<rel-clause> = NP_r.b:<rel-clause>
+NP_f.t:<gerund> = NP_r.b:<gerund>
+NP_f.t:<compar> = NP_r.b:<compar>
+NP_f.t:<equiv> = NP_r.b:<equiv>
+" :COMMENTS "PP modifying NP
+Three-word P
+The noun can take a determiner, and the
+ determiner is an anchor of the P.
+\"Walking for the sake of your health 
+ is always a good idea\"
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("PP" . ""))) (((("P" . "")) :connector :LINE) (((("P" . "1")) :headp T :constraints "NA" :constraint-type :NA))  (((("NP" . "1"))) (((("D" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("N" . "")) :headp T)) )  (((("P" . "2")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("NP" . "2")) :substp T)) ) ) 
+("vxPDNPnx" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+VP_r.b:<mode> = VP.t:<mode>
+VP_r.b:<agr> = VP.t:<agr>
+VP_r.b:<tense> = VP.t:<tense>
+VP_r.b:<assign-case> = VP.t:<assign-case>
+VP_r.b:<assign-comp> = VP.t:<assign-comp>
+VP_r.b:<passive> = VP.t:<passive>
+PP.b:<assign-case> = P.t:<assign-case>
+PP.b:<assign-case> = NP_2.t:<case>
+
+NP_1.b:<agr> = N.t:<agr>
+NP_1.b:<case> = N.t:<case>
+NP_1.b:<conj> = N.t:<conj>
+NP_1.b:<const> = D.t:<const>
+NP_1.b:<definite> = D.t:<definite>
+NP_1.b:<quan> = D.t:<quan>
+NP_1.b:<card> = D.t:<card>
+NP_1.b:<gen> = D.t:<gen>
+NP_1.b:<decreas> = D.t:<decreas>
+NP_1.b:<wh> = D.t:<wh>
+NP_1.t:<case> = nom/acc
+VP.t:<compar> = -
+VP_r.b:<compar> = VP.t:<compar>
+VP_r.b:<mainv> = VP.t:<mainv>
+VP.t:<mainv> = +
+" :COMMENTS "PP modifying VP
+Three-word P
+The noun can take a determiner, and the
+ determiner is an anchor of the P.
+\"She laughed in the face of defeat\"
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("VP" . "r"))) (((("VP" . "")) :footp T :constraints "NA" :constraint-type :NA))  (((("PP" . "")) :constraints "") (((("P" . "")) :connector :LINE) (((("P" . "1")) :headp T :constraints "NA" :constraint-type :NA))  (((("NP" . "1"))) (((("D" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("N" . "")) :headp T)) )  (((("P" . "2")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("NP" . "2")) :substp T)) ) ) 
+("nxPNaPnx" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<case> = NP_f.t:<case>
+NP_r.b:<assign-comp> = NP_f.t:<assign-comp>
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<conj> = NP_f.t:<conj>
+PP.b:<assign-case> = P.t:<assign-case>
+PP.b:<assign-case> = NP.t:<case>
+NP:<wh> = -
+NP_f.b:<case> = acc/nom
+
+NP_r.b:<card> = NP_f.t:<card>
+NP_r.b:<const> = NP_f.t:<const>
+NP_r.b:<quan> = NP_f.t:<quan>
+NP_r.b:<decreas> = NP_f.t:<decreas>
+NP_r.b:<definite> = NP_f.t:<definite>
+NP_r.b:<gen> = NP_f.t:<gen>
+NP_f.t:<rel-clause> = NP_r.b:<rel-clause>
+NP_f.t:<gerund> = NP_r.b:<gerund>
+NP_f.t:<compar> = NP_r.b:<compar>
+NP_f.t:<equiv> = NP_r.b:<equiv>
+" :COMMENTS "PP modifying NP
+Three-word P
+\"The peasant in need of water just
+ trapsed across the dais\"
+
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("PP" . ""))) (((("P" . "")) :connector :LINE) (((("P" . "1")) :headp T :constraints "NA" :constraint-type :NA))  (((("N" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("P" . "2")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("NP" . "")) :substp T)) ) ) 
+("vxPNaPnx" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+VP_r.b:<mode> = VP.t:<mode>
+VP_r.b:<agr> = VP.t:<agr>
+VP_r.b:<tense> = VP.t:<tense>
+VP_r.b:<assign-case> = VP.t:<assign-case>
+VP_r.b:<assign-comp> = VP.t:<assign-comp>
+VP_r.b:<passive> = VP.t:<passive>
+PP.b:<assign-case> = P.t:<assign-case>
+PP.b:<assign-case> = NP.t:<case>
+
+VP.t:<compar> = -
+VP_r.b:<compar> = VP.t:<compar>
+VP_r.b:<mainv> = VP.t:<mainv>
+VP.t:<mainv> = +
+" :COMMENTS "PP modifying VP
+Three-word P
+\"She succeeded merely by means of her wit\"
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("VP" . "r"))) (((("VP" . "")) :footp T :constraints "NA" :constraint-type :NA))  (((("PP" . "")) :constraints "") (((("P" . "")) :connector :LINE) (((("P" . "1")) :headp T :constraints "NA" :constraint-type :NA))  (((("N" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("P" . "2")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("NP" . "")) :substp T)) ) ) 
+("PNaPnxs" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+S.t:<comp> = nil
+S.t:<comp> = S_r.b:<comp>
+S.t:<conj> = S_r.b:<conj>
+S.t:<assign-comp> = S_r.b:<assign-comp>
+S.t:<tense> = S_r.b:<tense>
+S.t:<extracted> = S_r.b:<extracted>
+S.t:<mode> = S_r.b:<mode>
+S.t:<assign-case> = S_r.b:<assign-case>
+S.t:<agr> = S_r.b:<agr>
+
+S_r.b:<wh> = PP.t:<wh>
+PP.b:<wh> = NP:<wh>
+S_r.b:<inv> = S.t:<inv>
+S_r.b:<invlink> = S_r.b:<inv>
+S.b:<comp> = nil
+PP.b:<assign-case> = P.t:<assign-case>
+PP.b:<assign-case> = NP:<case>
+S_r.b:<nocomp-mode> = S.t:<nocomp-mode>
+" :COMMENTS "PP modifying S
+Three-word P
+\"On behalf of all of us here tonight,
+ we would like to thank you for you
+ never-ending generosity\"
+
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("PP" . ""))) (((("P" . ""))) (((("P" . "1")) :headp T :constraints "NA" :constraint-type :NA))  (((("N" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("P" . "2")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("NP" . "")) :substp T)) )  (((("S" . "")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("spuPnx" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+S.t:<comp> = nil
+S.t:<comp> = S_r.b:<comp>
+S.t:<conj> = S_r.b:<conj>
+S.t:<extracted> = S_r.b:<extracted>
+S.t:<assign-comp> = S_r.b:<assign-comp>
+S.t:<tense> = S_r.b:<tense>
+S.t:<wh> = S_r.b:<wh>
+S.t:<inv> = S_r.b:<inv>
+S.t:<invlink> = S_r.b:<invlink>
+S.t:<mode> = S_r.b:<mode>
+S.t:<assign-case> = S_r.b:<assign-case>
+S.t:<agr> = S_r.b:<agr>
+
+Punct.t:<punct struct> = comma/dash
+P.t:<assign-case> = PP.b:<assign-case> 
+PP.b:<assign-case> = NP.t:<case>
+S.b:<punct struct> = nil
+S.b:<punct term> = nil
+" :COMMENTS "Post-clausal, punctuation separated PP. These can often been
+interpreted as post-posed from somewhere inside the clause. However,
+unlike extraposed arguments, it is very difficult to decide the base
+position, so a multi-component analysis such as one might use for NP
+extraposition seems undesirable for this construction. 
+
+John has been more and more exhausted, in recent months.
+
+It increases employee commitment to the company, with
+all that means for efficiency and quality control.
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("S" . "")) :footp T :constraints "NA" :constraint-type :NA))  (((("Punct" . "")) :substp T))  (((("PP" . ""))) (((("P" . "")) :headp T))  (((("NP" . "")) :substp T)) ) ) 
+("vxPs" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+S.t:<inv> = -
+
+S.t:<wh> = -
+S.t:<extracted> = -
+S.t:<punct struct> = nil
+
+VP_r.b:<conj> = VP_f:<conj>
+VP_f:<mode> = ind/imp
+VP_r.b:<mode> = VP_f:<mode>
+VP_f:<mode> = ind/imp
+VP_r.b:<assign-comp> = VP_f:<assign-comp>
+VP_r.b:<agr> = VP_f:<agr>
+VP_r.b:<tense> = VP_f:<tense>
+VP_r.b:<assign-case> = VP_f:<assign-case>
+
+VP_r.b:<passive> = VP_f:<passive>
+P.t:<compar> = VP_f.t:<compar>
+P.t:<equiv> = VP_f.t:<equiv>
+VP_r.b:<compar> = -
+VP_r.b:<mainv> = VP_f.t:<mainv>
+VP.t:<mainv> = +
+" :COMMENTS "Tree for sentential adjuncts following main clause:
+      The emu left the zoo because she needed more space.  
+
+This tree adjoins to the main clause, and the subordinate/adjunct
+clause is a substitution site. In general, adjuncts may be indicative,
+subjunctive or participial - this and whether they allow a
+complementizer are specified in the lexical entry for the
+subordinating conjunction; the subordinating conjunction may be overt
+or null. Sentential adjuncts may not be inverted, extracted or wh+ in
+the current analysis, although we may extend the analysis to include
+inverted conditional clauses.
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("VP" . "r"))) (((("VP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("PP" . ""))) (((("P" . "")) :headp T))  (((("S" . "")) :substp T)) ) ) 
+("Pss" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+S.t:<wh> = -
+S.t:<extracted> = -
+S.t:<inv> = -
+
+S.t:<punct struct> = nil
+
+S_r.b:<comp> = S_f:<comp>
+S_r.b:<conj> = S_f:<conj>
+S_r.b:<assign-comp> = S_f:<assign-comp>
+S_r.b:<tense> = S_f:<tense>
+S_r.b:<mode> = S_f:<mode>
+S_f:<mode> = ind/imp
+S_r.b:<assign-case> = S_f:<assign-case>
+S_r.b:<agr> = S_f:<agr>
+
+S_r.b:<wh> = S_f:<wh>
+S_r.b:<comp> = nil
+S_r.b:<nocomp-mode> = S.t:<nocomp-mode>
+" :COMMENTS "
+
+Tree for sentential adjuncts preceding the main clause:
+      Since she was exhausted Mary went home.
+
+This tree adjoins to the main clause, and the subordinate/adjunct
+clause is a substitution site. Separating punctuation is optional,
+adjoining using the PUs tree. In general, adjuncts may be indicative,
+subjunctive or participial - this and whether they allow a
+complementizer are specified in the lexical entry for the
+subordinating conjunction; the subordinating conjunction may be overt
+or null. Sentential adjuncts may not be inverted, extracted or wh+ in
+the current analysis, although we may extend the analysis to include
+inverted conditional clauses.
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("S" . "1")) :constraints "NA" :constraint-type :NA) (((("P" . "")) :headp T))  (((("S" . "")) :substp T)) )  (((("S" . "f")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("puPpuvx" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+S.t:<inv> = -
+
+S.t:<wh> = -
+S.t:<extracted> = -
+S.t:<punct struct> = nil
+Punct_1.t:<punct struct> = Punct_2.t:<punct struct>
+Punct_1.t:<punct struct> = comma/dash
+VP_r.b:<punct struct> = Punct_1.t:<punct struct>
+VP.t:<punct struct> = nil
+VP.t:<punct bal> = nil
+VP_r.b:<mode> = VP.t:<mode>
+VP_r.b:<assign-comp> = VP.t:<assign-comp>
+VP_r.b:<agr> = VP.t:<agr>
+VP_r.b:<tense> = VP.t:<tense>
+VP_r.b:<passive> = VP.t:<passive>
+VP_r.b:<assign-case> = VP.t:<assign-case>
+
+VP.t:<compar> = -
+VP_r.b:<compar> = VP.t:<compar>
+" :COMMENTS "
+Tree for sentential adjuncts occurring between the subject and VP of
+the matrix clause:
+   Mary, as she was exhasted, took a nap.
+
+This tree adjoins to the main clause, and the subordinate/adjunct clause is a
+substitution site. The adjunct clause must be separated from the main
+clause by a pair of commas or dashes. In general, adjuncts may be
+indicative, subjunctive or participial - this and whether they allow a
+complementizer are specified in the lexical entry for the
+subordinating conjunction; the subordinating conjunction may be overt
+or null. Sentential adjuncts may not be inverted,
+extracted or wh+ in the current analysis, although we may extend the
+analysis to include inverted conditional clauses.
+
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("VP" . "r"))) (((("Punct" . "1")) :substp T))  (((("PP" . ""))) (((("P" . "")) :headp T))  (((("S" . "")) :substp T)) )  (((("Punct" . "2")) :substp T))  (((("VP" . "")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("spuPs" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+S.t:<inv> = -
+
+S.t:<wh> = -
+S.t:<extracted> = -
+S.t:<punct struct> = nil
+
+S_f.t:<punct struct> = nil
+S_f.t:<comp> = nil
+S_f.t:<comp> = S_r.b:<comp>
+S_f.t:<conj> = S_r.b:<conj>
+S_f.t:<extracted> = S_r.b:<extracted>
+S_f.t:<assign-comp> = S_r.b:<assign-comp>
+S_f.t:<tense> = S_r.b:<tense>
+S_f.t:<wh> = S_r.b:<wh>
+S_f.t:<inv> = S_r.b:<inv>
+S_f.t:<invlink> = S_r.b:<invlink>
+S_f.t:<mode> = ind/imp
+S_f.t:<mode> = S_r.b:<mode>
+S_f.t:<assign-case> = S_r.b:<assign-case>
+S_f.t:<agr> = S_r.b:<agr>
+
+Punct.t:<punct struct> = comma/dash
+S_r.b:<nocomp-mode> = S.t:<nocomp-mode>
+" :COMMENTS "
+
+Tree for sentential adjuncts following main clause, separated by a
+punctuation mark:
+   The emu left the zoo, because she needed more space.
+
+We typically attach post-clausal modifiers at the VP node, as you
+typically get scope ambiguity effects with negation ('John didn't
+go because he was tired' - did he go or not?). However, with
+post-sentential, comma-separated adjuct clauses there is no ambiguity
+- in 'John didn't go, because he was tired' he definitely did not
+go. Thus, we have a separate tree for these adjunct, which requires
+the punctuation mark.
+
+This tree adjoins to the main clause, and the subordinate/adjunct clause is a
+substitution site. The adjunct clause must be separated from the main
+clause by a comma or dash. In general, adjuncts may be indicative,
+subjunctive or participial - this and whether they allow a
+complementizer are specified in the lexical entry for the
+subordinating conjunction; the subordinating conjunction may be overt
+or null. Sentential adjuncts may not be inverted,
+extracted or wh+ in the current analysis, although we may extend the
+analysis to include inverted conditional clauses.
+
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("S" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("Punct" . "")) :substp T))  (((("PP" . ""))) (((("P" . "")) :headp T))  (((("S" . "")) :substp T)) ) ) 
+("PARBPss" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+S.t:<wh> = -
+S.t:<extracted> = -
+S.t:<inv> = -
+
+S.t:<punct struct> = nil
+
+S_r.b:<comp> = S_f:<comp>
+S_r.b:<conj> = S_f:<conj>
+S_r.b:<assign-comp> = S_f:<assign-comp>
+S_r.b:<tense> = S_f:<tense>
+S_r.b:<mode> = S_f:<mode>
+S_f:<mode> = ind/imp
+S_r.b:<assign-case> = S_f:<assign-case>
+S_r.b:<agr> = S_f:<agr>
+
+S_r.b:<wh> = S_f:<wh>
+S_r.b:<comp> = nil
+S_r.b:<nocomp-mode> = S.t:<nocomp-mode>
+" :COMMENTS "
+
+Tree for untensed sentential adjuncts introduced by 'as soon as'
+preceding the main clause:
+      As soon as elected to office, Bill began to make changes.
+
+A tensed adjunct with 'as soon as' would use the CONJarbCONJ set of
+subordinating conjunction trees.
+
+This tree adjoins to the main clause, and the subordinate/adjunct
+clause is a substitution site. Separating punctuation is optional,
+adjoining using the PUs tree. In general, adjuncts may be indicative,
+subjunctive or participial - this and whether they allow a
+complementizer are specified in the lexical entry for the
+subordinating conjunction. Sentential adjuncts may not be inverted,
+extracted or wh+ in the current analysis, although we may extend the
+analysis to include inverted conditional clauses.
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("PP" . ""))) (((("P" . ""))) (((("P" . "1")) :headp T :constraints "NA" :constraint-type :NA))  (((("Ad" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("P" . "2")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("S" . "")) :substp T)) )  (((("S" . "f")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("spuPARBPs" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+S.t:<inv> = -
+
+S.t:<wh> = -
+S.t:<extracted> = -
+S.t:<punct struct> = nil
+
+S_f.t:<punct struct> = nil
+S_f.t:<comp> = nil
+S_f.t:<comp> = S_r.b:<comp>
+S_f.t:<conj> = S_r.b:<conj>
+S_f.t:<extracted> = S_r.b:<extracted>
+S_f.t:<assign-comp> = S_r.b:<assign-comp>
+S_f.t:<tense> = S_r.b:<tense>
+S_f.t:<wh> = S_r.b:<wh>
+S_f.t:<inv> = S_r.b:<inv>
+S_f.t:<invlink> = S_r.b:<invlink>
+S_f.t:<mode> = ind/imp
+S_f.t:<mode> = S_r.b:<mode>
+S_f.t:<assign-case> = S_r.b:<assign-case>
+S_f.t:<agr> = S_r.b:<agr>
+
+Punct.t:<punct struct> = comma/dash
+S_r.b:<nocomp-mode> = S.t:<nocomp-mode>
+" :COMMENTS "
+
+Tree for untensed sentential adjuncts introduced by 'as soon as'
+following main clause and separated by a punctuation mark:
+      Bill began to make changes, as soon as elected to office.
+
+A tensed adjunct with 'as soon as' would use the CONJarbCONJ set of
+subordinating conjunction trees.
+
+We typically attach post-clausal modifiers at the VP node, as you
+typically get scope ambiguity effects with negation ('John didn't
+go because he was tired' - did he go or not?). However, with
+post-sentential, comma-separated adjuct clauses there is no ambiguity
+- in 'John didn't go, because he was tired' he definitely did not
+go. Thus, we have a separate tree for these adjunct, which requires
+the punctuation mark.
+
+This tree adjoins to the main clause, and the subordinate/adjunct clause is a
+substitution site. The adjunct clause must be separated from the main
+clause by a comma or dash. In general, adjuncts may be indicative,
+subjunctive or participial - this and whether they allow a
+complementizer are specified in the lexical entry for the
+subordinating conjunction. Sentential adjuncts may not be inverted,
+extracted or wh+ in the current analysis, although we may extend the
+analysis to include inverted conditional clauses.
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("S" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("Punct" . "")) :substp T))  (((("PP" . ""))) (((("P" . ""))) (((("P" . "1")) :headp T :constraints "NA" :constraint-type :NA))  (((("Ad" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("P" . "2")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("S" . "")) :substp T)) ) ) 
+("puPARBPpuvx" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+S.t:<inv> = -
+
+S.t:<wh> = -
+S.t:<extracted> = -
+S.t:<punct struct> = nil
+Punct_1.t:<punct struct> = Punct_2.t:<punct struct>
+Punct_1.t:<punct struct> = comma/dash
+VP_r.b:<punct struct> = Punct_1.t:<punct struct>
+VP.t:<punct struct> = nil
+VP.t:<punct bal> = nil
+VP_r.b:<mode> = VP.t:<mode>
+VP_r.b:<assign-comp> = VP.t:<assign-comp>
+VP_r.b:<agr> = VP.t:<agr>
+VP_r.b:<tense> = VP.t:<tense>
+VP_r.b:<passive> = VP.t:<passive>
+VP_r.b:<assign-case> = VP.t:<assign-case>
+
+VP.t:<compar> = -
+VP_r.b:<compar> = VP.t:<compar>
+" :COMMENTS "
+
+Tree for untensed sentential adjuncts introduced by 'as soon as'
+occurring between the subject and VP of the matrix clause:
+      Bill, as soon as elected to office,  began to make changes.
+
+A tensed adjunct with 'as soon as' would use the CONJarbCONJ set of
+subordinating conjunction trees.
+
+This tree adjoins to the main clause, and the subordinate/adjunct clause is a
+substitution site. The adjunct clause must be separated from the main
+clause by a pair of commas or dashes. In general, adjuncts may be
+indicative, subjunctive or participial - this and whether they allow a
+complementizer are specified in the lexical entry for the
+subordinating conjunction. Sentential adjuncts may not be inverted,
+extracted or wh+ in the current analysis, although we may extend the
+analysis to include inverted conditional clauses.
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("VP" . "r"))) (((("Punct" . "1")) :substp T))  (((("PP" . ""))) (((("P" . ""))) (((("P" . "1")) :headp T :constraints "NA" :constraint-type :NA))  (((("Ad" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("P" . "2")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("S" . "")) :substp T)) )  (((("Punct" . "2")) :substp T))  (((("VP" . "")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("vxPARBPs" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+S.t:<inv> = -
+
+S.t:<wh> = -
+S.t:<extracted> = -
+S.t:<punct struct> = nil
+VP_r.b:<conj> = VP_f:<conj>
+VP_f:<mode> = ind/imp
+VP_r.b:<mode> = VP_f:<mode>
+VP_f:<mode> = ind/imp
+VP_r.b:<assign-comp> = VP_f:<assign-comp>
+VP_r.b:<agr> = VP_f:<agr>
+VP_r.b:<tense> = VP_f:<tense>
+VP_r.b:<assign-case> = VP_f:<assign-case>
+
+VP_r.b:<passive> = VP_f:<passive>
+VP_f.t:<compar> = -
+VP_r.b:<compar> = VP_f.t:<compar>
+VP_r.b:<mainv> = VP_f.t:<mainv>
+VP.t:<mainv> = +
+" :COMMENTS "
+
+Tree for untensed sentential adjuncts introduced by 'as soon as'
+following main clause:
+      Bill began to make changes as soon as elected to office.
+
+A tensed adjunct with 'as soon as' would use the CONJarbCONJ set of
+subordinating conjunction trees.
+
+This tree adjoins to the main clause, and the subordinate/adjunct clause is a
+substitution site. In general, adjuncts may be indicative, subjunctive
+or participial - this and whether they allow a complementizer are
+specified in the lexical entry for the subordinating
+conjunction. Sentential adjuncts may not be inverted, extracted or wh+
+in the current analysis, although we may extend the analysis to
+include inverted conditional clauses.
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("VP" . "r"))) (((("VP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("PP" . ""))) (((("P" . ""))) (((("P" . "1")) :headp T :constraints "NA" :constraint-type :NA))  (((("Ad" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("P" . "2")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("S" . "")) :substp T)) ) ) 
+("vxPPs" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+S.t:<inv> = -
+
+S.t:<wh> = -
+S.t:<extracted> = -
+S.t:<punct struct> = nil
+VP_r.b:<conj> = VP_f:<conj>
+VP_f:<mode> = ind/imp
+VP_r.b:<mode> = VP_f:<mode>
+VP_f:<mode> = ind/imp
+VP_r.b:<assign-comp> = VP_f:<assign-comp>
+VP_r.b:<agr> = VP_f:<agr>
+VP_r.b:<tense> = VP_f:<tense>
+VP_r.b:<assign-case> = VP_f:<assign-case>
+
+VP_r.b:<passive> = VP_f:<passive>
+VP_f.t:<compar> = -
+VP_r.b:<compar> = VP_f.t:<compar>
+VP_r.b:<mainv> = VP_f.t:<mainv>
+VP.t:<mainv> = +
+" :COMMENTS "
+
+Tree for a multi-word subordinating conjunction introducing a
+sentential adjunct which follows the main clause:
+      Mary will move to LA even if she cannot find a job.
+
+This tree adjoins to the main clause, and the subordinate/adjunct clause is a
+substitution site. In general, adjuncts may be indicative, subjunctive
+or participial - this and whether they allow a complementizer are
+specified in the lexical entry for the subordinating
+conjunction. Sentential adjuncts may not be inverted, extracted or wh+
+in the current analysis, although we may extend the analysis to
+include inverted conditional clauses.
+
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("VP" . "r"))) (((("VP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("PP" . ""))) (((("P" . ""))) (((("P" . "1")) :headp T :constraints "NA" :constraint-type :NA))  (((("P" . "2")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("S" . "")) :substp T)) ) ) 
+("PPss" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+S.t:<wh> = -
+S.t:<extracted> = -
+S.t:<inv> = -
+
+S.t:<punct struct> = nil
+
+S_r.b:<comp> = S_f:<comp>
+S_r.b:<conj> = S_f:<conj>
+S_r.b:<assign-comp> = S_f:<assign-comp>
+S_r.b:<tense> = S_f:<tense>
+S_r.b:<mode> = S_f:<mode>
+S_f:<mode> = ind/imp
+S_r.b:<assign-case> = S_f:<assign-case>
+S_r.b:<agr> = S_f:<agr>
+
+S_r.b:<wh> = S_f:<wh>
+S_r.b:<comp> = nil
+S_r.b:<nocomp-mode> = S.t:<nocomp-mode>
+" :COMMENTS "
+
+Tree for a multi-word subordinating conjunction introducing a
+sentential adjunct which precedes the main clause:
+      Even if she cannot find a job Mary will move to LA.
+
+This tree adjoins to the main clause, and the subordinate/adjunct
+clause is a substitution site. Separating punctuation is optional,
+adjoining using the PUs tree. In general, adjuncts may be indicative,
+subjunctive or participial - this and whether they allow a
+complementizer are specified in the lexical entry for the
+subordinating conjunction. Sentential adjuncts may not be inverted,
+extracted or wh+ in the current analysis, although we may extend the
+analysis to include inverted conditional clauses.
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("PP" . ""))) (((("P" . ""))) (((("P" . "1")) :headp T :constraints "NA" :constraint-type :NA))  (((("P" . "2")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("S" . "")) :substp T)) )  (((("S" . "f")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("spuPPs" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+S.t:<inv> = -
+
+S.t:<wh> = -
+S.t:<extracted> = -
+S.t:<punct struct> = nil
+
+S_f.t:<punct struct> = nil
+S_f.t:<comp> = nil
+S_f.t:<comp> = S_r.b:<comp>
+S_f.t:<conj> = S_r.b:<conj>
+S_f.t:<extracted> = S_r.b:<extracted>
+S_f.t:<assign-comp> = S_r.b:<assign-comp>
+S_f.t:<tense> = S_r.b:<tense>
+S_f.t:<wh> = S_r.b:<wh>
+S_f.t:<inv> = S_r.b:<inv>
+S_f.t:<invlink> = S_r.b:<invlink>
+S_f.t:<mode> = ind/imp
+S_f.t:<mode> = S_r.b:<mode>
+S_f.t:<assign-case> = S_r.b:<assign-case>
+S_f.t:<agr> = S_r.b:<agr>
+
+Punct.t:<punct struct> = comma/dash
+S_r.b:<nocomp-mode> = S.t:<nocomp-mode>
+" :COMMENTS "
+
+Tree for multi-word subordinating conjunctions, introducing a
+sentential adjunct which follows the main clause and is separated by a
+punctuation mark:
+   Mary will move to LA, even if she does not find a job.
+
+We typically attach post-clausal modifiers at the VP node, as you
+typically get scope ambiguity effects with negation ('John didn't
+go because he was tired' - did he go or not?). However, with
+post-sentential, comma-separated adjuct clauses there is no ambiguity
+- in 'it John didn't go, because he was tired' he definitely did not
+go. Thus, we have a separate tree for these adjunct, which requires
+the punctuation mark.
+
+This tree adjoins to the main clause, and the subordinate/adjunct clause is a
+substitution site. The adjunct clause must be separated from the main
+clause by a comma or dash. In general, adjuncts may be indicative,
+subjunctive or participial - this and whether they allow a
+complementizer are specified in the lexical entry for the
+subordinating conjunction. Sentential adjuncts may not be inverted,
+extracted or wh+ in the current analysis, although we may extend the
+analysis to include inverted conditional clauses.
+
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("S" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("Punct" . "")) :substp T))  (((("PP" . ""))) (((("P" . ""))) (((("P" . "1")) :headp T :constraints "NA" :constraint-type :NA))  (((("P" . "2")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("S" . "")) :substp T)) ) ) 
+("puPPpuvx" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+S.t:<inv> = -
+
+S.t:<wh> = -
+S.t:<extracted> = -
+S.t:<punct struct> = nil
+Punct_1.t:<punct struct> = Punct_2.t:<punct struct>
+Punct_1.t:<punct struct> = comma/dash
+VP_r.b:<punct struct> = Punct_1.t:<punct struct>
+VP.t:<punct struct> = nil
+VP.t:<punct bal> = nil
+VP_r.b:<mode> = VP.t:<mode>
+VP_r.b:<passive> = VP.t:<passive>
+VP_r.b:<assign-comp> = VP.t:<assign-comp>
+VP_r.b:<agr> = VP.t:<agr>
+VP_r.b:<tense> = VP.t:<tense>
+VP_r.b:<assign-case> = VP.t:<assign-case>
+
+VP.t:<compar> = -
+VP_r.b:<compar> = VP.t:<compar>
+" :COMMENTS "
+Tree for multi-word subordinating conjunctions, introducing a
+sentential adjunct which occurs between the subject and VP of
+the matrix clause:
+   Mary, even if she does not find a job, will move to LA.
+
+This tree adjoins to the main clause, and the subordinate/adjunct clause is a
+substitution site. The adjunct clause must be separated from the main
+clause by a pair of commas or dashes. In general, adjuncts may be
+indicative, subjunctive or participial - this and whether they allow a
+complementizer are specified in the lexical entry for the
+subordinating conjunction. Sentential adjuncts may not be inverted,
+extracted or wh+ in the current analysis, although we may extend the
+analysis to include inverted conditional clauses.
+
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("VP" . "r"))) (((("Punct" . "1")) :substp T))  (((("PP" . ""))) (((("P" . ""))) (((("P" . "1")) :headp T :constraints "NA" :constraint-type :NA))  (((("P" . "2")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("S" . "")) :substp T)) )  (((("Punct" . "2")) :substp T))  (((("VP" . "")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("vxARBPs" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+S.t:<inv> = -
+
+S.t:<wh> = -
+S.t:<extracted> = -
+S.t:<punct struct> = nil
+VP_r.b:<conj> = VP_f:<conj>
+VP_f:<mode> = ind/imp
+VP_r.b:<mode> = VP_f:<mode>
+VP_f:<mode> = ind/imp
+VP_r.b:<assign-comp> = VP_f:<assign-comp>
+VP_r.b:<agr> = VP_f:<agr>
+VP_r.b:<tense> = VP_f:<tense>
+VP_r.b:<assign-case> = VP_f:<assign-case>
+
+VP_r.b:<passive> = VP_f:<passive>
+VP_f.t:<compar> = -
+VP_r.b:<compar> = VP_f.t:<compar>
+VP_r.b:<mainv> = VP_f.t:<mainv>
+VP.t:<mainv> = +
+" :COMMENTS "
+
+Tree for a multi-word subordinating conjunction introducing a
+sentential adjunct which follows the main clause:
+      Mary will move to LA even if she cannot find a job.
+
+This tree adjoins to the main clause, and the subordinate/adjunct clause is a
+substitution site. In general, adjuncts may be indicative, subjunctive
+or participial - this and whether they allow a complementizer are
+specified in the lexical entry for the subordinating
+conjunction. Sentential adjuncts may not be inverted, extracted or wh+
+in the current analysis, although we may extend the analysis to
+include inverted conditional clauses.
+
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("VP" . "r"))) (((("VP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("PP" . ""))) (((("P" . "1"))) (((("Ad" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("P" . "")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("S" . "")) :substp T)) ) ) 
+("ARBPss" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+S.t:<wh> = -
+S.t:<extracted> = -
+S.t:<inv> = -
+
+S.t:<punct struct> = nil
+
+S_r.b:<comp> = S_f:<comp>
+S_r.b:<conj> = S_f:<conj>
+S_r.b:<assign-comp> = S_f:<assign-comp>
+S_r.b:<tense> = S_f:<tense>
+S_r.b:<mode> = S_f:<mode>
+S_f:<mode> = ind/imp
+S_r.b:<assign-case> = S_f:<assign-case>
+S_r.b:<agr> = S_f:<agr>
+
+S_r.b:<wh> = S_f:<wh>
+S_r.b:<comp> = nil
+S_r.b:<nocomp-mode> = S.t:<nocomp-mode>
+" :COMMENTS "
+
+Tree for a multi-word subordinating conjunction introducing a
+sentential adjunct which precedes the main clause:
+      Even if she cannot find a job Mary will move to LA.
+
+This tree adjoins to the main clause, and the subordinate/adjunct
+clause is a substitution site. Separating punctuation is optional,
+adjoining using the PUs tree. In general, adjuncts may be indicative,
+subjunctive or participial - this and whether they allow a
+complementizer are specified in the lexical entry for the
+subordinating conjunction. Sentential adjuncts may not be inverted,
+extracted or wh+ in the current analysis, although we may extend the
+analysis to include inverted conditional clauses.
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("PP" . ""))) (((("P" . "1"))) (((("Ad" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("P" . "")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("S" . "")) :substp T)) )  (((("S" . "f")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("spuARBPs" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+S.t:<inv> = -
+
+S.t:<wh> = -
+S.t:<extracted> = -
+S.t:<punct struct> = nil
+
+S_f.t:<punct struct> = nil
+S_f.t:<comp> = nil
+S_f.t:<comp> = S_r.b:<comp>
+S_f.t:<conj> = S_r.b:<conj>
+S_f.t:<extracted> = S_r.b:<extracted>
+S_f.t:<assign-comp> = S_r.b:<assign-comp>
+S_f.t:<tense> = S_r.b:<tense>
+S_f.t:<wh> = S_r.b:<wh>
+S_f.t:<inv> = S_r.b:<inv>
+S_f.t:<invlink> = S_r.b:<invlink>
+S_f.t:<mode> = ind/imp
+S_f.t:<mode> = S_r.b:<mode>
+S_f.t:<assign-case> = S_r.b:<assign-case>
+S_f.t:<agr> = S_r.b:<agr>
+
+Punct.t:<punct struct> = comma/dash
+S_r.b:<nocomp-mode> = S.t:<nocomp-mode>
+" :COMMENTS "
+
+Tree for multi-word subordinating conjunctions, introducing a
+sentential adjunct which follows the main clause and is separated by a
+punctuation mark:
+   Mary will move to LA, even if she does not find a job.
+
+We typically attach post-clausal modifiers at the VP node, as you
+typically get scope ambiguity effects with negation ('John didn't
+go because he was tired' - did he go or not?). However, with
+post-sentential, comma-separated adjuct clauses there is no ambiguity
+- in 'it John didn't go, because he was tired' he definitely did not
+go. Thus, we have a separate tree for these adjunct, which requires
+the punctuation mark.
+
+This tree adjoins to the main clause, and the subordinate/adjunct clause is a
+substitution site. The adjunct clause must be separated from the main
+clause by a comma or dash. In general, adjuncts may be indicative,
+subjunctive or participial - this and whether they allow a
+complementizer are specified in the lexical entry for the
+subordinating conjunction. Sentential adjuncts may not be inverted,
+extracted or wh+ in the current analysis, although we may extend the
+analysis to include inverted conditional clauses.
+
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("S" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("Punct" . "")) :substp T))  (((("PP" . ""))) (((("P" . "1"))) (((("Ad" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("P" . "")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("S" . "")) :substp T)) ) ) 
+("puARBPpuvx" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+S.t:<inv> = -
+
+S.t:<wh> = -
+S.t:<extracted> = -
+S.t:<punct struct> = nil
+Punct_1.t:<punct struct> = Punct_2.t:<punct struct>
+Punct_1.t:<punct struct> = comma/dash
+VP_r.b:<punct struct> = Punct_1.t:<punct struct>
+VP.t:<punct struct> = nil
+VP.t:<punct bal> = nil
+VP_r.b:<mode> = VP.t:<mode>
+VP_r.b:<passive> = VP.t:<passive>
+VP_r.b:<assign-comp> = VP.t:<assign-comp>
+VP_r.b:<agr> = VP.t:<agr>
+VP_r.b:<tense> = VP.t:<tense>
+VP_r.b:<assign-case> = VP.t:<assign-case>
+
+VP.t:<compar> = -
+VP_r.b:<compar> = VP.t:<compar>
+" :COMMENTS "
+Tree for multi-word subordinating conjunctions, introducing a
+sentential adjunct which occurs between the subject and VP of
+the matrix clause:
+   Mary, even if she does not find a job, will move to LA.
+
+This tree adjoins to the main clause, and the subordinate/adjunct clause is a
+substitution site. The adjunct clause must be separated from the main
+clause by a pair of commas or dashes. In general, adjuncts may be
+indicative, subjunctive or participial - this and whether they allow a
+complementizer are specified in the lexical entry for the
+subordinating conjunction. Sentential adjuncts may not be inverted,
+extracted or wh+ in the current analysis, although we may extend the
+analysis to include inverted conditional clauses.
+
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("VP" . "r"))) (((("Punct" . "1")) :substp T))  (((("PP" . ""))) (((("P" . "1"))) (((("Ad" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("P" . "")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("S" . "")) :substp T)) )  (((("Punct" . "2")) :substp T))  (((("VP" . "")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("vxPNs" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+S.t:<inv> = -
+
+S.t:<wh> = -
+S.t:<extracted> = -
+S.t:<punct struct> = nil
+VP_r.b:<conj> = VP_f:<conj>
+VP_f:<mode> = ind/imp
+VP_r.b:<mode> = VP_f:<mode>
+VP_f:<mode> = ind/imp
+VP_r.b:<assign-comp> = VP_f:<assign-comp>
+VP_r.b:<agr> = VP_f:<agr>
+VP_r.b:<tense> = VP_f:<tense>
+VP_r.b:<assign-case> = VP_f:<assign-case>
+
+VP_r.b:<passive> = VP_f:<passive>
+VP_f.t:<compar> = -
+VP_r.b:<compar> = VP_f.t:<compar>
+VP_r.b:<mainv> = VP_f.t:<mainv>
+VP.t:<mainv> = +
+" :COMMENTS "
+
+Tree for a multi-word subordinating conjunction introducing a
+sentential adjunct which follows the main clause:
+      Mary bought a spare bike in case her old one is stolen.
+
+This tree adjoins to the main clause, and the subordinate/adjunct clause is a
+substitution site. In general, adjuncts may be indicative, subjunctive
+or participial - this and whether they allow a complementizer are
+specified in the lexical entry for the subordinating
+conjunction. Sentential adjuncts may not be inverted, extracted or wh+
+in the current analysis, although we may extend the analysis to
+include inverted conditional clauses.
+
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("VP" . "r"))) (((("VP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("PP" . ""))) (((("P" . "1"))) (((("P" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("N" . "")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("S" . "")) :substp T)) ) ) 
+("PNss" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+S.t:<wh> = -
+S.t:<extracted> = -
+S.t:<inv> = -
+
+S.t:<punct struct> = nil
+
+S_r.b:<comp> = S_f:<comp>
+S_r.b:<conj> = S_f:<conj>
+S_r.b:<assign-comp> = S_f:<assign-comp>
+S_r.b:<tense> = S_f:<tense>
+S_r.b:<mode> = S_f:<mode>
+S_f:<mode> = ind/imp
+S_r.b:<assign-case> = S_f:<assign-case>
+S_r.b:<agr> = S_f:<agr>
+
+S_r.b:<wh> = S_f:<wh>
+S_r.b:<comp> = nil
+S_r.b:<nocomp-mode> = S.t:<nocomp-mode>
+" :COMMENTS "
+
+Tree for a multi-word subordinating conjunction introducing a
+sentential adjunct which precedes the main clause:
+      For all that Mary enjoys sports, she cannot abide golf.
+
+This tree adjoins to the main clause, and the subordinate/adjunct
+clause is a substitution site. Separating punctuation is optional,
+adjoining using the PUs tree. In general, adjuncts may be indicative,
+subjunctive or participial - this and whether they allow a
+complementizer are specified in the lexical entry for the
+subordinating conjunction. Sentential adjuncts may not be inverted,
+extracted or wh+ in the current analysis, although we may extend the
+analysis to include inverted conditional clauses.
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("PP" . ""))) (((("P" . "1"))) (((("P" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("N" . "")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("S" . "")) :substp T)) )  (((("S" . "f")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("spuPNs" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+S.t:<inv> = -
+
+S.t:<wh> = -
+S.t:<extracted> = -
+S.t:<punct struct> = nil
+
+S_f.t:<punct struct> = nil
+S_f.t:<comp> = nil
+S_f.t:<comp> = S_r.b:<comp>
+S_f.t:<conj> = S_r.b:<conj>
+S_f.t:<assign-comp> = S_r.b:<assign-comp>
+S_f.t:<tense> = S_r.b:<tense>
+S_f.t:<wh> = S_r.b:<wh>
+S_f.t:<inv> = S_r.b:<inv>
+S_f.t:<invlink> = S_r.b:<invlink>
+S_f.t:<mode> = ind/imp
+S_f.t:<mode> = S_r.b:<mode>
+S_f.t:<assign-case> = S_r.b:<assign-case>
+S_f.t:<agr> = S_r.b:<agr>
+
+Punct.t:<punct struct> = comma/dash
+S_r.b:<nocomp-mode> = S.t:<nocomp-mode>
+" :COMMENTS "
+
+Tree for multi-word subordinating conjunctions, introducing a
+sentential adjunct which follows the main clause and is separated by a
+punctuation mark:
+   Mary bought a spare bike, in case her old one is stolen.
+
+We typically attach post-clausal modifiers at the VP node, as you
+typically get scope ambiguity effects with negation ('John didn't
+go because he was tired' - did he go or not?). However, with
+post-sentential, comma-separated adjuct clauses there is no ambiguity
+- in 'it John didn't go, because he was tired' he definitely did not
+go. Thus, we have a separate tree for these adjunct, which requires
+the punctuation mark.
+
+This tree adjoins to the main clause, and the subordinate/adjunct clause is a
+substitution site. The adjunct clause must be separated from the main
+clause by a comma or dash. In general, adjuncts may be indicative,
+subjunctive or participial - this and whether they allow a
+complementizer are specified in the lexical entry for the
+subordinating conjunction. Sentential adjuncts may not be inverted,
+extracted or wh+ in the current analysis, although we may extend the
+analysis to include inverted conditional clauses.
+
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("S" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("Punct" . "")) :substp T))  (((("PP" . ""))) (((("P" . "1"))) (((("P" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("N" . "")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("S" . "")) :substp T)) ) ) 
+("puPNpuvx" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+S.t:<inv> = -
+
+S.t:<wh> = -
+S.t:<extracted> = -
+S.t:<punct struct> = nil
+Punct_1.t:<punct struct> = Punct_2.t:<punct struct>
+Punct_1.t:<punct struct> = comma/dash
+VP_r.b:<punct struct> = Punct_1.t:<punct struct>
+VP.t:<punct struct> = nil
+VP.t:<punct bal> = nil
+VP_r.b:<mode> = VP.t:<mode>
+VP_r.b:<passive> = VP.t:<passive>
+VP_r.b:<assign-comp> = VP.t:<assign-comp>
+VP_r.b:<agr> = VP.t:<agr>
+VP_r.b:<tense> = VP.t:<tense>
+VP_r.b:<assign-case> = VP.t:<assign-case>
+
+VP.t:<compar> = -
+VP_r.b:<compar> = VP.t:<compar>
+" :COMMENTS "
+Tree for multi-word subordinating conjunctions, introducing a
+sentential adjunct which occurs between the subject and VP of
+the matrix clause:
+   Mary, in case her old bike is stolen, bought a spare one.
+
+This tree adjoins to the main clause, and the subordinate/adjunct
+clause is a substitution site. The adjunct clause must be separated
+from the main clause by a pair of commas or dashes. In general,
+adjuncts may be indicative, subjunctive or participial - this and
+whether they allow a complementizer are specified in the lexical entry
+for the subordinating conjunction. Sentential adjuncts may not be
+inverted, extracted or wh+ in the current analysis, although we may
+extend the analysis to include inverted conditional clauses.
+
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("VP" . "r"))) (((("Punct" . "1")) :substp T))  (((("PP" . ""))) (((("P" . "1"))) (((("P" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("N" . "")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("S" . "")) :substp T)) )  (((("Punct" . "2")) :substp T))  (((("VP" . "")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("vxPARBPnx" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+VP_r.b:<mode> = VP.t:<mode>
+VP_r.b:<agr> = VP.t:<agr>
+VP_r.b:<tense> = VP.t:<tense>
+VP_r.b:<assign-case> = VP.t:<assign-case>
+VP_r.b:<assign-comp> = VP.t:<assign-comp>
+VP_r.b:<passive> = VP.t:<passive>
+PP.b:<assign-case> = P.t:<assign-case>
+PP.b:<assign-case> = NP.t:<case>
+
+VP.t:<compar> = -
+VP_r.b:<compar> = VP.t:<compar>
+VP_r.b:<mainv> = VP_f.t:<mainv>
+VP.t:<mainv> = +
+" :COMMENTS "PP modifying VP
+Three-word P, as well/recently as
+
+She went to the doctor as recently as yesterday.
+
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("VP" . "r"))) (((("VP" . "")) :footp T :constraints "NA" :constraint-type :NA))  (((("PP" . "")) :constraints "") (((("P" . "")) :connector :LINE) (((("P" . "1")) :headp T :constraints "NA" :constraint-type :NA))  (((("Ad" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("P" . "2")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("NP" . "")) :substp T)) ) ) 
+("PARBPnxs" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+S.t:<comp> = nil
+S.t:<comp> = S_r.b:<comp>
+S.t:<conj> = S_r.b:<conj>
+S.t:<assign-comp> = S_r.b:<assign-comp>
+S.t:<tense> = S_r.b:<tense>
+S.t:<extracted> = S_r.b:<extracted>
+S.t:<mode> = S_r.b:<mode>
+S.t:<assign-case> = S_r.b:<assign-case>
+S.t:<agr> = S_r.b:<agr>
+
+S_r.b:<wh> = PP.t:<wh>
+PP.b:<wh> = NP:<wh>
+S_r.b:<inv> = S.t:<inv>
+S_r.b:<invlink> = S_r.b:<inv>
+S.b:<comp> = nil
+PP.b:<assign-case> = P.t:<assign-case>
+PP.b:<assign-case> = NP:<case>
+S_r.b:<nocomp-mode> = S.t:<nocomp-mode>
+" :COMMENTS "PP modifying S
+Three-word P, as well/recently as
+
+\"As well as the 1.2 million dollars in taxes, we will be gaining a good portion
+of our budget from ticket fees.\"
+
+
+
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("PP" . ""))) (((("P" . ""))) (((("P" . "1")) :headp T :constraints "NA" :constraint-type :NA))  (((("Ad" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("P" . "2")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("NP" . "")) :substp T)) )  (((("S" . "")) :footp T :constraints "NA" :constraint-type :NA)) ) 

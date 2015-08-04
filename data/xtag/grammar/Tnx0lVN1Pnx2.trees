@@ -1,0 +1,2267 @@
+("nx0lVN1Pnx2" :COMMENT-DISPLAY? T :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+S_r.b:<extracted> = -
+S_r.b:<inv> = -
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+
+
+
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+NP_0:<agr> = S_r.b:<agr>
+NP_0:<case> = S_r.b:<assign-case>
+NP_0:<wh> = -
+NP_1:<case> = acc
+P_2.t:<assign-case> = PP_2.b:<assign-case>
+NP_2:<case> = PP_2.b:<assign-case>
+NP_2:<wh> = PP_2.b:<wh>
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+VP.b:<agr> = V.t:<agr>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<mode> = V.t:<mode>
+VP.b:<tense> = V.t:<tense>
+VP.b:<mainv> = V.t:<mainv>
+VP.b:<passive> = V.t:<passive>
+V.t:<passive> = -
+VP.b:<compar> = -
+P_2.b:<assign-case> = acc
+NP_1.b:<case> = N.t:<case>
+NP_1.b:<pron> = N.t:<pron>
+NP_1.b:<agr> = N.t:<agr>
+NP_1.b:<wh> = N.t:<wh>
+NP_1.b:<compar> = N.t:<compar>
+N.b:<compar> = -
+N.t:<const> = NP_1.b:<const>
+N.t:<gen> = NP_1.b:<gen>
+N.t:<definite> = NP_1.b:<definite>
+N.t:<quan> = NP_1.b:<quan>
+N.t:<card> = NP_1.b:<card>
+N.t:<decreas> = NP_1.b:<decreas>
+S_r.b:<control> = NP_0.t:<control>
+S_r.b:<progressive> = VP.t:<progressive>
+S_r.b:<perfect> = VP.t:<perfect>
+S_r.b:<passive> = VP.t:<passive>
+S_r.b:<mainv> = VP.t:<mainv>
+" :COMMENTS "
+\"John made promises to his mother\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("NP" . "0")) :substp T :constraints ""))  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("NP" . "1")) :constraints "") (((("N" . "")) :headp T)) )  (((("PP" . "2"))) (((("P" . "2"))) (((("to" . "")))) )  (((("NP" . "2")) :substp T)) ) ) ) 
+("N1lVPnx2bynx0" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+S_r.b:<extracted> = -
+S_r.b:<inv> = -
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+
+
+
+
+VP.b:<mode> = V.t:<mode>
+V.t:<mode> = ppart
+V.t:<passive> = +
+VP.b:<passive> = V.t:<passive>
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+NP_1:<agr> = S_r.b:<agr>
+NP_1:<case> = S_r.b:<assign-case>
+NP_1:<wh> = -
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+VP.b:<agr> = V.t:<agr>
+VP.b:<tense> = V.t:<tense>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<mainv> = V.t:<mainv>
+VP.b:<compar> = -
+PP.b:<assign-case> = P.t:<assign-case>
+PP.b:<assign-case> = NP_0.t:<case>
+PP_2.b:<assign-case> = P_2.t:<assign-case>
+PP_2.b:<assign-case> = NP_2.t:<case>
+P_2.b:<assign-case> = acc
+P.b:<assign-case> = acc
+NP_1.b:<case> = N.t:<case>
+NP_1.b:<pron> = N.t:<pron>
+NP_1.b:<agr> = N.t:<agr>
+NP_1.b:<wh> = N.t:<wh>
+NP_1.b:<compar> = N.t:<compar>
+N.b:<compar> = -
+N.t:<const> = NP_1.b:<const>
+N.t:<gen> = NP_1.b:<gen>
+N.t:<definite> = NP_1.b:<definite>
+N.t:<quan> = NP_1.b:<quan>
+N.t:<card> = NP_1.b:<card>
+N.t:<decreas> = NP_1.b:<decreas>
+" :COMMENTS "
+\"Promises were made to John by a large conglomerate\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("NP" . "1")) :constraints "") (((("N" . "")) :headp T)) )  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("PP" . "2"))) (((("P" . "2"))) (((("to" . "")))) )  (((("NP" . "2")) :substp T)) )  (((("PP" . ""))) (((("P" . ""))) (((("by" . "")))) )  (((("NP" . "0")) :substp T :constraints "")) ) ) ) 
+("W0nx0lVN1Pnx2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+S_q.b:<extracted> = +
+
+S_q.b:<inv> = S_r.t:<inv>
+S_r.t:<comp> = nil
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+
+
+
+S_q.b:<wh> = NP_0:<wh>
+S_q.b:<comp> = nil
+S_q.b:<mode> = S_r.t:<mode>
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+S_r.b:<inv> = -
+P_2.t:<assign-case> = PP_2.b:<assign-case>
+NP_2:<case> = PP_2.b:<assign-case>
+NP_2:<wh> = PP_2.b:<wh>
+NP:<trace> = NP_0.t:<trace>
+NP:<agr> = NP_0.t:<agr>
+NP:<case> = NP_0.t:<case>
+NP:<wh> = NP_0:<wh>
+S_r.b:<agr> = NP.t:<agr>
+S_r.b:<assign-case> = NP.t:<case>
+NP_0:<wh> = +
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+NP_1:<case> = acc
+VP.b:<agr> = V.t:<agr>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<mode> = V.t:<mode>
+VP.b:<tense> = V.t:<tense>
+VP.b:<mainv> = V.t:<mainv>
+VP.b:<passive> = V.t:<passive>
+V.t:<passive> = -
+VP.b:<compar> = -
+P_2.b:<assign-case> = acc
+NP_1.b:<case> = N.t:<case>
+NP_1.b:<pron> = N.t:<pron>
+NP_1.b:<agr> = N.t:<agr>
+NP_1.b:<wh> = N.t:<wh>
+NP_1.b:<compar> = N.t:<compar>
+N.b:<compar> = -
+N.t:<const> = NP_1.b:<const>
+N.t:<gen> = NP_1.b:<gen>
+N.t:<definite> = NP_1.b:<definite>
+N.t:<quan> = NP_1.b:<quan>
+N.t:<card> = NP_1.b:<card>
+N.t:<decreas> = NP_1.b:<decreas>
+S_r.t:<conj> = nil
+S_r.b:<assign-comp> = inf_nil/ind_nil/ecm
+
+" :COMMENTS "
+\"Who made promises to John\"
+
+Need to decide what VP agrees with
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "q"))) (((("NP" . "0")) :substp T :constraints "" :constraint-type :DUMMY))  (((("S" . "r"))) (((("NP" . "")) :constraints "NA" :constraint-type :NA) (((("" . "")))) )  (((("VP" . "")) :constraints "") (((("V" . "")) :headp T))  (((("NP" . "1"))) (((("N" . "")) :headp T)) )  (((("PP" . "2"))) (((("P" . "2"))) (((("to" . "")))) )  (((("NP" . "2")) :substp T)) ) ) ) ) 
+("N0nx0lVN1Pnx2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+NP_r.b:<wh> = NP_f.t:<wh>
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<case> = NP_f.t:<case>
+NP_f.b:<wh> = -
+NP_0.t:<agr> = S_r.b:<agr>
+NP_0.t:<case> = S_r.b:<assign-case>
+
+
+
+
+S_r.t:<mode> = ind/inf
+S_r.t:<inv> = -
+S_r.b:<comp> = nil
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<tense> = VP.t:<tense>
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+NP_1:<case> = acc
+VP.b:<agr> = V.t:<agr>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<mode> = V.t:<mode>
+VP.b:<tense> = V.t:<tense>
+VP.b:<mainv> = V.t:<mainv>
+VP.b:<compar> = -
+P_2.t:<assign-case> = PP_2.b:<assign-case>
+NP_2:<case> = PP_2.b:<assign-case>
+P_2.b:<assign-case> = acc
+NP_1.b:<case> = N.t:<case>
+NP_1.b:<pron> = N.t:<pron>
+NP_1.b:<agr> = N.t:<agr>
+NP_1.b:<wh> = N.t:<wh>
+NP_1.b:<compar> = N.t:<compar>
+N.b:<compar> = -
+N.t:<const> = NP_1.b:<const>
+N.t:<gen> = NP_1.b:<gen>
+N.t:<definite> = NP_1.b:<definite>
+N.t:<quan> = NP_1.b:<quan>
+N.t:<card> = NP_1.b:<card>
+N.t:<decreas> = NP_1.b:<decreas>
+S_r.t:<conj> = nil
+
+NP_w.t:<trace> = NP_0.b:<trace>
+NP_w.t:<case> = NP_0.b:<case>
+NP_w.t:<agr> = NP_0.b:<agr>
+NP_w.t:<wh> = +
+S_r.t:<comp> = nil
+NP_r.b:<rel-clause> = +
+NP_f.b:<case> = nom/acc
+NP_r.b:<pron> = NP_f.t:<pron>
+
+" :COMMENTS "Need to decide what VP agrees with
+
+\"the company that made promises to John\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("S" . "p")) :constraints "NA" :constraint-type :NA) (((("NP" . "w")) :substp T))  (((("S" . "r"))) (((("NP" . "0")) :constraints "NA" :constraint-type :NA) (((("" . "")))) )  (((("VP" . "")) :constraints "") (((("V" . "")) :headp T))  (((("NP" . "1"))) (((("N" . "")) :headp T)) )  (((("PP" . "2"))) (((("P" . "2"))) (((("to" . "")))) )  (((("NP" . "2")) :substp T)) ) ) ) ) ) 
+("W2nx0lVN1Pnx2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+S_q.b:<extracted> = +
+
+S_q.b:<inv> = S_r.t:<inv>
+S_q.b:<inv> = S_q.b:<invlink>
+S_r.t:<comp> = nil
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+
+
+
+S_q.b:<wh> = NP_2:<wh>
+S_q.b:<mode> = S_r.t:<mode>
+S_q.b:<comp> = nil
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<comp> = nil
+S_r.b:<inv> = -
+NP_0:<agr> = S_r.b:<agr>
+NP_0:<case> = S_r.b:<assign-case>
+NP_1:<case> = acc
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<tense> = VP.t:<tense>
+VP.b:<agr> = V.t:<agr>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<mode> = V.t:<mode>
+VP.b:<tense> = V.t:<tense>
+VP.b:<mainv> = V.t:<mainv>
+VP.b:<passive> = V.t:<passive>
+V.t:<passive> = -
+VP.b:<compar> = -
+PP_2.b:<assign-case> = P_2.t:<assign-case>
+PP_2.b:<assign-case> = NP.t:<case>
+PP_2.b:<wh> = NP.t:<wh>
+NP:<trace> = NP_2:<trace>
+NP:<agr> = NP_2:<agr>
+NP:<case> = NP_2:<case>
+NP:<wh> = NP_2:<wh>
+P_2.b:<assign-case> = acc
+NP_1.b:<case> = N.t:<case>
+NP_1.b:<pron> = N.t:<pron>
+NP_1.b:<agr> = N.t:<agr>
+NP_1.b:<wh> = N.t:<wh>
+NP_1.b:<compar> = N.t:<compar>
+N.b:<compar> = -
+N.t:<const> = NP_1.b:<const>
+N.t:<gen> = NP_1.b:<gen>
+N.t:<definite> = NP_1.b:<definite>
+N.t:<quan> = NP_1.b:<quan>
+N.t:<card> = NP_1.b:<card>
+N.t:<decreas> = NP_1.b:<decreas>
+S_r.b:<control> = NP_0.t:<control>
+S_r.t:<conj> = nil
+S_r.b:<progressive> = VP.t:<progressive>
+S_r.b:<perfect> = VP.t:<perfect>
+S_r.b:<passive> = VP.t:<passive>
+S_r.b:<mainv> = VP.t:<mainv>
+" :COMMENTS "
+\"Who did the company make promises to\"
+
+
+Need to decide what VP agrees with
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "q"))) (((("NP" . "2")) :substp T))  (((("S" . "r"))) (((("NP" . "0")) :substp T :constraints ""))  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("NP" . "1"))) (((("N" . "")) :headp T)) )  (((("PP" . "2"))) (((("P" . "2"))) (((("to" . "")))) )  (((("NP" . "")) :constraints "NA" :constraint-type :NA) (((("" . "")))) ) ) ) ) ) 
+("N2nx0lVN1Pnx2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+
+
+
+
+S_r.b:<mode> = VP.t:<mode>
+S_r.t:<mode> = ind/inf
+S_r.t:<inv> = -
+S_r.b:<inv> = -
+NP_0:<agr> = S_r.b:<agr>
+NP_0:<case> = S_r.b:<assign-case>
+NP_1:<case> = acc
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<tense> = VP.t:<tense>
+VP.b:<agr> = V.t:<agr>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<mode> = V.t:<mode>
+VP.b:<tense> = V.t:<tense>
+VP.b:<mainv> = V.t:<mainv>
+VP.b:<compar> = -
+PP_2.b:<assign-case> = P_2.t:<assign-case>
+PP_2.b:<assign-case> = NP_2.t:<case>
+P_2.b:<assign-case> = acc
+NP_1.b:<case> = N.t:<case>
+NP_1.b:<pron> = N.t:<pron>
+NP_1.b:<agr> = N.t:<agr>
+NP_1.b:<wh> = N.t:<wh>
+NP_1.b:<compar> = N.t:<compar>
+N.b:<compar> = -
+N.t:<const> = NP_1.b:<const>
+N.t:<gen> = NP_1.b:<gen>
+N.t:<definite> = NP_1.b:<definite>
+N.t:<quan> = NP_1.b:<quan>
+N.t:<card> = NP_1.b:<card>
+N.t:<decreas> = NP_1.b:<decreas>
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<case> = NP_f.t:<case>
+S_r.t:<conj> = nil
+S_r.b:<control> = NP_0.t:<control>
+
+NP_w.t:<trace> = NP_2.b:<trace>
+NP_w.t:<case> = NP_2.b:<case>
+NP_w.t:<agr> = NP_2.b:<agr>
+NP_w.t:<wh> = +
+S_r.t:<comp> = nil
+NP_r.b:<rel-clause> = +
+NP_f.b:<case> = nom/acc
+NP_r.b:<pron> = NP_f.t:<pron>
+
+" :COMMENTS "Need to decide what VP agrees with
+
+\"the guy (that) they made promises to\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("S" . "p")) :constraints "NA" :constraint-type :NA) (((("NP" . "w")) :substp T))  (((("S" . "r"))) (((("NP" . "0")) :substp T :constraints ""))  (((("VP" . "")) :constraints "") (((("V" . "")) :headp T))  (((("NP" . "1"))) (((("N" . "")) :headp T)) )  (((("PP" . "2"))) (((("P" . "2"))) (((("to" . "")))) )  (((("NP" . "2")) :constraints "NA" :constraint-type :NA) (((("" . "")))) ) ) ) ) ) ) 
+("PW2nx0lVN1Pnx2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+S_q.b:<extracted> = +
+
+S_q.b:<inv> = S_r.t:<inv>
+S_q.b:<inv> = S_q.b:<invlink>
+S_q.b:<wh> = PP_2:<wh>
+S_r.t:<comp> = nil
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+S_q.b:<mode> = S_r.t:<mode>
+S_q.b:<comp> = nil
+
+
+
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<comp> = nil
+S_r.b:<inv> = -
+NP_0:<agr> = S_r.b:<agr>
+NP_0:<case> = S_r.b:<assign-case>
+NP_1:<case> = acc
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+PP_2.t:<trace> = PP.t:<trace>
+S_r.b:<tense> = VP.t:<tense>
+VP.b:<agr> = V.t:<agr>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<mode> = V.t:<mode>
+VP.b:<tense> = V.t:<tense>
+VP.b:<mainv> = V.t:<mainv>
+VP.b:<passive> = V.t:<passive>
+V.t:<passive> = -
+VP.b:<compar> = -
+P_2.t:<assign-case> = PP_2.b:<assign-case>
+PP_2.b:<assign-case> = NP_2.t:<case>
+P_2.b:<assign-case> = acc
+NP_1.b:<case> = N.t:<case>
+NP_1.b:<pron> = N.t:<pron>
+NP_1.b:<agr> = N.t:<agr>
+NP_1.b:<wh> = N.t:<wh>
+NP_1.b:<compar> = N.t:<compar>
+N.b:<compar> = -
+N.t:<const> = NP_1.b:<const>
+N.t:<gen> = NP_1.b:<gen>
+N.t:<definite> = NP_1.b:<definite>
+N.t:<quan> = NP_1.b:<quan>
+N.t:<card> = NP_1.b:<card>
+N.t:<decreas> = NP_1.b:<decreas>
+PP_2.b:<wh> = NP_2.t:<wh>
+S_r.t:<conj> = nil
+S_r.b:<control> = NP_0.t:<control>
+S_r.b:<progressive> = VP.t:<progressive>
+S_r.b:<perfect> = VP.t:<perfect>
+S_r.b:<passive> = VP.t:<passive>
+S_r.b:<mainv> = VP.t:<mainv>
+" :COMMENTS "Need to decide what VP agrees with
+
+\"To whom did they make promises\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "q"))) (((("PP" . "2"))) (((("P" . "2"))) (((("to" . "")))) )  (((("NP" . "2")) :substp T)) )  (((("S" . "r"))) (((("NP" . "0")) :substp T))  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("NP" . "1"))) (((("N" . "")) :headp T)) )  (((("PP" . "")) :constraints "NA" :constraint-type :NA) (((("" . "")))) ) ) ) ) 
+("Inx0lVN1Pnx2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+S_r.b:<extracted> = -
+S_r.b:<inv> = -
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+
+
+
+S_r.b:<mode> = imp
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+VP.t:<tense> = pres
+NP_0:<agr> = S_r.b:<agr>
+NP_0:<case> = S_r.b:<assign-case>
+NP_0:<wh> = -
+NP_0:<agr pers> = 2
+NP_0:<agr 3rdsing> = -
+NP_0:<agr num> = plur/sing
+NP_0:<case> = nom
+NP_1:<case> = acc
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+VP.t:<neg> = -
+VP.t:<mode> = base
+VP.b:<mode> = V.t:<mode>
+VP.b:<agr> = V.t:<agr>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<tense> = V.t:<tense>
+VP.b:<mainv> = V.t:<mainv>
+VP.b:<passive> = V.t:<passive>
+V.t:<passive> = -
+VP.b:<compar> = -
+PP_2.b:<assign-case> = P_2.t:<assign-case>
+PP_2.b:<assign-case> = NP_2.t:<case>
+PP_2.b:<wh> = NP_2.t:<wh>
+P_2.b:<assign-case> = acc
+NP_1.b:<case> = N.t:<case>
+NP_1.b:<pron> = N.t:<pron>
+NP_1.b:<agr> = N.t:<agr>
+NP_1.b:<wh> = N.t:<wh>
+NP_1.b:<compar> = N.t:<compar>
+N.b:<compar> = -
+N.t:<const> = NP_1.b:<const>
+N.t:<gen> = NP_1.b:<gen>
+N.t:<definite> = NP_1.b:<definite>
+N.t:<quan> = NP_1.b:<quan>
+N.t:<card> = NP_1.b:<card>
+N.t:<decreas> = NP_1.b:<decreas>
+S_r.b:<progressive> = VP.t:<progressive>
+S_r.b:<perfect> = VP.t:<perfect>
+S_r.b:<passive> = VP.t:<passive>
+S_r.b:<mainv> = VP.t:<mainv>
+" :COMMENTS "
+\"Make promises to John\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("NP" . "0")) :constraints "NA" :constraint-type :NA) (((("" . "")))) )  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("NP" . "1")) :constraints "") (((("N" . "")) :headp T)) )  (((("PP" . "2"))) (((("P" . "2"))) (((("to" . "")))) )  (((("NP" . "2")) :substp T)) ) ) ) 
+("nx0lVnx2N1" :COMMENT-DISPLAY? T :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+S_r.b:<extracted> = -
+S_r.b:<inv> = -
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+
+
+
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+NP_0:<agr> = S_r.b:<agr>
+NP_0:<case> = S_r.b:<assign-case>
+NP_0:<wh> = -
+NP_2:<case> = acc
+NP_1:<case> = acc
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<control> = NP_0.t:<control>
+VP.b:<agr> = V.t:<agr>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<mode> = V.t:<mode>
+VP.b:<tense> = V.t:<tense>
+VP.b:<mainv> = V.t:<mainv>
+VP.b:<passive> = V.t:<passive>
+V.t:<passive> = -
+VP.b:<compar> = -
+NP_1.b:<case> = N.t:<case>
+NP_1.b:<pron> = N.t:<pron>
+NP_1.b:<agr> = N.t:<agr>
+NP_1.b:<wh> = N.t:<wh>
+NP_1.b:<compar> = N.t:<compar>
+N.b:<compar> = -
+N.t:<const> = NP_1.b:<const>
+N.t:<gen> = NP_1.b:<gen>
+N.t:<definite> = NP_1.b:<definite>
+N.t:<quan> = NP_1.b:<quan>
+N.t:<card> = NP_1.b:<card>
+N.t:<decreas> = NP_1.b:<decreas>
+S_r.b:<progressive> = VP.t:<progressive>
+S_r.b:<perfect> = VP.t:<perfect>
+S_r.b:<passive> = VP.t:<passive>
+S_r.b:<mainv> = VP.t:<mainv>
+" :COMMENTS "
+\"The company made John promises\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("NP" . "0")) :substp T :constraints ""))  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("NP" . "2")) :substp T :constraints ""))  (((("NP" . "1"))) (((("N" . "")) :headp T)) ) ) ) 
+("nx2lVN1bynx0" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+S_r.b:<extracted> = -
+S_r.b:<inv> = -
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+VP.b:<mode> = V.t:<mode>
+V.t:<mode> = ppart
+V.t:<passive> = +
+VP.b:<passive> = V.t:<passive>
+
+
+
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+NP_2:<agr> = S_r.b:<agr>
+NP_2:<case> = S_r.b:<assign-case>
+NP_2:<wh> = S_r.b:<wh>
+NP_2:<wh> = -
+NP_1:<case> = acc
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+VP.b:<agr> = V.t:<agr>
+VP.b:<tense> = V.t:<tense>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<mainv> = V.t:<mainv>
+VP.b:<compar> = -
+PP_0.b:<assign-case> = P_0.t:<assign-case>
+PP_0.b:<assign-case> = NP_0.t:<case>
+PP_0.b:<wh> = NP_0.t:<wh>
+P_0.b:<assign-case> = acc
+NP_1.b:<case> = N.t:<case>
+NP_1.b:<pron> = N.t:<pron>
+NP_1.b:<agr> = N.t:<agr>
+NP_1.b:<wh> = N.t:<wh>
+NP_1.b:<compar> = N.t:<compar>
+N.b:<compar> = -
+N.t:<const> = NP_1.b:<const>
+N.t:<gen> = NP_1.b:<gen>
+N.t:<definite> = NP_1.b:<definite>
+N.t:<quan> = NP_1.b:<quan>
+N.t:<card> = NP_1.b:<card>
+N.t:<decreas> = NP_1.b:<decreas>
+S_r.b:<control> = NP_2.t:<control>
+S_r.b:<progressive> = VP.t:<progressive>
+S_r.b:<perfect> = VP.t:<perfect>
+S_r.b:<passive> = VP.t:<passive>
+S_r.b:<mainv> = VP.t:<mainv>
+" :COMMENTS "QUESTIONABLE BUT IN:
+\"John was made offers by the company\"
+\"The bank was made payments by John\"
+\"The renters were made loans by the bank officer\"
+\"Mary was made promises by John\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("NP" . "2")) :substp T :constraints ""))  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("NP" . "1"))) (((("N" . "")) :headp T)) )  (((("PP" . "0"))) (((("P" . "0"))) (((("by" . "")))) )  (((("NP" . "0")) :substp T :constraints "")) ) ) ) 
+("W0nx0lVnx2N1" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+S_q.b:<extracted> = +
+
+S_q.b:<inv> = S_r.t:<inv>
+S_r.t:<comp> = nil
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+S_q.b:<wh> = NP_0.t:<wh>
+S_q.b:<comp> = nil
+S_q.b:<mode> = S_r.t:<mode>
+
+
+
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+S_r.b:<agr> = NP.t:<agr>
+S_r.b:<assign-case> = NP.t:<case>
+S_r.b:<inv> = -
+NP.t:<trace> = NP_0.t:<trace>
+NP.t:<case> = NP_0.t:<case>
+NP.t:<agr> = NP_0.t:<agr>
+NP.t:<wh> = NP_0.t:<wh>
+NP_0:<wh> = +
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+NP_2:<case> = acc
+NP_1:<case> = acc
+VP.b:<agr> = V.t:<agr>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<mode> = V.t:<mode>
+VP.b:<tense> = V.t:<tense>
+VP.b:<mainv> = V.t:<mainv>
+VP.b:<passive> = V.t:<passive>
+V.t:<passive> = -
+VP.b:<compar> = -
+NP_1.b:<case> = N.t:<case>
+NP_1.b:<pron> = N.t:<pron>
+NP_1.b:<agr> = N.t:<agr>
+NP_1.b:<wh> = N.t:<wh>
+NP_1.b:<compar> = N.t:<compar>
+N.b:<compar> = -
+N.t:<const> = NP_1.b:<const>
+N.t:<gen> = NP_1.b:<gen>
+N.t:<definite> = NP_1.b:<definite>
+N.t:<quan> = NP_1.b:<quan>
+N.t:<card> = NP_1.b:<card>
+N.t:<decreas> = NP_1.b:<decreas>
+S_r.t:<conj> = nil
+S_r.b:<assign-comp> = inf_nil/ind_nil/ecm
+
+" :COMMENTS "Need to decide what VP agrees with.
+
+\"Who made John offers?\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "q"))) (((("NP" . "0")) :substp T :constraints "" :constraint-type :DUMMY))  (((("S" . "r"))) (((("NP" . "")) :constraints "NA" :constraint-type :NA) (((("" . "")))) )  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("NP" . "2")) :substp T))  (((("NP" . "1"))) (((("N" . "")) :headp T)) ) ) ) ) 
+("N0nx0lVnx2N1" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+
+
+
+
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<tense> = VP.t:<tense>
+S_r.b:<agr> = NP_0.t:<agr>
+S_r.b:<assign-case> = NP_0.t:<case>
+S_r.t:<mode> = ind/inf
+S_r.t:<inv> = -
+S_r.b:<comp> = nil
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+NP_2:<case> = acc
+NP_1:<case> = acc
+VP.b:<agr> = V.t:<agr>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<mode> = V.t:<mode>
+VP.b:<tense> = V.t:<tense>
+VP.b:<mainv> = V.t:<mainv>
+VP.b:<compar> = -
+NP_1.b:<case> = N.t:<case>
+NP_1.b:<pron> = N.t:<pron>
+NP_1.b:<agr> = N.t:<agr>
+NP_1.b:<wh> = N.t:<wh>
+NP_1.b:<compar> = N.t:<compar>
+N.b:<compar> = -
+N.t:<const> = NP_1.b:<const>
+N.t:<gen> = NP_1.b:<gen>
+N.t:<definite> = NP_1.b:<definite>
+N.t:<quan> = NP_1.b:<quan>
+N.t:<card> = NP_1.b:<card>
+N.t:<decreas> = NP_1.b:<decreas>
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<case> = NP_f.t:<case>
+S_r.t:<conj> = nil
+
+NP_w.t:<trace> = NP_0.b:<trace>
+NP_w.t:<case> = NP_0.b:<case>
+NP_w.t:<agr> = NP_0.b:<agr>
+NP_w.t:<wh> = +
+S_r.t:<comp> = nil
+NP_r.b:<rel-clause> = +
+NP_f.b:<case> = nom/acc
+NP_r.b:<pron> = NP_f.t:<pron>
+
+" :COMMENTS "Need to decide what VP agrees with.
+
+\"the company that made John promises\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("S" . "p")) :constraints "NA" :constraint-type :NA) (((("NP" . "w")) :substp T))  (((("S" . "r"))) (((("NP" . "0")) :constraints "NA" :constraint-type :NA) (((("" . "")))) )  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("NP" . "2")) :substp T))  (((("NP" . "1"))) (((("N" . "")) :headp T)) ) ) ) ) ) 
+("W2nx0lVnx2N1" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+S_q.b:<extracted> = +
+
+S_q.b:<inv> = S_r.t:<inv>
+S_q.b:<inv> = S_q.b:<invlink>
+S_r.t:<comp> = nil
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+S_q.b:<wh> = NP_2:<wh>
+S_q.b:<mode> = S_r.t:<mode>
+S_q.b:<comp> = nil
+
+
+
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<comp> = nil
+S_r.b:<inv> = -
+NP_0:<agr> = S_r.b:<agr>
+NP_0:<case> = S_r.b:<assign-case>
+NP_1:<case> = acc
+NP:<case> = acc
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+NP.t:<trace> = NP_2.t:<trace>
+NP.t:<agr> = NP_2.t:<agr>
+NP.t:<case> = NP_2.t:<case>
+NP:<wh> = NP_2:<wh>
+S_r.b:<tense> = VP.t:<tense>
+VP.b:<agr> = V.t:<agr>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<mode> = V.t:<mode>
+VP.b:<tense> = V.t:<tense>
+VP.b:<mainv> = V.t:<mainv>
+VP.b:<passive> = V.t:<passive>
+V.t:<passive> = -
+VP.b:<compar> = -
+NP_1.b:<case> = N.t:<case>
+NP_1.b:<pron> = N.t:<pron>
+NP_1.b:<agr> = N.t:<agr>
+NP_1.b:<wh> = N.t:<wh>
+NP_1.b:<compar> = N.t:<compar>
+N.b:<compar> = -
+N.t:<const> = NP_1.b:<const>
+N.t:<gen> = NP_1.b:<gen>
+N.t:<definite> = NP_1.b:<definite>
+N.t:<quan> = NP_1.b:<quan>
+N.t:<card> = NP_1.b:<card>
+N.t:<decreas> = NP_1.b:<decreas>
+S_r.t:<conj> = nil
+S_r.b:<control> = NP_0.t:<control>
+S_r.b:<progressive> = VP.t:<progressive>
+S_r.b:<perfect> = VP.t:<perfect>
+S_r.b:<passive> = VP.t:<passive>
+S_r.b:<mainv> = VP.t:<mainv>
+" :COMMENTS "QUESTIONABLE BUT IN:
+Who did the company make promises?\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "q"))) (((("NP" . "2")) :substp T :constraints "" :constraint-type :DUMMY))  (((("S" . "r"))) (((("NP" . "0")) :substp T :constraints ""))  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("NP" . "")) :constraints "NA" :constraint-type :NA) (((("" . "")))) )  (((("NP" . "1"))) (((("N" . "")) :headp T)) ) ) ) ) 
+("N2nx0lVnx2N1" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+
+
+
+
+S_r.b:<mode> = VP.t:<mode>
+S_r.t:<inv> = -
+S_r.t:<mode> = ind/inf
+S_r.b:<inv> = -
+NP_0:<agr> = S_r.b:<agr>
+NP_0:<case> = S_r.b:<assign-case>
+NP_1:<case> = acc
+NP_2:<case> = acc
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<tense> = VP.t:<tense>
+S_r.b:<control> = NP_0.t:<control>
+VP.b:<agr> = V.t:<agr>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<mode> = V.t:<mode>
+VP.b:<tense> = V.t:<tense>
+VP.b:<mainv> = V.t:<mainv>
+VP.b:<compar> = -
+NP_1.b:<case> = N.t:<case>
+NP_1.b:<pron> = N.t:<pron>
+NP_1.b:<agr> = N.t:<agr>
+NP_1.b:<wh> = N.t:<wh>
+NP_1.b:<compar> = N.t:<compar>
+N.b:<compar> = -
+N.t:<const> = NP_1.b:<const>
+N.t:<gen> = NP_1.b:<gen>
+N.t:<definite> = NP_1.b:<definite>
+N.t:<quan> = NP_1.b:<quan>
+N.t:<card> = NP_1.b:<card>
+N.t:<decreas> = NP_1.b:<decreas>
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<case> = NP_f.t:<case>
+S_r.t:<conj> = nil
+
+NP_w.t:<trace> = NP_2.b:<trace>
+NP_w.t:<case> = NP_2.b:<case>
+NP_w.t:<agr> = NP_2.b:<agr>
+NP_w.t:<wh> = +
+S_r.t:<comp> = nil
+NP_r.b:<rel-clause> = +
+NP_f.b:<case> = nom/acc
+NP_r.b:<pron> = NP_f.t:<pron>
+
+" :COMMENTS "QUESTIONABLE BUT IN:
+\"the guy (that) they made t promises\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("S" . "p")) :constraints "NA" :constraint-type :NA) (((("NP" . "w")) :substp T))  (((("S" . "r"))) (((("NP" . "0")) :substp T :constraints ""))  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("NP" . "2")) :constraints "NA" :constraint-type :NA) (((("" . "")))) )  (((("NP" . "1"))) (((("N" . "")) :headp T)) ) ) ) ) ) 
+("Inx0lVnx2N1" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+S_r.b:<extracted> = -
+S_r.b:<inv> = -
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+
+
+
+S_r.b:<mode> = imp
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+NP_0:<agr> = S_r.b:<agr>
+NP_0:<case> = S_r.b:<assign-case>
+NP_0:<wh> = -
+NP_0:<agr pers> = 2
+NP_0:<agr 3rdsing> = -
+NP_0:<agr num> = plur/sing
+NP_0:<case> = nom
+NP_2:<case> = acc
+NP_1:<case> = acc
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+VP.t:<tense> = pres
+VP.t:<neg> = -
+VP.t:<mode> = base
+VP.b:<mode> = V.t:<mode>
+VP.b:<agr> = V.t:<agr>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<tense> = V.t:<tense>
+VP.b:<mainv> = V.t:<mainv>
+VP.b:<passive> = V.t:<passive>
+V.t:<passive> = -
+VP.b:<compar> = -
+NP_1.b:<case> = N.t:<case>
+NP_1.b:<pron> = N.t:<pron>
+NP_1.b:<agr> = N.t:<agr>
+NP_1.b:<wh> = N.t:<wh>
+NP_1.b:<compar> = N.t:<compar>
+N.b:<compar> = -
+N.t:<const> = NP_1.b:<const>
+N.t:<gen> = NP_1.b:<gen>
+N.t:<definite> = NP_1.b:<definite>
+N.t:<quan> = NP_1.b:<quan>
+N.t:<card> = NP_1.b:<card>
+N.t:<decreas> = NP_1.b:<decreas>
+S_r.b:<progressive> = VP.t:<progressive>
+S_r.b:<perfect> = VP.t:<perfect>
+S_r.b:<passive> = VP.t:<passive>
+S_r.b:<mainv> = VP.t:<mainv>
+" :COMMENTS "
+\"Make John promises\"
+\"Make the bank payments\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("NP" . "0")) :constraints "NA" :constraint-type :NA) (((("" . "")))) )  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("NP" . "2")) :substp T :constraints ""))  (((("NP" . "1"))) (((("N" . "")) :headp T)) ) ) ) 
+("Dnx0lVN1Pnx2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+NP.b:<const> = D.t:<const>
+NP.b:<definite> = D.t:<definite>
+NP.b:<quan> = D.t:<quan>
+NP.b:<card> = D.t:<card>
+NP.b:<gen> = D.t:<gen>
+NP.b:<decreas> = D.t:<decreas>
+NP.b:<wh> = D.t:<wh>
+NP_1:<case> = acc
+V.b:<mode> = ger
+NP.b:<case> = nom/acc
+NP.b:<agr num> = sing
+NP.b:<agr pers> = 3
+NP.b:<agr 3rdsing> = +
+P_2.b:<assign-case> = acc
+PP_2.b:<assign-case> = P_2.t:<assign-case>
+PP_2.b:<assign-case> = NP_2.t:<case>
+P_1.b:<assign-case> = acc
+PP_1.b:<assign-case> = P_1.t:<assign-case>
+PP_1.b:<assign-case> = NP_1.t:<case>
+NP_1.b:<case> = N.t:<case>
+NP_1.b:<pron> = N.t:<pron>
+NP_1.b:<agr> = N.t:<agr>
+NP_1.b:<wh> = N.t:<wh>
+NP_1.b:<compar> = N.t:<compar>
+N.b:<compar> = -
+N.t:<const> = NP_1.b:<const>
+N.t:<gen> = NP_1.b:<gen>
+N.t:<definite> = NP_1.b:<definite>
+N.t:<quan> = NP_1.b:<quan>
+N.t:<card> = NP_1.b:<card>
+N.t:<decreas> = NP_1.b:<decreas>
+" :COMMENTS "Ditransitive Light verb (with PP shift)- Determiner Gerund:
+\"the making of promises to John\"
+
+There is no unshifted PP counterpart for this tree, witness 
+\"*...the making John promises...\"" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . ""))) (((("D" . "")) :substp T :constraints ""))  (((("N" . "g"))) (((("V" . "")) :headp T))  (((("PP" . "1")) :constraints "") (((("P" . "1"))) (((("of" . "")))) )  (((("NP" . "1"))) (((("N" . "")) :headp T)) ) )  (((("PP" . "2"))) (((("P" . "2"))) (((("to" . "")))) )  (((("NP" . "2")) :substp T)) ) ) ) 
+("Npxnx0lVN1Pnx2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+S_r.b:<extracted> = -
+S_r.b:<inv> = -
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+
+
+
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+NP_0:<agr> = S_r.b:<agr>
+NP_0:<case> = S_r.b:<assign-case>
+NP_0:<wh> = -
+NP_1:<case> = acc
+P_2.t:<assign-case> = PP_2.b:<assign-case>
+NP_2:<case> = PP_2.b:<assign-case>
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+VP.b:<agr> = V.t:<agr>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<mode> = V.t:<mode>
+VP.b:<tense> = V.t:<tense>
+VP.b:<mainv> = V.t:<mainv>
+P_2.b:<assign-case> = acc
+NP_1.b:<case> = N.t:<case>
+NP_1.b:<pron> = N.t:<pron>
+NP_1.b:<agr> = N.t:<agr>
+NP_1.b:<wh> = N.t:<wh>
+NP_1.b:<compar> = N.t:<compar>
+N.b:<compar> = -
+N.t:<const> = NP_1.b:<const>
+N.t:<gen> = NP_1.b:<gen>
+N.t:<definite> = NP_1.b:<definite>
+N.t:<quan> = NP_1.b:<quan>
+N.t:<card> = NP_1.b:<card>
+N.t:<decreas> = NP_1.b:<decreas>
+S_r.b:<control> = NP_0.t:<control>
+S_r.t:<inv> = -
+PP_w.t:<wh> = +
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<case> = NP_f.t:<case>
+NP_f.b:<case> = acc/nom
+S_r.t:<comp> = nil
+NP_r.b:<rel-clause> = +
+NP_f.b:<case> = nom/acc
+NP_r.b:<pron> = NP_f.t:<pron>
+
+S_r.b:<progressive> = VP.t:<progressive>
+S_r.b:<perfect> = VP.t:<perfect>
+S_r.b:<passive> = VP.t:<passive>
+S_r.b:<mainv> = VP.t:<mainv>
+" :COMMENTS "
+\"John made promises to his mother\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("S" . "p")) :constraints "NA" :constraint-type :NA) (((("PP" . "w")) :substp T))  (((("S" . "r"))) (((("NP" . "0")) :substp T :constraints ""))  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("NP" . "1")) :constraints "") (((("N" . "")) :headp T)) )  (((("PP" . "2"))) (((("P" . "2"))) (((("to" . "")))) )  (((("NP" . "2")) :substp T)) ) ) ) ) ) 
+("NpxN1lVPnx2bynx0" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+S_r.b:<extracted> = -
+S_r.b:<inv> = -
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+
+
+
+
+VP.b:<mode> = V.t:<mode>
+V.t:<mode> = ppart
+V.t:<passive> = +
+VP.b:<passive> = V.t:<passive>
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+NP_1:<agr> = S_r.b:<agr>
+NP_1:<case> = S_r.b:<assign-case>
+NP_1:<wh> = -
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+VP.b:<agr> = V.t:<agr>
+VP.b:<tense> = V.t:<tense>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<mainv> = V.t:<mainv>
+VP.b:<compar> = -
+PP.b:<assign-case> = P.t:<assign-case>
+PP.b:<assign-case> = NP_0.t:<case>
+PP_2.b:<assign-case> = P_2.t:<assign-case>
+PP_2.b:<assign-case> = NP_2.t:<case>
+P_2.b:<assign-case> = acc
+P.b:<assign-case> = acc
+NP_1.b:<case> = N.t:<case>
+NP_1.b:<pron> = N.t:<pron>
+NP_1.b:<agr> = N.t:<agr>
+NP_1.b:<wh> = N.t:<wh>
+NP_1.b:<compar> = N.t:<compar>
+N.b:<compar> = -
+N.t:<const> = NP_1.b:<const>
+N.t:<gen> = NP_1.b:<gen>
+N.t:<definite> = NP_1.b:<definite>
+N.t:<quan> = NP_1.b:<quan>
+N.t:<card> = NP_1.b:<card>
+N.t:<decreas> = NP_1.b:<decreas>
+PP_w.t:<wh> = +
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<case> = NP_f.t:<case>
+NP_f.b:<case> = acc/nom
+S_r.t:<comp> = nil
+NP_r.b:<rel-clause> = +
+NP_f.b:<case> = nom/acc
+NP_r.b:<pron> = NP_f.t:<pron>
+
+" :COMMENTS "
+\"Promises were made to John by a large conglomerate\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("S" . "p")) :constraints "NA" :constraint-type :NA) (((("PP" . "w")) :substp T))  (((("S" . "r"))) (((("NP" . "1")) :constraints "") (((("N" . "")) :headp T)) )  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("PP" . "2"))) (((("P" . "2"))) (((("to" . "")))) )  (((("NP" . "2")) :substp T)) )  (((("PP" . ""))) (((("P" . ""))) (((("by" . "")))) )  (((("NP" . "0")) :substp T :constraints "")) ) ) ) ) ) 
+("Npxnx0lVnx2N1" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+S_r.b:<extracted> = -
+S_r.b:<inv> = -
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+
+
+
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+NP_0:<agr> = S_r.b:<agr>
+NP_0:<case> = S_r.b:<assign-case>
+NP_0:<wh> = -
+NP_2:<case> = acc
+NP_1:<case> = acc
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<control> = NP_0.t:<control>
+VP.b:<agr> = V.t:<agr>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<mode> = V.t:<mode>
+VP.b:<tense> = V.t:<tense>
+VP.b:<mainv> = V.t:<mainv>
+VP.b:<compar> = -
+NP_1.b:<case> = N.t:<case>
+NP_1.b:<pron> = N.t:<pron>
+NP_1.b:<agr> = N.t:<agr>
+NP_1.b:<wh> = N.t:<wh>
+NP_1.b:<compar> = N.t:<compar>
+N.b:<compar> = -
+N.t:<const> = NP_1.b:<const>
+N.t:<gen> = NP_1.b:<gen>
+N.t:<definite> = NP_1.b:<definite>
+N.t:<quan> = NP_1.b:<quan>
+N.t:<card> = NP_1.b:<card>
+N.t:<decreas> = NP_1.b:<decreas>
+S_r.t:<inv> = -
+PP_w.t:<wh> = +
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<case> = NP_f.t:<case>
+NP_f.b:<case> = acc/nom
+S_r.t:<comp> = nil
+NP_r.b:<rel-clause> = +
+NP_f.b:<case> = nom/acc
+NP_r.b:<pron> = NP_f.t:<pron>
+
+S_r.b:<progressive> = VP.t:<progressive>
+S_r.b:<perfect> = VP.t:<perfect>
+S_r.b:<passive> = VP.t:<passive>
+S_r.b:<mainv> = VP.t:<mainv>
+" :COMMENTS "
+\"The company made John promises\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("S" . "p")) :constraints "NA" :constraint-type :NA) (((("PP" . "w")) :substp T))  (((("S" . "r"))) (((("NP" . "0")) :substp T :constraints ""))  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("NP" . "2")) :substp T :constraints ""))  (((("NP" . "1"))) (((("N" . "")) :headp T)) ) ) ) ) ) 
+("Npxnx2lVN1bynx0" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+S_r.b:<extracted> = -
+S_r.b:<inv> = -
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+VP.b:<mode> = V.t:<mode>
+V.t:<mode> = ppart
+V.t:<passive> = +
+VP.b:<passive> = V.t:<passive>
+
+
+
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+NP_2:<agr> = S_r.b:<agr>
+NP_2:<case> = S_r.b:<assign-case>
+NP_2:<wh> = -
+NP_1:<case> = acc
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+VP.b:<agr> = V.t:<agr>
+VP.b:<tense> = V.t:<tense>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<mainv> = V.t:<mainv>
+VP.b:<compar> = -
+PP.b:<assign-case> = P.t:<assign-case>
+PP.b:<assign-case> = NP_0.t:<case>
+P.b:<assign-case> = acc
+NP_1.b:<case> = N.t:<case>
+NP_1.b:<pron> = N.t:<pron>
+S_r.b:<control> = NP_1.t:<control>
+NP_1.b:<agr> = N.t:<agr>
+NP_1.b:<wh> = N.t:<wh>
+NP_1.b:<compar> = N.t:<compar>
+N.b:<compar> = -
+N.t:<const> = NP_1.b:<const>
+N.t:<gen> = NP_1.b:<gen>
+N.t:<definite> = NP_1.b:<definite>
+N.t:<quan> = NP_1.b:<quan>
+N.t:<card> = NP_1.b:<card>
+N.t:<decreas> = NP_1.b:<decreas>
+S_r.b:<control> = NP_1.t:<control>
+S_r.t:<inv> = -
+PP_w.t:<wh> = +
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<case> = NP_f.t:<case>
+NP_f.b:<case> = acc/nom
+S_r.t:<comp> = nil
+NP_r.b:<rel-clause> = +
+NP_f.b:<case> = nom/acc
+NP_r.b:<pron> = NP_f.t:<pron>
+
+S_r.b:<progressive> = VP.t:<progressive>
+S_r.b:<perfect> = VP.t:<perfect>
+S_r.b:<passive> = VP.t:<passive>
+S_r.b:<mainv> = VP.t:<mainv>
+" :COMMENTS "QUESTIONABLE BUT IN:
+\"John was made offers by the company\"
+\"The bank was made payments by John\"
+\"The renters were made loans by the bank officer\"
+\"Mary was made promises by John\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("S" . "p")) :constraints "NA" :constraint-type :NA) (((("PP" . "w")) :substp T))  (((("S" . "r"))) (((("NP" . "2")) :substp T :constraints ""))  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("NP" . "1"))) (((("N" . "")) :headp T)) )  (((("PP" . ""))) (((("P" . ""))) (((("by" . "")))) )  (((("NP" . "0")) :substp T :constraints "")) ) ) ) ) ) 
+("NPnx2nx0lVN1Pnx2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+
+
+
+
+S_r.b:<mode> = VP.t:<mode>
+S_r.t:<mode> = ind/inf
+S_r.t:<inv> = -
+S_r.b:<inv> = -
+NP_0:<agr> = S_r.b:<agr>
+NP_0:<case> = S_r.b:<assign-case>
+NP_1:<case> = acc
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<tense> = VP.t:<tense>
+VP.b:<agr> = V.t:<agr>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<mode> = V.t:<mode>
+VP.b:<tense> = V.t:<tense>
+VP.b:<mainv> = V.t:<mainv>
+VP.b:<compar> = -
+P_2.b:<assign-case> = acc
+NP_1.b:<case> = N.t:<case>
+NP_1.b:<pron> = N.t:<pron>
+NP_1.b:<agr> = N.t:<agr>
+NP_1.b:<wh> = N.t:<wh>
+NP_1.b:<compar> = N.t:<compar>
+N.b:<compar> = -
+N.t:<const> = NP_1.b:<const>
+N.t:<gen> = NP_1.b:<gen>
+N.t:<definite> = NP_1.b:<definite>
+N.t:<quan> = NP_1.b:<quan>
+N.t:<card> = NP_1.b:<card>
+N.t:<decreas> = NP_1.b:<decreas>
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<case> = NP_f.t:<case>
+S_r.t:<conj> = nil
+S_r.b:<control> = NP_0.t:<control>
+
+NP_w.t:<wh> = +
+S_r.t:<comp> = nil
+PP_w.t:<trace> = PP_2.b:<trace>
+PP_w.t:<case> = PP_2.b:<case>
+PP_w.t:<agr> = PP_2.b:<agr>
+PP_w.b:<assign-case> = P_2.t:<assign-case>
+PP_w.b:<assign-case> = NP_w.t:<case>
+PP_w.b:<wh> = NP_w.t:<wh>
+NP_r.b:<rel-clause> = +
+NP_f.b:<case> = nom/acc
+NP_r.b:<pron> = NP_f.t:<pron>
+
+" :COMMENTS "Need to decide what VP agrees with
+
+\"the guy (that) they made promises to\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("S" . "p")) :constraints "NA" :constraint-type :NA) (((("PP" . "w"))) (((("P" . "2"))) (((("to" . "")))) )  (((("NP" . "w")) :substp T)) )  (((("S" . "r"))) (((("NP" . "0")) :substp T :constraints ""))  (((("VP" . "")) :constraints "") (((("V" . "")) :headp T))  (((("NP" . "1"))) (((("N" . "")) :headp T)) )  (((("PP" . "2")) :constraints "NA" :constraint-type :NA) (((("" . "")))) ) ) ) ) ) 
+("Nc0nx0lVN1Pnx2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+NP_r.b:<wh> = NP_f.t:<wh>
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<case> = NP_f.t:<case>
+NP_f.b:<wh> = -
+NP_0.t:<agr> = S_r.b:<agr>
+NP_0.t:<case> = S_r.b:<assign-case>
+
+
+
+
+S_r.t:<inv> = -
+S_r.b:<comp> = nil
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<tense> = VP.t:<tense>
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+NP_1:<case> = acc
+VP.b:<agr> = V.t:<agr>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<mode> = V.t:<mode>
+VP.b:<tense> = V.t:<tense>
+VP.b:<mainv> = V.t:<mainv>
+VP.b:<compar> = -
+P_2.t:<assign-case> = PP_2.b:<assign-case>
+NP_2:<case> = PP_2.b:<assign-case>
+P_2.b:<assign-case> = acc
+NP_1.b:<case> = N.t:<case>
+NP_1.b:<pron> = N.t:<pron>
+NP_1.b:<agr> = N.t:<agr>
+NP_1.b:<wh> = N.t:<wh>
+NP_1.b:<compar> = N.t:<compar>
+N.b:<compar> = -
+N.t:<const> = NP_1.b:<const>
+N.t:<gen> = NP_1.b:<gen>
+N.t:<definite> = NP_1.b:<definite>
+N.t:<quan> = NP_1.b:<quan>
+N.t:<card> = NP_1.b:<card>
+N.t:<decreas> = NP_1.b:<decreas>
+S_r.t:<conj> = nil
+
+NP_w.t:<trace> = NP_0.b:<trace>
+NP_w.t:<case> = NP_0.b:<case>
+NP_w.t:<agr> = NP_0.b:<agr>
+NP_r.b:<rel-clause> = +
+S_r.t:<mode> = inf/ger/ind
+S_r.t:<nocomp-mode> = inf/ger
+VP.t:<assign-comp> = that/ind_nil/inf_nil/ecm
+S_r.b:<nocomp-mode> = S_r.b:<mode>
+NP_f.b:<case> = nom/acc
+NP_r.b:<pron> = NP_f.t:<pron>
+
+" :COMMENTS "Need to decide what VP agrees with
+
+\"the company that made promises to John\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("S" . "p")) :constraints "NA" :constraint-type :NA) (((("NP" . "w")) :constraints "NA" :constraint-type :NA) (((("" . "w")))) )  (((("S" . "r"))) (((("NP" . "0")) :constraints "NA" :constraint-type :NA) (((("" . "")))) )  (((("VP" . "")) :constraints "") (((("V" . "")) :headp T))  (((("NP" . "1"))) (((("N" . "")) :headp T)) )  (((("PP" . "2"))) (((("P" . "2"))) (((("to" . "")))) )  (((("NP" . "2")) :substp T)) ) ) ) ) ) 
+("Nc2nx0lVN1Pnx2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+
+
+
+
+S_r.b:<mode> = VP.t:<mode>
+S_r.t:<inv> = -
+S_r.b:<inv> = -
+NP_0:<agr> = S_r.b:<agr>
+NP_0:<case> = S_r.b:<assign-case>
+NP_1:<case> = acc
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<tense> = VP.t:<tense>
+VP.b:<agr> = V.t:<agr>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<mode> = V.t:<mode>
+VP.b:<tense> = V.t:<tense>
+VP.b:<mainv> = V.t:<mainv>
+VP.b:<compar> = -
+PP_2.b:<assign-case> = P_2.t:<assign-case>
+PP_2.b:<assign-case> = NP_2.t:<case>
+P_2.b:<assign-case> = acc
+NP_1.b:<case> = N.t:<case>
+NP_1.b:<pron> = N.t:<pron>
+NP_1.b:<agr> = N.t:<agr>
+NP_1.b:<wh> = N.t:<wh>
+NP_1.b:<compar> = N.t:<compar>
+N.b:<compar> = -
+N.t:<const> = NP_1.b:<const>
+N.t:<gen> = NP_1.b:<gen>
+N.t:<definite> = NP_1.b:<definite>
+N.t:<quan> = NP_1.b:<quan>
+N.t:<card> = NP_1.b:<card>
+N.t:<decreas> = NP_1.b:<decreas>
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<case> = NP_f.t:<case>
+S_r.t:<conj> = nil
+S_r.b:<control> = NP_0.t:<control>
+
+NP_w.t:<trace> = NP_2.b:<trace>
+NP_w.t:<case> = NP_2.b:<case>
+NP_w.t:<agr> = NP_2.b:<agr>
+NP_r.b:<rel-clause> = +
+S_r.t:<mode> = inf/ind
+S_r.t:<nocomp-mode> = ind
+VP.t:<assign-comp> = that/for/ind_nil
+S_r.b:<nocomp-mode> = S_r.b:<mode>
+NP_f.b:<case> = nom/acc
+NP_r.b:<pron> = NP_f.t:<pron>
+
+" :COMMENTS "Need to decide what VP agrees with
+
+\"the guy (that) they made promises to\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("S" . "p")) :constraints "NA" :constraint-type :NA) (((("NP" . "w")) :constraints "NA" :constraint-type :NA) (((("" . "w")))) )  (((("S" . "r"))) (((("NP" . "0")) :substp T :constraints ""))  (((("VP" . "")) :constraints "") (((("V" . "")) :headp T))  (((("NP" . "1"))) (((("N" . "")) :headp T)) )  (((("PP" . "2"))) (((("P" . "2"))) (((("to" . "")))) )  (((("NP" . "2")) :constraints "NA" :constraint-type :NA) (((("" . "")))) ) ) ) ) ) ) 
+("Nc0nx0lVnx2N1" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+
+
+
+
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<tense> = VP.t:<tense>
+S_r.b:<agr> = NP_0.t:<agr>
+S_r.b:<assign-case> = NP_0.t:<case>
+S_r.t:<inv> = -
+S_r.b:<comp> = nil
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+NP_2:<case> = acc
+NP_1:<case> = acc
+VP.b:<agr> = V.t:<agr>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<mode> = V.t:<mode>
+VP.b:<tense> = V.t:<tense>
+VP.b:<mainv> = V.t:<mainv>
+VP.b:<compar> = -
+NP_1.b:<case> = N.t:<case>
+NP_1.b:<pron> = N.t:<pron>
+NP_1.b:<agr> = N.t:<agr>
+NP_1.b:<wh> = N.t:<wh>
+NP_1.b:<compar> = N.t:<compar>
+N.b:<compar> = -
+N.t:<const> = NP_1.b:<const>
+N.t:<gen> = NP_1.b:<gen>
+N.t:<definite> = NP_1.b:<definite>
+N.t:<quan> = NP_1.b:<quan>
+N.t:<card> = NP_1.b:<card>
+N.t:<decreas> = NP_1.b:<decreas>
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<case> = NP_f.t:<case>
+S_r.t:<conj> = nil
+
+NP_w.t:<trace> = NP_0.b:<trace>
+NP_w.t:<case> = NP_0.b:<case>
+NP_w.t:<agr> = NP_0.b:<agr>
+NP_r.b:<rel-clause> = +
+S_r.t:<mode> = inf/ger/ind
+S_r.t:<nocomp-mode> = inf/ger
+VP.t:<assign-comp> = that/ind_nil/inf_nil/ecm
+S_r.b:<nocomp-mode> = S_r.b:<mode>
+NP_f.b:<case> = nom/acc
+NP_r.b:<pron> = NP_f.t:<pron>
+
+" :COMMENTS "Need to decide what VP agrees with.
+
+\"the company that made John promises\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("S" . "p")) :constraints "NA" :constraint-type :NA) (((("NP" . "w")) :constraints "NA" :constraint-type :NA) (((("" . "w")))) )  (((("S" . "r"))) (((("NP" . "0")) :constraints "NA" :constraint-type :NA) (((("" . "")))) )  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("NP" . "2")) :substp T))  (((("NP" . "1"))) (((("N" . "")) :headp T)) ) ) ) ) ) 
+("Nc2nx0lVnx2N1" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+
+
+
+
+S_r.b:<mode> = VP.t:<mode>
+S_r.t:<inv> = -
+S_r.b:<inv> = -
+NP_0:<agr> = S_r.b:<agr>
+NP_0:<case> = S_r.b:<assign-case>
+NP_1:<case> = acc
+NP_2:<case> = acc
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<tense> = VP.t:<tense>
+S_r.b:<control> = NP_0.t:<control>
+VP.b:<agr> = V.t:<agr>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<mode> = V.t:<mode>
+VP.b:<tense> = V.t:<tense>
+VP.b:<mainv> = V.t:<mainv>
+VP.b:<compar> = -
+NP_1.b:<case> = N.t:<case>
+NP_1.b:<pron> = N.t:<pron>
+NP_1.b:<agr> = N.t:<agr>
+NP_1.b:<wh> = N.t:<wh>
+NP_1.b:<compar> = N.t:<compar>
+N.b:<compar> = -
+N.t:<const> = NP_1.b:<const>
+N.t:<gen> = NP_1.b:<gen>
+N.t:<definite> = NP_1.b:<definite>
+N.t:<quan> = NP_1.b:<quan>
+N.t:<card> = NP_1.b:<card>
+N.t:<decreas> = NP_1.b:<decreas>
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<case> = NP_f.t:<case>
+S_r.t:<conj> = nil
+
+NP_w.t:<trace> = NP_2.b:<trace>
+NP_w.t:<case> = NP_2.b:<case>
+NP_w.t:<agr> = NP_2.b:<agr>
+NP_r.b:<rel-clause> = +
+S_r.t:<mode> = inf/ind
+S_r.t:<nocomp-mode> = ind
+VP.t:<assign-comp> = that/for/ind_nil
+S_r.b:<nocomp-mode> = S_r.b:<mode>
+NP_f.b:<case> = nom/acc
+NP_r.b:<pron> = NP_f.t:<pron>
+
+" :COMMENTS "QUESTIONABLE BUT IN:
+\"the guy (that) they made t promises\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("S" . "p")) :constraints "NA" :constraint-type :NA) (((("NP" . "w")) :constraints "NA" :constraint-type :NA) (((("" . "w")))) )  (((("S" . "r"))) (((("NP" . "0")) :substp T :constraints ""))  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("NP" . "2")) :constraints "NA" :constraint-type :NA) (((("" . "")))) )  (((("NP" . "1"))) (((("N" . "")) :headp T)) ) ) ) ) ) 
+("Ncnx0lVN1Pnx2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+S_r.b:<extracted> = -
+S_r.b:<inv> = -
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+
+
+
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+NP_0:<agr> = S_r.b:<agr>
+NP_0:<case> = S_r.b:<assign-case>
+NP_0:<wh> = -
+NP_1:<case> = acc
+P_2.t:<assign-case> = PP_2.b:<assign-case>
+NP_2:<case> = PP_2.b:<assign-case>
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+VP.b:<agr> = V.t:<agr>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<mode> = V.t:<mode>
+VP.b:<tense> = V.t:<tense>
+VP.b:<mainv> = V.t:<mainv>
+VP.b:<compar> = -
+P_2.b:<assign-case> = acc
+NP_1.b:<case> = N.t:<case>
+NP_1.b:<pron> = N.t:<pron>
+NP_1.b:<agr> = N.t:<agr>
+NP_1.b:<wh> = N.t:<wh>
+NP_1.b:<compar> = N.t:<compar>
+N.b:<compar> = -
+N.t:<const> = NP_1.b:<const>
+N.t:<gen> = NP_1.b:<gen>
+N.t:<definite> = NP_1.b:<definite>
+N.t:<quan> = NP_1.b:<quan>
+N.t:<card> = NP_1.b:<card>
+N.t:<decreas> = NP_1.b:<decreas>
+S_r.b:<control> = NP_0.t:<control>
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<case> = NP_f.t:<case>
+NP_f.b:<case> = acc/nom
+S_r.t:<inv> = -
+S_r.t:<mode> = ind/inf
+S_r.t:<nocomp-mode> = ind
+VP.t:<assign-comp> = that/for/ind_nil
+S_r.b:<nocomp-mode> = S_r.b:<mode>
+NP_r.b:<rel-clause> = +
+NP_f.b:<case> = nom/acc
+NP_r.b:<pron> = NP_f.t:<pron>
+
+S_r.b:<progressive> = VP.t:<progressive>
+S_r.b:<perfect> = VP.t:<perfect>
+S_r.b:<passive> = VP.t:<passive>
+S_r.b:<mainv> = VP.t:<mainv>
+" :COMMENTS "
+\"John made promises to his mother\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("S" . "p")) :constraints "NA" :constraint-type :NA) (((("NP" . "w")) :constraints "NA" :constraint-type :NA) (((("" . "w")))) )  (((("S" . "r"))) (((("NP" . "0")) :substp T :constraints ""))  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("NP" . "1")) :constraints "") (((("N" . "")) :headp T)) )  (((("PP" . "2"))) (((("P" . "2"))) (((("to" . "")))) )  (((("NP" . "2")) :substp T)) ) ) ) ) ) 
+("NcN1lVPnx2bynx0" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+S_r.b:<extracted> = -
+S_r.b:<inv> = -
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+
+
+
+
+VP.b:<mode> = V.t:<mode>
+V.t:<mode> = ppart
+V.t:<passive> = +
+VP.b:<passive> = V.t:<passive>
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+NP_1:<agr> = S_r.b:<agr>
+NP_1:<case> = S_r.b:<assign-case>
+NP_1:<wh> = -
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+VP.b:<agr> = V.t:<agr>
+VP.b:<tense> = V.t:<tense>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<mainv> = V.t:<mainv>
+VP.b:<compar> = -
+PP.b:<assign-case> = P.t:<assign-case>
+PP.b:<assign-case> = NP_0.t:<case>
+PP_2.b:<assign-case> = P_2.t:<assign-case>
+PP_2.b:<assign-case> = NP_2.t:<case>
+P_2.b:<assign-case> = acc
+P.b:<assign-case> = acc
+NP_1.b:<case> = N.t:<case>
+NP_1.b:<pron> = N.t:<pron>
+NP_1.b:<agr> = N.t:<agr>
+NP_1.b:<wh> = N.t:<wh>
+NP_1.b:<compar> = N.t:<compar>
+N.b:<compar> = -
+N.t:<const> = NP_1.b:<const>
+N.t:<gen> = NP_1.b:<gen>
+N.t:<definite> = NP_1.b:<definite>
+N.t:<quan> = NP_1.b:<quan>
+N.t:<card> = NP_1.b:<card>
+N.t:<decreas> = NP_1.b:<decreas>
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<case> = NP_f.t:<case>
+NP_f.b:<case> = acc/nom
+S_r.t:<mode> = ind/inf
+S_r.t:<nocomp-mode> = ind
+VP.t:<assign-comp> = that/for/ind_nil
+S_r.b:<nocomp-mode> = S_r.b:<mode>
+NP_r.b:<rel-clause> = +
+NP_f.b:<case> = nom/acc
+NP_r.b:<pron> = NP_f.t:<pron>
+
+" :COMMENTS "
+\"Promises were made to John by a large conglomerate\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("S" . "p")) :constraints "NA" :constraint-type :NA) (((("NP" . "w")) :constraints "NA" :constraint-type :NA) (((("" . "w")))) )  (((("S" . "r"))) (((("NP" . "1")) :constraints "") (((("N" . "")) :headp T)) )  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("PP" . "2"))) (((("P" . "2"))) (((("to" . "")))) )  (((("NP" . "2")) :substp T)) )  (((("PP" . "0"))) (((("P" . "0"))) (((("by" . "")))) )  (((("NP" . "0")) :substp T :constraints "")) ) ) ) ) ) 
+("Ncnx0lVnx2N1" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+S_r.b:<extracted> = -
+S_r.b:<inv> = -
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+
+
+
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+NP_0:<agr> = S_r.b:<agr>
+NP_0:<case> = S_r.b:<assign-case>
+NP_0:<wh> = -
+NP_2:<case> = acc
+NP_1:<case> = acc
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<control> = NP_0.t:<control>
+VP.b:<agr> = V.t:<agr>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<mode> = V.t:<mode>
+VP.b:<tense> = V.t:<tense>
+VP.b:<mainv> = V.t:<mainv>
+VP.b:<compar> = -
+NP_1.b:<case> = N.t:<case>
+NP_1.b:<pron> = N.t:<pron>
+NP_1.b:<agr> = N.t:<agr>
+NP_1.b:<wh> = N.t:<wh>
+NP_1.b:<compar> = N.t:<compar>
+N.b:<compar> = -
+N.t:<const> = NP_1.b:<const>
+N.t:<gen> = NP_1.b:<gen>
+N.t:<definite> = NP_1.b:<definite>
+N.t:<quan> = NP_1.b:<quan>
+N.t:<card> = NP_1.b:<card>
+N.t:<decreas> = NP_1.b:<decreas>
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<case> = NP_f.t:<case>
+NP_f.b:<case> = acc/nom
+S_r.t:<inv> = -
+S_r.t:<mode> = ind/inf
+S_r.t:<nocomp-mode> = ind
+VP.t:<assign-comp> = that/for/ind_nil
+S_r.b:<nocomp-mode> = S_r.b:<mode>
+NP_r.b:<rel-clause> = +
+NP_f.b:<case> = nom/acc
+NP_r.b:<pron> = NP_f.t:<pron>
+
+S_r.b:<progressive> = VP.t:<progressive>
+S_r.b:<perfect> = VP.t:<perfect>
+S_r.b:<passive> = VP.t:<passive>
+S_r.b:<mainv> = VP.t:<mainv>
+" :COMMENTS "
+\"The company made John promises\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("S" . "p")) :constraints "NA" :constraint-type :NA) (((("NP" . "w")) :constraints "NA" :constraint-type :NA) (((("" . "w")))) )  (((("S" . "r"))) (((("NP" . "0")) :substp T :constraints ""))  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("NP" . "2")) :substp T :constraints ""))  (((("NP" . "1"))) (((("N" . "")) :headp T)) ) ) ) ) ) 
+("Ncnx2lVN1bynx0" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+S_r.b:<extracted> = -
+S_r.b:<inv> = -
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+VP.b:<mode> = V.t:<mode>
+V.t:<mode> = ppart
+V.t:<passive> = +
+VP.b:<passive> = V.t:<passive>
+
+
+
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+NP_2:<agr> = S_r.b:<agr>
+NP_2:<case> = S_r.b:<assign-case>
+NP_2:<wh> = -
+NP_1:<case> = acc
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+VP.b:<agr> = V.t:<agr>
+VP.b:<tense> = V.t:<tense>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<mainv> = V.t:<mainv>
+VP.b:<compar> = -
+PP.b:<assign-case> = P.t:<assign-case>
+PP.b:<assign-case> = NP_0.t:<case>
+P.b:<assign-case> = acc
+NP_1.b:<case> = N.t:<case>
+NP_1.b:<pron> = N.t:<pron>
+S_r.b:<control> = NP_1.t:<control>
+NP_1.b:<agr> = N.t:<agr>
+NP_1.b:<wh> = N.t:<wh>
+NP_1.b:<compar> = N.t:<compar>
+N.b:<compar> = -
+N.t:<const> = NP_1.b:<const>
+N.t:<gen> = NP_1.b:<gen>
+N.t:<definite> = NP_1.b:<definite>
+N.t:<quan> = NP_1.b:<quan>
+N.t:<card> = NP_1.b:<card>
+N.t:<decreas> = NP_1.b:<decreas>
+S_r.b:<control> = NP_1.t:<control>
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<case> = NP_f.t:<case>
+NP_f.b:<case> = acc/nom
+S_r.t:<inv> = -
+S_r.t:<mode> = ind/inf
+S_r.t:<nocomp-mode> = ind
+VP.t:<assign-comp> = that/for/ind_nil
+S_r.b:<nocomp-mode> = S_r.b:<mode>
+NP_r.b:<rel-clause> = +
+NP_f.b:<case> = nom/acc
+NP_r.b:<pron> = NP_f.t:<pron>
+
+S_r.b:<progressive> = VP.t:<progressive>
+S_r.b:<perfect> = VP.t:<perfect>
+S_r.b:<passive> = VP.t:<passive>
+S_r.b:<mainv> = VP.t:<mainv>
+" :COMMENTS "QUESTIONABLE BUT IN:
+\"John was made offers by the company\"
+\"The bank was made payments by John\"
+\"The renters were made loans by the bank officer\"
+\"Mary was made promises by John\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("S" . "p")) :constraints "NA" :constraint-type :NA) (((("NP" . "w")) :constraints "NA" :constraint-type :NA) (((("" . "w")))) )  (((("S" . "r"))) (((("NP" . "2")) :substp T :constraints ""))  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("NP" . "1"))) (((("N" . "")) :headp T)) )  (((("PP" . "0"))) (((("P" . "0"))) (((("by" . "")))) )  (((("NP" . "0")) :substp T :constraints "")) ) ) ) ) ) 
+("GN1lVPnx2bynx0" :COMMENT-DISPLAY? T :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+NP_r.b:<case> = nom/acc
+NP_r.b:<agr num> = sing
+NP_r.b:<agr pers> = 3
+NP_r.b:<agr 3rdsing> = +
+NP_r.b:<gerund> = +
+
+NP_1.t:<wh> = NP_r.b:<wh>
+NP_1.t:<case> = acc
+NP_1.b:<case> = N.t:<case>
+NP_1.b:<pron> = N.t:<pron>
+NP_1.b:<agr> = N.t:<agr>
+NP_1.b:<wh> = N.t:<wh>
+NP_1.b:<compar> = N.t:<compar>
+N.b:<compar> = -
+N.t:<const> = NP_1.b:<const>
+N.t:<gen> = NP_1.b:<gen>
+N.t:<definite> = NP_1.b:<definite>
+N.t:<quan> = NP_1.b:<quan>
+N.t:<card> = NP_1.b:<card>
+N.t:<decreas> = NP_1.b:<decreas>
+VP.t:<mode> = ger
+
+VP.b:<mode> = V.t:<mode>
+VP.b:<passive> = V.t:<passive>
+VP.b:<compar> = -
+V.t:<mode> = ppart
+V.t:<passive> = +
+P_2.t:<assign-case> = PP_2.b:<assign-case>
+NP_2:<case> = PP_2.b:<assign-case>
+P_2.b:<assign-case> = acc
+P_0.t:<assign-case> = PP_0.b:<assign-case>
+NP_0:<case> = PP_0.b:<assign-case>
+P_0.b:<assign-case> = acc
+" :COMMENTS "Ditransitive Light Verb (shifted PP) -
+ gerund passive with \"by\" phrase:
+
+ \"... \"promises being made to the company by John\"...\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "1")) :display-feature? T :constraints "") (((("N" . "")) :display-feature? T :headp T)) )  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("PP" . "2"))) (((("P" . "2"))) (((("to" . "")))) )  (((("NP" . "2")) :substp T)) )  (((("PP" . "0"))) (((("P" . "0"))) (((("by" . "")))) )  (((("NP" . "0")) :substp T)) ) ) ) 
+("GN1lVPnx2" :COMMENT-DISPLAY? T :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+NP_r.b:<case> = nom/acc
+NP_r.b:<agr num> = sing
+NP_r.b:<agr pers> = 3
+NP_r.b:<agr 3rdsing> = +
+NP_r.b:<gerund> = +
+
+NP_1.t:<wh> = NP_r.b:<wh>
+NP_1.t:<case> = acc
+NP_1.b:<case> = N.t:<case>
+NP_1.b:<pron> = N.t:<pron>
+NP_1.b:<agr> = N.t:<agr>
+NP_1.b:<wh> = N.t:<wh>
+NP_1.b:<compar> = N.t:<compar>
+N.b:<compar> = -
+N.t:<const> = NP_1.b:<const>
+N.t:<gen> = NP_1.b:<gen>
+N.t:<definite> = NP_1.b:<definite>
+N.t:<quan> = NP_1.b:<quan>
+N.t:<card> = NP_1.b:<card>
+N.t:<decreas> = NP_1.b:<decreas>
+VP.t:<mode> = ger
+
+VP.b:<mode> = V.t:<mode>
+VP.b:<passive> = V.t:<passive>
+VP.b:<compar> = -
+V.t:<mode> = ppart
+V.t:<passive> = +
+P_2.t:<assign-case> = PP_2.b:<assign-case>
+NP_2:<case> = PP_2.b:<assign-case>
+P_2.b:<assign-case> = acc
+" :COMMENTS "Ditransitive Light verb (shifted PP):
+gerund passive without the \"by\" phrase:
+
+ \"...\"promises being made to the company\"...\"" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "1")) :display-feature? T :constraints "") (((("N" . "")) :headp T)) )  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("PP" . "2"))) (((("P" . "2"))) (((("to" . "")))) )  (((("NP" . "2")) :substp T)) ) ) ) 
+("Gnx0lVN1Pnx2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+NP_1:<case> = acc
+P_2.t:<assign-case> = PP_2.b:<assign-case>
+NP_2:<case> = PP_2.b:<assign-case>
+P_2.b:<assign-case> = acc
+NP_0:<wh> = NP_r.b:<wh>
+VP.t:<mode> = ger
+NP_r.b:<case> = nom/acc
+NP_r.b:<agr num> = sing
+NP_r.b:<agr pers> = 3
+NP_r.b:<agr 3rdsing> = +
+NP_1.b:<case> = N.t:<case>
+NP_1.b:<pron> = N.t:<pron>
+NP_1.b:<agr> = N.t:<agr>
+NP_1.b:<wh> = N.t:<wh>
+NP_1.b:<compar> = N.t:<compar>
+N.b:<compar> = -
+N.t:<const> = NP_1.b:<const>
+N.t:<gen> = NP_1.b:<gen>
+N.t:<definite> = NP_1.b:<definite>
+N.t:<quan> = NP_1.b:<quan>
+N.t:<card> = NP_1.b:<card>
+N.t:<decreas> = NP_1.b:<decreas>
+
+
+
+NP_r.b:<gerund> = +
+VP.b:<mode> = V.t:<mode>
+VP.b:<passive> = V.t:<passive>
+VP.b:<compar> = -
+V.t:<passive> = -
+NP_0:<case> = acc/gen
+" :COMMENTS "Ditransitive Light Verbs (with PP shift) - NP gerund
+
+...John('s) making promises to the company...
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "0")) :substp T :constraints ""))  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("NP" . "1")) :constraints "") (((("N" . "")) :headp T)) )  (((("PP" . "2"))) (((("P" . "2"))) (((("to" . "")))) )  (((("NP" . "2")) :substp T)) ) ) ) 
+("Gnx0lVnx2N1" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+NP_2:<case> = acc
+NP_1:<case> = acc
+NP_0:<wh> = NP_r.b:<wh>
+VP.t:<mode> = ger
+NP_r.b:<case> = nom/acc
+NP_r.b:<agr num> = sing
+NP_r.b:<agr pers> = 3
+NP_r.b:<agr 3rdsing> = +
+NP_1.b:<case> = N.t:<case>
+NP_1.b:<pron> = N.t:<pron>
+NP_1.b:<agr> = N.t:<agr>
+NP_1.b:<wh> = N.t:<wh>
+NP_1.b:<compar> = N.t:<compar>
+N.b:<compar> = -
+N.t:<const> = NP_1.b:<const>
+N.t:<gen> = NP_1.b:<gen>
+N.t:<definite> = NP_1.b:<definite>
+N.t:<quan> = NP_1.b:<quan>
+N.t:<card> = NP_1.b:<card>
+N.t:<decreas> = NP_1.b:<decreas>
+
+
+
+NP_r.b:<gerund> = +
+VP.b:<mode> = V.t:<mode>
+VP.b:<passive> = V.t:<passive>
+VP.b:<compar> = -
+V.t:<passive> = -
+NP_0:<case> = acc/gen
+" :COMMENTS "Ditransitive Light Verbs (with unshifted PP) - NP Gerund:
+
+...John('s) making the company promises...
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "0")) :substp T :constraints ""))  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("NP" . "2")) :substp T :constraints ""))  (((("NP" . "1"))) (((("N" . "")) :headp T)) ) ) ) 
+("Gnx2lVN1bynx0" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+NP_r.b:<case> = nom/acc
+NP_r.b:<agr num> = sing
+NP_r.b:<agr pers> = 3
+NP_r.b:<agr 3rdsing> = +
+NP_r.b:<gerund> = +
+
+NP_2.t:<wh> = NP_r.b:<wh>
+NP_1:<case> = acc
+NP_1.b:<case> = N.t:<case>
+NP_1.b:<pron> = N.t:<pron>
+NP_1.b:<agr> = N.t:<agr>
+NP_1.b:<wh> = N.t:<wh>
+NP_1.b:<compar> = N.t:<compar>
+N.b:<compar> = -
+N.t:<const> = NP_1.b:<const>
+N.t:<gen> = NP_1.b:<gen>
+N.t:<definite> = NP_1.b:<definite>
+N.t:<quan> = NP_1.b:<quan>
+N.t:<card> = NP_1.b:<card>
+N.t:<decreas> = NP_1.b:<decreas>
+VP.t:<mode> = ger
+
+VP.b:<mode> = V.t:<mode>
+VP.b:<passive> = V.t:<passive>
+VP.b:<compar> = -
+V.t:<mode> = ppart
+V.t:<passive> = +
+PP_0.b:<assign-case> = P_0.t:<assign-case>
+P_0.b:<assign-case> = acc
+NP_0:<case> = PP_0.b:<assign-case>
+NP_2:<case> = acc/gen
+" :COMMENTS "Ditransitive Light Verbs (unshifted PP) - gerund passive with the by-phrase 
+QUESTIONABLE BUT IN:
+
+...the company('s) being made promises by John...
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "2")) :substp T :constraints ""))  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("NP" . "1"))) (((("N" . "")) :headp T)) )  (((("PP" . "0"))) (((("P" . "0"))) (((("by" . "")))) )  (((("NP" . "0")) :substp T)) ) ) ) 
+("Gnx2lVN1" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+NP_r.b:<case> = nom/acc
+NP_r.b:<agr num> = sing
+NP_r.b:<agr pers> = 3
+NP_r.b:<agr 3rdsing> = +
+NP_r.b:<gerund> = +
+
+NP_2.t:<wh> = NP_r.b:<wh>
+NP_1:<case> = acc
+NP_1.b:<case> = N.t:<case>
+NP_1.b:<pron> = N.t:<pron>
+NP_1.b:<agr> = N.t:<agr>
+NP_1.b:<wh> = N.t:<wh>
+NP_1.b:<compar> = N.t:<compar>
+N.b:<compar> = -
+N.t:<const> = NP_1.b:<const>
+N.t:<gen> = NP_1.b:<gen>
+N.t:<definite> = NP_1.b:<definite>
+N.t:<quan> = NP_1.b:<quan>
+N.t:<card> = NP_1.b:<card>
+N.t:<decreas> = NP_1.b:<decreas>
+VP.t:<mode> = ger
+
+VP.b:<mode> = V.t:<mode>
+VP.b:<passive> = V.t:<passive>
+VP.b:<compar> = -
+V.t:<mode> = ppart
+V.t:<passive> = +
+NP_2:<case> = acc/gen
+" :COMMENTS "Ditransitive Light Verbs (unshifted PP) - gerund passive without the \"by\" phrase
+QUESTIONABLE BUT IN:
+
+...the company('s) being made promises...
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "2")) :substp T :constraints ""))  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("NP" . "1"))) (((("N" . "")) :headp T)) ) ) ) 
+("nx0lVN1Pnx2-PRO" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+S_r.b:<extracted> = -
+S_r.b:<inv> = -
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+S_r.b:<assign-case> = NP_0.t:<case>
+NP_0:<agr> = S_r.b:<agr>
+NP_0:<wh> = -
+NP_0.t:<case> = none
+NP_1:<case> = acc
+P_2.t:<assign-case> = PP_2.b:<assign-case>
+NP_2:<case> = PP_2.b:<assign-case>
+NP_2:<wh> = PP_2.b:<wh>
+S_r.b:<agr> = VP.t:<agr>
+VP.b:<agr> = V.t:<agr>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<mode> = V.t:<mode>
+VP.b:<tense> = V.t:<tense>
+VP.b:<mainv> = V.t:<mainv>
+VP.b:<passive> = V.t:<passive>
+V.t:<passive> = -
+VP.b:<compar> = -
+P_2.b:<assign-case> = acc
+NP_1.b:<case> = N.t:<case>
+NP_1.b:<pron> = N.t:<pron>
+NP_1.b:<agr> = N.t:<agr>
+NP_1.b:<wh> = N.t:<wh>
+NP_1.b:<compar> = N.t:<compar>
+N.b:<compar> = -
+N.t:<const> = NP_1.b:<const>
+N.t:<gen> = NP_1.b:<gen>
+N.t:<definite> = NP_1.b:<definite>
+N.t:<quan> = NP_1.b:<quan>
+N.t:<card> = NP_1.b:<card>
+N.t:<decreas> = NP_1.b:<decreas>
+S_r.b:<control> = NP_0.t:<control>
+S_r.b:<progressive> = VP.t:<progressive>
+S_r.b:<perfect> = VP.t:<perfect>
+S_r.b:<passive> = VP.t:<passive>
+S_r.b:<mainv> = VP.t:<mainv>
+VP.t:<mode> = inf/ger
+
+" :COMMENTS "Ditransitgive Light Verbs (w/ PP shift) - PRO subject
+
+John wanted [PRO to make promises to his mother].
+
+While [PRO giving a wave to Mary] John was spotted by his girlfriend.
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("NP" . "0")) :constraints "NA" :constraint-type :NA) (((("PRO" . "")))) )  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("NP" . "1")) :constraints "") (((("N" . "")) :headp T)) )  (((("PP" . "2"))) (((("P" . "2"))) (((("to" . "")))) )  (((("NP" . "2")) :substp T)) ) ) ) 
+("nx0lVnx2N1-PRO" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+S_r.b:<extracted> = -
+S_r.b:<inv> = -
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+S_r.b:<assign-case> = NP_0.t:<case>
+NP_0:<agr> = S_r.b:<agr>
+NP_0:<wh> = -
+NP_0.t:<case> = none
+NP_2:<case> = acc
+NP_1:<case> = acc
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<control> = NP_0.t:<control>
+VP.b:<agr> = V.t:<agr>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<mode> = V.t:<mode>
+VP.b:<tense> = V.t:<tense>
+VP.b:<mainv> = V.t:<mainv>
+VP.b:<passive> = V.t:<passive>
+V.t:<passive> = -
+VP.b:<compar> = -
+NP_1.b:<case> = N.t:<case>
+NP_1.b:<pron> = N.t:<pron>
+NP_1.b:<agr> = N.t:<agr>
+NP_1.b:<wh> = N.t:<wh>
+NP_1.b:<compar> = N.t:<compar>
+N.b:<compar> = -
+N.t:<const> = NP_1.b:<const>
+N.t:<gen> = NP_1.b:<gen>
+N.t:<definite> = NP_1.b:<definite>
+N.t:<quan> = NP_1.b:<quan>
+N.t:<card> = NP_1.b:<card>
+N.t:<decreas> = NP_1.b:<decreas>
+S_r.b:<progressive> = VP.t:<progressive>
+S_r.b:<perfect> = VP.t:<perfect>
+S_r.b:<passive> = VP.t:<passive>
+S_r.b:<mainv> = VP.t:<mainv>
+VP.t:<mode> = inf/ger
+
+" :COMMENTS "Ditransitive Light Verbs (w/o PP shift) - PRO subject
+
+John didn't want [PRO to make his mother promises].
+While [PRO giving Mary a wave] John was spotted by his girlfriend.
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("NP" . "0")) :constraints "NA" :constraint-type :NA) (((("PRO" . "")))) )  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("NP" . "2")) :substp T :constraints ""))  (((("NP" . "1"))) (((("N" . "")) :headp T)) ) ) ) 
+("nx2lVN1bynx0-PRO" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+S_r.b:<extracted> = -
+S_r.b:<inv> = -
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+VP.b:<mode> = V.t:<mode>
+V.t:<mode> = ppart
+V.t:<passive> = +
+VP.b:<passive> = V.t:<passive>
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+S_r.b:<assign-case> = NP_2.t:<case>
+NP_2:<agr> = S_r.b:<agr>
+NP_2:<wh> = S_r.b:<wh>
+NP_2:<wh> = -
+NP_2.t:<case> = none
+NP_1:<case> = acc
+S_r.b:<agr> = VP.t:<agr>
+VP.b:<agr> = V.t:<agr>
+VP.b:<tense> = V.t:<tense>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<mainv> = V.t:<mainv>
+VP.b:<compar> = -
+PP_0.b:<assign-case> = P_0.t:<assign-case>
+PP_0.b:<assign-case> = NP_0.t:<case>
+PP_0.b:<wh> = NP_0.t:<wh>
+P_0.b:<assign-case> = acc
+NP_1.b:<case> = N.t:<case>
+NP_1.b:<pron> = N.t:<pron>
+NP_1.b:<agr> = N.t:<agr>
+NP_1.b:<wh> = N.t:<wh>
+NP_1.b:<compar> = N.t:<compar>
+N.b:<compar> = -
+N.t:<const> = NP_1.b:<const>
+N.t:<gen> = NP_1.b:<gen>
+N.t:<definite> = NP_1.b:<definite>
+N.t:<quan> = NP_1.b:<quan>
+N.t:<card> = NP_1.b:<card>
+N.t:<decreas> = NP_1.b:<decreas>
+S_r.b:<control> = NP_2.t:<control>
+S_r.b:<progressive> = VP.t:<progressive>
+S_r.b:<perfect> = VP.t:<perfect>
+S_r.b:<passive> = VP.t:<passive>
+S_r.b:<mainv> = VP.t:<mainv>
+VP.t:<mode> = inf/ger
+
+" :COMMENTS "Ditransitive Light Verbs - Passive w/ PRO subject
+QUESTIONABLE BUT IN:
+
+Mary didn't want [PRO to be made promises by John].
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("NP" . "2")) :constraints "NA" :constraint-type :NA) (((("PRO" . "")))) )  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("NP" . "1"))) (((("N" . "")) :headp T)) )  (((("PP" . "0"))) (((("P" . "0"))) (((("by" . "")))) )  (((("NP" . "0")) :substp T :constraints "")) ) ) ) 
+("Gnx0lVN1Pnx2-PRO" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+NP_1:<case> = acc
+P_2.t:<assign-case> = PP_2.b:<assign-case>
+NP_2:<case> = PP_2.b:<assign-case>
+P_2.b:<assign-case> = acc
+NP_0:<wh> = NP_r.b:<wh>
+NP_0.t:<case> = none
+NP_0.t:<wh> = -
+VP.t:<mode> = ger
+NP_r.b:<case> = nom/acc
+NP_r.b:<agr num> = sing
+NP_r.b:<agr pers> = 3
+NP_r.b:<agr 3rdsing> = +
+NP_1.b:<case> = N.t:<case>
+NP_1.b:<pron> = N.t:<pron>
+NP_1.b:<agr> = N.t:<agr>
+NP_1.b:<wh> = N.t:<wh>
+NP_1.b:<compar> = N.t:<compar>
+N.b:<compar> = -
+N.t:<const> = NP_1.b:<const>
+N.t:<gen> = NP_1.b:<gen>
+N.t:<definite> = NP_1.b:<definite>
+N.t:<quan> = NP_1.b:<quan>
+N.t:<card> = NP_1.b:<card>
+N.t:<decreas> = NP_1.b:<decreas>
+NP_r.b:<gerund> = +
+VP.b:<mode> = V.t:<mode>
+VP.b:<passive> = V.t:<passive>
+VP.b:<compar> = -
+V.t:<passive> = -
+
+" :COMMENTS "Ditransitive Light Verbs (with PP shift) - NP gerund w/ PRO subject
+
+John disapproved of [PRO making promises to the customers].
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "0")) :constraints "NA" :constraint-type :NA) (((("PRO" . "")))) )  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("NP" . "1")) :constraints "") (((("N" . "")) :headp T)) )  (((("PP" . "2"))) (((("P" . "2"))) (((("to" . "")))) )  (((("NP" . "2")) :substp T)) ) ) ) 
+("Gnx0lVnx2N1-PRO" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+NP_2:<case> = acc
+NP_1:<case> = acc
+NP_0:<wh> = NP_r.b:<wh>
+NP_0.t:<case> = none
+NP_0.t:<wh> = -
+VP.t:<mode> = ger
+NP_r.b:<case> = nom/acc
+NP_r.b:<agr num> = sing
+NP_r.b:<agr pers> = 3
+NP_r.b:<agr 3rdsing> = +
+NP_1.b:<case> = N.t:<case>
+NP_1.b:<pron> = N.t:<pron>
+NP_1.b:<agr> = N.t:<agr>
+NP_1.b:<wh> = N.t:<wh>
+NP_1.b:<compar> = N.t:<compar>
+N.b:<compar> = -
+N.t:<const> = NP_1.b:<const>
+N.t:<gen> = NP_1.b:<gen>
+N.t:<definite> = NP_1.b:<definite>
+N.t:<quan> = NP_1.b:<quan>
+N.t:<card> = NP_1.b:<card>
+N.t:<decreas> = NP_1.b:<decreas>
+NP_r.b:<gerund> = +
+VP.b:<mode> = V.t:<mode>
+VP.b:<passive> = V.t:<passive>
+VP.b:<compar> = -
+V.t:<passive> = -
+
+" :COMMENTS "Ditransitive Light Verbs (with unshifted PP) - NP Gerund w/ PRO subject:
+
+John disapproved of [PRO making the customers promises].
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "0")) :constraints "NA" :constraint-type :NA) (((("PRO" . "")))) )  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("NP" . "2")) :substp T :constraints ""))  (((("NP" . "1"))) (((("N" . "")) :headp T)) ) ) ) 
+("Gnx2lVN1bynx0-PRO" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+NP_r.b:<case> = nom/acc
+NP_r.b:<agr num> = sing
+NP_r.b:<agr pers> = 3
+NP_r.b:<agr 3rdsing> = +
+NP_r.b:<gerund> = +
+NP_2.t:<wh> = NP_r.b:<wh>
+NP_2.t:<case> = none
+NP_2.t:<wh> = -
+NP_1:<case> = acc
+NP_1.b:<case> = N.t:<case>
+NP_1.b:<pron> = N.t:<pron>
+NP_1.b:<agr> = N.t:<agr>
+NP_1.b:<wh> = N.t:<wh>
+NP_1.b:<compar> = N.t:<compar>
+N.b:<compar> = -
+N.t:<const> = NP_1.b:<const>
+N.t:<gen> = NP_1.b:<gen>
+N.t:<definite> = NP_1.b:<definite>
+N.t:<quan> = NP_1.b:<quan>
+N.t:<card> = NP_1.b:<card>
+N.t:<decreas> = NP_1.b:<decreas>
+VP.t:<mode> = ger
+VP.b:<mode> = V.t:<mode>
+VP.b:<passive> = V.t:<passive>
+VP.b:<compar> = -
+V.t:<mode> = ppart
+V.t:<passive> = +
+PP_0.b:<assign-case> = P_0.t:<assign-case>
+P_0.b:<assign-case> = acc
+NP_0:<case> = PP_0.b:<assign-case>
+
+" :COMMENTS "Ditransitive Light Verbs (unshifted PP) - gerund passive with the by-phrase, w/
+PRO subject
+QUESTIONABLE BUT IN:
+
+John didn't like [PRO being made promises by the company].
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "2")) :constraints "NA" :constraint-type :NA) (((("PRO" . "")))) )  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("NP" . "1"))) (((("N" . "")) :headp T)) )  (((("PP" . "0"))) (((("P" . "0"))) (((("by" . "")))) )  (((("NP" . "0")) :substp T)) ) ) ) 
+("Gnx2lVN1-PRO" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+NP_r.b:<case> = nom/acc
+NP_r.b:<agr num> = sing
+NP_r.b:<agr pers> = 3
+NP_r.b:<agr 3rdsing> = +
+NP_r.b:<gerund> = +
+NP_2.t:<wh> = NP_r.b:<wh>
+NP_2.t:<case> = none
+NP_2.t:<wh> = -
+NP_1:<case> = acc
+NP_1.b:<case> = N.t:<case>
+NP_1.b:<pron> = N.t:<pron>
+NP_1.b:<agr> = N.t:<agr>
+NP_1.b:<wh> = N.t:<wh>
+NP_1.b:<compar> = N.t:<compar>
+N.b:<compar> = -
+N.t:<const> = NP_1.b:<const>
+N.t:<gen> = NP_1.b:<gen>
+N.t:<definite> = NP_1.b:<definite>
+N.t:<quan> = NP_1.b:<quan>
+N.t:<card> = NP_1.b:<card>
+N.t:<decreas> = NP_1.b:<decreas>
+VP.t:<mode> = ger
+VP.b:<mode> = V.t:<mode>
+VP.b:<passive> = V.t:<passive>
+VP.b:<compar> = -
+V.t:<mode> = ppart
+V.t:<passive> = +
+
+" :COMMENTS "Ditransitive Light Verbs (unshifted PP) - gerund passive without the by-phrase,
+w/ PRO subject 
+QUESTIONABLE BUT IN:
+
+John didn't like [PRO being made promises].
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "2")) :constraints "NA" :constraint-type :NA) (((("PRO" . "")))) )  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("NP" . "1"))) (((("N" . "")) :headp T)) ) ) ) 

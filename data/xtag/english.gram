@@ -1,0 +1,129 @@
+;; DERIVED FROM THE TEST GRAMMAR FOR DEMO4
+
+#+DB
+(defgrammar english
+    
+  (:default-pathname (setf user::*english-directory*
+			   "/mnt/linc/xtag2/pub/english/")
+		     :pretty-name "XTAG English grammar (Release 02.13.2001)"
+		     :start-feature "<mode> = ind/imp <comp> = nil <wh> = <invlink>  <punct term> = per/qmark/excl <punct struct> = nil")
+
+  (:tree-files "lex" 
+	       "advs-adjs"
+	       "prepositions"
+	       "determiners"
+	       "conjunctions"
+	       "modifiers"
+	       "auxs"
+	       "neg"
+               "punct"
+               "comparatives"
+
+	       (:default-pathname (concatenate 'string
+					       user::*english-directory*
+					       "grammar/")
+				  :type "trees")
+	       )
+  
+  (:family-files 
+		 "Tnx0V"
+		 "TEnx1V"
+		 "Tnx0Vnx1"
+		 "Tnx0Vpnx1"
+                 "Tnx0VPnx1"
+		 "Tnx0Vnx2nx1"
+		 "Tnx0Vnx1pnx2"
+                 "Tnx0Vnx1Pnx2"
+		 "Tnx0Vnx1s2"
+		 "Tnx0Vpl"
+		 "Tnx0Vplnx1"
+		 "Tnx0Vplnx2nx1"
+		 "Tnx0Vs1"
+		 "Tnx0Vax1"
+		 "Ts0Vnx1"
+		 "Tnx0lVN1"
+		 "Tnx0lVN1Pnx2"
+		 "TItVnx1s2"
+		 "TItVpnx1s2"
+		 "TItVad1s2"
+		 "Tnx0Ax1"
+		 "Tnx0A1s1"
+		 "Ts0Ax1"
+		 "Tnx0BEnx1"
+		 "Tnx0N1"
+		 "Tnx0N1s1"
+		 "Ts0N1"
+		 "Tnx0Pnx1"
+		 "Tnx0Px1"
+		 "Ts0Pnx1"
+		 "Tnx0ARBPnx1"
+		 "Tnx0APnx1"
+		 "Tnx0NPnx1"
+		 "Tnx0PPnx1"
+		 "Tnx0PNaPnx1"
+		 "Ts0ARBPnx1"
+		 "Ts0APnx1"
+		 "Ts0NPnx1"
+		 "Ts0PPnx1"
+		 "Ts0PNaPnx1"
+		 "Ts0V"
+		 "Ts0Vtonx1"
+		 "TXnx0Vs1"
+		 "Tnx0nx1ARB"
+		 "Tnx0VDN1"
+                 "Tnx0VDAN1"
+                 "Tnx0VN1"
+                 "Tnx0VAN1"
+                 "Tnx0VDAN1Pnx2"
+                 "Tnx0VAN1Pnx2"
+                 "Tnx0VN1Pnx2"
+                 "Tnx0VDN1Pnx2"
+		 "TRnx0Vnx1A2"
+		 "TRnx0Vnx1Pnx2"
+		 "TREnx1VA2"
+		 "TREnx1VPnx2"
+		 "Ts0Vs1"
+		 (:default-pathname (concatenate 'string
+						 user::*english-directory*
+						 "grammar/")
+		  :type "trees"))
+
+  (:lexicon-files "syntax-coded" 
+
+		  (:default-pathname (concatenate 'string
+						  user::*english-directory*
+						  "syntax/")
+		   :type "db"))
+
+
+  (:morphology-files "morph_english"
+
+		     (:default-pathname (concatenate 'string
+						    user::*morphology-directory*
+						     "data/")
+		      :type "db"))
+
+
+  (:templates-files "templates"
+
+		    (:default-pathname (concatenate 'string
+						    user::*english-directory*
+						    "syntax/")
+		     :type "lex"))
+
+ (:corpus-data-files "unigram"
+		     (:default-pathname (concatenate 'string
+						     user::*english-directory*
+						     "corpus-data/")
+					:type "data"))
+  (:example-files "examples"
+		  
+		  (:default-pathname (concatenate 'string
+						  user::*english-directory*
+						  "examples/")
+		   :type "ex"))
+
+  )
+
+
+

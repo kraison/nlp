@@ -1,0 +1,36 @@
+("NEGvx" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+VP_r.b:<conditional> = VP.t:<conditional>
+VP_r.b:<perfect> = VP.t:<perfect>
+VP_r.b:<progressive> = VP.t:<progressive>
+VP_r.b:<passive> = VP.t:<passive>
+VP_r.b:<mode> = VP.t:<mode>
+VP_r.b:<mainv> = VP.t:<mainv>
+VP_r.b:<neg> = +
+VP_r.b:<agr> = VP.t:<agr>
+VP_r.b:<tense> = VP.t:<tense>
+
+
+VP_r.b:<assign-case> = VP.t:<assign-case>
+VP.t:<mode> = inf/base/ger/ppart/nom/prep/imp
+VP_r.b:<compar> = -
+" :COMMENTS NIL :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("VP" . "r")) :display-feature? T :constraints "") (((("Ad" . "")) :display-feature? T :headp T))  (((("VP" . "")) :display-feature? T :footp T :constraints "NA" :constraint-type :NA)) ) 
+("NEGa" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+A_r.b:<neg> = +
+
+A.t:<neg> = +
+A.t:<compar> = A_r.b:<compar>
+A.t:<equiv> = A_r.b:<equiv>
+A.t:<super> = A_r.b:<super>
+" :COMMENTS "This tree allows \"not\" to adjoin to *negative* adjectives only. 
+
+	The not unhappy/displeased man
+	The not incoherent letter
+	*The not happy man
+	*The not coherent letter
+
+This feature is not yet marked on the relevant adjectives.
+" :SHAPE :NONE :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("A" . "r"))) (((("Ad" . "")) :headp T))  (((("A" . "")) :footp T :constraints "NA" :constraint-type :NA)) ) 

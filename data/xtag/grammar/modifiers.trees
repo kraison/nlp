@@ -1,0 +1,236 @@
+("Nn" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+N.t:<pron> = -
+N.t:<case> = nom/acc
+N_f:<pron> = -
+N_f:<case> = nom/acc
+N_r.b:<case> = N_f.t:<case>
+N_r.b:<agr> = N_f.t:<agr>
+N_r.b:<wh> = N_f.t:<wh>
+N_r.b:<pron> = N_f.t:<pron>
+
+N_r.b:<assign-comp> = N_f.t:<assign-comp>
+N_r.b:<conj> = N_f.t:<conj>
+N_r.b:<const> = N_f.t:<const>
+N_r.b:<gen> = N_f.t:<gen>
+N_r.b:<definite> = N_f.t:<definite>
+N_r.b:<quan> = N_f.t:<quan>
+N_r.b:<card> = N_f.t:<card>
+N_r.b:<decreas> = N_f.t:<decreas>
+N.t:<compar> = N_r.b:<compar>
+N.t:<equiv> = N_r.b:<equiv>
+N.t:<super> = N_r.b:<super>
+N_f.t:<compar> = -
+N_f.t:<super> = -
+
+" :COMMENTS "Adjective" :SHAPE :NONE :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("N" . "r"))) (((("N" . "")) :headp T))  (((("N" . "f")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("Is" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+S.t:<comp> = nil
+S.t:<wh> = S_r.b:<wh>
+S.t:<comp> = S_r.b:<comp>
+S.t:<assign-comp> = S_r.b:<assign-comp>
+S.t:<tense> = S_r.b:<tense>
+S_r.b:<extracted> = S.t:<extracted>
+S_r.b:<conj> = S.t:<conj>
+S.t:<mode> = S_r.b:<mode>
+S.t:<assign-case> = S_r.b:<assign-case>
+S.t:<agr> = S_r.b:<agr>
+
+S_r.b:<inv> = S.t:<inv>
+S_r.b:<invlink> = S_r.b:<inv>
+S.b:<comp> = nil
+" :COMMENTS "Sentential adverbial tree
+Adverb on the left of the sentence
+ \"Obviously John loves Mary\"
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("I" . "")) :headp T))  (((("S" . "")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("COMPs" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+S_r.t:<inv> = -
+S_c.b:<mode> = S_r.b:<mode>
+S_c.b:<comp> = Comp:<comp>
+S_c.b:<inv> = -
+S_r.b:<comp> = nil
+
+S_c.b:<wh> = Comp.t:<wh>
+S_r.t:<assign-comp> = S_c.b:<comp>
+S_r.t:<control> = S_c.b:<control>
+" :COMMENTS "Tree used for complementizer clauses as:
+(John thinks) that (Mary loves Mark)
+
+NB: to ensure that comps do not stack on top of each other we need (1)
+the foot S to be a NA node and (2) the feature comp=nil on the BOTTOM
+features of the foot S.
+
+" :SHAPE :NONE :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "c"))) (((("Comp" . "")) :headp T))  (((("S" . "r")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("Ns" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+S.t:<comp> = nil
+S.t:<comp> = S_r.b:<comp>
+S.t:<conj> = and/or/but/nil
+S.t:<conj> = S_r.b:<conj>
+S.t:<assign-comp> = S_r.b:<assign-comp>
+S.t:<tense> = S_r.b:<tense>
+S.t:<extracted> = S_r.b:<extracted>
+S.t:<mode> = S_r.b:<mode>
+S.t:<assign-case> = S_r.b:<assign-case>
+S.t:<agr> = S_r.b:<agr>
+
+S_r.b:<wh> = NP.t:<wh>
+S_r.b:<inv> = S.t:<inv>
+S_r.b:<invlink> = S_r.b:<inv>
+S.b:<comp> = nil
+NP.b:<case> = N.t:<case>
+NP.b:<wh> = N.t:<wh>
+NP.b:<pron> = N.t:<pron>
+NP.b:<conj> = N.t:<conj>
+N.t:<agr> = NP.b:<agr>
+N.t:<const> = NP.b:<const>
+N.t:<definite> = NP.b:<definite>
+N.t:<gen> = NP.b:<gen>
+N.t:<decreas> = NP.b:<decreas>
+N.t:<quan> = NP.b:<quan>
+N.t:<card> = NP.b:<card>
+N.t:<compar> = NP.b:<compar>
+N.t:<equiv> = NP.b:<equiv>
+N.t:<super> = NP.b:<super>
+
+" :COMMENTS "Sentence modifying time NP
+Time NP on the left of the sentence
+ \"Last week John saw Mary\"
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("NP" . ""))) (((("N" . "")) :headp T)) )  (((("S" . "")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("vxN" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+VP_r.b:<mode> = VP.t:<mode>
+VP_r.b:<agr> = VP.t:<agr>
+VP_r.b:<tense> = VP.t:<tense>
+VP_r.b:<assign-case> = VP.t:<assign-case>
+VP_r.b:<assign-comp> = VP.t:<assign-comp>
+VP_r.b:<passive> = VP.t:<passive>
+
+VP_r.b:<mainv> = VP_f.t:<mainv>
+VP.t:<mainv> = +
+VP_r.b:<compar> = -
+NP.b:<case> = N.t:<case>
+NP.b:<wh> = N.t:<wh>
+NP.b:<pron> = N.t:<pron>
+NP.b:<conj> = N.t:<conj>
+N.t:<agr> = NP.b:<agr>
+N.t:<const> = NP.b:<const>
+N.t:<definite> = NP.b:<definite>
+N.t:<gen> = NP.b:<gen>
+N.t:<decreas> = NP.b:<decreas>
+N.t:<quan> = NP.b:<quan>
+N.t:<card> = NP.b:<card>
+
+" :COMMENTS "VP modifying Time NP at end of sentence:
+\"Everyone was gone last week\"
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("VP" . "r"))) (((("VP" . "")) :footp T :constraints "NA" :constraint-type :NA))  (((("NP" . "")) :constraints "") (((("N" . "")) :headp T)) ) ) 
+("nxN" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<case> = NP_f.t:<case>
+NP_r.b:<assign-comp> = NP_f.t:<assign-comp>
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<conj> = NP_f.t:<conj>
+
+NP_r.b:<card> = NP_f.t:<card>
+NP_r.b:<const> = NP_f.t:<const>
+NP_r.b:<quan> = NP_f.t:<quan>
+NP_r.b:<decreas> = NP_f.t:<decreas>
+NP_r.b:<definite> = NP_f.t:<definite>
+NP_r.b:<gen> = NP_f.t:<gen>
+NP.b:<assign-case> = N.t:<case>
+NP:<wh> = -
+NP_f.b:<case> = acc/nom
+NP.b:<wh> = N.t:<wh>
+NP.b:<pron> = N.t:<pron>
+NP.b:<conj> = N.t:<conj>
+N.t:<agr> = NP.b:<agr>
+N.t:<const> = NP.b:<const>
+N.t:<definite> = NP.b:<definite>
+N.t:<gen> = NP.b:<gen>
+N.t:<decreas> = NP.b:<decreas>
+N.t:<quan> = NP.b:<quan>
+N.t:<card> = NP.b:<card>
+NP_r.b:<rel-clause> = NP_f.t:<rel-clause>
+NP_f.t:<compar> = NP_r.b:<compar>
+NP_f.t:<equiv> = NP_r.b:<equiv>
+N.t:<compar> = NP.b:<compar>
+N.t:<equiv> = NP.b:<equiv>
+" :COMMENTS "Time NP modifying an NP
+ e.g. the meeting last week
+
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("NP" . ""))) (((("N" . "")) :headp T)) ) ) 
+("Nvx" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+VP_r.b:<mode> = VP.t:<mode>
+VP_r.b:<agr> = VP.t:<agr>
+VP_r.b:<tense> = VP.t:<tense>
+VP_r.b:<passive> = VP.t:<passive>
+VP_r.b:<assign-case> = VP.t:<assign-case>
+VP_r.b:<assign-comp> = VP.t:<assign-comp>
+VP_r.b:<passive> = VP.t:<passive>
+
+NP.b:<case> = N.t:<case>
+NP.b:<wh> = N.t:<wh>
+NP.b:<pron> = N.t:<pron>
+NP.b:<conj> = N.t:<conj>
+N.t:<agr> = NP.b:<agr>
+N.t:<const> = NP.b:<const>
+N.t:<definite> = NP.b:<definite>
+N.t:<gen> = NP.b:<gen>
+N.t:<decreas> = NP.b:<decreas>
+N.t:<quan> = NP.b:<quan>
+N.t:<card> = NP.b:<card>
+N.t:<compar> = NP.b:<compar>
+N.t:<equiv> = NP.b:<equiv>
+VP.t:<compar> = -
+" :COMMENTS "Tree for time-NPs between subject and VP: Reporters today presented
+the ....
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("VP" . "r"))) (((("NP" . "")) :constraints "") (((("N" . "")) :headp T)) )  (((("VP" . "")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("sI" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+S.t:<comp> = nil
+S.t:<wh> = S_r.b:<wh>
+S.t:<comp> = S_r.b:<comp>
+S.t:<assign-comp> = S_r.b:<assign-comp>
+S.t:<tense> = S_r.b:<tense>
+S_r.b:<extracted> = S.t:<extracted>
+S_r.b:<conj> = S.t:<conj>
+S.t:<mode> = S_r.b:<mode>
+S.t:<assign-case> = S_r.b:<assign-case>
+S.t:<agr> = S_r.b:<agr>
+
+S_r.b:<inv> = S.t:<inv>
+S_r.b:<invlink> = S_r.b:<inv>
+S.b:<comp> = nil
+" :COMMENTS "Sentential adverbial tree
+Adverb on the left of the sentence
+ \"Obviously John loves Mary\"
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("S" . "")) :footp T :constraints "NA" :constraint-type :NA))  (((("I" . "")) :headp T)) ) 

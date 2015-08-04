@@ -1,0 +1,224 @@
+S (0.5) -> question .
+S (0.5) -> sentence .
+sentence (0.25) -> NP VP
+sentence (0.25) -> sentence , sub-clause
+sentence (0.25) -> sentence sub-clause
+sentence (0.25) -> sentence , CC sentence
+sub-clause (0.5) -> IN sentence
+sub-clause (0.5) -> WRB sentence
+NP (0.055555556) -> WRB TO-PHRASE
+NP (0.055555556) -> Cardinal
+NP (0.055555556) -> POSS NP2
+NP (0.055555556) -> PDT DT PropPH
+NP (0.055555556) -> DT PropPH
+NP (0.055555556) -> PDT DT IN NP
+NP (0.055555556) -> DT IN NP
+NP (0.055555556) -> NP2
+NP (0.055555556) -> PDT DT IN DT NP2
+NP (0.055555556) -> PDT DT NP2
+NP (0.055555556) -> DT NP2
+NP (0.055555556) -> PropPH
+NP (0.055555556) -> PRP
+NP (0.055555556) -> NP , CC NP
+NP (0.055555556) -> NP , NP
+NP (0.055555556) -> NP CC NP
+NP (0.055555556) -> NP , NADJS
+NP (0.055555556) -> NP NADJS
+NADJS (0.5) -> NADJ NADJS
+NADJS (0.5) -> NADJ
+NADJ (0.2) -> JJ
+NADJ (0.2) -> RB JJ
+NADJ (0.2) -> GERUND-PHRASE
+NADJ (0.2) -> TO-PHRASE
+NADJ (0.2) -> PP
+PropPH (0.5) -> PropN
+PropPH (0.5) -> PropN PropPH
+PropN (0.33333334) -> FW
+PropN (0.33333334) -> NNPS
+PropN (0.33333334) -> NNP
+POSS (0.5) -> NP2 POS NP2
+POSS (0.5) -> PRP$
+Cardinal (0.5) -> CD
+Cardinal (0.5) -> CD CC Cardinal
+GERUND-PHRASE (0.5) -> IN VBG NP
+GERUND-PHRASE (0.5) -> IN VBG
+NP2 (0.125) -> NP3
+NP2 (0.125) -> VPProg
+NP2 (0.125) -> NP2 VBN NP3
+NP2 (0.125) -> NP2 VBG NP3
+NP2 (0.125) -> NP2 VBP NP2
+NP2 (0.125) -> NMODS NP2
+NP2 (0.125) -> NP2 POS
+NP2 (0.125) -> NP2 POS NP2
+NP3 (0.5) -> NP4
+NP3 (0.5) -> PropPH NP4
+NP4 (0.5) -> CommonN
+NP4 (0.5) -> CommonN NP4
+CommonN (0.5) -> NNS
+CommonN (0.5) -> NN
+NPS2 (0.5) -> NMOD NPS2
+NPS2 (0.5) -> NNS
+NMODS (0.33333334) -> NMODS , NMOD
+NMODS (0.33333334) -> NMOD NMODS
+NMODS (0.33333334) -> NMOD
+NMOD (0.11111111) -> JJR PP
+NMOD (0.11111111) -> JJR
+NMOD (0.11111111) -> CD
+NMOD (0.11111111) -> VBN
+NMOD (0.11111111) -> VBG
+NMOD (0.11111111) -> RB
+NMOD (0.11111111) -> RBS
+NMOD (0.11111111) -> JJS
+NMOD (0.11111111) -> JJ
+ADVPH (0.5) -> RB
+ADVPH (0.5) -> RB ADVPH
+ADJPH (0.33333334) -> JJ
+ADJPH (0.33333334) -> JJ , ADJPH
+ADJPH (0.33333334) -> JJ ADJPH
+PP (0.5) -> TO NP
+PP (0.5) -> IN NP
+VP (0.2) -> VG ADJPH TO NP
+VP (0.2) -> VG NMOD
+VP (0.2) -> VG
+VP (0.2) -> VG NP
+VP (0.2) -> VP VADJS
+VADJS (0.5) -> VADJ VADJS
+VADJS (0.5) -> VADJ
+VADJ (0.1) -> IN DT
+VADJ (0.1) -> IN JJ
+VADJ (0.1) -> IN CC IN VAJD
+VADJ (0.1) -> TO-phrase
+VADJ (0.1) -> GERUND-PHRASE
+VADJ (0.1) -> DT RBS
+VADJ (0.1) -> JJR
+VADJ (0.1) -> RBR
+VADJ (0.1) -> advph
+VADJ (0.1) -> PP
+VG (058823529) -> VPast RB VBN
+VG (058823529) -> VPast VBN
+VG (058823529) -> VPast RB VBG
+VG (058823529) -> VPast VBG
+VG (058823529) -> VPast RB VB
+VG (058823529) -> VPast
+VG (058823529) -> VPres RB VBN
+VG (058823529) -> VPres VBN
+VG (058823529) -> VPres RB VBG
+VG (058823529) -> VPres VBG
+VG (058823529) -> VPres RB VB
+VG (058823529) -> VPres
+VG (058823529) -> MD RB VBase
+VG (058823529) -> MD RB RB VBase
+VG (058823529) -> MD VBase
+VG (058823529) -> VG TO
+VG (058823529) -> VG IN
+VBase (0.33333334) -> VB VBG
+VBase (0.33333334) -> VB VBN
+VBase (0.33333334) -> VB
+VPres (0.5) -> VBP
+VPres (0.5) -> VBZ
+VPast (1.0) -> VBD
+VPart (1.0) -> VBN
+TO-PHRASE (0.5) -> TO VB NP
+TO-PHRASE (0.5) -> TO VB
+question (0.11111111) -> YNQ
+question (0.11111111) -> WH-ADV
+question (0.11111111) -> WH-POSS
+question (0.11111111) -> WH-PRON
+question (0.11111111) -> WH-DET
+question (0.11111111) -> question , sub-clause
+question (0.11111111) -> question sub-clause
+question (0.11111111) -> question , CC question
+question (0.11111111) -> question CC question
+YNQ (0.045454547) -> VPres NP ADJPH TO NP
+YNQ (0.045454547) -> VPast NP NMOD VADJS
+YNQ (0.045454547) -> VPast NP NMOD
+YNQ (0.045454547) -> VPres NP NMOD VADJS
+YNQ (0.045454547) -> VPres NP NMOD
+YNQ (0.045454547) -> VPast EX advph NP VADJS
+YNQ (0.045454547) -> VPast EX NP VADJS
+YNQ (0.045454547) -> VPast EX advph NP
+YNQ (0.045454547) -> VPast EX NP
+YNQ (0.045454547) -> VPres EX advph NP VADJS
+YNQ (0.045454547) -> VPres EX NP VADJS
+YNQ (0.045454547) -> VPres EX advph NP
+YNQ (0.045454547) -> VPres EX NP
+YNQ (0.045454547) -> VPast NP DT NP2
+YNQ (0.045454547) -> VPres NP DT NP2
+YNQ (0.045454547) -> VPast NP VPProg
+YNQ (0.045454547) -> VPast NP VPPart
+YNQ (0.045454547) -> VPast NP VPBase
+YNQ (0.045454547) -> VPres NP VPProg
+YNQ (0.045454547) -> VPres NP VPPart
+YNQ (0.045454547) -> VPres NP VPBase
+YNQ (0.045454547) -> MD NP VPBase
+WH-DET (0.14285715) -> WP NNS IN NP2 sentence/subj
+WH-DET (0.14285715) -> WDT NN IN NP2 sentence/subj
+WH-DET (0.14285715) -> WDT NN IN NP2 ynq/obj
+WH-DET (0.14285715) -> WP NNS sentence/subj
+WH-DET (0.14285715) -> WDT NP2 sentence/subj
+WH-DET (0.14285715) -> WP NNS ynq/obj
+WH-DET (0.14285715) -> WDT NP2 ynq/obj
+WH-PRON (0.5) -> WP sentence/subj
+WH-PRON (0.5) -> WP ynq/obj
+WH-ADV (0.125) -> WRB JJ NP2 YNQ
+WH-ADV (0.125) -> WRB NN ynq/nmod
+WH-ADV (0.125) -> WRB JJ ynq/nmod
+WH-ADV (0.125) -> WRB RB ynq/nmod
+WH-ADV (0.125) -> WRB ynq/nmod
+WH-ADV (0.125) -> WRB NN YNQ
+WH-ADV (0.125) -> WRB RB YNQ
+WH-ADV (0.125) -> WRB YNQ
+WH-POSS (0.5) -> WP$ NP2 sentence/subj
+WH-POSS (0.5) -> WP$ NP2 ynq/obj
+ynq/obj (0.5) -> MD NP VPBase/obj
+ynq/obj (0.5) -> tensedV NP VPBase/obj
+ynq/nmod (0.5) -> tensedV NP VADJS
+ynq/nmod (0.5) -> tensedV NP
+tensedV (0.33333334) -> VBD
+tensedV (0.33333334) -> VBZ
+tensedV (0.33333334) -> VBP
+VPBase/obj (0.125) -> VB TO VADJS
+VPBase/obj (0.125) -> VB IN VADJS
+VPBase/obj (0.125) -> VB TO
+VPBase/obj (0.125) -> VB IN
+VPBase/obj (0.125) -> VBP VADJS
+VPBase/obj (0.125) -> VB VADJS
+VPBase/obj (0.125) -> VBP
+VPBase/obj (0.125) -> VB
+sentence/subj (1.0) -> VP
+VPBase (0.14285715) -> advph VPBase
+VPBase (0.14285715) -> VGBase NMOD VADJS
+VPBase (0.14285715) -> VGBase NMOD
+VPBase (0.14285715) -> VGBase VADJS
+VPBase (0.14285715) -> VGBase
+VPBase (0.14285715) -> VGBase NP VADJS
+VPBase (0.14285715) -> VGBase NP
+VGBase (0.2) -> VBP
+VGBase (0.2) -> VBase
+VGBase (0.2) -> RB VBase
+VGBase (0.2) -> VGBase TO
+VGBase (0.2) -> VGBase IN
+VPPart (0.14285715) -> advph VPPart
+VPPart (0.14285715) -> VGPart NMOD VADJS
+VPPart (0.14285715) -> VGPart NMOD
+VPPart (0.14285715) -> VGPart VADJS
+VPPart (0.14285715) -> VGPart
+VPPart (0.14285715) -> VGPart NP VADJS
+VPPart (0.14285715) -> VGPart NP
+VGPart (0.2) -> VBD
+VGPart (0.2) -> VPart
+VGPart (0.2) -> RB VPart
+VGPart (0.2) -> VGPart TO
+VGPart (0.2) -> VGPart IN
+VPProg (0.14285715) -> advph VPProg
+VPProg (0.14285715) -> VGProg NMOD VADJS
+VPProg (0.14285715) -> VGProg NMOD
+VPProg (0.14285715) -> VGProg VADJS
+VPProg (0.14285715) -> VGProg
+VPProg (0.14285715) -> VGProg NP VADJS
+VPProg (0.14285715) -> VGProg NP
+VGProg (0.25) -> VProg
+VGProg (0.25) -> RB VProg
+VGProg (0.25) -> VGProg TO
+VGProg (0.25) -> VGProg IN
+VProg (1.0) -> VBG

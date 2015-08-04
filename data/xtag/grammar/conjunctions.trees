@@ -1,0 +1,818 @@
+("CONJs" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+S_c.b:<mode> = S_r.t:<mode>
+
+S_c.b:<extracted> = S_r.t:<extracted>
+S_c.b:<wh> = S_r.t:<wh>
+S_c.b:<inv> = S_r.t:<inv>
+S_c.b:<comp> = S_r.t:<comp>
+S_r.t:<punct term> = nil 
+S_r.t:<punct struct> = comma/nil 
+S_r.t:<comp> = nil 
+S_r.t:<conj>=and/or/but/nil
+S_c.b:<conj>=disc
+" :COMMENTS "This tree is used for discourse conjunction,
+i.e. single sentences which begin with 'and' or 'but'.
+	Ex: And Truffula trees are what everyone needs.
+
+" :SHAPE :NONE :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "c")) :display-feature? T) (((("Conj" . ""))
+:display-feature? T :headp T))  (((("S" . "r")) :display-feature? T
+:substp T)) ) 
+("nx1CONJnx2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+NP.b:<case> = NP_1.t:<case>
+NP.b:<case> = NP_2.t:<case>
+NP.b:<case> = nom/acc
+NP.b:<wh> = NP_1.t:<wh>
+NP_1.t:<wh> = NP_2.t:<wh>
+
+Conj:<conj> = NP.b:<conj>
+NP.b:<const> = NP_1.t:<const>
+NP.b:<gen> = NP_1.t:<gen>
+NP.b:<definite> = NP_1.t:<definite>
+NP.b:<quan> = NP_1.t:<quan>
+NP.b:<card> = NP_1.t:<card>
+NP.b:<decreas> = NP_1.t:<decreas>
+NP.b:<compar> = NP_1.t:<compar>
+NP.b:<compar> = NP_2:<compar>
+NP.b:<equiv> = NP_2:<equiv>
+" :COMMENTS "Tree for doing NP conjunction.  The new NP adjoins to the right of the
+original NP.  The wh and case values must unify, and the agreement of 
+the conjoined is NP is specified , the agreement of 
+the conjoined is NP is specified by the conjunction, and the
+determiner features are taken from the left conjunct. Conjunction may be:
+'and', comma, or 'or'. 
+Ex: the boy and the girl
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . ""))) (((("NP" . "1")) :footp T :constraints "NA" :constraint-type :NA))  (((("Conj" . "")) :headp T))  (((("NP" . "2")) :substp T)) ) 
+("a1CONJa2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+Conj:<conj> = A.b:<conj>
+A_1.t:<neg> = -
+A_2.t:<neg> = -
+A.b:<neg> = -
+A_1.t:<compar> = A.b:<compar>
+A_2:<compar> = A.b:<compar>
+A.b:<compar> = -
+" :COMMENTS "Tree for doing Adjective conjunction.  The new Adjective adjoins to the right of the original Adjective.  There are no constraints as to
+forms. Conjunction may be:'and', comma, or 'or'. 
+Ex: the dark and dreary day
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("A" . ""))) (((("A" . "1")) :footp T :constraints "NA" :constraint-type :NA))  (((("Conj" . "")) :headp T))  (((("A" . "2")) :substp T)) ) 
+("px1CONJpx2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+Conj:<conj> = PP.b:<conj>
+" :COMMENTS "Tree for doing PP conjunction.  The new PP adjoins to the 
+right of the original PP.  There are no constraints as to
+forms. Conjunction may be:'and', comma, or 'or'.  
+Ex: down the street and around the corner
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("PP" . ""))) (((("PP" . "1")) :footp T :constraints "NA" :constraint-type :NA))  (((("Conj" . "")) :headp T))  (((("PP" . "2")) :substp T)) ) 
+("arb1CONJarb2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+Conj:<conj> = Ad.b:<conj>
+" :COMMENTS "Tree for doing Adverb conjunction.  The new Adverb adjoins to the 
+right of the original Adverb.  There are no constraints as to forms. Conjunction may be:'and', comma, or 'or'. 
+Ex: slowly and carefully
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("Ad" . ""))) (((("Ad" . "1")) :footp T :constraints "NA" :constraint-type :NA))  (((("Conj" . "")) :headp T))  (((("Ad" . "2")) :substp T)) ) 
+("s1CONJs2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+S_1.t:<mode> = S_2.t:<mode>
+S.b:<mode> = S_1.t:<mode>
+S_1.t:<assign-comp> = inf_nil/ind_nil
+S_2.t:<assign-comp> = inf_nil/ind_nil
+S_1.t:<mode> = ind/inf/ger/nom/prep/imp
+
+Conj:<conj> = S.b:<conj>
+S_1.t:<wh> = S_2.t:<wh>
+S.b:<wh> = S_1.t:<wh>
+S_1.t:<extracted> = S_2.t:<extracted>
+S.b:<extracted> = S_1.t:<extracted>
+S_1.t:<comp> = S_2.t:<comp>
+S.b:<comp> = S_1.t:<comp>
+
+" :COMMENTS "Tree for doing sentential conjunction.  The new sentence adjoins to the 
+right of the original sentence.  The modes of the two sentences are 
+constrained to be the same, and may be of type ind/inf/ger/nom/prep/imp.
+Null complementizers are allowed for inf and ind sentences for both
+sentences.  Note that this tree does not do VP conjunction. Conjunction may be:'and', comma, or 'or'. 
+Ex: the day was dark and the phone never rang.
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . ""))) (((("S" . "1")) :footp T :constraints "NA" :constraint-type :NA))  (((("Conj" . "")) :headp T))  (((("S" . "2")) :substp T)) ) 
+("n1CONJn2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+N.b:<case> = N_1.t:<case>
+N.b:<case> = N_2.t:<case>
+N.b:<case> = nom/acc
+N.b:<wh> = N_1.t:<wh>
+N_1.t:<wh> = N_2.t:<wh>
+
+Conj:<conj> = N.b:<conj>
+N.b:<const> = N_1.t:<const>
+N.b:<gen> = N_1.t:<gen>
+N.b:<definite> = N_1.t:<definite>
+N.b:<quan> = N_1.t:<quan>
+N.b:<card> = N_1.t:<card>
+N.b:<decreas> = N_1.t:<decreas>
+N.b:<compar> = N_1.t:<compar>
+N.b:<compar> = N_2:<compar>
+N.b:<compar> = -
+
+" :COMMENTS "Tree for doing N conjunction.  The new N adjoins to the right of the
+original N.  The wh and case values must unify, and the agreement of 
+the conjoined is N is specified to be plural. Conjunction may be:'and', comma, or 'or'. 
+Ex: the (boy and girl)
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("N" . ""))) (((("N" . "1")) :footp T :constraints "NA" :constraint-type :NA))  (((("Conj" . "")) :headp T))  (((("N" . "2")) :substp T)) ) 
+("p1CONJp2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+P.b:<assign-case> = P_1.t:<assign-case>
+
+Conj:<conj> = P.b:<conj>
+" :COMMENTS "Tree for doing P conjunction.  The new P adjoins to the 
+right of the original P.  There are no constraints as to forms. Conjunction may be:'and', comma, or 'or'. 
+Ex: to and from the office
+
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("P" . ""))) (((("P" . "1")) :footp T :constraints "NA" :constraint-type :NA))  (((("Conj" . "")) :headp T))  (((("P" . "2")) :substp T)) ) 
+("ax1CONJax2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+Conj:<conj> = AP.b:<conj>
+AP_1.t:<compar> = AP.b:<compar>
+AP_2:<compar> = AP.b:<compar>
+AP.b:<equiv> = AP_2:<equiv>
+" :COMMENTS "Tree for doing Adjective Phrase conjunction.  The new AP adjoins to the left of the original AP.  There are no constraints as to
+forms. Conjunction may be:'and', comma, or 'or'. 
+Ex: Bill is certain that Bill is still alive and confident that he will reappear
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("AP" . ""))) (((("AP" . "1")) :footp T :constraints "NA" :constraint-type :NA))  (((("Conj" . "")) :headp T))  (((("AP" . "2")) :substp T)) ) 
+("d1CONJd2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+D.b:<definite> = D_1.t:<definite>
+D.b:<agr> = D_1.t:<agr>
+D.b:<quan> = D_1.t:<quan>
+D.b:<card> = D_1.t:<card>
+D.b:<gen> = D_1.t:<gen>
+D.b:<decreas> = D_1.t:<decreas>
+D.b:<const> = D_1.t:<const>
+D.b:<wh> = D_1.t:<wh>
+D.b:<wh> = D_2.t:<wh>
+Conj:<conj> = D.b:<conj>
+" :COMMENTS "Tree for doing determiner conjunction.  The new determiner adjoins to
+the right of the original determiner.  This is because the determiner
+phrases generally build to the left.  The wh value of the two
+determiners are constained to be the same, and all other feature
+values are taken from the left D (again, since determiners build to
+the left).  Conjunction may be:'and', comma, or 'or'. 
+Ex: All but one
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("D" . ""))) (((("D" . "1")) :footp T :constraints "NA" :constraint-type :NA))  (((("Conj" . "")) :headp T))  (((("D" . "2")) :substp T)) ) 
+("CONJa1CONJa2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+Conj_1:<conj> = A.b:<conj>
+A_1.t:<compar> = A.b:<compar>
+A_2:<compar> = A.b:<compar>
+A_2:<equiv> = A.b:<equiv>
+" :COMMENTS "Tree for doing Adjective conjunction.  The new Adjective adjoins to the right of the original Adjective.  There are no constraints as to
+forms. The multi-word pairs either-or, neither-nor and both-and select
+this tree.
+Ex: both yellow and green dogs
+    
+Prob: how to block
+	*the both yellow and green dogs
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("A" . ""))) (((("Conj" . "1")) :headp T))  (((("A" . "1")) :footp T :constraints "NA" :constraint-type :NA))  (((("Conj" . "2")) :headp T))  (((("A" . "2")) :substp T)) ) 
+("CONJpx1CONJpx2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+Conj_1:<conj> = PP.b:<conj>
+" :COMMENTS "Tree for doing multi-word PP conjunction.  The new PP adjoins to the 
+right of the original PP.  There are no constraints as to
+forms. The multi-word pairs either-or, neither-nor and both-and select
+this tree.
+Ex: either down the street or around the corner
+   both in your homes and in your schools
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("PP" . ""))) (((("Conj" . "1")) :headp T))  (((("PP" . "1")) :footp T :constraints "NA" :constraint-type :NA))  (((("Conj" . "2")) :headp T))  (((("PP" . "2")) :substp T)) ) 
+("CONJarb1CONJarb2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+Conj_1:<conj> = Ad.b:<conj>
+" :COMMENTS "Tree for doing Adverb conjunction.  The new Adverb adjoins to the 
+right of the original Adverb.  There are no constraints as to forms. The multi-word pairs either-or, neither-nor and both-and select
+this tree.
+Ex: either very quickly or very slowly
+    neither brilliantly nor well
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("Ad" . ""))) (((("Conj" . "1")) :headp T))  (((("Ad" . "1")) :footp T :constraints "NA" :constraint-type :NA))  (((("Conj" . "2")) :headp T))  (((("Ad" . "2")) :substp T)) ) 
+("CONJs1CONJs2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+S_1.t:<mode> = S_2.t:<mode>
+S.b:<mode> = S_1.t:<mode>
+S_1.t:<assign-comp> = inf_nil/ind_nil
+S_2.t:<assign-comp> = inf_nil/ind_nil
+S_1.t:<mode> = ind/inf/ger/nom/prep/imp
+
+Conj_1:<conj> = S.b:<conj>
+S_1.t:<wh> = S_2.t:<wh>
+S.b:<wh> = S_1.t:<wh>
+S_1.t:<extracted> = S_2.t:<extracted>
+S.b:<extracted> = S_1.t:<extracted>
+S_1.t:<comp> = S_2.t:<comp>
+S_1:<comp> = S.b:<comp>
+" :COMMENTS "Tree for doing sentential conjunction.  The new sentence adjoins to the 
+right of the original sentence. The multi-word pairs either-or, neither-nor and both-and select
+this tree. The modes of the two sentences are 
+constrained to be the same, and may be of type ind/inf/ger/nom/prep/imp.
+Null complementizers are allowed for inf and ind sentences for both
+sentences.  Note that this tree does not do VP conjunction. 
+Ex: Either Mary will attend the meeting or she will listen via
+conference call.
+Prob case: 
+   I'm either going to the store or to the gym.
+ 
+       In protege2, a method EITHER is undecomposable, in which case
+we call it a mechanism, OR it can bedecomposed into a set of subtasks.
+
+
+These cases should be handled with multi-component sets, of XconjX plus
+\"either\" anchoring an adverb-like tree. 
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . ""))) (((("Conj" . "1")) :headp T))  (((("S" . "1")) :footp T :constraints "NA" :constraint-type :NA))  (((("Conj" . "2")) :headp T))  (((("S" . "2")) :substp T)) ) 
+("CONJp1CONJp2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+P.b:<assign-case> = P_1.t:<assign-case>
+
+Conj_1:<conj> = P.b:<conj>
+" :COMMENTS "Tree for doing P conjunction.  The new P adjoins to the 
+right of the original P.  There are no constraints as to forms. The multi-word pairs either-or, neither-nor and both-and select
+this tree.
+
+Ex: either for or against Clinton
+    both in and out of school
+
+
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("P" . ""))) (((("Conj" . "1")) :headp T))  (((("P" . "1")) :footp T :constraints "NA" :constraint-type :NA))  (((("Conj" . "2")) :headp T))  (((("P" . "2")) :substp T)) ) 
+("CONJax1CONJax2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+Conj_1:<conj> = AP.b:<conj>
+AP_1.t:<compar> = AP.b:<compar>
+AP_2:<compar> = AP.b:<compar>
+AP_2:<equiv> = AP.b:<equiv>
+" :COMMENTS "Tree for doing Adjective Phrase conjunction.  The new AP adjoins to the left of the original AP.  There are no constraints as to
+forms. The multi-word pairs either-or, neither-nor and both-and select
+this tree.
+Ex: Bill is either certain that Bob is still alive or confident that he will reappear
+    
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("AP" . ""))) (((("Conj" . "1")) :headp T))  (((("AP" . "1")) :footp T :constraints "NA" :constraint-type :NA))  (((("Conj" . "2")) :headp T))  (((("AP" . "2")) :substp T)) ) 
+("CONJnx1CONJnx2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+NP.b:<case> = NP_1.t:<case>
+NP.b:<case> = NP_2.t:<case>
+NP.b:<case> = nom/acc
+NP.b:<wh> = NP_1.t:<wh>
+NP_1.t:<wh> = NP_2.t:<wh>
+
+Conj_1:<conj> = NP.b:<conj>
+NP.b:<const> = NP_1.t:<const>
+NP.b:<gen> = NP_1.t:<gen>
+NP.b:<definite> = NP_1.t:<definite>
+NP.b:<quan> = NP_1.t:<quan>
+NP.b:<card> = NP_1.t:<card>
+NP.b:<decreas> = NP_1.t:<decreas>
+" :COMMENTS "Tree for doing NP conjunction.  The new NP adjoins to the right of the
+original NP.  The wh and case values must unify, the agreement of 
+the conjoined is NP is specified by the conjunction, and the
+determiner features are taken from the left conjunct. The multi-word pairs either-or, neither-nor and both-and select
+this tree.
+Ex: neither the boy nor the girl
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . ""))) (((("Conj" . "1")) :headp T))  (((("NP" . "1")) :footp T :constraints "NA" :constraint-type :NA))  (((("Conj" . "2")) :headp T))  (((("NP" . "2")) :substp T)) ) 
+("CONJd1CONJd2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+D.b:<definite> = D_1.t:<definite>
+D.b:<agr> = D_1.t:<agr>
+D.b:<quan> = D_1.t:<quan>
+D.b:<card> = D_1.t:<card>
+D.b:<gen> = D_1.t:<gen>
+D.b:<decreas> = D_1.t:<decreas>
+D.b:<const> = D_1.t:<const>
+D.b:<wh> = D_1.t:<wh>
+D.b:<wh> = D_2.t:<wh>
+Conj_1:<conj> = D.b:<conj>
+" :COMMENTS "Tree for doing multi-word determiner conjunction. The multi-word pairs either-or, neither-nor and both-and select
+this tree. The new determiner adjoins to
+the right of the original determiner.  This is because the determiner
+phrases generally build to the left.  The wh value of the two
+determiners are constained to be the same, and all other feature
+values are taken from the left D (again, since determiners build to
+the left).  
+Ex: either five or ten
+    both this and that 
+Prob: There are no constraints on the two Dets having similar
+features; this needs to be added to block, eg. *\"the and ten men\"
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("D" . ""))) (((("Conj" . "1")) :headp T))  (((("D" . "1")) :footp T :constraints "NA" :constraint-type :NA))  (((("Conj" . "2")) :headp T))  (((("D" . "2")) :substp T)) ) 
+("nx1CONJARBnx2" :COMMENT-DISPLAY? T :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+NP.b:<neg>=+
+Conj:<conj> = NP.b:<conj>
+NP.b:<case> = NP_2.t:<case>
+NP.b:<case> = nom/acc
+NP.b:<case> = NP_1.t:<case>
+
+NP.b:<wh> = NP_1.t:<wh>
+NP_1.t:<wh> = NP_2.t:<wh>
+NP.b:<const> = NP_1.t:<const>
+NP.b:<gen> = NP_1.t:<gen>
+NP.b:<definite> = NP_1.t:<definite>
+NP.b:<quan> = NP_1.t:<quan>
+NP.b:<card> = NP_1.t:<card>
+NP.b:<decreas> = NP_1.t:<decreas>
+" :COMMENTS "Tree for doing NP conjunction with \"but not\",
+\"e not\" and \"and not\".  The new NP adjoins to the right of the
+original NP.  The wh and case values must unify, and the 
+determiner features are taken from the left conjunct..
+Ex: the boy not the girl, Joe and not John
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . ""))) (((("NP" . "1")) :footp T :constraints "NA" :constraint-type :NA))  (((("Conj" . "")) :headp T))  (((("NP" . "0")) :constraints "NA" :constraint-type :NA) (((("Ad" . "")) :headp T))  (((("NP" . "2")) :substp T)) ) ) 
+("px1CONJARBpx2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+PP.b:<neg>=+
+
+Conj:<conj> = PP.b:<conj>
+" :COMMENTS "Tree for doing PP conjunction with \"but not\",
+\"e not\" and \"and not\".  The new PP
+adjoins to the  right of the original PP.  There are no constraints as to
+forms.
+Ex: down the street and not to the end
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("PP" . ""))) (((("PP" . "1")) :footp T :constraints "NA" :constraint-type :NA))  (((("Conj" . "")) :headp T))  (((("PP" . "0")) :constraints "NA" :constraint-type :NA) (((("Ad" . "")) :headp T))  (((("PP" . "2")) :substp T)) ) ) 
+("p1CONJARBp2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+P.b:<neg>=+
+P.b:<assign-case> = P_1.t:<assign-case>
+
+Conj:<conj> = P.b:<conj>
+" :COMMENTS "Tree for doing P conjunction with \"but not\",
+\"e not\" and \"and not\".  The new P adjoins to the  right of the
+original P.  There are no constraints as to forms.
+Ex: near not in the office, before and not after the race
+
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("P" . ""))) (((("P" . "1")) :footp T :constraints "NA" :constraint-type :NA))  (((("Conj" . "")) :headp T))  (((("P" . "0")) :constraints "NA" :constraint-type :NA) (((("Ad" . "")) :headp T))  (((("P" . "2")) :substp T)) ) ) 
+("d1CONJARBd2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+D.b:<neg>=+
+D.b:<wh> = D_2.t:<wh>
+Conj:<conj> = D.b:<conj>
+
+D.b:<definite> = D_1.t:<definite>
+D.b:<agr> = D_1.t:<agr>
+D.b:<quan> = D_1.t:<quan>
+D.b:<card> = D_1.t:<card>
+D.b:<gen> = D_1.t:<gen>
+D.b:<decreas> = D_1.t:<decreas>
+D.b:<const> = D_1.t:<const>
+D.b:<wh> = D_1.t:<wh>
+
+" :COMMENTS "Tree for doing determiner conjunction with \"but not\",
+\"e not\" and \"and not\".  The new determiner adjoins to the right of
+the original determiner.  This is because the determiner phrases
+generally build to the left.  The wh value of the two determiners are
+constained to be the same, and all other feature values are taken from
+the left D (again, since determiners build to the left).  
+Ex: All not some
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("D" . ""))) (((("D" . "1")) :footp T :constraints "NA" :constraint-type :NA))  (((("Conj" . "")) :headp T))  (((("D" . "0")) :constraints "NA" :constraint-type :NA) (((("Ad" . "")) :headp T))  (((("D" . "2")) :substp T)) ) ) 
+("ax1CONJARBax2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+AP.b:<neg>=+
+
+Conj:<conj> = AP.b:<conj>
+AP_1.t:<compar> = AP.b:<compar>
+AP_2:<compar> = AP.b:<compar>
+AP_2:<equiv> = AP.b:<equiv>
+" :COMMENTS "Tree for doing Adjective Phrase conjunction with \"but not\",
+\"e not\"  and \"and not\".  The new AP adjoins to the left of the
+original AP.  There are no constraints as to forms.  
+Ex: Bill is certain that Max is still alive but not confident that he will reappear
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("AP" . ""))) (((("AP" . "1")) :footp T :constraints "NA" :constraint-type :NA))  (((("Conj" . "")) :headp T))  (((("AP" . "0")) :constraints "NA" :constraint-type :NA) (((("Ad" . "")) :headp T))  (((("AP" . "2")) :substp T)) ) ) 
+("arb1CONJARBarb2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+Conj:<conj> = Ad_r.b:<conj>
+" :COMMENTS "Tree for doing Adverb conjunction with \"but not\",
+\"e not\"  and \"and not\".  The new Adverb
+adjoins to the right of the original Adverb.  There are no constraints
+as to forms.  Ex: slowly but not carefully, slowly and painstakingly
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("Ad" . "r"))) (((("Ad" . "1")) :footp T :constraints "NA" :constraint-type :NA))  (((("Conj" . "")) :headp T))  (((("Ad" . "0")) :constraints "NA" :constraint-type :NA) (((("Ad" . "")) :headp T))  (((("Ad" . "2")) :substp T)) ) ) 
+("a1CONJARBa2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+A.b:<neg>=+
+
+Conj:<conj> = A.b:<conj>
+A_1.t:<compar> = A.b:<compar>
+A_2:<compar> = A.b:<compar>
+A_2:<equiv> = A.b:<equiv>
+" :COMMENTS "Tree for doing Adjective conjunction with \"but not\",
+\"e not\"  and \"and not\".
+The new Adjective adjoins to the right of the original Adjective.
+There are no constraints as to forms.
+
+Ex: dark but not dreary days, yellow not green bananas
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("A" . ""))) (((("A" . "1")) :footp T :constraints "NA" :constraint-type :NA))  (((("Conj" . "")) :headp T))  (((("A" . "0")) :constraints "NA" :constraint-type :NA) (((("Ad" . "")) :headp T))  (((("A" . "2")) :substp T)) ) ) 
+("ARBnx1CONJnx2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+NP.b:<neg>=+
+NP.b:<wh> = NP_2.t:<wh>
+NP.b:<case> = NP_2.t:<case>
+NP.b:<case> = nom/acc
+NP.b:<wh> = NP_0.t:<wh>
+NP.b:<case> = NP_0.t:<case>
+
+NP_0.b:<case> = NP_1.t:<case>
+NP_0.b:<wh> = NP_1.t:<wh>
+
+Conj:<conj> = NP.b:<conj>
+" :COMMENTS "Tree for doing NP conjunction with `not but'.  The new NP
+adjoins to the right of the original NP.  The wh and case values must unify. 
+Ex: not the boy but the girl
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . ""))) (((("NP" . "0")) :constraints "NA" :constraint-type :NA) (((("Ad" . "")) :headp T))  (((("NP" . "1")) :footp T :constraints "NA" :constraint-type :NA)) )  (((("Conj" . "")) :headp T))  (((("NP" . "2")) :substp T)) ) 
+("ARBpx1CONJpx2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+PP.b:<neg>=+
+
+
+Conj:<conj> = PP.b:<conj>
+" :COMMENTS "Tree for doing PP conjunction with `not but'.  The new PP
+adjoins to the  right of the original PP.  There are no constraints as to
+forms.
+Ex: not down the street but around the corner
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("PP" . ""))) (((("PP" . "0")) :constraints "NA" :constraint-type :NA) (((("Ad" . "")) :headp T))  (((("PP" . "1")) :footp T :constraints "NA" :constraint-type :NA)) )  (((("Conj" . "")) :headp T))  (((("PP" . "2")) :substp T)) ) 
+("ARBp1CONJp2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+P.b:<neg>=+
+P.b:<assign-case> = P_0.t:<assign-case>
+
+P_0.b:<assign-case> = P_1.t:<assign-case>
+
+Conj:<conj> = P.b:<conj>
+" :COMMENTS "Tree for doing P conjunction with `not but'.  The new P
+adjoins to the  right of the original P.  There are no constraints as
+to forms.  Ex: not near but in the office
+
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("P" . ""))) (((("P" . "0")) :constraints "NA" :constraint-type :NA) (((("Ad" . "")) :headp T))  (((("P" . "1")) :footp T :constraints "NA" :constraint-type :NA)) )  (((("Conj" . "")) :headp T))  (((("P" . "2")) :substp T)) ) 
+("ARBd1CONJd2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+D.b:<neg>=+
+D.b:<wh> = D_2.t:<wh>
+Conj:<conj> = D.b:<conj>
+
+D.b:<definite> = D_0.t:<definite>
+D.b:<agr> = D_0.t:<agr>
+D.b:<quan> = D_0.t:<quan>
+D.b:<card> = D_0.t:<card>
+D.b:<gen> = D_0.t:<gen>
+D.b:<decreas> = D_0.t:<decreas>
+D.b:<const> = D_0.t:<const>
+D.b:<wh> = D_0.t:<wh>
+
+D_0.b:<definite> = D_1.t:<definite>
+D_0.b:<agr> = D_1.t:<agr>
+D_0.b:<quan> = D_1.t:<quan>
+D_0.b:<card> = D_1.t:<card>
+D_0.b:<gen> = D_1.t:<gen>
+D_0.b:<decreas> = D_1.t:<decreas>
+D_0.b:<const> = D_1.t:<const>
+D_0.b:<wh> = D_1.t:<wh>
+" :COMMENTS "Tree for doing determiner conjunction with `not but'.  The new determiner adjoins to
+the right of the original determiner.  This is because the determiner
+phrases generally build to the left.  The wh value of the two
+determiners are constained to be the same, and all other feature
+values are taken from the left D (again, since determiners build to
+the left).  
+Ex: Not all but some
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("D" . ""))) (((("D" . "0")) :constraints "NA" :constraint-type :NA) (((("Ad" . "")) :headp T))  (((("D" . "1")) :footp T :constraints "NA" :constraint-type :NA)) )  (((("Conj" . "")) :headp T))  (((("D" . "2")) :substp T)) ) 
+("ARBa1CONJa2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+A.b:<neg>=+
+
+
+Conj:<conj> = A.b:<conj>
+A_1.t:<compar> = A.b:<compar>
+A_2:<compar> = A.b:<compar>
+A_2:<equiv> = A.b:<equiv>
+
+" :COMMENTS "Tree for doing Adjective conjunction with 'not but'.  The new
+Adjective adjoins to the right of the original Adjective.  There are
+no constraints as to forms.
+Ex: not dark but dreary days
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("A" . ""))) (((("A" . "0")) :constraints "NA" :constraint-type :NA) (((("Ad" . "")) :headp T))  (((("A" . "1")) :footp T :constraints "NA" :constraint-type :NA)) )  (((("Conj" . "")) :headp T))  (((("A" . "2")) :substp T)) ) 
+("ARBarb1CONJarb2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+Conj:<conj> = Ad_r.b:<conj>
+" :COMMENTS "Tree for doing Adverb conjunction with 'not but'.  The new Adverb
+adjoins to the right of the original Adverb.  There are no constraints
+as to forms.  Ex: not slowly but carefully
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("Ad" . "r"))) (((("Ad" . "0")) :constraints "NA" :constraint-type :NA) (((("Ad" . "")) :headp T))  (((("Ad" . "1")) :footp T :constraints "NA" :constraint-type :NA)) )  (((("Conj" . "")) :headp T))  (((("Ad" . "2")) :substp T)) ) 
+("ARBax1CONJax2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+AP.b:<neg>=+
+
+Conj:<conj> = AP.b:<conj>
+AP_1.t:<compar> = AP.b:<compar>
+AP_2:<compar> = AP.b:<compar>
+AP_2:<equiv> = AP.b:<equiv>
+" :COMMENTS "Tree for doing Adjective Phrase conjunction with 'not
+but'.  The new AP adjoins to the left of the original AP.  There are
+no constraints as to forms.  
+Ex: Bill is not certain to win the election but confident that he will
+perform well
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("AP" . ""))) (((("AP" . "0")) :constraints "NA" :constraint-type :NA) (((("Ad" . "")) :headp T))  (((("AP" . "1")) :footp T :constraints "NA" :constraint-type :NA)) )  (((("Conj" . "")) :headp T))  (((("AP" . "2")) :substp T)) ) 
+("nx1CONJCONJnx2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+NP.b:<case> = NP_1.t:<case>
+NP.b:<wh> = NP_1.t:<wh>
+
+NP.b:<case> = nom/acc
+NP_1.t:<wh> = NP_2.t:<wh>
+NP_1.t:<case> = NP_2.t:<case>
+NP.b:<conj> = Conj.t:<conj>
+Conj.b:<conj> = Conj_2.t:<conj>
+" :COMMENTS "Tree for \", and\"
+
+Max, Bill, and Sue
+
+Question is whether to have another level built in, to force this to
+have a comma above it or to do it with features.
+
+Changed conj2 to anchor from subst. node. Removed Conj entry from
+conj.text:
+INDEX: ,/9
+ENTRY:	,
+POS:	Conj
+TREES:	Conj
+FS:	#Comma_conj
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . ""))) (((("NP" . "1")) :footp T :constraints "NA" :constraint-type :NA))  (((("Conj" . ""))) (((("Conj" . "1")) :headp T))  (((("Conj" . "2")) :headp T)) )  (((("NP" . "2")) :substp T)) ) 
+("nx1PARBPnx2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+NP.b:<case> = NP_1.t:<case>
+NP.b:<case> = NP_2.t:<case>
+NP.b:<case> = nom/acc
+NP.b:<wh> = NP_1.t:<wh>
+NP_1.t:<wh> = NP_2.t:<wh>
+
+Conj:<conj> = NP.b:<conj>
+NP.b:<const> = NP_1.t:<const>
+NP.b:<gen> = NP_1.t:<gen>
+NP.b:<definite> = NP_1.t:<definite>
+NP.b:<quan> = NP_1.t:<quan>
+NP.b:<card> = NP_1.t:<card>
+NP.b:<decreas> = NP_1.t:<decreas>
+" :COMMENTS "Tree for doing NP conjunction.  The new NP adjoins to the right of the
+original NP.  The wh and case values must unify, and the agreement of 
+the conjoined is NP is specified , the agreement of 
+the conjoined is NP is specified by the conjunction, and the
+determiner features are taken from the left conjunct.  In this case, the
+conjunction is multi-word, namely, 'as well as'.  
+
+EX: That would benefit Chinese enterprises as well as Sino-foreign joint
+ventures.
+
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . ""))) (((("NP" . "1")) :footp T :constraints "NA" :constraint-type :NA))  (((("Conj" . "")) :constraints "NA" :constraint-type :NA) (((("P" . "1")) :headp T :constraints "NA" :constraint-type :NA))  (((("Ad" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("P" . "2")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("NP" . "2")) :substp T)) ) 
+("a1PARBPa2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+Conj:<conj> = A.b:<conj>
+A_1.t:<neg> = -
+A_2.t:<neg> = -
+A.b:<neg> = -
+A_1.t:<compar> = A_2:<compar>
+A_1.t:<compar> = A.b:<compar>
+A_2:<equiv> = A.b:<equiv>
+" :COMMENTS "Tree for doing Adjective conjunction.  The new Adjective adjoins to the right
+of the original Adjective.  There are no constraints as to forms. This tree 
+handles conjunction of adjectives by multi-word conjunctions, namely,
+'as well as'.
+
+EX: We do not discriminate in terms of size; tall as well as short people are
+included in our groups.
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("A" . ""))) (((("A" . "1")) :footp T :constraints "NA" :constraint-type :NA))  (((("Conj" . "")) :constraints "NA" :constraint-type :NA) (((("P" . "1")) :headp T :constraints "NA" :constraint-type :NA))  (((("Ad" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("P" . "2")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("A" . "2")) :substp T)) ) 
+("px1PARBPpx2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+Conj:<conj> = PP.b:<conj>
+" :COMMENTS "Tree for doing PP conjunction.  The new PP adjoins to the 
+right of the original PP.  There are no constraints as to
+forms. This tree handles the multi-word conjunction 'as well as'.
+Ex: down the street as well as around the corner
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("PP" . ""))) (((("PP" . "1")) :footp T :constraints "NA" :constraint-type :NA))  (((("Conj" . "")) :constraints "NA" :constraint-type :NA) (((("P" . "1")) :headp T :constraints "NA" :constraint-type :NA))  (((("Ad" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("P" . "2")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("PP" . "2")) :substp T)) ) 
+("arb1PARBParb2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+Conj:<conj> = Ad_r.b:<conj>
+" :COMMENTS "Tree for doing Adverb conjunction.  The new Adverb adjoins to the 
+right of the original Adverb.  There are no constraints as to forms. This tree
+handles the multi-word conjunction 'as well as'.
+Ex: He walked gingerly as well as swiftly through the woods.
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("Ad" . "r"))) (((("Ad" . "1")) :footp T :constraints "NA" :constraint-type :NA))  (((("Conj" . "")) :constraints "NA" :constraint-type :NA) (((("P" . "1")) :headp T :constraints "NA" :constraint-type :NA))  (((("Ad" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("P" . "2")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("Ad" . "2")) :substp T)) ) 
+("p1PARBPp2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+P.b:<assign-case> = P_1.t:<assign-case>
+
+Conj:<conj> = P.b:<conj>
+" :COMMENTS "Tree for doing P conjunction.  The new P adjoins to the 
+right of the original P.  There are no constraints as to forms.  This tree
+handles the multi-word conjunction 'as well as'. 
+EX:  He went to as well as from the office by bicycle.
+
+
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("P" . ""))) (((("P" . "1")) :footp T :constraints "NA" :constraint-type :NA))  (((("Conj" . "")) :constraints "NA" :constraint-type :NA) (((("P" . "3")) :headp T :constraints "NA" :constraint-type :NA))  (((("Ad" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("P" . "4")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("P" . "2")) :substp T)) ) 
+("ax1PARBPax2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+Conj:<conj> = AP.b:<conj>
+AP_1.t:<compar> = AP.b:<compar>
+AP_2:<compar> = AP.b:<compar>
+AP.b:<equiv> = AP_2:<equiv>
+" :COMMENTS "Tree for doing Adjective Phrase conjunction.  The new AP adjoins to the left of the original AP.  There are no constraints as to
+forms.  This handles the multi-word conjunction 'as well as'.
+Ex: Bill is certain that Bill is still alive as well as confident that he will reappear
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("AP" . ""))) (((("AP" . "1")) :footp T :constraints "NA" :constraint-type :NA))  (((("Conj" . "")) :constraints "NA" :constraint-type :NA) (((("P" . "1")) :headp T :constraints "NA" :constraint-type :NA))  (((("Ad" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("P" . "2")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("AP" . "2")) :substp T)) ) 

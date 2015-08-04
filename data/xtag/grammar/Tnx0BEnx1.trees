@@ -1,0 +1,89 @@
+("nx0BEnx1" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+S_r.b:<extracted> = -
+S_r.b:<inv> = -
+
+S_r.b:<assign-comp> = VP_r.t:<assign-comp>
+
+
+
+VP_1.t:<mode> = VP_r.b:<mode>
+VP_1.t:<mode> = VP_1.b:<mode>
+S_r.b:<mode> = VP_r.t:<mode>
+S_r.b:<mainv> = VP_r.t:<mainv>
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP_r.t:<tense>
+NP_0:<agr> = S_r.b:<agr>
+NP_0:<case> = S_r.b:<assign-case>
+NP_0:<wh> = -
+NP_1:<case> = nom/acc
+S_r.b:<agr> = VP_r.t:<agr>
+S_r.b:<assign-case> = VP_r.t:<assign-case>
+V.t:<passive> = -
+V.t:<mainv> = -
+VP_r.b:<passive> = V.t:<passive>
+VP_r.b:<agr> = V.t:<agr>
+VP_r.b:<assign-case> = V.t:<assign-case>
+VP_r.b:<assign-comp> = V.t:<assign-comp>
+VP_r.b:<mode> = V.t:<mode>
+VP_r.b:<tense> = V.t:<tense>
+VP_r.b:<mainv> = V.t:<mainv>
+S_r.b:<control> = NP_0.t:<control>
+NP_0:<gerund> = -
+NP_1:<gerund> = -
+VP_r.b:<compar> = -
+VP_1.b:<compar> = -
+" :COMMENTS "This is the tree for \"equative be\": i.e. the \"be\" that you get in
+sentences like:
+  
+  My uncle is that man over there.
+  That man over there is my uncle.
+
+The two NP's are \"equated\" hence their interchangibility in contrast to 
+predicative \"be\" sentences (e.g. Tnx0Nx1) in which NP's are not interchangible." :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("NP" . "0")) :substp T))  (((("VP" . "r"))) (((("V" . "")) :headp T))  (((("VP" . "1"))) (((("V" . "1")) :constraints "NA" :constraint-type :NA) (((("" . "v")))) )  (((("NP" . "1")) :substp T)) ) ) ) 
+("Invnx0BEnx1" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+S_q.b:<inv> = +
+S_q.b:<extracted> = -
+S_q.b:<mode> = S_r.t:<mode>
+S_q.b:<comp> = nil
+S_r.b:<mode> = V.t:<mode>
+V.t:<agr> = NP_0:<agr>
+V.t:<assign-case> = NP_0:<case>
+S_r.b:<assign-comp> = VP_r.t:<assign-comp>
+S_r.b:<comp> = nil
+S_r.t:<inv> = -
+S_r.b:<inv> = -
+S_r.b:<agr> = V.t:<agr>
+S_r.b:<assign-case> = V.t:<assign-case>
+S_r.b:<tense> = V.t:<tense>
+
+
+
+
+
+V.t:<mode> = V_r.b:<mode>
+V.t:<trace> = V_r.b:<trace>
+V_r.t:<mode> = VP_r.b:<mode>
+VP_r.b:<mode> = VP_1.t:<mode>
+VP_1.b:<mode> = VP_1.t:<mode>
+VP_r.b:<compar> = -
+VP_1.b:<compar> = -
+NP_1:<case> = nom/acc
+S_r.t:<conj> = nil
+NP_0:<gerund> = -
+NP_1:<gerund> = -
+" :COMMENTS "Inverted equative \"be\" constructions.
+This tree is necesary because \"be\" anchors the tree 
+rather than adjoining as an auxiliary.
+
+
+ Who is that man over there?
+ Which one is your uncle?
+
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "q"))) (((("V" . "")) :headp T))  (((("S" . "r"))) (((("NP" . "0")) :substp T))  (((("VP" . "r")) :constraints "NA" :constraint-type :NA) (((("V" . "r")) :constraints "NA" :constraint-type :NA) (((("" . "")))) )  (((("VP" . "1"))) (((("V" . "1")) :constraints "NA" :constraint-type :NA) (((("" . "v")))) )  (((("NP" . "1")) :substp T)) ) ) ) ) 

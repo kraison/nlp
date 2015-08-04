@@ -1,0 +1,1794 @@
+("Rnx0Vnx1A2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+S_r.b:<inv> = -
+S_r.b:<comp> = nil
+S_r.b:<extracted> = -
+S_r.b:<control> = NP_0.t:<control>
+S_r.b:<wh> = NP_0.t:<wh>
+S_r.b:<progressive> = VP.t:<progressive>
+S_r.b:<perfect> = VP.t:<perfect>
+S_r.b:<passive> = VP.t:<passive>
+S_r.b:<mainv> = VP.t:<mainv>
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<tense> = VP.t:<tense>
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+S_r.b:<assign-case> = VP.t:<assign-case>
+
+NP_0.t:<wh> = -
+NP_0.t:<agr> = S_r.b:<agr>
+NP_0.t:<case> = S_r.b:<assign-case>
+
+VP.b:<compar> = -
+VP.b:<passive> = V.t:<passive>
+VP.b:<agr> = V.t:<agr>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<mode> = V.t:<mode>
+VP.b:<tense> = V.t:<tense>
+VP.b:<mainv> = V.t:<mainv>
+V.t:<passive> = -
+NP_1.t:<case> = acc
+AP_2.b:<wh> = A.t:<wh>
+AP_2.b:<compar> = A.t:<compar>
+AP_2.b:<equiv> = A.t:<equiv>
+" :COMMENTS "Adjectival resultative construction:
+
+	\"Max hammered the metal flat\"
+	\"The runners ran their shoes threadbare\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("NP" . "0")) :substp T :constraints ""))  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("NP" . "1")) :substp T :constraints ""))  (((("AP" . "2"))) (((("A" . "")) :headp T)) ) ) ) 
+("Rnx1VA2bynx0" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+S_r.b:<inv> = -
+S_r.b:<comp> = nil
+S_r.b:<extracted> = -
+S_r.b:<control> = NP_1.t:<control>
+S_r.b:<wh> = NP_1.t:<wh>
+S_r.b:<progressive> = VP.t:<progressive>
+S_r.b:<perfect> = VP.t:<perfect>
+S_r.b:<passive> = VP.t:<passive>
+S_r.b:<mainv> = VP.t:<mainv>
+
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<tense> = VP.t:<tense>
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+NP_1.t:<wh> = -
+NP_1.t:<agr> = S_r.b:<agr>
+NP_1.t:<case> = S_r.b:<assign-case>
+
+VP.b:<compar> = -
+VP.b:<mode> = V.t:<mode>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<tense> = V.t:<tense>
+VP.b:<passive> = V.t:<passive>
+VP.b:<agr> = V.t:<agr>
+VP.b:<mainv> = V.t:<mainv>
+V.t:<punct struct> = nil
+V.t:<mode> = ppart
+V.t:<passive> = +
+PP_0.b:<assign-case> = P_0.t:<assign-case>
+PP_0.b:<assign-case> = NP_0.t:<case>
+PP_0.b:<wh> = NP_0.t:<wh>
+P_0.b:<assign-case> = acc
+AP_2.b:<wh> = A.t:<wh>
+AP_2.b:<compar> = A.t:<compar>
+AP_2.b:<equiv> = A.t:<equiv>
+" :COMMENTS "Passive on an adjectival resultative (w/ by-phrase):
+	
+	\"The metal was hammered flat by Max\"
+	\"The shoes were run theradbare by the runners\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("NP" . "1")) :substp T :constraints ""))  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("AP" . "2"))) (((("A" . "")) :headp T)) )  (((("PP" . "0"))) (((("P" . "0"))) (((("by" . "")))) )  (((("NP" . "0")) :substp T :constraints "")) ) ) ) 
+("RW0nx0Vnx1A2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+S_q.b:<extracted> = +
+S_q.b:<comp> = nil
+S_q.b:<wh> = NP_0.t:<wh>
+S_q.b:<mode> = S_r.t:<mode>
+
+S_q.b:<inv> = S_r.t:<inv>
+NP_0.t:<wh> = +
+S_r.t:<comp> = nil
+
+S_r.t:<conj> = nil
+S_r.b:<inv> = -
+S_r.b:<comp> = nil
+S_r.b:<assign-comp> = inf_nil/ind_nil/ecm
+
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<tense> = VP.t:<tense>
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+
+NP.t:<trace> = NP_0.t:<trace>
+NP.t:<agr> = NP_0.t:<agr>
+NP.t:<case> = NP_0.t:<case>
+NP.t:<wh> = NP_0.t:<wh>
+NP.t:<agr> = S_r.b:<agr>
+NP.t:<case> = S_r.b:<assign-case>
+NP_1.t:<case> = acc
+
+VP.b:<compar> = -
+VP.b:<passive> = V.t:<passive>
+VP.b:<agr> = V.t:<agr>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<mode> = V.t:<mode>
+VP.b:<tense> = V.t:<tense>
+VP.b:<mainv> = V.t:<mainv>
+V.t:<passive> = -
+AP_2.b:<wh> = A.t:<wh>
+AP_2.b:<compar> = A.t:<compar>
+AP_2.b:<equiv> = A.t:<equiv>
+" :COMMENTS "Wh on the subject of an adjectival resultative:
+
+ \"Who hammered the metal flat\"
+ \"Who danced their soles thin\"
+
+check the agr equation on  NP0
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "q"))) (((("NP" . "0")) :substp T :constraints "" :constraint-type :DUMMY))  (((("S" . "r"))) (((("NP" . "")) :constraints "NA" :constraint-type :NA) (((("" . "")))) )  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("NP" . "1")) :substp T))  (((("AP" . "2"))) (((("A" . "")) :headp T)) ) ) ) ) 
+("RN0nx0Vnx1A2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+NP_r.b:<rel-clause> = +
+NP_r.b:<pron> = NP_f.t:<pron>
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<case> = NP_f.t:<case>
+NP_r.b:<compar> = NP_f.t:<compar>
+
+NP_f.b:<case> = nom/acc
+NP_f.b:<refl> = -
+NP_w.t:<wh> = +
+NP_w.t:<trace> = NP_0.t:<trace>
+NP_w.t:<case> = NP_0.t:<case>
+NP_w.t:<agr> = NP_0.t:<agr>
+S_r.t:<conj> = nil
+S_r.t:<comp> = nil
+
+S_r.t:<mode> = inf/ind
+S_r.t:<inv> = -
+
+S_r.b:<comp> = nil
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<tense> = VP.t:<tense>
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+NP_0.t:<agr> = S_r.b:<agr>
+NP_0.t:<case> = S_r.b:<assign-case>
+
+VP.b:<passive> = V.t:<passive>
+VP.b:<compar> = -
+VP.b:<agr> = V.t:<agr>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<mode> = V.t:<mode>
+VP.b:<tense> = V.t:<tense>
+VP.b:<mainv> = V.t:<mainv>
+V.t:<passive> = -
+NP_1:<case> = acc
+AP_2.b:<wh> = A.t:<wh>
+AP_2.b:<compar> = A.t:<compar>
+AP_2.b:<equiv> = A.t:<equiv>
+" :COMMENTS "Relative clause on the subject of an adjectival resultative w/ overt
+wh. relative pronoun:
+
+	\"(I saw) the girl who painted the barn red\"
+	\"(I know) the runners who ran their soles thin\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("S" . "p")) :constraints "NA" :constraint-type :NA) (((("NP" . "w")) :substp T))  (((("S" . "r"))) (((("NP" . "0")) :constraints "NA" :constraint-type :NA) (((("" . "")))) )  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("NP" . "1")) :substp T))  (((("AP" . "2"))) (((("A" . "")) :headp T)) ) ) ) ) ) 
+("RW1nx0Vnx1A2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+S_q.b:<extracted> = +
+S_q.b:<comp> = nil
+S_q.b:<inv> = S_q.b:<invlink>
+S_q.b:<wh> = NP_1.t:<wh>
+S_q.b:<inv> = S_r.t:<inv>
+S_q.b:<mode> = S_r.t:<mode>
+
+
+S_r.t:<comp> = nil
+S_r.t:<conj> = nil
+S_r.b:<comp> = nil
+S_r.b:<inv> = -
+S_r.b:<control> = NP_0.t:<control>
+
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+S_r.b:<progressive> = VP.t:<progressive>
+S_r.b:<perfect> = VP.t:<perfect>
+S_r.b:<passive> = VP.t:<passive>
+S_r.b:<mainv> = VP.t:<mainv>
+S_r.b:<tense> = VP.t:<tense>
+NP_0.t:<agr> = S_r.b:<agr>
+NP_0.t:<case> = S_r.b:<assign-case>
+
+VP.b:<compar> = -
+VP.b:<passive> = V.t:<passive>
+VP.b:<agr> = V.t:<agr>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<mode> = V.t:<mode>
+VP.b:<tense> = V.t:<tense>
+VP.b:<mainv> = V.t:<mainv>
+V.t:<passive> = -
+V.t:<punct struct> = nil
+NP.t:<case> = acc
+NP.t:<trace> = NP_1.t:<trace>
+NP.t:<agr> = NP_1.t:<agr>
+NP.t:<case> = NP_1.t:<case>
+NP.t:<wh> = NP_1.t:<wh>
+AP_2.b:<wh> = A.t:<wh>
+AP_2.b:<compar> = A.t:<compar>
+AP_2.b:<equiv> = A.t:<equiv>
+" :COMMENTS "Wh question on the object of an  adjectival resultative:
+ \"What did John hammer flat\"
+ \"What did the runners run threadbare\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "q"))) (((("NP" . "1")) :substp T))  (((("S" . "r"))) (((("NP" . "0")) :substp T))  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("NP" . "")) :constraints "NA" :constraint-type :NA) (((("" . "")))) )  (((("AP" . "2"))) (((("A" . "")) :headp T)) ) ) ) ) 
+("RN1nx0Vnx1A2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+NP_r.b:<rel-clause> = +
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<case> = NP_f.t:<case>
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<pron> = NP_f.t:<pron>
+NP_r.b:<compar> = NP_f.t:<compar>
+
+NP_f.b:<case> = nom/acc
+NP_f.b:<refl> = -
+NP_w.t:<wh> = +
+NP_w.t:<trace> = NP_1.t:<trace>
+NP_w.t:<case> = NP_1.t:<case>
+NP_w.t:<agr> = NP_1.t:<agr>
+
+S_r.t:<mode> = ind/inf
+S_r.t:<conj> = nil
+S_r.t:<comp> = nil
+S_r.t:<inv> = -
+
+S_r.b:<comp> = nil
+S_r.b:<control> = NP_0.t:<control>
+
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<tense> = VP.t:<tense>
+NP_0.t:<agr> = S_r.b:<agr>
+NP_0.t:<case> = S_r.b:<assign-case>
+
+VP.b:<compar> = -
+VP.b:<passive> = V.t:<passive>
+VP.b:<agr> = V.t:<agr>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<tense> = V.t:<tense>
+VP.b:<mode> = V.t:<mode>
+VP.b:<mainv> = V.t:<mainv>
+V.t:<passive> = -
+V.t:<punct struct> = nil
+NP_1.t:<case> = acc
+AP_2.b:<wh> = A.t:<wh>
+AP_2.b:<compar> = A.t:<compar>
+AP_2.b:<equiv> = A.t:<equiv>
+" :COMMENTS "Relative clause on the object of an adjectival resultative (w/ overt wh
+relative pronoun):
+
+	\"(I saw) the tulips which the gardener watered flat\"
+	\"(I saw) the shoes which the runners ran theradbare\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("S" . "p")) :constraints "NA" :constraint-type :NA) (((("NP" . "w")) :substp T))  (((("S" . "r"))) (((("NP" . "0")) :substp T))  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("NP" . "1")) :constraints "NA" :constraint-type :NA) (((("" . "")))) )  (((("AP" . "2"))) (((("A" . "")) :headp T)) ) ) ) ) ) 
+("RW1nx1VA2bynx0" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+S_q.b:<extracted> = +
+S_q.b:<comp> = nil
+S_q.b:<wh> = NP_1.t:<wh>
+
+S_q.b:<inv> = S_r.t:<inv>
+S_q.b:<mode> = S_r.t:<mode>
+NP_1.t:<wh> = +
+S_r.t:<comp> = nil
+
+S_r.t:<conj> = nil
+S_r.b:<assign-comp> = inf_nil/ind_nil/ecm
+
+S_r.b:<comp> = nil
+S_r.b:<inv> = -
+S_r.b:<agr> = NP.t:<agr>
+S_r.b:<assign-case> = NP.t:<case>
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<tense> = VP.t:<tense>
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+
+NP.t:<agr> = NP_1.t:<agr>
+NP.t:<case> = NP_1.t:<case>
+NP.t:<trace> = NP_1.t:<trace>
+NP.t:<wh> = NP_1.t:<wh>
+
+VP.b:<passive> = +
+VP.b:<compar> = -
+VP.b:<mode> = V.t:<mode>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<tense> = V.t:<tense>
+VP.b:<agr> = V.t:<agr>
+VP.b:<mainv> = V.t:<mainv>
+VP.b:<passive> = V.t:<passive>
+V.t:<mode> = ppart
+V.t:<passive> = +
+V.t:<punct struct> = nil
+PP_0.b:<assign-case> = P_0.t:<assign-case>
+PP_0.b:<assign-case> = NP_0.t:<case>
+PP_0.b:<wh> = NP_0:<wh>
+P_0.b:<assign-case> = acc
+AP_2.b:<wh> = A.t:<wh>
+AP_2.b:<compar> = A.t:<compar>
+AP_2.b:<equiv> = A.t:<equiv>
+" :COMMENTS "Wh question on NP1 in passivized adjectival resultaive constructions (with by-phrase):
+
+	\"What was painted red by Max\"
+	\"What was danced thin by the dancers\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "q"))) (((("NP" . "1")) :substp T :constraints "" :constraint-type :DUMMY))  (((("S" . "r"))) (((("NP" . "")) :constraints "NA" :constraint-type :NA) (((("" . "")))) )  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("AP" . "2"))) (((("A" . "")) :headp T)) )  (((("PP" . "0"))) (((("P" . "0"))) (((("by" . "")))) )  (((("NP" . "0")) :substp T :constraints "")) ) ) ) ) 
+("RN1nx1VA2bynx0" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+NP_r.b:<rel-clause> = +
+NP_r.b:<pron> = NP_f.t:<pron>
+NP_r.b:<compar> = NP_f.t:<compar>
+
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<case> = NP_f.t:<case>
+NP_f.b:<case> = nom/acc
+NP_f.b:<refl> = -
+NP_w.t:<wh> = +
+NP_w.t:<case> = NP_1.t:<case>
+NP_w.t:<agr> = NP_1.t:<agr>
+NP_w.t:<trace> = NP_1.t:<trace>
+
+S_r.t:<inv> = -
+S_r.t:<mode> = ind/inf/ppart
+S_r.t:<conj> = nil
+S_r.t:<comp> = nil
+
+S_r.b:<comp> = nil
+S_r.b:<agr> = NP_1.t:<agr>
+S_r.b:<assign-case> = NP_1.t:<case>
+
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<tense> = VP.t:<tense>
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+
+VP.b:<passive> = +
+VP.b:<compar> = -
+VP.b:<passive> = V.t:<passive>
+VP.b:<agr> = V.t:<agr>
+VP.b:<mode> = V.t:<mode>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<tense> = V.t:<tense>
+VP.b:<mainv> = V.t:<mainv>
+V.t:<mode> = ppart
+V.t:<assign-comp> = ppart_nil
+V.t:<passive> = +
+V.t:<punct struct> = nil
+PP_0.b:<assign-case> = P_0.t:<assign-case>
+PP_0.b:<assign-case> = NP_0.t:<case>
+PP_0.b:<wh> = NP_0.t:<wh>
+P_0.b:<assign-case> = acc
+AP_2.b:<wh> = A.t:<wh>
+AP_2.b:<compar> = A.t:<compar>
+AP_2.b:<equiv> = A.t:<equiv>
+" :COMMENTS "Relative clause, extraction from NP1 in passiveized adjectival resultative (w/ by-phrase):
+
+	\"(I saw) the tulips which were watered flat by Max\"
+	\"I saw the shoes which were danced threadbare by the dancers\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("S" . "p")) :constraints "NA" :constraint-type :NA) (((("NP" . "w")) :substp T))  (((("S" . "r"))) (((("NP" . "1")) :constraints "NA" :constraint-type :NA) (((("" . "")))) )  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("AP" . "2"))) (((("A" . "")) :headp T)) )  (((("PP" . "0"))) (((("P" . "0"))) (((("by" . "")))) )  (((("NP" . "0")) :substp T :constraints "")) ) ) ) ) ) 
+("RInx0Vnx1A2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+S_r.b:<extracted> = -
+S_r.b:<comp> = nil
+S_r.b:<inv> = -
+S_r.b:<wh> = NP_0.t:<wh>
+
+S_r.b:<mode> = imp
+S_r.b:<tense> = VP.t:<tense>
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+S_r.b:<progressive> = VP.t:<progressive>
+S_r.b:<perfect> = VP.t:<perfect>
+S_r.b:<passive> = VP.t:<passive>
+S_r.b:<mainv> = VP.t:<mainv>
+NP_0.t:<wh> = -
+NP_0.t:<agr pers> = 2
+NP_0.t:<agr 3rdsing> = -
+NP_0.t:<agr num> = plur/sing
+NP_0.t:<case> = nom
+NP_0.t:<agr> = S_r.b:<agr>
+NP_0.t:<case> = S_r.b:<assign-case>
+VP.t:<tense> = pres
+VP.t:<neg> = -
+VP.t:<mode> = base
+VP.b:<mode> = V.t:<mode>
+
+VP.b:<compar> = -
+VP.b:<passive> = V.t:<passive>
+VP.b:<agr> = V.t:<agr>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<tense> = V.t:<tense>
+VP.b:<mainv> = V.t:<mainv>
+V.t:<passive> = -
+NP_1.t:<case> = acc
+AP_2.b:<wh> = A.t:<wh>
+AP_2.b:<compar> = A.t:<compar>
+AP_2.b:<equiv> = A.t:<equiv>
+" :COMMENTS "Imperative adjectival resultative:
+
+	\"Hammer the metal flat\"
+	\"Run the shoes threadbare\"
+	
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("NP" . "0")) :constraints "NA" :constraint-type :NA) (((("" . "")))) )  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("NP" . "1")) :substp T :constraints ""))  (((("AP" . "2"))) (((("A" . "")) :headp T)) ) ) ) 
+("Rnx1VA2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+S_r.b:<extracted> = -
+S_r.b:<inv> = -
+S_r.b:<comp> = nil
+S_r.b:<control> = NP_1.t:<control>
+S_r.b:<wh> = NP_1.t:<wh>
+S_r.b:<mode> = VP.t:<mode>
+
+S_r.b:<progressive> = VP.t:<progressive>
+S_r.b:<perfect> = VP.t:<perfect>
+S_r.b:<passive> = VP.t:<passive>
+S_r.b:<mainv> = VP.t:<mainv>
+S_r.b:<tense> = VP.t:<tense>
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+NP_1.t:<agr> = S_r.b:<agr>
+NP_1.t:<case> = S_r.b:<assign-case>
+NP_1.t:<wh> = -
+
+VP.b:<compar> = -
+VP.b:<mode> = V.t:<mode>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<tense> = V.t:<tense>
+VP.b:<passive> = V.t:<passive>
+VP.b:<agr> = V.t:<agr>
+VP.b:<mainv> = V.t:<mainv>
+V.t:<punct struct> = nil
+V.t:<mode> = ppart
+V.t:<passive> = +
+AP_2.b:<wh> = A.t:<wh>
+AP_2.b:<compar> = A.t:<compar>
+AP_2.b:<equiv> = A.t:<equiv>
+" :COMMENTS "Passive on adjectival resultative w/out by-phrase:
+
+	\"The metal was hammered flat\"
+	\"The soles were dance thin\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("NP" . "1")) :substp T :constraints ""))  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("AP" . "2"))) (((("A" . "")) :headp T)) ) ) ) 
+("RW1nx1VA2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+S_q.b:<extracted> = +
+S_q.b:<comp> = nil
+S_q.b:<wh> = NP_1.t:<wh>
+
+S_q.b:<inv> = S_r.t:<inv>
+S_q.b:<mode> = S_r.t:<mode>
+NP_1.t:<wh> = +
+S_r.t:<comp> = nil
+
+S_r.t:<conj> = nil
+S_r.b:<assign-comp> = inf_nil/ind_nil/ecm
+
+S_r.b:<comp> = nil
+S_r.b:<inv> = -
+
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<tense> = VP.t:<tense>
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+NP.t:<agr> = S_r.b:<agr>
+NP.t:<case> = S_r.b:<assign-case>
+NP.t:<trace> = NP_1.t:<trace>
+NP.t:<agr> = NP_1.t:<agr>
+NP.t:<case> = NP_1.t:<case>
+NP.t:<wh> = NP_1.t:<wh>
+
+VP.b:<passive> = +
+VP.b:<compar> = -
+VP.b:<passive> = V.t:<passive>
+VP.b:<mode> = V.t:<mode>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<tense> = V.t:<tense>
+VP.b:<agr> = V.t:<agr>
+VP.b:<mainv> = V.t:<mainv>
+V.t:<punct struct> = nil
+V.t:<mode> = ppart
+V.t:<passive> = +
+AP_2.b:<wh> = A.t:<wh>
+AP_2.b:<compar> = A.t:<compar>
+AP_2.b:<equiv> = A.t:<equiv>
+" :COMMENTS "Wh question on NP1 in passivized adjectival resultative  constructions, w/o by-phrase:
+	
+	\"What was painted red\"
+	\"What was danced thin\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "q"))) (((("NP" . "1")) :substp T :constraints "" :constraint-type :DUMMY))  (((("S" . "r"))) (((("NP" . "")) :constraints "NA" :constraint-type :NA) (((("" . "")))) )  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("AP" . "2"))) (((("A" . "")) :headp T)) ) ) ) ) 
+("RN1nx1VA2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+NP_f.t:<agr> = NP_r.b:<agr>
+NP_f.t:<wh> = NP_r.b:<wh>
+NP_f.t:<case> = NP_r.b:<case>
+S_r.t:<mode> = ind/inf
+S_r.t:<inv> = -
+S_r.b:<comp> = nil
+S_r.b:<agr> = NP_1.t:<agr>
+S_r.b:<assign-case> = NP_1.t:<case>
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<tense> = VP.t:<tense>
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+VP.b:<passive> = +
+VP.b:<mode> = V.t:<mode>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<tense> = V.t:<tense>
+VP.b:<mainv> = V.t:<mainv>
+VP.b:<compar> = -
+V.t:<mode> = ppart
+V.t:<assign-comp> = ppart_nil
+V.t:<passive> = +
+VP.b:<passive> = V.t:<passive>
+VP.b:<agr> = V.t:<agr>
+V.t:<punct struct> = nil
+NP_f.b:<refl> = -
+S_r.t:<conj> = nil
+NP_w.t:<trace> = NP_1.b:<trace>
+NP_w.t:<case> = NP_1.b:<case>
+NP_w.t:<agr> = NP_1.b:<agr>
+NP_w.t:<wh> = +
+S_r.t:<comp> = nil
+NP_r.b:<rel-clause> = +
+NP_f.b:<case> = nom/acc
+NP_r.b:<pron> = NP_f.t:<pron>
+NP_r.b:<compar> = NP_f.t:<compar>
+
+AP_2.b:<wh> = A.t:<wh>
+AP_2.b:<compar> = A.t:<compar>
+AP_2.b:<equiv> = A.t:<equiv>
+" :COMMENTS "Relative clause, extraction from NP1 of a passivized adjectival resultative,
+w/o by-phrase:
+
+	\"(I saw) the barn which was painted red\"
+	\"(I lost) the shoes which were danced threadbare\"
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("S" . "p")) :constraints "NA" :constraint-type :NA) (((("NP" . "w")) :substp T))  (((("S" . "r"))) (((("NP" . "1")) :constraints "NA" :constraint-type :NA) (((("" . "")))) )  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("AP" . "2"))) (((("A" . "")) :headp T)) ) ) ) ) ) 
+("RW0nx1VA2bynx0" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+S_r.t:<comp> = nil
+S_q.b:<extracted> = +
+
+
+
+
+S_q.b:<wh> = NP_0:<wh>
+S_q.b:<inv> = S_r.t:<inv>
+S_q.b:<invlink> = S_q.b:<inv>
+S_q.b:<mode> = S_r.t:<mode>
+S_q.b:<comp> = nil
+S_r.b:<inv> = -
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+S_r.b:<agr> = NP_1.t:<agr>
+S_r.b:<assign-case> = NP_1.t:<case>
+S_r.b:<control> = NP_1.t:<control>
+VP.b:<passive> = +
+VP.b:<mode> = V.t:<mode>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<tense> = V.t:<tense>
+VP.b:<agr> = V.t:<agr>
+VP.b:<mainv> = V.t:<mainv>
+VP.b:<compar> = -
+V.t:<mode> = ppart
+V.t:<passive> = +
+VP.b:<passive> = V.t:<passive>
+V.t:<punct struct> = nil
+NP.t:<agr> = NP_0.t:<agr>
+NP.t:<case> = NP_0.t:<case>
+NP.t:<trace> = NP_0.t:<trace>
+NP.t:<wh> = NP_0.t:<wh>
+P_0.b:<assign-case> = acc
+PP_0.b:<assign-case> = P_0.t:<assign-case>
+NP:<case> = PP_0.b:<assign-case>
+S_r.t:<conj> = nil
+PP_0.b:<wh> = NP:<wh>
+S_r.b:<progressive> = VP.t:<progressive>
+S_r.b:<perfect> = VP.t:<perfect>
+S_r.b:<passive> = VP.t:<passive>
+S_r.b:<mainv> = VP.t:<mainv>
+AP_2.b:<wh> = A.t:<wh>
+AP_2.b:<compar> = A.t:<compar>
+AP_2.b:<equiv> = A.t:<equiv>
+" :COMMENTS "Wh question, extraction from by-phrase of nx0  in passivized adjectival
+resultative constructions:
+	\"Who was the barn painted red by\"
+Topicalization:
+	\"John the barn was painted red by\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "q"))) (((("NP" . "0")) :substp T :constraints "" :constraint-type :DUMMY))  (((("S" . "r"))) (((("NP" . "1")) :substp T))  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("AP" . "2"))) (((("A" . "")) :headp T)) )  (((("PP" . "0"))) (((("P" . "0"))) (((("by" . "")))) )  (((("NP" . "")) :constraints "NA" :constraint-type :NA) (((("" . "")))) ) ) ) ) ) 
+("RN0nx1VA2bynx0" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+NP_f.t:<agr> = NP_r.b:<agr>
+NP_f.t:<wh> = NP_r.b:<wh>
+NP_f.t:<case> = NP_r.b:<case>
+S_r.t:<mode> = ind/inf
+S_r.t:<inv> = -
+S_r.b:<comp> = nil
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<tense> = VP.t:<tense>
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+S_r.b:<agr> = NP_1.t:<agr>
+S_r.b:<assign-case> = NP_1.t:<case>
+S_r.b:<control> = NP_1.t:<control>
+VP.t:<mode> = ind
+VP.b:<passive> = +
+VP.b:<mode> = V.t:<mode>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<tense> = V.t:<tense>
+VP.b:<mainv> = V.t:<mainv>
+VP.b:<compar> = -
+V.t:<mode> = ppart
+V.t:<passive> = +
+VP.b:<passive> = V.t:<passive>
+VP.b:<agr> = V.t:<agr>
+NP_f.b:<refl> = -
+PP_0.b:<assign-case> = P_0.t:<assign-case>
+PP_0.b:<assign-case> = NP_0.t:<case>
+P_0.b:<assign-case> = acc
+S_r.t:<conj> = nil
+
+NP_w.t:<trace> = NP_0.b:<trace>
+NP_w.t:<case> = NP_0.b:<case>
+NP_w.t:<agr> = NP_0.b:<agr>
+NP_w.t:<wh> = +
+S_r.t:<comp> = nil
+NP_r.b:<rel-clause> = +
+NP_f.b:<case> = nom/acc
+PP_0.b:<wh> = NP_0:<wh>
+NP_r.b:<pron> = NP_f.t:<pron>
+NP_r.b:<compar> = NP_f.t:<compar>
+
+AP_2.b:<wh> = A.t:<wh>
+AP_2.b:<compar> = A.t:<compar>
+AP_2.b:<equiv> = A.t:<equiv>
+" :COMMENTS "That relative clause, extraction of NP0 from by-phrase of a passivized
+adjectival resultative:
+	\"(I saw) the man who the barn was painted red by\"
+	
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("S" . "p")) :constraints "NA" :constraint-type :NA) (((("NP" . "w")) :substp T))  (((("S" . "r"))) (((("NP" . "1")) :substp T))  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("AP" . "2"))) (((("A" . "")) :headp T)) )  (((("PP" . "0"))) (((("P" . "0"))) (((("by" . "")))) )  (((("NP" . "0")) :constraints "NA" :constraint-type :NA) (((("" . "")))) ) ) ) ) ) ) 
+("RpW0nx1VA2bynx0" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+P_0.b:<assign-case> = acc
+PP_0.b:<assign-case> = P_0.t:<assign-case>
+
+
+
+S_q.b:<extracted> = +
+S_q.b:<inv> = S_r.t:<inv>
+S_q.b:<inv> = S_q.b:<invlink>
+
+NP_0:<case> = PP_0.b:<assign-case>
+PP_0.b:<wh> = NP_0:<wh>
+S_q.b:<wh> = PP_0.t:<wh>
+S_q.b:<mode> = S_r.t:<mode>
+S_q.b:<comp> = nil
+S_r.b:<inv> = -
+S_r.b:<mode> = VP.t:<mode>
+S_r.t:<comp> = nil
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+S_r.b:<agr> = NP_1.t:<agr>
+S_r.b:<assign-case> = NP_1.t:<case>
+S_r.b:<control> = NP_1.t:<control>
+VP.b:<passive> = +
+VP.b:<mode> = V.t:<mode>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<tense> = V.t:<tense>
+VP.b:<agr> = V.t:<agr>
+VP.b:<mainv> = V.t:<mainv>
+VP.b:<compar> = -
+V.t:<mode> = ppart
+V.t:<passive> = +
+V.t:<punct struct> = nil
+VP.b:<passive> = V.t:<passive>
+PP_0.t:<trace> = PP.t:<trace>
+S_r.t:<conj> = nil
+S_r.b:<progressive> = VP.t:<progressive>
+S_r.b:<perfect> = VP.t:<perfect>
+S_r.b:<passive> = VP.t:<passive>
+S_r.b:<mainv> = VP.t:<mainv>
+AP_2.b:<wh> = A.t:<wh>
+AP_2.b:<compar> = A.t:<compar>
+AP_2.b:<equiv> = A.t:<equiv>
+" :COMMENTS "Wh question on NP0 in passivized adjectival resultative constructions, by-phrase extracted:
+	
+	\"By who was the barn painted red\"
+Topicalization:
+	\"By John the barn was painted red\"
+
+
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "q"))) (((("PP" . "0"))) (((("P" . "0"))) (((("by" . "")))) )  (((("NP" . "0")) :substp T)) )  (((("S" . "r"))) (((("NP" . "1")) :substp T))  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("AP" . "2"))) (((("A" . "")) :headp T)) )  (((("PP" . "")) :constraints "NA" :constraint-type :NA) (((("" . "")))) ) ) ) ) 
+("RVA2transn" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+N_f:<case> = nom/acc
+N_r.b:<case> = N_f:<case>
+N_r.b:<agr> = N_f:<agr>
+N_r.b:<wh> = N_f:<wh>
+N_r.b:<pron> = N_f:<pron>
+N_r.b:<conj> = N_f:<conj>
+
+V.t:<mode> = ppart
+V.t:<punct struct> = nil
+VP.t:<mode> = VP.b:<mode>
+VP.b:<mode> = VP.t:<mode>
+
+VP.b:<compar> = -
+N_r.b:<const> = N_f.t:<const>
+N_r.b:<gen> = N_f.t:<gen>
+N_r.b:<definite> = N_f.t:<definite>
+N_r.b:<quan> = N_f.t:<quan>
+N_r.b:<card> = N_f.t:<card>
+N_r.b:<decreas> = N_f.t:<decreas>
+AP_2.b:<wh> = A.t:<wh>
+AP_2.b:<compar> = A.t:<compar>
+AP_2.b:<equiv> = A.t:<equiv>
+" :COMMENTS " -ed adjectives are prevalent in the language, but are restricted to transitive
+verbs.  This tree handles sentences like:
+	 \"The watered-flat tulips\"
+	 \"The danced-thin soles\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("N" . "r"))) (((("VP" . ""))) (((("V" . "")) :headp T))  (((("AP" . "2"))) (((("A" . "")) :headp T)) ) )  (((("N" . "f")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("RNbynx0nx1VA2bynx0" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+NP_f.t:<agr> = NP_r.b:<agr>
+NP_f.t:<wh> = NP_r.b:<wh>
+NP_f.t:<case> = NP_r.b:<case>
+S_r.t:<mode> = ind/inf
+S_r.b:<comp> = nil
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<tense> = VP.t:<tense>
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+S_r.b:<agr> = NP_1.t:<agr>
+S_r.b:<assign-case> = NP_1.t:<case>
+S_r.b:<control> = NP_1.t:<control>
+VP.t:<mode> = ind
+VP.b:<passive> = +
+VP.b:<mode> = V.t:<mode>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<tense> = V.t:<tense>
+VP.b:<mainv> = V.t:<mainv>
+VP.b:<compar> = -
+V.t:<mode> = ppart
+V.t:<passive> = +
+V.t:<punct struct> = nil
+VP.b:<passive> = V.t:<passive>
+VP.b:<agr> = V.t:<agr>
+NP_f.b:<refl> = -
+P_0.b:<assign-case> = acc
+S_r.t:<conj> = nil
+
+NP_w.t:<wh> = +
+S_r.t:<comp> = nil
+PP_w.t:<trace> = PP_0.b:<trace>
+PP_w.t:<case> = PP_0.b:<case>
+PP_w.t:<agr> = PP_0.b:<agr>
+PP_w.b:<assign-case> = P_0.t:<assign-case>
+PP_w.b:<assign-case> = NP_w.t:<case>
+PP_w.b:<wh> = NP_w.t:<wh>
+NP_r.b:<rel-clause> = +
+NP_f.b:<case> = nom/acc
+NP_r.b:<pron> = NP_f.t:<pron>
+NP_r.b:<compar> = NP_f.t:<compar>
+
+AP_2.b:<wh> = A.t:<wh>
+AP_2.b:<compar> = A.t:<compar>
+AP_2.b:<equiv> = A.t:<equiv>
+" :COMMENTS "Relative clause, extraction of NP0 from by-phrase in an adjectival resultative:
+	
+	\"(I saw) the man who the barn was painted red by\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("S" . "p")) :constraints "NA" :constraint-type :NA) (((("PP" . "w"))) (((("P" . "0"))) (((("by" . "")))) )  (((("NP" . "w")) :substp T)) )  (((("S" . "r"))) (((("NP" . "1")) :substp T))  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("AP" . "2"))) (((("A" . "")) :headp T)) )  (((("PP" . "0")) :constraints "NA" :constraint-type :NA) (((("" . "")))) ) ) ) ) ) 
+("RNpxnx0Vnx1A2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+S_r.b:<extracted> = -
+
+
+
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+NP_0:<agr> = S_r.b:<agr>
+NP_0:<case> = S_r.b:<assign-case>
+NP_1:<case> = acc
+NP_0:<wh> = -
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+S_r.b:<assign-case> = VP.t:<assign-case>
+VP.b:<passive> = V.t:<passive>
+V.t:<passive> = -
+VP.b:<agr> = V.t:<agr>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<mode> = V.t:<mode>
+VP.b:<tense> = V.t:<tense>
+VP.b:<mainv> = V.t:<mainv>
+VP.b:<compar> = -
+S_r.b:<inv> = -
+S_r.b:<control> = NP_0.t:<control>
+S_r.t:<inv> = -
+PP_w.t:<wh> = +
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<case> = NP_f.t:<case>
+NP_f.b:<case> = acc/nom
+S_r.t:<comp> = nil
+NP_r.b:<rel-clause> = +
+NP_f.b:<case> = nom/acc
+NP_r.b:<pron> = NP_f.t:<pron>
+NP_r.b:<compar> = NP_f.t:<compar>
+
+S_r.b:<progressive> = VP.t:<progressive>
+S_r.b:<perfect> = VP.t:<perfect>
+S_r.b:<passive> = VP.t:<passive>
+S_r.b:<mainv> = VP.t:<mainv>
+AP_2.b:<wh> = A.t:<wh>
+AP_2.b:<compar> = A.t:<compar>
+AP_2.b:<equiv> = A.t:<equiv>
+" :COMMENTS "Relative clause on a PP adjunct of an adjectival resultative (w/ overt wh
+rel. pronoun):
+
+	\"The day on which I watered the tulips flat\"
+	\"The club in which we danced our soles thin\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("S" . "p")) :constraints "NA" :constraint-type :NA) (((("PP" . "w")) :substp T))  (((("S" . "r"))) (((("NP" . "0")) :substp T :constraints ""))  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("NP" . "1")) :substp T :constraints ""))  (((("AP" . "2"))) (((("A" . "")) :headp T)) ) ) ) ) ) 
+("RNpxnx1VA2bynx0" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<comp> = nil
+S_r.b:<extracted> = -
+S_r.b:<tense> = VP.t:<tense>
+NP_1:<agr> = S_r.b:<agr>
+NP_1:<case> = S_r.b:<assign-case>
+NP_1:<wh> = -
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+VP.b:<mode> = V.t:<mode>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<tense> = V.t:<tense>
+VP.b:<passive> = V.t:<passive>
+VP.b:<agr> = V.t:<agr>
+VP.b:<mainv> = V.t:<mainv>
+VP.b:<compar> = -
+V.t:<punct struct> = nil
+V.t:<mode> = ppart
+V.t:<passive> = +
+S_r.b:<inv> = -
+PP_0.b:<assign-case> = P_0.t:<assign-case>
+PP_0.b:<assign-case> = NP_0.t:<case>
+P_0.b:<assign-case> = acc
+S_r.b:<control> = NP_1.t:<control>
+S_r.t:<inv> = -
+PP_w.t:<wh> = +
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<case> = NP_f.t:<case>
+NP_f.b:<case> = acc/nom
+S_r.t:<comp> = nil
+NP_r.b:<rel-clause> = +
+NP_f.b:<case> = nom/acc
+PP_0.b:<wh> = NP_0:<wh>
+NP_r.b:<pron> = NP_f.t:<pron>
+NP_r.b:<compar> = NP_f.t:<compar>
+
+S_r.b:<progressive> = VP.t:<progressive>
+S_r.b:<perfect> = VP.t:<perfect>
+S_r.b:<passive> = VP.t:<passive>
+S_r.b:<mainv> = VP.t:<mainv>
+AP_2.b:<wh> = A.t:<wh>
+AP_2.b:<compar> = A.t:<compar>
+AP_2.b:<equiv> = A.t:<equiv>
+" :COMMENTS "Relative clause on a PP adjunct of a passivized adjectival resultative (w/ by phrase):
+	
+	\"The day on which the barn was painted red by Max\"
+	\"THe club in which the soles were danced thin by John and Mary\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("S" . "p")) :constraints "NA" :constraint-type :NA) (((("PP" . "w")) :substp T))  (((("S" . "r"))) (((("NP" . "1")) :substp T :constraints ""))  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("AP" . "2"))) (((("A" . "")) :headp T)) )  (((("PP" . "0"))) (((("P" . "0"))) (((("by" . "")))) )  (((("NP" . "0")) :substp T :constraints "")) ) ) ) ) ) 
+("RNpxnx1VA2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+S_r.b:<extracted> = -
+S_r.b:<mode> = VP.t:<mode>
+
+
+
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+NP_1:<agr> = S_r.b:<agr>
+NP_1:<case> = S_r.b:<assign-case>
+NP_1:<wh> = -
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+VP.b:<mode> = V.t:<mode>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<tense> = V.t:<tense>
+VP.b:<passive> = V.t:<passive>
+VP.b:<agr> = V.t:<agr>
+VP.b:<mainv> = V.t:<mainv>
+VP.b:<compar> = -
+V.t:<punct struct> = nil
+V.t:<mode> = ppart
+V.t:<passive> = +
+S_r.b:<inv> = -
+S_r.b:<control> = NP_1.t:<control>
+S_r.t:<inv> = -
+PP_w.t:<wh> = +
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<case> = NP_f.t:<case>
+NP_f.b:<case> = acc/nom
+S_r.t:<comp> = nil
+NP_r.b:<rel-clause> = +
+NP_f.b:<case> = nom/acc
+NP_r.b:<pron> = NP_f.t:<pron>
+NP_r.b:<compar> = NP_f.t:<compar>
+
+S_r.b:<progressive> = VP.t:<progressive>
+S_r.b:<perfect> = VP.t:<perfect>
+S_r.b:<passive> = VP.t:<passive>
+S_r.b:<mainv> = VP.t:<mainv>
+AP_2.b:<wh> = A.t:<wh>
+AP_2.b:<compar> = A.t:<compar>
+AP_2.b:<equiv> = A.t:<equiv>
+" :COMMENTS "
+Relative clause on a PP adjunct of a passivized adjectival resultative (w/out  by phrase):
+	
+	\"The day on which the barn was painted red\"
+	\"The club in which the soles were danced thin\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("S" . "p")) :constraints "NA" :constraint-type :NA) (((("PP" . "w")) :substp T))  (((("S" . "r"))) (((("NP" . "1")) :substp T :constraints ""))  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("AP" . "2"))) (((("A" . "")) :headp T)) ) ) ) ) ) 
+("RNc0nx0Vnx1A2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+S_r.b:<comp> = nil
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<tense> = VP.t:<tense>
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+S_r.t:<inv> = -
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<case> = NP_f.t:<case>
+NP_0.t:<agr> = S_r.b:<agr>
+NP_0.t:<case> = S_r.b:<assign-case>
+NP_1:<case> = acc
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+VP.b:<passive> = V.t:<passive>
+V.t:<passive> = -
+VP.b:<agr> = V.t:<agr>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<mode> = V.t:<mode>
+VP.b:<tense> = V.t:<tense>
+VP.b:<mainv> = V.t:<mainv>
+VP.b:<compar> = -
+S_r.t:<conj> = nil
+
+NP_w.t:<trace> = NP_0.b:<trace>
+NP_w.t:<case> = NP_0.b:<case>
+NP_w.t:<agr> = NP_0.b:<agr>
+NP_r.b:<rel-clause> = +
+S_r.t:<mode> = inf/ger/ind
+S_r.t:<nocomp-mode> = inf/ger
+VP.t:<assign-comp> = that/ind_nil/inf_nil
+S_r.b:<nocomp-mode> = S_r.b:<mode>
+NP_f.b:<refl> = -
+NP_f.b:<case> = nom/acc
+NP_r.b:<pron> = NP_f.t:<pron>
+NP_r.b:<compar> = NP_f.t:<compar>
+
+AP_2.b:<wh> = A.t:<wh>
+AP_2.b:<compar> = A.t:<compar>
+AP_2.b:<equiv> = A.t:<equiv>
+" :COMMENTS "That relative clause on the subject of an adjectival resultative:
+
+	\"The tulips that I watered flat\"
+	\"The shoes that I ran threadbare\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("S" . "p")) :constraints "NA" :constraint-type :NA) (((("NP" . "w")) :constraints "NA" :constraint-type :NA) (((("" . "w")))) )  (((("S" . "r"))) (((("NP" . "0")) :constraints "NA" :constraint-type :NA) (((("" . "")))) )  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("NP" . "1")) :substp T))  (((("AP" . "2"))) (((("A" . "")) :headp T)) ) ) ) ) ) 
+("RNc1nx0Vnx1A2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<tense> = VP.t:<tense>
+S_r.b:<comp> = nil
+S_r.t:<inv> = -
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<case> = NP_f.t:<case>
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_1.t:<case> = acc
+NP_0:<agr> = S_r.b:<agr>
+NP_0:<case> = S_r.b:<assign-case>
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+VP.b:<passive> = V.t:<passive>
+V.t:<passive> = -
+V.t:<punct struct> = nil
+VP.b:<agr> = V.t:<agr>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<tense> = V.t:<tense>
+VP.b:<mode> = V.t:<mode>
+VP.b:<mainv> = V.t:<mainv>
+VP.b:<compar> = -
+NP_f.b:<refl> = -
+S_r.t:<conj> = nil
+
+S_r.b:<control> = NP_0.t:<control>
+NP_w.t:<trace> = NP_1.b:<trace>
+NP_w.t:<case> = NP_1.b:<case>
+NP_w.t:<agr> = NP_1.b:<agr>
+NP_r.b:<rel-clause> = +
+S_r.t:<mode> = inf/ind
+S_r.t:<nocomp-mode> = ind
+VP.t:<assign-comp> = that/for/ind_nil
+S_r.b:<nocomp-mode> = S_r.b:<mode>
+NP_f.b:<case> = nom/acc
+NP_f.b:<refl> = -
+NP_r.b:<pron> = NP_f.t:<pron>
+NP_r.b:<compar> = NP_f.t:<compar>
+
+AP_2.b:<wh> = A.t:<wh>
+AP_2.b:<compar> = A.t:<compar>
+AP_2.b:<equiv> = A.t:<equiv>
+" :COMMENTS "That relative clause on the object of an adjectival resultative:
+
+	\"(I saw) the barn that was painted red\"
+	
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("S" . "p")) :constraints "NA" :constraint-type :NA) (((("NP" . "w")) :constraints "NA" :constraint-type :NA) (((("" . "w")))) )  (((("S" . "r"))) (((("NP" . "0")) :substp T))  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("NP" . "1")) :constraints "NA" :constraint-type :NA) (((("" . "")))) )  (((("AP" . "2"))) (((("A" . "")) :headp T)) ) ) ) ) ) 
+("RNc1nx1VA2bynx0" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+NP_f.t:<agr> = NP_r.b:<agr>
+NP_f.t:<wh> = NP_r.b:<wh>
+NP_f.t:<case> = NP_r.b:<case>
+S_r.t:<inv> = -
+S_r.b:<comp> = nil
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<tense> = VP.t:<tense>
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+S_r.b:<agr> = NP_1.t:<agr>
+S_r.b:<assign-case> = NP_1.t:<case>
+VP.b:<passive> = +
+VP.b:<mode> = V.t:<mode>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<tense> = V.t:<tense>
+VP.b:<mainv> = V.t:<mainv>
+V.t:<mode> = ppart
+V.t:<assign-comp> = ppart_nil
+V.t:<passive> = +
+V.t:<punct struct> = nil
+VP.b:<passive> = V.t:<passive>
+VP.b:<agr> = V.t:<agr>
+VP.b:<compar> = -
+NP_f.b:<refl> = -
+PP_0.b:<assign-case> = P_0.t:<assign-case>
+PP_0.b:<assign-case> = NP_0.t:<case>
+P_0.b:<assign-case> = acc
+S_r.t:<conj> = nil
+
+NP_w.t:<trace> = NP_1.b:<trace>
+NP_w.t:<case> = NP_1.b:<case>
+NP_w.t:<agr> = NP_1.b:<agr>
+NP_r.b:<rel-clause> = +
+S_r.t:<mode> = inf/ger/ind/ppart
+S_r.t:<nocomp-mode> = ind/ger/ppart
+VP.t:<assign-comp> = that/inf_nil
+S_r.b:<nocomp-mode> = S_r.b:<mode>
+NP_f.b:<case> = nom/acc
+PP_0.b:<wh> = NP_0:<wh>
+NP_r.b:<pron> = NP_f.t:<pron>
+NP_r.b:<compar> = NP_f.t:<compar>
+
+AP_2.b:<wh> = A.t:<wh>
+AP_2.b:<compar> = A.t:<compar>
+AP_2.b:<equiv> = A.t:<equiv>
+" :COMMENTS "That relative clause, extraction from NP1 of a passivized adjectival
+resultative (w/ by phrase)
+	
+	\"(I saw) the barn that was painted read by Max\"
+	\"(I saw) the shoes that were run threadbare by Tobias\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("S" . "p")) :constraints "NA" :constraint-type :NA) (((("NP" . "w")) :constraints "NA" :constraint-type :NA) (((("" . "w")))) )  (((("S" . "r"))) (((("NP" . "1")) :constraints "NA" :constraint-type :NA) (((("" . "")))) )  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("AP" . "2"))) (((("A" . "")) :headp T)) )  (((("PP" . "0"))) (((("P" . "0"))) (((("by" . "")))) )  (((("NP" . "0")) :substp T :constraints "")) ) ) ) ) ) 
+("RNc1nx1VA2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+NP_f.t:<agr> = NP_r.b:<agr>
+NP_f.t:<wh> = NP_r.b:<wh>
+NP_f.t:<case> = NP_r.b:<case>
+S_r.t:<inv> = -
+S_r.b:<comp> = nil
+S_r.b:<agr> = NP_1.t:<agr>
+S_r.b:<assign-case> = NP_1.t:<case>
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<tense> = VP.t:<tense>
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+VP.b:<passive> = +
+VP.b:<mode> = V.t:<mode>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<tense> = V.t:<tense>
+VP.b:<mainv> = V.t:<mainv>
+VP.b:<compar> = -
+V.t:<mode> = ppart
+V.t:<assign-comp> = ppart_nil
+V.t:<passive> = +
+VP.b:<passive> = V.t:<passive>
+VP.b:<agr> = V.t:<agr>
+V.t:<punct struct> = nil
+NP_f.b:<refl> = -
+S_r.t:<conj> = nil
+
+NP_w.t:<trace> = NP_1.b:<trace>
+NP_w.t:<case> = NP_1.b:<case>
+NP_w.t:<agr> = NP_1.b:<agr>
+NP_r.b:<rel-clause> = +
+S_r.t:<mode> = inf/ppart/ger/ind
+S_r.t:<mode> = ind/inf/ger/ppart
+S_r.t:<nocomp-mode> = ind/ger/ppart
+VP.t:<assign-comp> = that/inf_nil
+S_r.b:<nocomp-mode> = S_r.b:<mode>
+NP_f.b:<case> = nom/acc
+NP_r.b:<pron> = NP_f.t:<pron>
+NP_r.b:<compar> = NP_f.t:<compar>
+
+AP_2.b:<wh> = A.t:<wh>
+AP_2.b:<compar> = A.t:<compar>
+AP_2.b:<equiv> = A.t:<equiv>
+" :COMMENTS "That relative clause, extraction from NP1 of a passivized adjectival
+resultative (w/out  by phrase)
+	
+	\"(I saw) the barn that was painted read\"
+	\"(I saw) the shoes that were run threadbare\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("S" . "p")) :constraints "NA" :constraint-type :NA) (((("NP" . "w")) :constraints "NA" :constraint-type :NA) (((("" . "w")))) )  (((("S" . "r"))) (((("NP" . "1")) :constraints "NA" :constraint-type :NA) (((("" . "")))) )  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("AP" . "2"))) (((("A" . "")) :headp T)) ) ) ) ) ) 
+("RNc0nx1VA2bynx0" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+NP_f.t:<agr> = NP_r.b:<agr>
+NP_f.t:<wh> = NP_r.b:<wh>
+NP_f.t:<case> = NP_r.b:<case>
+S_r.t:<inv> = -
+S_r.b:<comp> = nil
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<tense> = VP.t:<tense>
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+S_r.b:<agr> = NP_1.t:<agr>
+S_r.b:<assign-case> = NP_1.t:<case>
+S_r.b:<control> = NP_1.t:<control>
+VP.t:<mode> = ind
+VP.b:<passive> = +
+VP.b:<mode> = V.t:<mode>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<tense> = V.t:<tense>
+VP.b:<mainv> = V.t:<mainv>
+VP.b:<compar> = -
+V.t:<mode> = ppart
+V.t:<passive> = +
+VP.b:<passive> = V.t:<passive>
+VP.b:<agr> = V.t:<agr>
+NP_f.b:<refl> = -
+PP_0.b:<assign-case> = P_0.t:<assign-case>
+PP_0.b:<assign-case> = NP_0.t:<case>
+P_0.b:<assign-case> = acc
+S_r.t:<conj> = nil
+
+NP_w.t:<trace> = NP_0.b:<trace>
+NP_w.t:<case> = NP_0.b:<case>
+NP_w.t:<agr> = NP_0.b:<agr>
+NP_r.b:<rel-clause> = +
+S_r.t:<mode> = inf/ind
+S_r.t:<mode> = ind/inf
+S_r.t:<nocomp-mode> = ind
+VP.t:<assign-comp> = that/for/ind_nil
+S_r.b:<nocomp-mode> = S_r.b:<mode>
+NP_f.b:<case> = nom/acc
+NP_f.b:<refl> = -
+PP_0.b:<wh> = NP_0:<wh>
+NP_r.b:<pron> = NP_f.t:<pron>
+NP_r.b:<compar> = NP_f.t:<compar>
+
+AP_2.b:<wh> = A.t:<wh>
+AP_2.b:<compar> = A.t:<compar>
+AP_2.b:<equiv> = A.t:<equiv>
+" :COMMENTS "That relative clause, extraction of NP0 from by-phrase of a passivized
+adjectival resultative:
+	
+	\"(I saw) the man that the barn was painted red by\"
+	\"(I know) the folks that the soles were danced thin by\"
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("S" . "p")) :constraints "NA" :constraint-type :NA) (((("NP" . "w")) :constraints "NA" :constraint-type :NA) (((("" . "w")))) )  (((("S" . "r"))) (((("NP" . "1")) :substp T))  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("AP" . "2"))) (((("A" . "")) :headp T)) )  (((("PP" . "0"))) (((("P" . "0"))) (((("by" . "")))) )  (((("NP" . "0")) :constraints "NA" :constraint-type :NA) (((("" . "")))) ) ) ) ) ) ) 
+("RNcnx0Vnx1A2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+S_r.b:<extracted> = -
+
+
+
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+NP_0:<agr> = S_r.b:<agr>
+NP_0:<case> = S_r.b:<assign-case>
+NP_1:<case> = acc
+NP_0:<wh> = -
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+S_r.b:<assign-case> = VP.t:<assign-case>
+VP.b:<passive> = V.t:<passive>
+V.t:<passive> = -
+VP.b:<agr> = V.t:<agr>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<mode> = V.t:<mode>
+VP.b:<tense> = V.t:<tense>
+VP.b:<mainv> = V.t:<mainv>
+VP.b:<compar> = -
+S_r.b:<inv> = -
+S_r.b:<control> = NP_0.t:<control>
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<case> = NP_f.t:<case>
+NP_f.b:<case> = acc/nom
+S_r.t:<inv> = -
+S_r.t:<mode> = ind/inf
+S_r.t:<nocomp-mode> = ind
+VP.t:<assign-comp> = that/for/ind_nil
+S_r.b:<nocomp-mode> = S_r.b:<mode>
+NP_r.b:<rel-clause> = +
+NP_f.b:<case> = nom/acc
+NP_r.b:<pron> = NP_f.t:<pron>
+NP_r.b:<compar> = NP_f.t:<compar>
+
+S_r.b:<progressive> = VP.t:<progressive>
+S_r.b:<perfect> = VP.t:<perfect>
+S_r.b:<passive> = VP.t:<passive>
+S_r.b:<mainv> = VP.t:<mainv>
+AP_2.b:<wh> = A.t:<wh>
+AP_2.b:<compar> = A.t:<compar>
+AP_2.b:<equiv> = A.t:<equiv>
+" :COMMENTS "That relative clause on an adjunct of an adjectival resultative:
+
+	\"The day that I painted the barn red\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("S" . "p")) :constraints "NA" :constraint-type :NA) (((("NP" . "w")) :constraints "NA" :constraint-type :NA) (((("" . "w")))) )  (((("S" . "r"))) (((("NP" . "0")) :substp T :constraints ""))  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("NP" . "1")) :substp T :constraints ""))  (((("AP" . "2"))) (((("A" . "")) :headp T)) ) ) ) ) ) 
+("RNcnx1VA2bynx0" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<comp> = nil
+S_r.b:<extracted> = -
+S_r.b:<tense> = VP.t:<tense>
+NP_1:<agr> = S_r.b:<agr>
+NP_1:<case> = S_r.b:<assign-case>
+NP_1:<wh> = -
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+VP.b:<mode> = V.t:<mode>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<tense> = V.t:<tense>
+VP.b:<passive> = V.t:<passive>
+VP.b:<agr> = V.t:<agr>
+VP.b:<mainv> = V.t:<mainv>
+VP.b:<compar> = -
+V.t:<mode> = ppart
+V.t:<passive> = +
+V.t:<punct struct> = nil
+S_r.b:<inv> = -
+PP_0.b:<assign-case> = P_0.t:<assign-case>
+PP_0.b:<assign-case> = NP_0.t:<case>
+P_0.b:<assign-case> = acc
+S_r.b:<control> = NP_1.t:<control>
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<case> = NP_f.t:<case>
+NP_f.b:<case> = acc/nom
+S_r.t:<inv> = -
+S_r.t:<mode> = ind/inf
+S_r.t:<nocomp-mode> = ind
+VP.t:<assign-comp> = that/for/ind_nil
+S_r.b:<nocomp-mode> = S_r.b:<mode>
+NP_r.b:<rel-clause> = +
+NP_f.b:<case> = nom/acc
+PP_0.b:<wh> = NP_0:<wh>
+NP_r.b:<pron> = NP_f.t:<pron>
+NP_r.b:<compar> = NP_f.t:<compar>
+
+S_r.b:<progressive> = VP.t:<progressive>
+S_r.b:<perfect> = VP.t:<perfect>
+S_r.b:<passive> = VP.t:<passive>
+S_r.b:<mainv> = VP.t:<mainv>
+AP_2.b:<wh> = A.t:<wh>
+AP_2.b:<compar> = A.t:<compar>
+AP_2.b:<equiv> = A.t:<equiv>
+" :COMMENTS "That relative clause on an adjunct of apassivized  adjectival resultative:
+
+	\"The day that the barn was painted red by Max\"
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("S" . "p")) :constraints "NA" :constraint-type :NA) (((("NP" . "w")) :constraints "NA" :constraint-type :NA) (((("" . "w")))) )  (((("S" . "r"))) (((("NP" . "1")) :substp T :constraints ""))  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("AP" . "2"))) (((("A" . "")) :headp T)) )  (((("PP" . "0"))) (((("P" . "0"))) (((("by" . "")))) )  (((("NP" . "0")) :substp T :constraints "")) ) ) ) ) ) 
+("RNcnx1VA2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+S_r.b:<extracted> = -
+S_r.b:<mode> = VP.t:<mode>
+
+
+
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+NP_1:<agr> = S_r.b:<agr>
+NP_1:<case> = S_r.b:<assign-case>
+NP_1:<wh> = -
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+VP.b:<mode> = V.t:<mode>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<tense> = V.t:<tense>
+VP.b:<passive> = V.t:<passive>
+VP.b:<agr> = V.t:<agr>
+VP.b:<mainv> = V.t:<mainv>
+VP.b:<compar> = -
+V.t:<punct struct> = nil
+V.t:<mode> = ppart
+V.t:<passive> = +
+S_r.b:<inv> = -
+S_r.b:<control> = NP_1.t:<control>
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<case> = NP_f.t:<case>
+NP_f.b:<case> = acc/nom
+S_r.t:<inv> = -
+S_r.t:<mode> = ind/inf
+S_r.t:<nocomp-mode> = ind
+VP.t:<assign-comp> = that/for/ind_nil
+S_r.b:<nocomp-mode> = S_r.b:<mode>
+NP_r.b:<rel-clause> = +
+NP_f.b:<case> = nom/acc
+NP_r.b:<pron> = NP_f.t:<pron>
+NP_r.b:<compar> = NP_f.t:<compar>
+
+S_r.b:<progressive> = VP.t:<progressive>
+S_r.b:<perfect> = VP.t:<perfect>
+S_r.b:<passive> = VP.t:<passive>
+S_r.b:<mainv> = VP.t:<mainv>
+AP_2.b:<wh> = A.t:<wh>
+AP_2.b:<compar> = A.t:<compar>
+AP_2.b:<equiv> = A.t:<equiv>
+" :COMMENTS "
+
+That relative clause on an adjunct of apassivized  adjectival resultative
+(w/out by phrase):
+
+	\"The day that the barn was painted red\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("S" . "p")) :constraints "NA" :constraint-type :NA) (((("NP" . "w")) :constraints "NA" :constraint-type :NA) (((("" . "w")))) )  (((("S" . "r"))) (((("NP" . "1")) :substp T :constraints ""))  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("AP" . "2"))) (((("A" . "")) :headp T)) ) ) ) ) ) 
+("RGnx0Vnx1A2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+NP_0:<case> = acc/none/gen
+NP_0:<wh> = NP_r.b:<wh>
+NP_r.b:<compar> = NP_0:<compar>
+NP_r.b:<case> = nom/acc
+NP_r.b:<agr num> = sing
+NP_r.b:<agr pers> = 3
+NP_r.b:<agr 3rdsing> = +
+NP_1:<case> = acc
+
+
+VP.t:<mode> = ger
+
+VP.b:<compar> = -
+NP_r.b:<gerund> = +
+VP.b:<mode> = V.t:<mode>
+VP.b:<passive> = V.t:<passive>
+V.t:<passive> = -
+AP_2.b:<wh> = A.t:<wh>
+AP_2.b:<compar> = A.t:<compar>
+AP_2.b:<equiv> = A.t:<equiv>
+" :COMMENTS "Adjectival resultativ NP gerund tree:
+\"Bill approved of \"Peter painitng the barn red\"\"
+\"Bill approved of \"Simone's painting the barn red\"\"
+\"John was talking about \"painting  the barn red\"\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r")) :constraints "") (((("NP" . "0")) :substp T :constraints ""))  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("NP" . "1")) :substp T :constraints ""))  (((("AP" . "2"))) (((("A" . "")) :headp T)) ) ) ) 
+("RGnx1VA2bynx0" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+NP_r.b:<case> = nom/acc
+NP_r.b:<agr num> = sing
+NP_r.b:<agr pers> = 3
+NP_r.b:<agr 3rdsing> = +
+
+NP_1:<case> = acc/none/gen
+NP_1:<wh> = NP_r.b:<wh>
+NP_r.b:<compar> = NP_1:<compar>
+VP.b:<mode> = V.t:<mode>
+VP.b:<passive> = V.t:<passive>
+
+NP_r.b:<gerund> = +
+
+PP_0.b:<assign-case> = P_0.t:<assign-case>
+P_0.b:<assign-case> = acc
+NP_0:<case> = PP_0.b:<assign-case>
+PP_0.b:<wh> = NP_0:<wh>
+VP.t:<mode> = ger
+VP.b:<compar> = -
+V.t:<mode> = ppart
+V.t:<passive> = +
+AP_2.b:<wh> = A.t:<wh>
+AP_2.b:<compar> = A.t:<compar>
+AP_2.b:<equiv> = A.t:<equiv>
+" :COMMENTS "Adjectival resultative gerund passive with the \"by\" phrase:
+\"John approved of \"the barn being painted red by Jens\"\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r")) :constraints "") (((("NP" . "1")) :substp T :constraints ""))  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("AP" . "2"))) (((("A" . "")) :headp T)) )  (((("PP" . "0"))) (((("P" . "0"))) (((("by" . "")))) )  (((("NP" . "0")) :substp T)) ) ) ) 
+("RGnx1VA2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+NP_r.b:<case> = nom/acc
+NP_r.b:<agr num> = sing
+NP_r.b:<agr pers> = 3
+NP_r.b:<agr 3rdsing> = +
+
+NP_r.b:<wh> = NP_1:<wh>
+NP_r.b:<compar> = NP_1:<compar>
+NP_1:<case> = acc/none/gen
+
+NP_r.b:<gerund> = +
+VP.t:<mode> = ger
+VP.b:<compar> = -
+
+VP.b:<mode> = V.t:<mode>
+VP.b:<passive> = V.t:<passive>
+V.t:<mode> = ppart
+V.t:<passive> = +
+AP_2.b:<wh> = A.t:<wh>
+AP_2.b:<compar> = A.t:<compar>
+AP_2.b:<equiv> = A.t:<equiv>
+" :COMMENTS "Adectival resultative gerund passive without the \"by\" phrase:
+\"John was bothered by \"the barn being painted\"\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r")) :constraints "") (((("NP" . "1")) :substp T :constraints ""))  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("AP" . "2"))) (((("A" . "")) :headp T)) ) ) ) 
+("RWA2nx0Vnx1A2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+S_r.b:<inv> = -
+S_r.b:<comp> = nil
+S_r.b:<control> = NP_0.t:<control>
+S_r.b:<progressive> = VP.t:<progressive>
+S_r.b:<perfect> = VP.t:<perfect>
+S_r.b:<passive> = VP.t:<passive>
+S_r.b:<mainv> = VP.t:<mainv>
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<tense> = VP.t:<tense>
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+S_r.b:<assign-case> = VP.t:<assign-case>
+
+NP_0.t:<agr> = S_r.b:<agr>
+NP_0.t:<case> = S_r.b:<assign-case>
+
+VP.b:<compar> = -
+VP.b:<passive> = V.t:<passive>
+VP.b:<agr> = V.t:<agr>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<mode> = V.t:<mode>
+VP.b:<tense> = V.t:<tense>
+VP.b:<mainv> = V.t:<mainv>
+V.t:<passive> = -
+NP_1.t:<case> = acc
+AP_2.b:<wh> = A.t:<wh>
+AP_2.b:<compar> = A.t:<compar>
+AP_2.b:<equiv> = A.t:<equiv>
+S_q.b:<extracted> = +
+
+S_q.b:<inv> = S_r.t:<inv>
+S_q.b:<inv> = S_q.b:<invlink>
+S_q.b:<wh> = AP_2.t:<wh>
+S_q.b:<mode> = S_r.t:<mode>
+S_q.b:<comp> = nil
+S_r.t:<comp> = nil
+S_r.t:<conj> = nil
+AP.t:<trace> = AP_2.t:<trace>
+AP.t:<wh> = AP_2.t:<wh>
+AP_2.t:<wh>=+
+" :COMMENTS NIL :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "q"))) (((("AP" . "2"))) (((("A" . "")) :headp T)) )  (((("S" . "r"))) (((("NP" . "0")) :substp T :constraints ""))  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("NP" . "1")) :substp T :constraints ""))  (((("AP" . "")) :constraints "NA" :constraint-type :NA) (((("" . "")))) ) ) ) ) 
+("RWA2nx1VA2bynx0" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+S_r.b:<inv> = -
+S_r.b:<comp> = nil
+S_r.b:<control> = NP_1.t:<control>
+S_r.b:<progressive> = VP.t:<progressive>
+S_r.b:<perfect> = VP.t:<perfect>
+S_r.b:<passive> = VP.t:<passive>
+S_r.b:<mainv> = VP.t:<mainv>
+
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<tense> = VP.t:<tense>
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+NP_1.t:<agr> = S_r.b:<agr>
+NP_1.t:<case> = S_r.b:<assign-case>
+
+VP.b:<compar> = -
+VP.b:<mode> = V.t:<mode>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<tense> = V.t:<tense>
+VP.b:<passive> = V.t:<passive>
+VP.b:<agr> = V.t:<agr>
+VP.b:<mainv> = V.t:<mainv>
+V.t:<punct struct> = nil
+V.t:<mode> = ppart
+V.t:<passive> = +
+PP_0.b:<assign-case> = P_0.t:<assign-case>
+PP_0.b:<assign-case> = NP_0.t:<case>
+PP_0.b:<wh> = NP_0.t:<wh>
+P_0.b:<assign-case> = acc
+AP_2.b:<wh> = A.t:<wh>
+AP_2.b:<compar> = A.t:<compar>
+AP_2.b:<equiv> = A.t:<equiv>
+S_q.b:<extracted> = +
+
+S_q.b:<inv> = S_r.t:<inv>
+S_q.b:<inv> = S_q.b:<invlink>
+S_q.b:<wh> = AP_2.t:<wh>
+S_q.b:<mode> = S_r.t:<mode>
+S_q.b:<comp> = nil
+S_r.t:<comp> = nil
+S_r.t:<conj> = nil
+AP.t:<trace> = AP_2.t:<trace>
+AP.t:<wh> = AP_2.t:<wh>
+AP_2.t:<wh>=+
+" :COMMENTS NIL :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "q"))) (((("AP" . "2"))) (((("A" . "")) :headp T)) )  (((("S" . "r"))) (((("NP" . "1")) :substp T :constraints ""))  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("AP" . "")) :constraints "NA" :constraint-type :NA) (((("" . "")))) )  (((("PP" . "0"))) (((("P" . "0"))) (((("by" . "")))) )  (((("NP" . "0")) :substp T :constraints "")) ) ) ) ) 
+("RWA2nx1VA2" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+S_r.b:<inv> = -
+S_r.b:<comp> = nil
+S_r.b:<control> = NP_1.t:<control>
+S_r.b:<mode> = VP.t:<mode>
+
+S_r.b:<progressive> = VP.t:<progressive>
+S_r.b:<perfect> = VP.t:<perfect>
+S_r.b:<passive> = VP.t:<passive>
+S_r.b:<mainv> = VP.t:<mainv>
+S_r.b:<tense> = VP.t:<tense>
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+NP_1.t:<agr> = S_r.b:<agr>
+NP_1.t:<case> = S_r.b:<assign-case>
+
+VP.b:<compar> = -
+VP.b:<mode> = V.t:<mode>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<tense> = V.t:<tense>
+VP.b:<passive> = V.t:<passive>
+VP.b:<agr> = V.t:<agr>
+VP.b:<mainv> = V.t:<mainv>
+V.t:<punct struct> = nil
+V.t:<mode> = ppart
+V.t:<passive> = +
+AP_2.b:<wh> = A.t:<wh>
+AP_2.b:<compar> = A.t:<compar>
+AP_2.b:<equiv> = A.t:<equiv>
+S_q.b:<extracted> = +
+
+S_q.b:<inv> = S_r.t:<inv>
+S_q.b:<inv> = S_q.b:<invlink>
+S_q.b:<wh> = AP_2.t:<wh>
+S_q.b:<mode> = S_r.t:<mode>
+S_q.b:<comp> = nil
+S_r.t:<comp> = nil
+S_r.t:<conj> = nil
+AP.t:<trace> = AP_2.t:<trace>
+AP.t:<wh> = AP_2.t:<wh>
+AP_2.t:<wh>=+
+" :COMMENTS NIL :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "q"))) (((("AP" . "2"))) (((("A" . "")) :headp T)) )  (((("S" . "r"))) (((("NP" . "1")) :substp T :constraints ""))  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("AP" . "")) :constraints "NA" :constraint-type :NA) (((("" . "")))) ) ) ) ) 

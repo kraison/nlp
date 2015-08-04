@@ -1,0 +1,547 @@
+("nx0N1" :COMMENT-DISPLAY? T :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+S_r.b:<extracted> = -
+S_r.b:<inv> = -
+
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+
+
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<mainv> = VP.t:<mainv>
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+NP_0:<agr> = S_r.b:<agr>
+NP_0:<case> = S_r.b:<assign-case>
+NP_0:<wh> = -
+NP_1:<case> = acc 
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<passive> = VP.t:<passive>
+VP.t:<passive> = -
+VP.b:<mode> = nom
+VP.b:<assign-case> = acc
+VP.b:<compar> = -
+N:<agr> = NP_1.b:<agr>
+NP_1.b:<case> = N.t:<case>
+NP_1.b:<wh> = N.t:<wh>
+NP_1.b:<pron> = N.t:<pron>
+NP_1.b:<compar> = N.t:<compar>
+N.t:<compar> = -
+N.t:<const> = NP_1.b:<const>
+N.t:<gen> = NP_1.b:<gen>
+N.t:<definite> = NP_1.b:<definite>
+N.t:<quan> = NP_1.b:<quan>
+N.t:<card> = NP_1.b:<card>
+N.t:<decreas> = NP_1.b:<decreas>
+S_r.b:<control> = NP_0.t:<control>
+" :COMMENTS "Tree for predicational NPs:
+
+  John is an author.
+  I consider John an author.
+
+<mainv> feature prevents
+adjunction of \"do\" to auxiliary-headed S
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("NP" . "0")) :substp T))  (((("VP" . ""))) (((("V" . "")) :constraints "NA" :constraint-type :NA) (((("" . "v")))) )  (((("NP" . "1"))) (((("N" . "")) :headp T)) ) ) ) 
+("W1nx0N1" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+S_q.b:<extracted> = +
+
+S_q.b:<inv> = S_r.t:<inv>
+S_q.b:<inv> = S_q.b:<invlink>
+NP_1.t:<wh> = S_q.b:<wh>
+NP_1.b:<wh> = N.t:<wh>
+S_r.t:<comp> = nil
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+
+
+
+S_q.b:<mode> = S_r.t:<mode>
+S_q.b:<comp> = nil
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<comp> = nil
+S_r.b:<inv> = -
+NP_0:<agr> = S_r.b:<agr>
+NP_0:<case> = S_r.b:<assign-case>
+NP_1.b:<compar> = N.t:<compar>
+NP_1.b:<agr> = N.t:<agr>
+NP_1.b:<case> = N.t:<case>
+NP_1.b:<pron> = N.t:<pron>
+N.t:<compar> = -
+N.t:<const> = NP_1.b:<const>
+N.t:<gen> = NP_1.b:<gen>
+N.t:<definite> = NP_1.b:<definite>
+N.t:<quan> = NP_1.b:<quan>
+N.t:<card> = NP_1.b:<card>
+N.t:<decreas> = NP_1.b:<decreas>
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<control> = NP_0.t:<control>
+NP.t:<trace> = NP_1:<trace>
+NP.t:<agr> = NP_1:<agr>
+NP.t:<case> = NP_1:<case>
+NP.t:<wh> = NP_1:<wh>
+NP.t:<case> = acc
+S_r.b:<tense> = VP.t:<tense>
+S_r.b:<mainv> = VP.t:<mainv>
+S_r.b:<passive> = VP.t:<passive>
+VP.t:<passive> = -
+VP.b:<mode> = nom
+VP.b:<assign-case> = acc
+VP.b:<compar> = -
+S_r.t:<conj> = nil
+" :COMMENTS "
+No original comments." :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "q"))) (((("NP" . "1"))) (((("N" . "")) :headp T)) )  (((("S" . "r"))) (((("NP" . "0")) :substp T))  (((("VP" . ""))) (((("V" . "")) :constraints "NA" :constraint-type :NA) (((("" . "v")))) )  (((("NP" . "")) :constraints "NA" :constraint-type :NA) (((("" . "")))) ) ) ) ) 
+("W0nx0N1" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+S_q.b:<extracted> = +
+
+S_q.b:<inv> = S_r.t:<inv>
+S_q.b:<wh> = NP_0.t:<wh>
+S_r.t:<comp> = nil
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+
+
+
+S_q.b:<comp> = nil
+S_q.b:<mode> = S_r.t:<mode>
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+S_r.b:<inv> = -
+NP:<trace> = NP_0:<trace>
+NP:<agr> = NP_0:<agr>
+NP:<case> = NP_0:<case>
+NP:<wh> = NP_0:<wh>
+NP_0:<wh> = +
+NP.t:<agr> = S_r.b:<agr>
+NP.t:<case> = S_r.b:<assign-case>
+NP_1.b:<compar> = N.t:<compar>
+N.t:<compar> = -
+N.t:<const> = NP_1.b:<const>
+N.t:<gen> = NP_1.b:<gen>
+N.t:<definite> = NP_1.b:<definite>
+N.t:<quan> = NP_1.b:<quan>
+N.t:<card> = NP_1.b:<card>
+N.t:<decreas> = NP_1.b:<decreas>
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+VP.b:<mode> = nom
+VP.b:<assign-case> = acc
+VP.b:<compar> = -
+VP.t:<passive> = -
+N:<agr> = NP_1.b:<agr>
+NP_1.b:<wh> = N.t:<wh>
+NP_1.t:<case> = acc
+NP_1.b:<case> = N.t:<case>
+NP_1.b:<pron> = N.t:<pron>
+S_r.t:<conj> = nil
+S_r.b:<assign-comp> = inf_nil/ind_nil/ecm
+
+" :COMMENTS "Wh on the subject
+ \"Who loves Mary\"
+ \"Who has loved Mary\"
+
+check the agr equation on  NP0
+
+minidemo:
+
+ The value for tense is passed up from the V node.
+ this should be implemented everywhere: I have 
+ changed only this tree and the regular non-
+ question matrix tree" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "q"))) (((("NP" . "0")) :substp T :constraints "" :constraint-type :DUMMY))  (((("S" . "r"))) (((("NP" . "")) :constraints "NA" :constraint-type :NA) (((("" . "")))) )  (((("VP" . ""))) (((("V" . "")) :constraints "NA" :constraint-type :NA) (((("" . "v")))) )  (((("NP" . "1"))) (((("N" . "")) :headp T)) ) ) ) ) 
+("Inx0N1" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+S_r.b:<extracted> = -
+S_r.b:<inv> = -
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+
+
+
+S_r.b:<mode> = imp
+S_r.b:<mainv> = VP.t:<mainv>
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+NP_0:<agr> = S_r.b:<agr>
+NP_0:<case> = S_r.b:<assign-case>
+NP_0:<wh> = -
+NP_0:<agr pers> = 2
+NP_0:<agr 3rdsing> = -
+NP_0:<agr num> = plur/sing
+NP_0:<case> = nom
+NP_1:<case> = acc
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<passive> = VP.t:<passive>
+VP.t:<passive> = -
+VP.t:<tense> = pres
+VP.t:<mode> = base
+VP.t:<neg> = -
+VP.b:<mode> = nom
+VP.b:<assign-case> = acc
+VP.b:<compar> = -
+N:<agr> = NP_1.b:<agr>
+NP_1.b:<wh> = N.t:<wh>
+NP_1.b:<case> = N.t:<case>
+NP_1.b:<pron> = N.t:<pron>
+NP_1.b:<compar> = N.t:<compar>
+N.t:<compar> = -
+N.t:<const> = NP_1.b:<const>
+N.t:<gen> = NP_1.b:<gen>
+N.t:<definite> = NP_1.b:<definite>
+N.t:<quan> = NP_1.b:<quan>
+N.t:<card> = NP_1.b:<card>
+N.t:<decreas> = NP_1.b:<decreas>
+" :COMMENTS "Tree for predicational NPs:
+
+  John is an author.
+  I consider John an author.
+
+<mainv> feature prevents
+adjunction of \"do\" to auxiliary-headed S
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("NP" . "0")) :constraints "NA" :constraint-type :NA) (((("" . "")))) )  (((("VP" . ""))) (((("V" . "")) :constraints "NA" :constraint-type :NA) (((("" . "v")))) )  (((("NP" . "1"))) (((("N" . "")) :headp T)) ) ) ) 
+("N0nx0N1" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+
+
+
+
+S_r.t:<mode> = ind/inf
+S_r.b:<comp> = nil
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<tense> = VP.t:<tense>
+S_r.t:<inv> = -
+NP_0.t:<agr> = S_r.b:<agr>
+NP_0.t:<case> = S_r.b:<assign-case>
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+VP.b:<mode> = nom
+VP.b:<assign-case> = acc
+VP.b:<agr> = NP_1.t:<agr>
+VP.b:<compar> = -
+NP_1.t:<wh> = -
+NP_1.b:<case> = N.t:<case>
+NP_1.b:<agr> = N.t:<agr>
+NP_1.b:<wh> = N.t:<wh>
+NP_1.b:<pron> = N.t:<pron>
+NP_1.b:<compar> = N.t:<compar>
+N.t:<compar> = -
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<case> = NP_f.t:<case>
+N.t:<const> = NP_1.b:<const>
+N.t:<gen> = NP_1.b:<gen>
+N.t:<definite> = NP_1.b:<definite>
+N.t:<quan> = NP_1.b:<quan>
+N.t:<card> = NP_1.b:<card>
+N.t:<decreas> = NP_1.b:<decreas>
+S_r.t:<conj> = nil
+
+NP_w.t:<trace> = NP_0.b:<trace>
+NP_w.t:<case> = NP_0.b:<case>
+NP_w.t:<agr> = NP_0.b:<agr>
+NP_w.t:<wh> = +
+S_r.t:<comp> = nil
+NP_r.b:<rel-clause> = +
+NP_f.b:<case> = nom/acc
+NP_r.b:<pron> = NP_f.t:<pron>
+
+" :COMMENTS "Wh on the subject
+ \"Who loves Mary\"
+ \"Who has loved Mary\"
+
+check the agr equation on  NP0
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("S" . "p")) :constraints "NA" :constraint-type :NA) (((("NP" . "w")) :substp T))  (((("S" . "r"))) (((("NP" . "0")) :constraints "NA" :constraint-type :NA) (((("" . "")))) )  (((("VP" . ""))) (((("V" . "")) :constraints "NA" :constraint-type :NA) (((("" . "v")))) )  (((("NP" . "1"))) (((("N" . "")) :headp T)) ) ) ) ) ) 
+("Npxnx0N1" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+S_r.b:<extracted> = -
+S_r.b:<inv> = -
+
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+
+
+VP.b:<compar> = -
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<mainv> = VP.t:<mainv>
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+NP_0:<agr> = S_r.b:<agr>
+NP_0:<case> = S_r.b:<assign-case>
+NP_0:<wh> = -
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<passive> = VP.t:<passive>
+VP.t:<passive> = -
+VP.b:<mode> = nom
+VP.b:<assign-case> = acc
+N:<agr> = NP_1.b:<agr>
+NP_1.t:<wh> = -
+NP_1.b:<case> = N.t:<case>
+NP_1.b:<pron> = N.t:<pron>
+NP_1.b:<wh> = N.t:<wh>
+NP_1.b:<compar> = N.t:<compar>
+N.t:<compar> = -
+N.t:<const> = NP_1.b:<const>
+N.t:<gen> = NP_1.b:<gen>
+N.t:<definite> = NP_1.b:<definite>
+N.t:<quan> = NP_1.b:<quan>
+N.t:<card> = NP_1.b:<card>
+N.t:<decreas> = NP_1.b:<decreas>
+S_r.b:<control> = NP_0.t:<control>
+S_r.t:<inv> = -
+PP_w.t:<wh> = +
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<case> = NP_f.t:<case>
+NP_f.b:<case> = acc/nom
+S_r.t:<comp> = nil
+NP_r.b:<rel-clause> = +
+NP_f.b:<case> = nom/acc
+NP_r.b:<pron> = NP_f.t:<pron>
+
+" :COMMENTS "Tree for predicational NPs:
+
+  John is an author.
+  I consider John an author.
+
+<mainv> feature prevents
+adjunction of \"do\" to auxiliary-headed S
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("S" . "p")) :constraints "NA" :constraint-type :NA) (((("PP" . "w")) :substp T))  (((("S" . "r"))) (((("NP" . "0")) :substp T))  (((("VP" . ""))) (((("V" . "")) :constraints "NA" :constraint-type :NA) (((("" . "v")))) )  (((("NP" . "1"))) (((("N" . "")) :headp T)) ) ) ) ) ) 
+("Nc0nx0N1" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+
+
+
+
+S_r.b:<comp> = nil
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<tense> = VP.t:<tense>
+S_r.t:<inv> = -
+NP_0.t:<agr> = S_r.b:<agr>
+NP_0.t:<case> = S_r.b:<assign-case>
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+VP.b:<mode> = nom
+VP.b:<assign-case> = acc
+VP.b:<agr> = NP_1.t:<agr>
+VP.b:<compar> = -
+NP_1.t:<wh> = -
+NP_1.b:<case> = N.t:<case>
+NP_1.b:<agr> = N.t:<agr>
+NP_1.b:<wh> = N.t:<wh>
+NP_1.b:<pron> = N.t:<pron>
+NP_1.b:<compar> = N.t:<compar>
+N.t:<compar> = -
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<case> = NP_f.t:<case>
+N.t:<const> = NP_1.b:<const>
+N.t:<gen> = NP_1.b:<gen>
+N.t:<definite> = NP_1.b:<definite>
+N.t:<quan> = NP_1.b:<quan>
+N.t:<card> = NP_1.b:<card>
+N.t:<decreas> = NP_1.b:<decreas>
+S_r.t:<conj> = nil
+
+NP_w.t:<trace> = NP_0.b:<trace>
+NP_w.t:<case> = NP_0.b:<case>
+NP_w.t:<agr> = NP_0.b:<agr>
+NP_r.b:<rel-clause> = +
+S_r.t:<mode> = inf/ger/ind
+S_r.t:<nocomp-mode> = inf/ger
+VP.t:<assign-comp> = that/ind_nil/inf_nil/ecm
+S_r.b:<nocomp-mode> = S_r.t:<nocomp-mode>
+S_r.b:<nocomp-mode> = S_r.b:<mode>
+NP_f.b:<case> = nom/acc
+NP_r.b:<pron> = NP_f.t:<pron>
+
+" :COMMENTS "Wh on the subject
+ \"Who loves Mary\"
+ \"Who has loved Mary\"
+
+check the agr equation on  NP0
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("S" . "p")) :constraints "NA" :constraint-type :NA) (((("NP" . "w")) :constraints "NA" :constraint-type :NA) (((("" . "w")))) )  (((("S" . "r"))) (((("NP" . "0")) :constraints "NA" :constraint-type :NA) (((("" . "")))) )  (((("VP" . ""))) (((("V" . "")) :constraints "NA" :constraint-type :NA) (((("" . "v")))) )  (((("NP" . "1"))) (((("N" . "")) :headp T)) ) ) ) ) ) 
+("Ncnx0N1" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+S_r.b:<extracted> = -
+S_r.b:<inv> = -
+
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+
+
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<mainv> = VP.t:<mainv>
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+NP_0:<agr> = S_r.b:<agr>
+NP_0:<case> = S_r.b:<assign-case>
+NP_0:<wh> = -
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<passive> = VP.t:<passive>
+VP.t:<passive> = -
+VP.b:<mode> = nom
+VP.b:<assign-case> = acc
+VP.b:<compar> = -
+N:<agr> = NP_1.b:<agr>
+NP_1.t:<wh> = -
+NP_1.b:<case> = N.t:<case>
+NP_1.b:<pron> = N.t:<pron>
+NP_1.b:<wh> = N.t:<wh>
+NP_1.b:<compar> = N.t:<compar>
+N.t:<compar> = -
+N.t:<const> = NP_1.b:<const>
+N.t:<gen> = NP_1.b:<gen>
+N.t:<definite> = NP_1.b:<definite>
+N.t:<quan> = NP_1.b:<quan>
+N.t:<card> = NP_1.b:<card>
+N.t:<decreas> = NP_1.b:<decreas>
+S_r.b:<control> = NP_0.t:<control>
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<case> = NP_f.t:<case>
+NP_f.b:<case> = acc/nom
+S_r.t:<inv> = -
+S_r.t:<mode> = ind/inf
+S_r.t:<nocomp-mode> = ind
+VP.t:<assign-comp> = that/for/ind_nil
+S_r.b:<nocomp-mode> = S_r.t:<nocomp-mode>
+S_r.b:<nocomp-mode> = S_r.b:<mode>
+NP_r.b:<rel-clause> = +
+NP_f.b:<case> = nom/acc
+NP_r.b:<pron> = NP_f.t:<pron>
+
+" :COMMENTS "Tree for predicational NPs:
+
+  John is an author.
+  I consider John an author.
+
+<mainv> feature prevents
+adjunction of \"do\" to auxiliary-headed S
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("S" . "p")) :constraints "NA" :constraint-type :NA) (((("NP" . "w")) :constraints "NA" :constraint-type :NA) (((("" . "w")))) )  (((("S" . "r"))) (((("NP" . "0")) :substp T))  (((("VP" . ""))) (((("V" . "")) :constraints "NA" :constraint-type :NA) (((("" . "v")))) )  (((("NP" . "1"))) (((("N" . "")) :headp T)) ) ) ) ) ) 
+("Gnx0N1" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+NP_0:<wh> = NP_r.b:<wh>
+VP.t:<mode> = ger
+NP_r.b:<case> = nom/acc
+NP_r.b:<agr num> = sing
+NP_r.b:<agr pers> = 3
+NP_r.b:<agr 3rdsing> = +
+VP.b:<mode> = nom
+VP.b:<assign-case> = acc
+VP.b:<compar> = -
+N:<agr> = NP_1.b:<agr>
+NP_1.b:<wh> = N.t:<wh>
+NP_1.b:<case> = N.t:<case>
+NP_1.b:<pron> = N.t:<pron>
+NP_1.b:<compar> = N.t:<compar>
+N.t:<compar> = -
+N.t:<const> = NP_1.b:<const>
+N.t:<gen> = NP_1.b:<gen>
+N.t:<definite> = NP_1.b:<definite>
+N.t:<quan> = NP_1.b:<quan>
+N.t:<card> = NP_1.b:<card>
+N.t:<decreas> = NP_1.b:<decreas>
+
+
+
+NP_r.b:<gerund> = +
+NP_0:<case> = acc/gen
+" :COMMENTS "Gerund Tree for predicational NPs:
+
+...John('s) being an author...
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "0")) :substp T))  (((("VP" . ""))) (((("V" . "")) :constraints "NA" :constraint-type :NA) (((("" . "v")))) )  (((("NP" . "1"))) (((("N" . "")) :headp T)) ) ) ) 
+("nx0N1-PRO" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+S_r.b:<extracted> = -
+S_r.b:<inv> = -
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<mainv> = VP.t:<mainv>
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+S_r.b:<assign-case> = NP_0.t:<case>
+NP_0:<agr> = S_r.b:<agr>
+NP_0:<wh> = -
+NP_0.t:<case> = none
+NP_1:<case> = acc
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<passive> = VP.t:<passive>
+VP.t:<passive> = -
+VP.b:<mode> = nom
+VP.b:<assign-case> = acc
+VP.b:<compar> = -
+N:<agr> = NP_1.b:<agr>
+NP_1.b:<case> = N.t:<case>
+NP_1.b:<wh> = N.t:<wh>
+NP_1.b:<pron> = N.t:<pron>
+NP_1.b:<compar> = N.t:<compar>
+N.t:<compar> = -
+N.t:<const> = NP_1.b:<const>
+N.t:<gen> = NP_1.b:<gen>
+N.t:<definite> = NP_1.b:<definite>
+N.t:<quan> = NP_1.b:<quan>
+N.t:<card> = NP_1.b:<card>
+N.t:<decreas> = NP_1.b:<decreas>
+S_r.b:<control> = NP_0.t:<control>
+VP.t:<mode> = inf/ger
+
+" :COMMENTS "Tree for predicational NPs w/ PRO subject
+
+John wants [PRO to be an author].
+
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("NP" . "0")) :constraints "NA" :constraint-type :NA) (((("PRO" . "")))) )  (((("VP" . ""))) (((("V" . "")) :constraints "NA" :constraint-type :NA) (((("" . "v")))) )  (((("NP" . "1"))) (((("N" . "")) :headp T)) ) ) ) 
+("Gnx0N1-PRO" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+NP_0:<wh> = NP_r.b:<wh>
+NP_0.t:<case> = none
+NP_0.t:<wh> = -
+VP.t:<mode> = ger
+NP_r.b:<case> = nom/acc
+NP_r.b:<agr num> = sing
+NP_r.b:<agr pers> = 3
+NP_r.b:<agr 3rdsing> = +
+VP.b:<mode> = nom
+VP.b:<assign-case> = acc
+VP.b:<compar> = -
+N:<agr> = NP_1.b:<agr>
+NP_1.b:<wh> = N.t:<wh>
+NP_1.b:<case> = N.t:<case>
+NP_1.b:<pron> = N.t:<pron>
+NP_1.b:<compar> = N.t:<compar>
+N.t:<compar> = -
+N.t:<const> = NP_1.b:<const>
+N.t:<gen> = NP_1.b:<gen>
+N.t:<definite> = NP_1.b:<definite>
+N.t:<quan> = NP_1.b:<quan>
+N.t:<card> = NP_1.b:<card>
+N.t:<decreas> = NP_1.b:<decreas>
+NP_r.b:<gerund> = +
+
+" :COMMENTS "Gerund Tree w/ PRO subject for predicational NPs:
+
+[PRO being an author] is important to John.
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "0")) :constraints "NA" :constraint-type :NA) (((("PRO" . "")))) )  (((("VP" . ""))) (((("V" . "")) :constraints "NA" :constraint-type :NA) (((("" . "v")))) )  (((("NP" . "1"))) (((("N" . "")) :headp T)) ) ) ) 

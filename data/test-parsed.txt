@@ -1,0 +1,5 @@
+( (S (NP (PRP He)) (VP (VBD ate)) (\. \.) ))
+( (S (NP (PRP He)) (VP (VBZ eats)) (\. \.) ))
+( (S (NP (DT The) (NN man)) (VP (VBD ate) (NN soup)) (\. \.) ))
+( (S (NP (PRP He)) (VP (VBZ eats)) (NP (NN soup)) (\. \.) ))
+( (S (NP (PRP He)) (VP (VBD sat) (PP (IN on) (DT the) (NN mat))) (\. \.) ))

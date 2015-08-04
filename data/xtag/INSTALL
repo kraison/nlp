@@ -1,0 +1,8 @@
+#!/bin/csh
+set perl_cmd = /usr/bin/perl
+#--------------edit entries above to reflect your system-------------------------
+
+set english_gram_dir = $1
+echo Installing XTAG English Grammar to $english_gram_dir
+$perl_cmd -pe "s#\@\@ENGLISH_GRAM_DIR\@\@#$english_gram_dir#o" english.gram.orig > english.gram
+

@@ -1,0 +1,274 @@
+("s0PNaPnx1" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+S_r.b:<extracted> = -
+S_r.b:<inv> = -
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+
+
+
+VP.b:<compar> = -
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<mainv> = VP.t:<mainv>
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+S_0.t:<mode> = ind/inf
+S_0.t:<comp> = that/whether/for/nil
+S_0.t:<assign-comp> = inf_nil
+S_0.t:<inv> = -
+S_0.t:<extracted> = -
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<passive> = VP.t:<passive>
+VP.t:<passive> = -
+VP.t:<agr pers> = 3
+VP.b:<mode> = prep
+VP.b:<assign-case> = acc
+PP_1.b:<assign-case> = P.t:<assign-case>
+PP_1.b:<assign-case> = NP_1.t:<case>
+PP_1.b:<wh> = NP_1.t:<wh>
+
+" :COMMENTS "Declarative tree for predicative PPs that take sentential subjects.
+The sentential subjects can be indicative or infinitive with comps
+of that/whether/for/nil, although nil can only co-occur with the infinitive.
+This tree family, like other predicative tree families, is anchored by the
+predicted object (here, the P), with the verb, if any, adjoining in.
+EX: That Phyllis contradicted herself is in line with everything else we know
+about her.  
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("S" . "0")) :substp T))  (((("VP" . ""))) (((("V" . "")) :constraints "NA" :constraint-type :NA) (((("" . "v")))) )  (((("PP" . "1"))) (((("P" . ""))) (((("P" . "1")) :headp T :constraints "NA" :constraint-type :NA))  (((("N" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("P" . "2")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("NP" . "1")) :substp T)) ) ) ) 
+("W0s0PNaPnx1" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+S_q.b:<extracted> = +
+
+S_q.b:<inv> = S_r.t:<inv>
+S_r.t:<comp> = nil
+S_q.b:<wh> = NP_0.t:<wh>
+S_r.b:<assign-comp> = inf_nil/ind_nil
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+
+
+
+VP.t:<passive> = -
+
+VP.b:<compar> = -
+S_q.b:<comp> = nil
+S_q.b:<mode> = S_r.t:<mode>
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+S_r.b:<inv> = -
+NP_0:<trace> = S_0:<trace>
+NP_0:<wh> = +
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+VP.b:<mode> = prep
+VP.b:<assign-case> = acc
+PP_1.b:<assign-case> = P.t:<assign-case>
+PP_1.b:<assign-case> = NP_1.t:<case>
+PP_1.b:<wh> = NP_1.t:<wh>
+S_r.t:<conj> = nil
+" :COMMENTS "Subject extraction tree for predicative PPs that take sentential subjects.
+The tree does only wh extraction, not topicalization, since subjects do
+not topicalize.  The extracted S becomes an NP in its wh+ form, so this
+tree will parse the same sentence as W0nx0Pnx1, but we keep it here in spite of
+its redundancy because the underlying structure is different.
+This tree family, like other predicative tree families, is anchored by the
+predicted object (here, the P), with the verb, if any, adjoining in.
+EX: What was in line with everything else I know about Phyllis?
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "q"))) (((("NP" . "0")) :substp T))  (((("S" . "r"))) (((("S" . "0")) :constraints "NA" :constraint-type :NA) (((("" . "")))) )  (((("VP" . ""))) (((("V" . "")) :constraints "NA" :constraint-type :NA) (((("" . "v")))) )  (((("PP" . "1"))) (((("P" . ""))) (((("P" . "1")) :headp T :constraints "NA" :constraint-type :NA))  (((("N" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("P" . "2")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("NP" . "1")) :substp T)) ) ) ) ) 
+("N1s0PNaPnx1" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+
+
+
+
+VP.b:<compar> = -
+S_r.b:<mode> = VP.t:<mode>
+S_r.t:<mode> = ind/inf
+S_r.b:<tense> = VP.t:<tense>
+S_r.t:<inv> = -
+S_r.b:<inv> = -
+S_0.t:<mode> = ind/inf
+S_0.t:<comp> = that/whether/for/nil
+S_0.t:<assign-comp> = inf_nil
+S_0.t:<extracted> = -
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<case> = NP_f.t:<case>
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<tense> = VP.t:<tense>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<mainv> = VP.t:<mainv>
+S_r.b:<passive> = VP.t:<passive>
+VP.t:<passive> = -
+VP.b:<mode> = prep
+PP_1.b:<assign-case> = P.t:<assign-case>
+PP_1.b:<assign-case> = NP_1.t:<case>
+NP_w.t:<trace> = NP_1.b:<trace>
+NP_w.t:<case> = NP_1.b:<case>
+NP_w.t:<agr> = NP_1.b:<agr>
+NP_w.t:<wh> = +
+S_r.t:<comp> = nil
+NP_r.b:<rel-clause> = +
+NP_f.b:<case> = nom/acc
+NP_r.b:<pron> = NP_f.t:<pron>
+
+" :COMMENTS "Relative clause tree for predicative PPs that take sentential subjects.
+The NP inside the PP is what is extracted.
+The sentential subjects can be indicative or infinitive with comps
+of that/whether/for/nil, although nil can only co-occur with the infinitive.
+This tree family, like other predicative tree families, is anchored by the
+predicted object (here, the P), with the verb, if any, adjoining in.
+EX: That she spoke is in line with my theory --> I discussed my theory that
+that she spoke is in line with
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("S" . "p")) :constraints "NA" :constraint-type :NA) (((("NP" . "w")) :substp T))  (((("S" . "r"))) (((("S" . "0")) :substp T))  (((("VP" . ""))) (((("V" . "")) :constraints "NA" :constraint-type :NA) (((("" . "v")))) )  (((("PP" . "1"))) (((("P" . ""))) (((("P" . "1")) :headp T :constraints "NA" :constraint-type :NA))  (((("N" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("P" . "2")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("NP" . "1")) :constraints "NA" :constraint-type :NA) (((("" . "")))) ) ) ) ) ) ) 
+("Npxs0PNaPnx1" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+S_r.b:<extracted> = -
+S_r.b:<inv> = -
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+
+
+
+VP.b:<compar> = -
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<mainv> = VP.t:<mainv>
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+S_0.t:<mode> = ind/inf
+S_0.t:<comp> = that/whether/for/nil
+S_0.t:<assign-comp> = inf_nil
+S_0.t:<inv> = -
+S_0.t:<extracted> = -
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<passive> = VP.t:<passive>
+VP.t:<passive> = -
+VP.b:<mode> = prep
+PP_1.b:<assign-case> = P.t:<assign-case>
+PP_1.b:<assign-case> = NP_1.t:<case>
+P.b:<wh> = -
+S_r.t:<inv> = -
+PP_w.t:<wh> = +
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<case> = NP_f.t:<case>
+NP_f.b:<case> = acc/nom
+S_r.t:<comp> = nil
+NP_r.b:<rel-clause> = +
+NP_f.b:<case> = nom/acc
+NP_r.b:<pron> = NP_f.t:<pron>
+
+" :COMMENTS "Declarative tree for predicative PPs that take sentential subjects.
+The sentential subjects can be indicative or infinitive with comps
+of that/whether/for/nil, although nil can only co-occur with the infinitive.
+This tree family, like other predicative tree families, is anchored by the
+predicted object (here, the P), with the verb, if any, adjoining in.
+EX: That Phyllis contradicted herself is in line with everything else we know
+about her.  
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("S" . "p")) :constraints "NA" :constraint-type :NA) (((("PP" . "w")) :substp T))  (((("S" . "r"))) (((("S" . "0")) :substp T))  (((("VP" . ""))) (((("V" . "")) :constraints "NA" :constraint-type :NA) (((("" . "v")))) )  (((("PP" . "1"))) (((("P" . ""))) (((("P" . "1")) :headp T :constraints "NA" :constraint-type :NA))  (((("N" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("P" . "2")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("NP" . "1")) :substp T)) ) ) ) ) ) 
+("Nc1s0PNaPnx1" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+
+
+
+
+VP.b:<compar> = -
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<tense> = VP.t:<tense>
+S_r.t:<inv> = -
+S_r.b:<inv> = -
+S_0.t:<mode> = ind/inf
+S_0.t:<comp> = that/whether/for/nil
+S_0.t:<assign-comp> = inf_nil
+S_0.t:<extracted> = -
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<case> = NP_f.t:<case>
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<tense> = VP.t:<tense>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<mainv> = VP.t:<mainv>
+S_r.b:<passive> = VP.t:<passive>
+VP.t:<passive> = -
+VP.b:<mode> = prep
+PP_1.b:<assign-case> = P.t:<assign-case>
+PP_1.b:<assign-case> = NP_1.t:<case>
+NP_w.t:<trace> = NP_1.b:<trace>
+NP_w.t:<case> = NP_1.b:<case>
+NP_w.t:<agr> = NP_1.b:<agr>
+NP_r.b:<rel-clause> = +
+S_r.t:<mode> = inf/ind
+S_r.t:<nocomp-mode> = ind
+VP.t:<assign-comp> = that/for/ind_nil
+S_r.b:<nocomp-mode> = S_r.b:<mode>
+NP_f.b:<case> = nom/acc
+NP_r.b:<pron> = NP_f.t:<pron>
+
+" :COMMENTS "Relative clause tree for predicative PPs that take sentential subjects.
+The NP inside the PP is what is extracted.
+The sentential subjects can be indicative or infinitive with comps
+of that/whether/for/nil, although nil can only co-occur with the infinitive.
+This tree family, like other predicative tree families, is anchored by the
+predicted object (here, the P), with the verb, if any, adjoining in.
+EX: That she spoke is in line with my theory --> I discussed my theory that
+that she spoke is in line with
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("S" . "p")) :constraints "NA" :constraint-type :NA) (((("NP" . "w")) :constraints "NA" :constraint-type :NA) (((("" . "w")))) )  (((("S" . "r"))) (((("S" . "0")) :substp T))  (((("VP" . ""))) (((("V" . "")) :constraints "NA" :constraint-type :NA) (((("" . "v")))) )  (((("PP" . "1"))) (((("P" . ""))) (((("P" . "1")) :headp T :constraints "NA" :constraint-type :NA))  (((("N" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("P" . "2")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("NP" . "1")) :constraints "NA" :constraint-type :NA) (((("" . "")))) ) ) ) ) ) ) 
+("Ncs0PNaPnx1" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+S_r.b:<extracted> = -
+S_r.b:<inv> = -
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+
+
+
+VP.b:<compar> = -
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<mainv> = VP.t:<mainv>
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+S_0.t:<mode> = ind/inf
+S_0.t:<comp> = that/whether/for/nil
+S_0.t:<assign-comp> = inf_nil
+S_0.t:<inv> = -
+S_0.t:<extracted> = -
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<passive> = VP.t:<passive>
+VP.t:<passive> = -
+VP.b:<mode> = prep
+PP_1.b:<assign-case> = P.t:<assign-case>
+PP_1.b:<assign-case> = NP_1.t:<case>
+P.b:<wh> = -
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<case> = NP_f.t:<case>
+NP_f.b:<case> = acc/nom
+S_r.t:<inv> = -
+S_r.t:<mode> = ind/inf
+S_r.t:<nocomp-mode> = ind
+VP.t:<assign-comp> = that/for/ind_nil
+S_r.b:<nocomp-mode> = S_r.b:<mode>
+NP_r.b:<rel-clause> = +
+NP_f.b:<case> = nom/acc
+NP_r.b:<pron> = NP_f.t:<pron>
+
+" :COMMENTS "Declarative tree for predicative PPs that take sentential subjects.
+The sentential subjects can be indicative or infinitive with comps
+of that/whether/for/nil, although nil can only co-occur with the infinitive.
+This tree family, like other predicative tree families, is anchored by the
+predicted object (here, the P), with the verb, if any, adjoining in.
+EX: That Phyllis contradicted herself is in line with everything else we know
+about her.  
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("S" . "p")) :constraints "NA" :constraint-type :NA) (((("NP" . "w")) :constraints "NA" :constraint-type :NA) (((("" . "w")))) )  (((("S" . "r"))) (((("S" . "0")) :substp T))  (((("VP" . ""))) (((("V" . "")) :constraints "NA" :constraint-type :NA) (((("" . "v")))) )  (((("PP" . "1"))) (((("P" . ""))) (((("P" . "1")) :headp T :constraints "NA" :constraint-type :NA))  (((("N" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("P" . "2")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("NP" . "1")) :substp T)) ) ) ) ) ) 

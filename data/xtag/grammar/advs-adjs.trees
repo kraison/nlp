@@ -1,0 +1,1099 @@
+("ARBs" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+
+S.t:<comp> = nil
+S.t:<comp> = S_r.b:<comp>
+S.t:<assign-comp> = S_r.b:<assign-comp>
+S.t:<tense> = S_r.b:<tense>
+S.t:<extracted> = S_r.b:<extracted>
+S.t:<conj> = S_r.b:<conj>
+S.t:<mode> = S_r.b:<mode>
+S.t:<assign-case> = S_r.b:<assign-case>
+S.t:<agr> = S_r.b:<agr>
+
+Ad.t:<wh>= S_r.b:<wh>
+S_r.b:<inv> = S.t:<inv>
+S_r.b:<invlink> = S_r.b:<inv>
+S.b:<comp> = nil
+S_r.b:<nocomp-mode> = S.t:<nocomp-mode>
+" :COMMENTS "Sentential adverbial tree
+Adverb on the left of the sentence
+ \"Obviously John loves Mary\"
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("Ad" . "")) :headp T))  (((("S" . "")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("ARBvx" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+VP_r.b:<passive> = VP.t:<passive>
+VP_r.b:<mainv> = VP.t:<mainv>
+VP_r.b:<mode> = VP.t:<mode>
+VP_r.b:<assign-comp> = VP.t:<assign-comp>
+VP_r.b:<agr> = VP.t:<agr>
+VP_r.b:<tense> = VP.t:<tense>
+VP_r.b:<assign-case> = VP.t:<assign-case>
+
+
+VP_r.b:<conj> = VP.t:<conj>
+Ad.t:<compar> = VP_r.b:<compar>
+VP_r.b:<equiv> = Ad.t:<equiv>
+Ad.t:<equiv> = -
+" :COMMENTS "adverb modifies verb phrase on the left
+
+John obviously loves Mary" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("VP" . "r"))) (((("Ad" . "")) :headp T))  (((("VP" . "")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("An" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+N_r.b:<case> = N_f.t:<case>
+N_r.b:<agr> = N_f.t:<agr>
+N_r.b:<assign-comp> = N_f.t:<assign-comp>
+N_r.b:<pron> = N_f.t:<pron>
+N_r.b:<wh> = N_f.t:<wh>
+
+N_r.b:<conj> = N_f.t:<conj>
+N_r.b:<card> = N_f.t:<card>
+N_r.b:<const> = N_f.t:<const>
+N_r.b:<quan> = N_f.t:<quan>
+N_r.b:<decreas> = N_f.t:<decreas>
+N_r.b:<definite> = N_f.t:<definite>
+N_r.b:<gen> = N_f.t:<gen>
+N_f.t:<compar> = -
+N_r.b:<compar> = A.t:<compar>
+N_r.b:<equiv> = -
+" :COMMENTS "Adjective" :SHAPE :NONE :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("N" . "r"))) (((("A" . "")) :headp T))  (((("N" . "f")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("sARB" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+
+S.t:<comp> = nil
+S.t:<comp> = S_r.b:<comp>
+S.t:<conj> = S_r.b:<conj>
+S.t:<extracted> = S_r.b:<extracted>
+S.t:<assign-comp> = S_r.b:<assign-comp>
+S.t:<tense> = S_r.b:<tense>
+S.t:<wh> = S_r.b:<wh>
+S.t:<inv> = S_r.b:<inv>
+S.t:<invlink> = S_r.b:<invlink>
+S.t:<mode> = S_r.b:<mode>
+S.t:<assign-case> = S_r.b:<assign-case>
+S.t:<agr> = S_r.b:<agr>
+
+" :COMMENTS "Sentential adverbial tree
+Adverb on  the right of the sentence
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("S" . "")) :footp T :constraints "NA" :constraint-type :NA))  (((("Ad" . "")) :headp T)) ) 
+("vxARB" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+VP_r.b:<agr> = VP.t:<agr>
+VP_r.b:<mode> = VP.t:<mode>
+VP_r.b:<mainv> = VP.t:<mainv>
+VP_r.b:<tense> = VP.t:<tense>
+VP_r.b:<assign-comp> = VP.t:<assign-comp>
+VP_r.b:<assign-case> = VP.t:<assign-case>
+
+VP_r.b:<passive> = VP.t:<passive>
+VP_r.b:<conj> = VP.t:<conj>
+VP_r.b:<compar> = Ad.t:<compar>
+VP_r.b:<equiv> = Ad.t:<equiv>
+VP.t:<mainv> = +
+" :COMMENTS NIL :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("VP" . "r"))) (((("VP" . "")) :footp T :constraints "NA" :constraint-type :NA))  (((("Ad" . "")) :headp T)) ) 
+("ARBa" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+A_r.b:<wh> = Ad.t:<wh>
+A.t:<wh> = -
+
+A_r.b:<assign-comp> = A.t:<assign-comp>
+A_r.b:<conj> = A.t:<conj>
+A_r.b:<compar> = A.t:<compar>
+A_r.b:<equiv> = A.t:<equiv>
+A_r.b:<super> = A.t:<super>" :COMMENTS NIL :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("A" . "r"))) (((("Ad" . "")) :headp T))  (((("A" . "")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("aARB" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+A.t:<wh> = -
+
+A_r.b:<assign-comp> = A.t:<assign-comp>
+A_r.b:<conj> = A.t:<conj>
+A_r.b:<compar> = A.t:<compar>
+A_r.b:<equiv> = A.t:<equiv>
+A_r.b:<super> = A.t:<super>" :COMMENTS "Adverb post modifies the adjective. 
+Only selected by one adverb, \"enough\"
+
+\"hot enough\"" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("A" . "r"))) (((("A" . "")) :footp T :constraints "NA" :constraint-type :NA))  (((("Ad" . "")) :headp T)) ) 
+("ARBpx" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+
+PP_r.b:<assign-comp> = PP.t:<assign-comp>
+PP_r.b:<conj> = PP.t:<conj>
+" :COMMENTS NIL :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("PP" . "r"))) (((("Ad" . "")) :headp T))  (((("PP" . "")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("ARBarb" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+
+Ad_r.b:<assign-comp> = Ad_1.t:<assign-comp>
+Ad_r.b:<conj> = Ad_1.t:<conj>
+Ad_r.b:<compar> = Ad_1.t:<compar>
+Ad_r.b:<equiv> = Ad_1.t:<equiv>
+" :COMMENTS NIL :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("Ad" . "r"))) (((("Ad" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("Ad" . "1")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("arbARB" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+
+Ad_r.b:<assign-comp> = Ad_0.t:<assign-comp>
+Ad_r.b:<conj> = Ad_0.t:<conj>
+Ad_r.b:<compar> = -
+Ad_0.t:<compar> = -
+Ad_r.b:<equiv> = Ad_0.t:<equiv>
+" :COMMENTS NIL :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("Ad" . "r"))) (((("Ad" . "0")) :footp T :constraints "NA" :constraint-type :NA))  (((("Ad" . "")) :headp T)) ) 
+("ARBarbs" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+Ad.t:<wh> = +
+S.t:<comp> = nil
+S.t:<comp> = S_r.b:<comp>
+S.t:<assign-comp> = S_r.b:<assign-comp>
+S.t:<tense> = S_r.b:<tense>
+S.t:<conj> = S_r.b:<conj>
+S.t:<extracted> = S_r.b:<extracted>
+S.t:<mode> = S_r.b:<mode>
+S.t:<assign-case> = S_r.b:<assign-case>
+S.t:<agr> = S_r.b:<agr>
+
+Ad.t:<wh>= Ad_r.b:<wh>
+Ad_r.t:<wh> = S_r.b:<wh>
+S_r.b:<inv> = S.t:<inv>
+S_r.b:<invlink> = S_r.b:<inv>
+S.b:<comp> = nil
+S.t:<inv> = +
+S_r.b:<nocomp-mode> = S.t:<nocomp-mode>
+" :COMMENTS NIL :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("Ad" . "r"))) (((("Ad" . "")) :headp T))  (((("Ad" . "c")) :substp T)) )  (((("S" . "")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("pxARB" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+
+PP_r.b:<assign-comp> = PP.t:<assign-comp>
+PP.t:<conj> = PP_r.b:<conj>
+" :COMMENTS NIL :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("PP" . "r"))) (((("PP" . "")) :footp T :constraints "NA" :constraint-type :NA))  (((("Ad" . "")) :headp T)) ) 
+("ARBd" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+D_r.b:<agr> = D_f.t:<agr>
+D_r.b:<definite> = D_f.t:<definite>
+D_r.b:<quan> = D_f.t:<quan>
+D_r.b:<card> = D_f.t:<card>
+D_r.b:<gen> = D_f.t:<gen>
+D_r.b:<decreas> = D_f.t:<decreas>
+
+D_r.b:<assign-comp> = D_f.t:<assign-comp>
+D_f.t:<conj> = D_r.b:<conj>
+D_r.b:<wh> = Ad.t:<wh>
+" :COMMENTS NIL :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("D" . "r"))) (((("Ad" . "")) :headp T))  (((("D" . "f")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("ARBnx" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+NP_r.b:<case> = NP_f.t:<case>
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<pron> = NP_f.t:<pron>
+NP_r.b:<refl> = NP_f.t:<refl>
+NP_r.b:<conj> = NP_f.t:<conj>
+NP_r.b:<card> = NP_f.t:<card>
+NP_r.b:<const> = NP_f.t:<const>
+NP_r.b:<quan> = NP_f.t:<quan>
+NP_r.b:<decreas> = NP_f.t:<decreas>
+NP_r.b:<definite> = NP_f.t:<definite>
+NP_r.b:<gen> = NP_f.t:<gen>
+Ad.t:<compar> = -
+" :COMMENTS "ADverbs that adjoin onto all NPs - Mass, plural, fullNP with determiner, and
+Proper Nouns.  The adverbs 'even', 'only', 'just', and 'especially' select this tree.
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("Ad" . "")) :headp T))  (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("nxARBs" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+
+S.t:<comp> = nil
+S.t:<comp> = S_r.b:<comp>
+S.t:<assign-comp> = S_r.b:<assign-comp>
+S.t:<tense> = S_r.b:<tense>
+S.t:<extracted> = S_r.b:<extracted>
+S_r.b:<conj> = S.t:<conj>
+S.t:<mode> = S_r.b:<mode>
+S.t:<assign-case> = S_r.b:<assign-case>
+S.t:<agr> = S_r.b:<agr>
+
+Ad.t:<wh> = AdvP.b:<wh>
+AdvP.t:<wh>= S_r.b:<wh>
+S_r.b:<inv> = S.t:<inv>
+S_r.b:<invlink> = S_r.b:<inv>
+S.b:<comp> = nil
+S.b:<comp> = nil
+NP.t:<case> = nom/acc
+S_r.b:<nocomp-mode> = S.t:<nocomp-mode>
+" :COMMENTS "Time adverbial phrases to the left of the S:
+three days ago John had a party
+
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("AdvP" . ""))) (((("NP" . "")) :substp T))  (((("Ad" . "")) :headp T)) )  (((("S" . "")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("snxARB" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+
+S.t:<comp> = nil
+S.t:<comp> = S_r.b:<comp>
+S.t:<assign-comp> = S_r.b:<assign-comp>
+S.t:<tense> = S_r.b:<tense>
+S.t:<mode> = S_r.b:<mode>
+S_r.b:<conj> = S.t:<conj>
+S.t:<assign-case> = S_r.b:<assign-case>
+S.t:<agr> = S_r.b:<agr>
+
+S.t:<inv> = S_r.b:<inv>
+S.t:<invlink> = S_r.b:<invlink>
+S.t:<wh> = S_r.b:<wh>
+S.t:<extracted> = S_r.b:<extracted>
+NP.t:<case> = nom/acc
+" :COMMENTS "Time adverbials to the right of the S:
+John had a party three days ago
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("S" . "")) :footp T :constraints "NA" :constraint-type :NA))  (((("AdvP" . ""))) (((("NP" . "")) :substp T))  (((("Ad" . "")) :headp T)) ) ) 
+("vxnxARB" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+VP_r.b:<agr> = VP.t:<agr>
+VP_r.b:<mode> = VP.t:<mode>
+VP_r.b:<mainv> = VP.t:<mainv>
+VP_r.b:<tense> = VP.t:<tense>
+VP_r.b:<assign-comp> = VP.t:<assign-comp>
+VP_r.b:<assign-case> = VP.t:<assign-case>
+
+VP_r.b:<passive> = VP.t:<passive>
+VP_r.b:<conj> = VP.t:<conj>
+VP_r.b:<compar> = VP.t:<compar>
+VP_r.b:<equiv> = VP.t:<equiv>
+VP_r.b:<super> = VP.t:<super>
+VP.t:<mainv> = +
+NP.t:<case> = nom/acc
+" :COMMENTS NIL :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("VP" . "r"))) (((("VP" . "")) :footp T :constraints "NA" :constraint-type :NA))  (((("AdvP" . ""))) (((("NP" . "")) :substp T))  (((("Ad" . "")) :headp T)) ) ) 
+("PARBs" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+
+S.t:<comp> = nil
+S.t:<comp> = S_r.b:<comp>
+S.t:<assign-comp> = S_r.b:<assign-comp>
+S.t:<tense> = S_r.b:<tense>
+S.t:<extracted> = S_r.b:<extracted>
+S.t:<conj> = S_r.b:<conj>
+S.t:<mode> = S_r.b:<mode>
+S.t:<assign-case> = S_r.b:<assign-case>
+S.t:<agr> = S_r.b:<agr>
+
+Ad_1.t:<wh>= S_r.b:<wh>
+S_r.b:<inv> = S.t:<inv>
+S_r.b:<invlink> = S_r.b:<inv>
+S.b:<comp> = nil
+S_r.b:<nocomp-mode> = S.t:<nocomp-mode>
+" :COMMENTS "Sentential adverbial tree
+Adverb on the left of the sentence
+Multi-word Adverb, first word is Prep, second word is Adj
+ \"At least it has a little dash.\"
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("Ad" . "1"))) (((("P" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("Ad" . "")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("S" . "")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("PARBd" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+D_r.b:<agr> = D_f.t:<agr>
+D_r.b:<definite> = D_f.t:<definite>
+D_r.b:<quan> = D_f.t:<quan>
+D_r.b:<card> = D_f.t:<card>
+D_r.b:<gen> = D_f.t:<gen>
+D_r.b:<decreas> = D_f.t:<decreas>
+D_r.b:<wh> = D_f.t:<wh>
+
+D_r.b:<assign-comp> = D_f.t:<assign-comp>
+D_f.t:<conj> = D_r.b:<conj>
+" :COMMENTS "Adverbial tree that modifies a Determiner
+Multi-word Adverb, first word is Prep, second word is Adj
+\"If I'm going to go to Wall Street, I have to be making at least one
+million dollars per year.\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("D" . "r")) :constraints "NA" :constraint-type :NA) (((("Ad" . "1"))) (((("P" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("Ad" . "")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("D" . "f")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("PARBnx" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+NP_r.b:<case> = NP_f.t:<case>
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<pron> = NP_f.t:<pron>
+NP_r.b:<refl> = NP_f.t:<refl>
+NP_r.b:<conj> = NP_f.t:<conj>
+NP_r.b:<card> = NP_f.t:<card>
+NP_r.b:<const> = NP_f.t:<const>
+NP_r.b:<quan> = NP_f.t:<quan>
+NP_r.b:<decreas> = NP_f.t:<decreas>
+NP_r.b:<definite> = NP_f.t:<definite>
+NP_r.b:<gen> = NP_f.t:<gen>
+NP_r.b:<compar> = -
+NP_r.b:<super>= NP_f.t:<super>
+" :COMMENTS "Adverbial tree that modifies NP.
+Multi-word Adverb, first word is Prep, second word is Adj.
+\"A simple economic theory may provide at least a partial explanation
+for the split personality displayed by Americans in the voting booth.\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("Ad" . "1"))) (((("P" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("Ad" . "")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("PARBvx" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+VP_r.b:<passive> = VP.t:<passive>
+VP_r.b:<mainv> = VP.t:<mainv>
+VP_r.b:<mode> = VP.t:<mode>
+VP_r.b:<assign-comp> = VP.t:<assign-comp>
+VP_r.b:<agr> = VP.t:<agr>
+VP_r.b:<tense> = VP.t:<tense>
+VP_r.b:<assign-case> = VP.t:<assign-case>
+
+VP_r.b:<conj> = VP.t:<conj>
+VP_r.b:<compar> = -
+VP_r.b:<super>=VP.t:<super>" :COMMENTS "Adverbial tree that attaches to the left of the VP
+Multi-word adverb, first word is Prep, second word is Adj
+\"Hopefully, she will at least run the last lap at a half-decent pace.\"
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("VP" . "r"))) (((("Ad" . "1"))) (((("P" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("Ad" . "")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("VP" . "")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("vxPARB" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+VP_r.b:<agr> = VP.t:<agr>
+VP_r.b:<mode> = VP.t:<mode>
+VP_r.b:<mainv> = VP.t:<mainv>
+VP_r.b:<tense> = VP.t:<tense>
+VP_r.b:<assign-comp> = VP.t:<assign-comp>
+VP_r.b:<assign-case> = VP.t:<assign-case>
+
+VP_r.b:<passive> = VP.t:<passive>
+VP_r.b:<conj> = VP.t:<conj>
+VP_r.b:<compar> = -
+VP_r.b:<super>= VP.t:<super>
+VP.t:<mainv> = +
+" :COMMENTS "Adverbial tree that attaches to the right of the VP
+Multi-word adverb, first word is Prep, second word is Adj
+\"David was so tired; I told him to take a nap at least.\"
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("VP" . "r"))) (((("VP" . "")) :footp T :constraints "NA" :constraint-type :NA))  (((("Ad" . "1"))) (((("P" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("Ad" . "")) :headp T :constraints "NA" :constraint-type :NA)) ) ) 
+("PARBarb" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+
+Ad_r.b:<assign-comp> = Ad_1.t:<assign-comp>
+Ad_r.b:<conj> = Ad_1.t:<conj>
+Ad_r.b:<compar> = Ad_1.t:<compar>
+Ad_r.b:<equiv> = Ad_1.t:<equiv>
+Ad_r.b:<super> = Ad_1.t:<super>" :COMMENTS "Adverbial tree that modifies another adverb
+Multi-word adverb, first word is Prep, second word is Adj
+\"Sasha carried out the project with good intentions, at least initially.\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("Ad" . "r"))) (((("Ad" . "0")) :constraints "NA" :constraint-type :NA) (((("P" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("Ad" . "")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("Ad" . "1")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("PARBpx" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+
+PP_r.b:<assign-comp> = PP.t:<assign-comp>
+PP_r.b:<conj> = PP.t:<conj>
+" :COMMENTS "Adverbial tree that modifies a prepositional phrase
+Multi-word adverb, first word is Prep, second word is Adj
+\"Republicans are squinting most painfully, at least at first.\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("PP" . "r"))) (((("Ad" . "1"))) (((("P" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("Ad" . "")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("PP" . "")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("PaPd" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+D_r.b:<agr> = D_f.t:<agr>
+D_r.b:<definite> = D_f.t:<definite>
+D_r.b:<quan> = D_f.t:<quan>
+D_r.b:<card> = D_f.t:<card>
+D_r.b:<gen> = D_f.t:<gen>
+D_r.b:<decreas> = D_f.t:<decreas>
+D_r.b:<wh> = D_f.t:<wh>
+
+D_r.b:<assign-comp> = D_f.t:<assign-comp>
+D_f.t:<conj> = D_r.b:<conj>
+" :COMMENTS "Adverbial tree that modifies a Determiner
+It handles three-word complex adverbs, where the first and third words are
+'as', and the middle word is any adjective that substitutes in.
+\"A pact with GM may emerge in as little as two weeks.\"
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("D" . "r")) :constraints "NA" :constraint-type :NA) (((("Ad" . ""))) (((("P" . "1")) :headp T :constraints "NA" :constraint-type :NA))  (((("A" . "")) :substp T))  (((("P" . "2")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("D" . "f")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("PDPd" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+D_r.b:<agr> = D_f.t:<agr>
+D_r.b:<definite> = D_f.t:<definite>
+D_r.b:<quan> = D_f.t:<quan>
+D_r.b:<card> = D_f.t:<card>
+D_r.b:<gen> = D_f.t:<gen>
+D_r.b:<decreas> = D_f.t:<decreas>
+D_r.b:<wh> = D_f.t:<wh>
+
+D_r.b:<assign-comp> = D_f.t:<assign-comp>
+D_f.t:<conj> = D_r.b:<conj>
+" :COMMENTS "Adverbial tree that modifies a Determiner
+It handles three-word complex adverbs, where the first and third words are
+'as', and the middle word is one of three determiners: many, much, or few.
+\"As many as twenty thousand people lined up for tickets to the Ani DiFranco
+concert.\"
+
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("D" . "r")) :constraints "NA" :constraint-type :NA) (((("Ad" . ""))) (((("P" . "1")) :headp T :constraints "NA" :constraint-type :NA))  (((("D" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("P" . "2")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("D" . "f")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("puARBpuvx" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+Punct_1.t:<punct struct> = Punct_2.t:<punct struct>
+Punct_1.t:<punct struct> = comma/dash
+VP_r.b:<punct struct> = Punct_1.t:<punct struct>
+VP.t:<punct struct> = nil
+VP.t:<punct bal> = nil
+VP_r.b:<passive> = VP.t:<passive>
+VP_r.b:<mainv> = VP.t:<mainv>
+VP_r.b:<mode> = VP.t:<mode>
+VP_r.b:<assign-comp> = VP.t:<assign-comp>
+VP_r.b:<agr> = VP.t:<agr>
+VP_r.b:<tense> = VP.t:<tense>
+VP_r.b:<assign-case> = VP.t:<assign-case>
+
+VP_r.b:<compar> = VP.t:<compar>
+VP_r.b:<equiv> = VP.t:<equiv>
+VP_r.b:<super> = VP.t:<super>
+" :COMMENTS "
+Tree for pre-verbal parenthetical adverbs - however, nonetheless,
+etc. The punctuation marks may be dashes or commas.
+
+      Most people, however, never buy their own homes.
+      Mary, nevertheless, tried to climb Mt. Everest solo.
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("VP" . "r"))) (((("Punct" . "1")) :substp T))  (((("Ad" . "")) :headp T))  (((("Punct" . "2")) :substp T))  (((("VP" . "")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("spuARB" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+
+S.t:<comp> = nil
+S.t:<comp> = S_r.b:<comp>
+S.t:<conj> = S_r.b:<conj>
+S.t:<extracted> = S_r.b:<extracted>
+S.t:<assign-comp> = S_r.b:<assign-comp>
+S.t:<tense> = S_r.b:<tense>
+S.t:<wh> = S_r.b:<wh>
+S.t:<inv> = S_r.b:<inv>
+S.t:<invlink> = S_r.b:<invlink>
+S.t:<mode> = S_r.b:<mode>
+S.t:<assign-case> = S_r.b:<assign-case>
+S.t:<agr> = S_r.b:<agr>
+
+Punct.t:<punct struct> = comma/dash
+" :COMMENTS "In general, we attach post-clausal modifiers at the VP node, as you
+typically get scope ambiguity effects with negation (`John didn't
+leave today' - did he leave or not?). However, with post-sentential,
+comma-separated adverbs, which may well be extraposed, there is no
+ambiguity - in `John didn't leave, today' he definitely did not
+leave. Since this tree is only selected by a subset of the adverbs
+(namely, those which can appear pre-sententially, without a
+punctuation mark), it is anchored by the adverb.
+
+John has been more and more exhausted, recently.
+
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("S" . "")) :footp T :constraints "NA" :constraint-type :NA))  (((("Punct" . "")) :substp T))  (((("Ad" . "")) :headp T)) ) 
+("DAax" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+" :COMMENTS "Multi-word adverbs modifying an adjectival phrase 
+(predicate adjective or adjectival complement). 
+First word is a determiner and second word is adjective. 
+Examples: \"a little\" 
+\"John is a little silly\"
+\"John felt a little angry\"
+\"John seems a little tired\"
+\"John considers Mary a little dumb\"
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("AP" . "r")) :constraints "NA" :constraint-type :NA) (((("Ad" . "")) :constraints "NA" :constraint-type :NA) (((("D" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("A" . "")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("AP" . "f")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("vxDA" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+VP_r.b:<agr> = VP_f.t:<agr>
+VP_r.b:<mode> = VP_f.t:<mode>
+VP_r.b:<mainv> = VP_f.t:<mainv>
+VP_r.b:<tense> = VP_f.t:<tense>
+VP_r.b:<assign-comp> = VP_f.t:<assign-comp>
+VP_r.b:<assign-case> = VP_f.t:<assign-case>
+
+VP_r.b:<passive> = VP_f.t:<passive>
+VP_r.b:<conj> = VP_f.t:<conj>
+VP.t:<mainv> = +
+" :COMMENTS "Multi-word Adverbial tree that attaches to the right of the VP. 
+First word is Determiner, second word is Adjective.
+\"The medicine has eased John's pain a little\"
+\"John pulled down the blinds a little\"" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("VP" . "r"))) (((("VP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("Ad" . ""))) (((("D" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("A" . "")) :headp T :constraints "NA" :constraint-type :NA)) ) ) 
+("DNax" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+" :COMMENTS "Multi-words adverbs modifying an adjectival phrase 
+(predicate adjective or adjectival complement). 
+First word is a determiner and second word is Noun. 
+Examples: \"a bit\", \"a mite\".
+
+\"John is a bit silly\"
+\"John felt a bit angry\"
+\"John seems a bit tired\"
+\"John considers Mary a bit dumb\"
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("AP" . "r")) :constraints "NA" :constraint-type :NA) (((("Ad" . ""))) (((("D" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("N" . "")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("AP" . "f")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("vxDN" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+VP_r.b:<agr> = VP_f.t:<agr>
+VP_r.b:<mode> = VP_f.t:<mode>
+VP_r.b:<tense> = VP_f.t:<tense>
+VP_r.b:<assign-comp> = VP_f.t:<assign-comp>
+VP_r.b:<assign-case> = VP_f.t:<assign-case>
+
+VP_r.b:<passive> = VP_f.t:<passive>
+VP_r.b:<conj> = VP_f.t:<conj>
+VP_r.b:<mainv> = VP_f.t:<mainv>
+VP.t:<mainv> = +
+" :COMMENTS "Multi-word Adverbial tree that attaches to the right of the VP. 
+First word is Determiner, second word is Noun
+\"The medicine has eased John's pain a bit\"
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("VP" . "r"))) (((("VP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("Ad" . ""))) (((("D" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("N" . "")) :headp T :constraints "NA" :constraint-type :NA)) ) ) 
+("NPvx" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+VP_r.b:<passive> = VP.t:<passive>
+VP_r.b:<mainv> = VP.t:<mainv>
+VP_r.b:<mode> = VP_f.t:<mode>
+VP_r.b:<assign-comp> = VP_f.t:<assign-comp>
+VP_r.b:<agr> = VP_f.t:<agr>
+VP_r.b:<tense> = VP_f.t:<tense>
+VP_r.b:<assign-case> = VP_f.t:<assign-case>
+
+VP_r.b:<conj> = VP_f.t:<conj>
+" :COMMENTS "Multi-word Adverbial tree that attaches to the left of the VP. 
+First word is Noun, second word is Prep.
+\"Bill has sort of finished his education\"
+
+Can modify VP's headed by main verbs as well as auxiliaries, 
+so the VP features are unspecified:
+\"John could have been sort of (eating the cake)\"
+\"John could sort of (have been eating the cake)\"
+\"John sort of (could have been eating the cake)\"" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("VP" . "r"))) (((("Ad" . ""))) (((("N" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("P" . "")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("VP" . "f")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("NPpx" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+
+PP_r.b:<assign-comp> = PP_f.t:<assign-comp>
+PP_r.b:<conj> = PP_f.t:<conj>
+" :COMMENTS "Multi-word adverb modifying a prepositional phrase (but 
+heavily conditioned by the semantics of the PP). 
+First word is a Noun, second is Prep. 
+\"We all saw Bill marching sort of toward the courthouse\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("PP" . "r"))) (((("Ad" . ""))) (((("N" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("P" . "")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("PP" . "f")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("NPnx" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+NP_r.b:<case> = NP_f.t:<case>
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<pron> = NP_f.t:<pron>
+NP_r.b:<refl> = NP_f.t:<refl>
+NP_r.b:<conj> = NP_f.t:<conj>
+NP_r.b:<card> = NP_f.t:<card>
+NP_r.b:<const> = NP_f.t:<const>
+NP_r.b:<quan> = NP_f.t:<quan>
+NP_r.b:<decreas> = NP_f.t:<decreas>
+NP_r.b:<definite> = NP_f.t:<definite>
+NP_r.b:<gen> = NP_f.t:<gen>
+" :COMMENTS "Adverbial tree that modifies NP. 
+First word is Noun, second word is Prep.
+\"Bill is sort of a Jerk\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r")) :constraints "NA" :constraint-type :NA) (((("Ad" . ""))) (((("N" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("P" . "")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("DApx" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+
+PP_r.b:<assign-comp> = PP_f.t:<assign-comp>
+PP_r.b:<conj> = PP_f.t:<conj>
+" :COMMENTS "Multi-word adverbs modifying a PP (but heavily conditioned 
+by the semantics of the PP). 
+First word is a determiner, second word is an adjective. 
+\"John is a little to the right\"
+\"Mary moved a little to the left\"
+\"Bill walked a little into the room\"" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("PP" . "r"))) (((("Ad" . ""))) (((("D" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("A" . "")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("PP" . "f")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("DNpx" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+
+PP_r.b:<assign-comp> = PP_f.t:<assign-comp>
+PP_r.b:<conj> = PP_f.t:<conj>
+" :COMMENTS "Multi-word adverbs modifying a PP (but heavily conditioned 
+by the semantics of the PP). 
+First word is a Determiner, second word is a Noun. 
+\"John is a bit to the right\"
+\"Mary moved a bit to the left\"
+\"Bill walked a bit into the room\"" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("PP" . "r"))) (((("Ad" . ""))) (((("D" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("N" . "")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("PP" . "f")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("NPax" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+" :COMMENTS "Multi-word adverbs modifying an 
+adjectival phrase (predicate adjective or adjectival complement). 
+First word is a Noun and second word is a Preposition. 
+\"John is sort of silly\"
+\"John felt sort of angry\"
+\"John seems sort of tired\"
+\"John considers Mary sort of dumb\"
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("AP" . "r")) :constraints "NA" :constraint-type :NA) (((("Ad" . ""))) (((("N" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("P" . "")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("AP" . "f")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("vxNP" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+VP_r.b:<mode> = VP_f.t:<mode>
+VP_r.b:<agr> = VP_f.t:<agr>
+VP_r.b:<tense> = VP_f.t:<tense>
+VP_r.b:<assign-comp> = VP_f.t:<assign-comp>
+VP_r.b:<assign-case> = VP_f.t:<assign-case>
+
+VP_r.b:<passive> = VP_f.t:<passive>
+VP_r.b:<conj> = VP_f.t:<conj>
+VP_r.b:<mainv> = VP_f.t:<mainv>
+VP.t:<mainv> = +
+" :COMMENTS "Multi-word Adverbial tree that attaches to the right of the VP. 
+First word is Noun, second word is a Preposition.
+\"The medicine has eased John's pain sort of\"
+\"John pulled down the blinds sort of\"" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("VP" . "r"))) (((("VP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("Ad" . ""))) (((("N" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("P" . "")) :headp T :constraints "NA" :constraint-type :NA)) ) ) 
+("DAarb" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+
+Ad_r.b:<assign-comp> = Ad_1.t:<assign-comp>
+Ad_r.b:<conj> = Ad_1.t:<conj>
+" :COMMENTS "Multi-word adverb Adverbial tree that modifies another Adverb. 
+First word is a Determiner, second word is Adjective.
+\"Sasha has been doing her knitting a little slowly\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("Ad" . "r"))) (((("Ad" . "")) :constraints "NA" :constraint-type :NA) (((("D" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("A" . "")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("Ad" . "f")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("NParb" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+
+Ad_r.b:<assign-comp> = Ad_1.t:<assign-comp>
+Ad_r.b:<conj> = Ad_1.t:<conj>
+" :COMMENTS "Multi-word adverb Adverbial tree that modifies another Adverb. 
+First word is Noun, second word is Preposition.
+\"Andreas has been sort of obviously worried today\"" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("Ad" . "r"))) (((("Ad" . "")) :constraints "NA" :constraint-type :NA) (((("N" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("P" . "")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("Ad" . "f")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("DNarb" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+
+Ad_r.b:<assign-comp> = Ad_1.t:<assign-comp>
+Ad_r.b:<conj> = Ad_1.t:<conj>
+" :COMMENTS "Multi-word adverb Adverbial tree that modifies another Adverb.
+First word is Determiner, second word is Noun.
+\"Sasha has been doing her knitting a bit slowly\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("Ad" . "r"))) (((("Ad" . "")) :constraints "NA" :constraint-type :NA) (((("D" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("N" . "")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("Ad" . "f")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("nxnxARB" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+NP_r.b:<agr> = NP_1.t:<agr>
+NP_r.b:<case> = NP_1.t:<case>
+NP_r.b:<wh> = NP_1.t:<wh>
+NP_r.b:<conj> = NP_1.t:<conj>
+NP_1.b:<case> = acc/nom
+
+NP_r.b:<assign-comp> = NP_1.t:<assign-comp>
+NP_r.b:<card> = NP_1.t:<card>
+NP_r.b:<const> = NP_1.t:<const>
+NP_r.b:<quan> = NP_1.t:<quan>
+NP_r.b:<decreas> = NP_1.t:<decreas>
+NP_r.b:<definite> = NP_1.t:<definite>
+NP_r.b:<gen> = NP_1.t:<gen>
+NP_1.t:<rel-clause> = NP_r.b:<rel-clause>
+NP_2.t:<case> = nom/acc
+
+
+
+
+
+" :COMMENTS "Locative adverbial phrase postmodifying an NP.
+EX: The accident three blocks ahead blocked traffic.
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("AdvP" . ""))) (((("NP" . "")) :substp T))  (((("Ad" . "")) :headp T)) ) ) 
+("nxARB" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+NP_r.b:<agr> = NP_1.t:<agr>
+NP_r.b:<case> = NP_1.t:<case>
+NP_r.b:<wh> = NP_1.t:<wh>
+NP_r.b:<conj> = NP_1.t:<conj>
+NP_1.b:<case> = acc/nom
+
+NP_r.b:<assign-comp> = NP_1.t:<assign-comp>
+NP_r.b:<card> = NP_1.t:<card>
+NP_r.b:<const> = NP_1.t:<const>
+NP_r.b:<quan> = NP_1.t:<quan>
+NP_r.b:<decreas> = NP_1.t:<decreas>
+NP_r.b:<definite> = NP_1.t:<definite>
+NP_r.b:<gen> = NP_1.t:<gen>
+NP_1.t:<rel-clause> = NP_r.b:<rel-clause>
+
+" :COMMENTS "Locative adverb (without an accompanying NP) postmodifying an NP.
+EX: The accident ahead blocked traffic.
+
+When the locative adverb is accompanied by an NP specifying 
+distance or degree, it uses the betanxnxARB tree.
+EX: The circus seven kilometers away was very noisy.
+
+This tree is also intended for locative phrases that have a second adverb to
+specify distance. The second adverb adjoins in with betaARBarb.
+EX: The accident far ahead caused confusion.
+
+This tree is also used for \"o'clock\", \"a.m.\" and \"p.m.\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("AdvP" . ""))) (((("Ad" . "")) :headp T)) ) ) 
+("punxARBpuvx" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+Punct_1.t:<punct struct> = Punct_2.t:<punct struct>
+Punct_1.t:<punct struct> = comma/dash
+VP_r.b:<punct struct> = Punct_1.t:<punct struct>
+VP.t:<punct struct> = nil
+VP.t:<punct bal> = nil
+VP_r.b:<passive> = VP.t:<passive>
+VP_r.b:<mainv> = VP.t:<mainv>
+VP_r.b:<mode> = VP.t:<mode>
+VP_r.b:<assign-comp> = VP.t:<assign-comp>
+VP_r.b:<agr> = VP.t:<agr>
+VP_r.b:<tense> = VP.t:<tense>
+VP_r.b:<assign-case> = VP.t:<assign-case>
+
+NP.t:<case> = nom/acc
+
+
+
+
+" :COMMENTS "Tree for a locative adverbial separated by commas or dashes 
+premodifying a VP. The locative adverb anchors the tree, and
+the NP that specifies quantity (for example, 'three blocks')
+substitutes in.
+
+EX: John, three yards off, announced his resignation.
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("VP" . "r"))) (((("Punct" . "1")) :substp T))  (((("AdvP" . ""))) (((("NP" . "")) :substp T))  (((("Ad" . "")) :headp T)) )  (((("Punct" . "2")) :substp T))  (((("VP" . "")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("nARB" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+
+N_r.b:<case> = N_f.t:<case>
+N_r.b:<agr> = N_f.t:<agr>
+N_r.b:<assign-comp> = N_f.t:<assign-comp>
+N_r.b:<pron> = N_f.t:<pron>
+N_r.b:<wh> = N_f.t:<wh>
+
+N_r.b:<conj> = N_f.t:<conj>
+N_r.b:<card> = N_f.t:<card>
+N_r.b:<const> = N_f.t:<const>
+N_r.b:<quan> = N_f.t:<quan>
+N_r.b:<decreas> = N_f.t:<decreas>
+N_r.b:<definite> = N_f.t:<definite>
+N_r.b:<gen> = N_f.t:<gen>
+N_r.b:<compar> = N_f.t:<compar>
+N_f.t:<compar> = -
+" :COMMENTS "This tree is used for \"o'clock\", \"a.m.\" and \"p.m.\"  By adjoining to N
+we won't allow sentences like \"three in the morning a.m.\" where \"a.m.\"
+modifies \"three\".  It will, however, allow \"three a.m.\", \"three
+o'clock\", and \"three o'clock a.m.\" (also *\"three a.m. o'clock\", but we
+are not worrying about the ordering restriction here).
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("N" . "r"))) (((("N" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("Ad" . "")) :headp T)) ) 

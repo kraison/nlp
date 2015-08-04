@@ -1,0 +1,272 @@
+S -> sentence
+S -> question
+sentence -> sentence , CC sentence
+sentence -> sentence sub-clause
+sentence -> sentence , sub-clause
+sentence -> NP VP
+sub-clause -> WRB sentence
+sub-clause -> IN sentence
+NP -> NP NADJS
+NP -> NP , NADJS
+NP -> NP CC NP
+NP -> NP , NP
+NP -> NP , CC NP
+NP -> PRP
+NP -> PropPH
+NP -> DT NP2
+NP -> PDT DT NP2
+NP -> PDT DT IN DT NP2
+NP -> NP2
+NP -> DT IN NP
+NP -> PDT DT IN NP
+NP -> DT PropPH
+NP -> PDT DT PropPH
+NP -> POSS NP2
+NP -> Cardinal
+NP -> WRB TO-PHRASE
+NADJS -> NADJ
+NADJS -> NADJ NADJS
+NADJ -> PP
+NADJ -> TO-PHRASE
+NADJ -> GERUND-PHRASE
+NADJ -> RB JJ
+NADJ -> JJ
+PropPH -> PropN PropPH
+PropPH -> PropN
+PropN -> NNP
+PropN -> NNPS
+PropN -> FW
+POSS -> PRP$
+POSS -> NP2 POS NP2
+Cardinal -> CD CC Cardinal
+Cardinal -> CD
+GERUND-PHRASE -> IN VBG
+GERUND-PHRASE -> IN VBG NP
+NP2 -> NP2 POS NP2
+NP2 -> NP2 POS
+NP2 -> NMODS NP2
+NP2 -> NP2 VBP NP2
+NP2 -> NP2 VBG NP3
+NP2 -> NP2 VBN NP3
+NP2 -> VPProg
+NP2 -> NP3
+NP3 -> PropPH NP4
+NP3 -> NP4
+NP4 -> CommonN NP4
+NP4 -> CommonN
+CommonN -> NN
+CommonN -> NNS
+NPS2 -> NNS
+NPS2 -> NMOD NPS2
+NMODS -> NMOD
+NMODS -> NMOD NMODS
+NMODS -> NMODS , NMOD
+NMOD -> JJ
+NMOD -> JJS
+NMOD -> RBS
+NMOD -> RB
+NMOD -> VBG
+NMOD -> VBN
+NMOD -> CD
+NMOD -> JJR
+NMOD -> JJR PP
+ADVPH -> RB ADVPH
+ADVPH -> RB
+ADJPH -> JJ ADJPH
+ADJPH -> JJ , ADJPH
+ADJPH -> JJ
+PP -> IN NP
+PP -> TO NP
+VP -> VP VADJS
+VP -> VG NP
+VP -> VG
+VP -> VG NMOD
+VP -> VG ADJPH TO NP
+
+VADJS -> VADJ
+VADJS -> VADJ VADJS
+
+VADJ -> PP
+VADJ -> advph
+VADJ -> RBR
+VADJ -> JJR
+VADJ -> DT RBS
+VADJ -> GERUND-PHRASE
+VADJ -> TO-phrase
+VADJ -> IN CC IN VAJD
+VADJ -> IN JJ
+VADJ -> IN DT
+
+VG -> VG IN
+VG -> VG TO
+VG -> MD VBase
+VG -> MD RB VBase
+VG -> VPres
+VG -> VPres RB VB
+VG -> VPres VBG
+VG -> VPres RB VBG
+VG -> VPres VBN
+VG -> VPres RB VBN
+VG -> VPast
+VG -> VPast RB VB
+VG -> VPast VBG
+VG -> VPast RB VBG
+VG -> VPast VBN
+VG -> VPast RB VBN
+
+VBase -> VB
+VBase -> VB VBN
+VBase -> VB VBG
+
+
+VPres -> VBZ
+VPres -> VBP
+
+VPast -> VBD
+
+VPart -> VBN
+
+
+
+
+TO-PHRASE -> TO VB
+TO-PHRASE -> TO VB NP
+
+
+
+
+
+
+question -> question CC question
+question -> question , CC question
+question -> question sub-clause
+question -> question , sub-clause
+
+question -> WH-DET
+question -> WH-PRON
+question -> WH-POSS
+question -> WH-ADV
+question -> YNQ
+
+
+YNQ -> MD NP VPBase
+YNQ -> VPres NP VPBase
+YNQ -> VPres NP VPPart
+YNQ -> VPres NP VPProg
+YNQ -> VPast NP VPBase
+YNQ -> VPast NP VPPart
+YNQ -> VPast NP VPProg
+YNQ -> VPres NP DT NP2
+YNQ -> VPast NP DT NP2
+YNQ -> VPres EX NP
+YNQ -> VPres EX advph NP
+YNQ -> VPres EX NP VADJS
+YNQ -> VPres EX advph NP VADJS
+YNQ -> VPast EX NP
+YNQ -> VPast EX advph NP
+YNQ -> VPast EX NP VADJS
+YNQ -> VPast EX advph NP VADJS
+YNQ -> VPres NP NMOD
+YNQ -> VPres NP NMOD VADJS
+YNQ -> VPast NP NMOD
+YNQ -> VPast NP NMOD VADJS
+YNQ -> VPres NP ADJPH TO NP
+
+
+WH-DET -> WDT NP2 ynq/obj
+WH-DET -> WP NNS ynq/obj
+WH-DET -> WDT NP2 sentence/subj
+WH-DET -> WP NNS sentence/subj
+WH-DET -> WDT NN IN NP2 ynq/obj
+WH-DET -> WDT NN IN NP2 sentence/subj
+WH-DET -> WP NNS IN NP2 sentence/subj
+
+
+WH-PRON -> WP ynq/obj
+WH-PRON -> WP sentence/subj
+
+
+WH-ADV -> WRB YNQ
+WH-ADV -> WRB RB YNQ
+WH-ADV -> WRB NN YNQ
+WH-ADV -> WRB ynq/nmod
+WH-ADV -> WRB RB ynq/nmod
+WH-ADV -> WRB JJ ynq/nmod
+WH-ADV -> WRB NN ynq/nmod
+
+WH-ADV -> WRB JJ NP2 YNQ
+
+
+
+WH-POSS -> WP$ NP2 ynq/obj
+WH-POSS -> WP$ NP2 sentence/subj
+
+ynq/obj -> tensedV NP VPBase/obj
+ynq/obj -> MD NP VPBase/obj
+
+ynq/nmod -> tensedV NP
+ynq/nmod -> tensedV NP VADJS
+
+tensedV -> VBP
+tensedV -> VBZ
+tensedV -> VBD
+
+VPBase/obj -> VB
+VPBase/obj -> VBP
+VPBase/obj -> VB VADJS
+VPBase/obj -> VBP VADJS
+VPBase/obj -> VB IN
+VPBase/obj -> VB TO
+VPBase/obj -> VB IN VADJS
+VPBase/obj -> VB TO VADJS
+
+sentence/subj -> VP
+
+
+
+VPBase -> VGBase NP
+VPBase -> VGBase NP VADJS
+VPBase -> VGBase
+VPBase -> VGBase VADJS
+VPBase -> VGBase NMOD
+VPBase -> VGBase NMOD VADJS
+VPBase -> advph VPBase
+
+VGBase -> VGBase IN
+VGBase -> VGBase TO
+VGBase -> RB VBase
+VGBase -> VBase
+VGBase -> VBP
+
+
+VPPart -> VGPart NP
+VPPart -> VGPart NP VADJS
+VPPart -> VGPart
+VPPart -> VGPart VADJS
+VPPart -> VGPart NMOD
+VPPart -> VGPart NMOD VADJS
+VPPart -> advph VPPart
+
+VGPart -> VGPart IN
+VGPart -> VGPart TO
+VGPart -> RB VPart
+VGPart -> VPart
+VGPart -> VBD
+
+VPProg -> VGProg NP
+VPProg -> VGProg NP VADJS
+VPProg -> VGProg
+VPProg -> VGProg VADJS
+VPProg -> VGProg NMOD
+VPProg -> VGProg NMOD VADJS
+VPProg -> advph VPProg
+
+VGProg -> VGProg IN
+VGProg -> VGProg TO
+VGProg -> RB VProg
+VGProg -> VProg
+
+VProg -> VBG
+
+
+

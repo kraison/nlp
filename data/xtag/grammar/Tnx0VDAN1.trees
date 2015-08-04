@@ -1,0 +1,730 @@
+("N0nx0VDAN1" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+S_r.t:<mode> = inf/ind
+S_r.b:<comp> = nil
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<tense> = VP.t:<tense>
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+S_r.t:<inv> = -
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<case> = NP_f.t:<case>
+NP_0.t:<agr> = S_r.b:<agr>
+NP_0.t:<case> = S_r.b:<assign-case>
+NP_1:<case> = acc
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+VP.b:<passive> = V.t:<passive>
+V.t:<passive> = -
+V.t:<contr> = -
+VP.b:<agr> = V.t:<agr>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<mode> = V.t:<mode>
+VP.b:<tense> = V.t:<tense>
+VP.b:<mainv> = V.t:<mainv>
+VP.b:<compar> = -
+D_1.t:<agr> = NP_1.b:<agr>
+NP_1.b:<agr> = N_1.t:<agr>
+N_1.t:<case> = nom/acc
+S_r.t:<conj> = nil
+
+NP_w.t:<trace> = NP_0.b:<trace>
+NP_w.t:<case> = NP_0.b:<case>
+NP_w.t:<agr> = NP_0.b:<agr>
+NP_w.t:<wh> = +
+S_r.t:<comp> = nil
+NP_r.b:<rel-clause> = +
+NP_f.b:<case> = nom/acc
+" :COMMENTS "Transitive idiom with V, D, A, and N anchors.
+Relative clause on the subject.
+
+EX: [The president] who had a green thumb...
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("S" . "p")) :constraints "NA" :constraint-type :NA) (((("NP" . "w")) :substp T))  (((("S" . "r"))) (((("NP" . "0")) :constraints "NA" :constraint-type :NA) (((("" . "")))) )  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("NP" . "1"))) (((("D" . "1")) :headp T))  (((("A" . "")) :headp T))  (((("N" . "1")) :headp T)) ) ) ) ) ) 
+("nx0VDAN1" :COMMENT-DISPLAY? T :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+S_r.b:<extracted> = -
+
+
+
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+NP_0:<agr> = S_r.b:<agr>
+NP_0:<case> = S_r.b:<assign-case>
+NP_1:<case> = acc
+NP_0:<wh> = -
+S_r.b:<wh> = NP_0:<wh>
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+S_r.b:<assign-case> = VP.t:<assign-case>
+VP.b:<passive> = V.t:<passive>
+V.t:<passive> = -
+V.t:<contr> = -
+VP.b:<agr> = V.t:<agr>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<mode> = V.t:<mode>
+VP.b:<tense> = V.t:<tense>
+VP.b:<mainv> = V.t:<mainv>
+VP.b:<compar> = -
+S_r.b:<inv> = -
+N_1:<case> = nom/acc
+D_1:<agr> = NP_1.b:<agr>
+NP_1.b:<agr> = N_1.t:<agr>
+S_r.b:<control> = NP_0.t:<control>
+
+" :COMMENTS "Transitive idiom with V, D, A, and N anchors.
+Declarative tree.
+
+EX: John had a green thumb.
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r")) :constraints "") (((("NP" . "0")) :substp T :constraints ""))  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("NP" . "1")) :constraints "") (((("D" . "1")) :headp T))  (((("A" . "")) :headp T))  (((("N" . "1")) :headp T)) ) ) ) 
+("W0nx0VDAN1" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+S_q.b:<extracted> = +
+S_q.b:<inv> = S_r.t:<inv>
+S_r.t:<comp> = nil
+S_r.b:<assign-comp> = inf_nil/ind_nil/ecm
+
+
+
+
+
+S_q.b:<wh> = NP_0:<wh>
+S_q.b:<comp> = nil
+S_q.b:<mode> = S_r.t:<mode>
+S_r.b:<inv> = -
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+NP.t:<trace> = NP_0.t:<trace>
+NP.t:<agr> = NP_0.t:<agr>
+NP.t:<case> = NP_0.t:<case>
+NP.t:<wh> = NP_0.t:<wh>
+NP_0:<wh> = +
+NP.t:<agr> = S_r.b:<agr>
+NP.t:<case> = S_r.b:<assign-case>
+NP_1:<case> = acc
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+VP.b:<passive> = V.t:<passive>
+V.t:<passive> = -
+V.t:<contr> = -
+VP.b:<agr> = V.t:<agr>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<mode> = V.t:<mode>
+VP.b:<tense> = V.t:<tense>
+VP.b:<mainv> = V.t:<mainv>
+VP.b:<compar> = -
+NP_1.b:<agr> = N_1.t:<agr>
+D_1.t:<agr> = NP_1.b:<agr>
+N_1:<case> = nom/acc
+S_r.t:<conj> = nil
+
+
+
+
+
+" :COMMENTS "Transitive idiom with V, D, A, and N anchors.
+Wh-question on the subject.
+
+EX: Who had a green thumb?
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "q"))) (((("NP" . "0")) :substp T :constraints "" :constraint-type :DUMMY))  (((("S" . "r"))) (((("NP" . "")) :constraints "NA" :constraint-type :NA) (((("" . "")))) )  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("NP" . "1"))) (((("D" . "1")) :headp T))  (((("A" . "")) :headp T))  (((("N" . "1")) :headp T)) ) ) ) ) 
+("Inx0VDAN1" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+S_r.b:<extracted> = -
+S_r.b:<comp> = nil
+
+
+
+S_r.b:<inv> = -
+S_r.b:<mode> = imp
+S_r.b:<tense> = VP.t:<tense>
+VP.t:<tense> = pres
+S_r.b:<wh> = NP_0:<wh>
+NP_0:<agr> = S_r.b:<agr>
+NP_0:<case> = S_r.b:<assign-case>
+NP_1:<case> = acc
+NP_0:<wh> = -
+NP_0:<agr pers> = 2
+NP_0:<agr 3rdsing> = -
+NP_0:<agr num> = plur/sing
+NP_0:<case> = nom
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+S_r.b:<control> = NP_0.t:<control>
+VP.t:<neg> = -
+VP.t:<mode> = base
+VP.b:<mode> = V.t:<mode>
+VP.b:<passive> = V.t:<passive>
+V.t:<passive> = -
+V.t:<contr> = -
+VP.b:<agr> = V.t:<agr>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<tense> = V.t:<tense>
+VP.b:<mainv> = V.t:<mainv>
+VP.b:<compar> = -
+NP_1.b:<agr> = N_1.t:<agr>
+D_1:<agr> = NP_1.b:<agr>
+N_1:<case> = nom/acc
+
+" :COMMENTS "Transitive idiom with V, D, A, and N anchors.
+Imperative.
+
+EX: Turn the other cheek!
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r")) :constraints "") (((("NP" . "0")) :constraints "NA" :constraint-type :NA) (((("" . "")))) )  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("NP" . "1")) :constraints "") (((("D" . "1")) :headp T))  (((("A" . "")) :headp T))  (((("N" . "1")) :headp T)) ) ) ) 
+("Nc0nx0VDAN1" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+S_r.b:<comp> = nil
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<tense> = VP.t:<tense>
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+S_r.t:<inv> = -
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<case> = NP_f.t:<case>
+NP_0.t:<agr> = S_r.b:<agr>
+NP_0.t:<case> = S_r.b:<assign-case>
+NP_1:<case> = acc
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+VP.b:<passive> = V.t:<passive>
+V.t:<passive> = -
+V.t:<contr> = -
+VP.b:<agr> = V.t:<agr>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<mode> = V.t:<mode>
+VP.b:<tense> = V.t:<tense>
+VP.b:<mainv> = V.t:<mainv>
+VP.b:<compar> = -
+S_r.t:<conj> = nil
+
+NP_w.t:<trace> = NP_0.b:<trace>
+NP_w.t:<case> = NP_0.b:<case>
+NP_w.t:<agr> = NP_0.b:<agr>
+NP_r.b:<rel-clause> = +
+S_r.t:<mode> = inf/ger/ind
+S_r.t:<nocomp-mode> = inf/ger
+VP.t:<assign-comp> = that/ind_nil/inf_nil/ecm
+S_r.b:<nocomp-mode> = S_r.b:<mode>
+NP_f.b:<case> = nom/acc
+NP_1.b:<agr> = N_1.t:<agr>
+D_1.t:<agr> = NP_1.b:<agr>
+N_1.t:<case> = nom/acc
+" :COMMENTS "Transitive idiom with V, D, A, and N anchors.
+Relative clause on the subject, with overt Comp.
+
+EX: [The man] that turned the other cheek...
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("S" . "p")) :constraints "NA" :constraint-type :NA) (((("NP" . "w")) :constraints "NA" :constraint-type :NA) (((("" . "w")))) )  (((("S" . "r"))) (((("NP" . "0")) :constraints "NA" :constraint-type :NA) (((("" . "")))) )  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("NP" . "1"))) (((("D" . "1")) :headp T))  (((("A" . "")) :headp T))  (((("N" . "1")) :headp T)) ) ) ) ) ) 
+("DAN1V" :COMMENT-DISPLAY? T :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+S_r.b:<extracted> = -
+S_r.b:<mode> = VP.t:<mode>
+
+
+
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+S_r.b:<wh> = NP_1:<wh>
+NP_1:<agr> = S_r.b:<agr>
+NP_1:<case> = S_r.b:<assign-case>
+NP_1:<wh> = -
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+VP.b:<mode> = V.t:<mode>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<tense> = V.t:<tense>
+VP.b:<passive> = V.t:<passive>
+VP.b:<agr> = V.t:<agr>
+VP.b:<mainv> = V.t:<mainv>
+VP.b:<compar> = -
+V.t:<punct struct> = nil
+V.t:<mode> = ppart
+V.t:<passive> = +
+S_r.b:<inv> = -
+S_r.b:<control> = NP_1.t:<control>
+NP_1.b:<agr> = N_1.t:<agr>
+D_1.t:<agr> = NP_1.b:<agr>
+N_1.t:<case> = nom/acc
+" :COMMENTS "Transitive idiom with V, D, A, and N anchors.
+Passive without by-phrase.
+
+EX: The other cheek was turned.
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r")) :constraints "") (((("NP" . "1")) :constraints "") (((("D" . "1")) :headp T))  (((("A" . "")) :headp T))  (((("N" . "1")) :headp T)) )  (((("VP" . ""))) (((("V" . "")) :headp T)) ) ) 
+("DAN1Vbynx0" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<comp> = nil
+S_r.b:<extracted> = -
+S_r.b:<tense> = VP.t:<tense>
+S_r.b:<wh> = NP_1:<wh>
+NP_1:<agr> = S_r.b:<agr>
+NP_1:<case> = S_r.b:<assign-case>
+NP_1.b:<case> = N_1.t:<case>
+NP_1:<wh> = -
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+VP.b:<mode> = V.t:<mode>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<tense> = V.t:<tense>
+VP.b:<passive> = V.t:<passive>
+VP.b:<agr> = V.t:<agr>
+VP.b:<mainv> = V.t:<mainv>
+VP.b:<compar> = -
+V.t:<punct struct> = nil
+V.t:<mode> = ppart
+V.t:<passive> = +
+S_r.b:<inv> = -
+PP_0.b:<assign-case> = P_0.t:<assign-case>
+PP_0.b:<assign-case> = NP_0.t:<case>
+P_0.b:<assign-case> = acc
+S_r.b:<control> = NP_1.t:<control>
+PP_0.b:<wh> = NP_0:<wh>
+NP_1.b:<agr> = N_1.t:<agr>
+D_1.t:<agr> = NP_1.b:<agr>
+N_1.t:<case> = nom/acc
+
+
+
+" :COMMENTS "Transitive idiom with V, D, A, and N anchors.
+Passive with by-phrase.
+
+EX: The other cheek was turned by the pacifists.
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r")) :constraints "") (((("NP" . "1")) :constraints "") (((("D" . "1")) :headp T))  (((("A" . "")) :headp T))  (((("N" . "1")) :headp T)) )  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("PP" . "0"))) (((("P" . "0"))) (((("by" . "")))) )  (((("NP" . "0")) :substp T :constraints "")) ) ) ) 
+("W0DAN1Vbynx0" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+S_r.t:<comp> = nil
+S_q.b:<extracted> = +
+
+
+
+
+S_q.b:<wh> = NP_0:<wh>
+S_q.b:<inv> = S_r.t:<inv>
+S_q.b:<invlink> = S_q.b:<inv>
+S_q.b:<mode> = S_r.t:<mode>
+S_q.b:<comp> = nil
+S_r.b:<inv> = -
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+S_r.b:<agr> = NP_1.t:<agr>
+S_r.b:<assign-case> = NP_1.t:<case>
+S_r.b:<control> = NP_1.t:<control>
+VP.b:<passive> = +
+VP.b:<mode> = V.t:<mode>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<tense> = V.t:<tense>
+VP.b:<agr> = V.t:<agr>
+VP.b:<mainv> = V.t:<mainv>
+VP.b:<compar> = -
+V.t:<mode> = ppart
+V.t:<passive> = +
+VP.b:<passive> = V.t:<passive>
+V.t:<punct struct> = nil
+NP.t:<agr> = NP_0.t:<agr>
+NP.t:<case> = NP_0.t:<case>
+NP.t:<trace> = NP_0.t:<trace>
+NP.t:<wh> = NP_0.t:<wh>
+P_0.b:<assign-case> = acc
+PP_0.b:<assign-case> = P_0.t:<assign-case>
+NP:<case> = PP_0.b:<assign-case>
+S_r.t:<conj> = nil
+PP_0.b:<wh> = NP:<wh>
+NP_1.b:<agr> = N_1.t:<agr>
+D_1.t:<agr> = NP_1.b:<agr>
+N_1.t:<case> = nom/acc
+" :COMMENTS "Transitive idiom with V, D, A, and N anchors.
+Wh-question extracted from by-phrase in passive construction.
+
+EX: Who was the other cheek turned by?
+
+Topicalization:
+
+EX: Madeline the other cheek was turned by.
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "q"))) (((("NP" . "0")) :substp T :constraints "" :constraint-type :DUMMY))  (((("S" . "r"))) (((("NP" . "1"))) (((("D" . "1")) :headp T))  (((("A" . "")) :headp T))  (((("N" . "1")) :headp T)) )  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("PP" . "0"))) (((("P" . "0"))) (((("by" . "")))) )  (((("NP" . "")) :constraints "NA" :constraint-type :NA) (((("" . "")))) ) ) ) ) ) 
+("pW0DAN1Vbynx0" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+P_0.b:<assign-case> = acc
+PP_0.b:<assign-case> = P_0.t:<assign-case>
+
+
+
+S_q.b:<extracted> = +
+S_q.b:<inv> = S_r.t:<inv>
+S_q.b:<inv> = S_q.b:<invlink>
+
+NP_0:<case> = PP_0.b:<assign-case>
+PP_0.b:<wh> = NP_0:<wh>
+S_q.b:<wh> = PP_0.t:<wh>
+S_q.b:<mode> = S_r.t:<mode>
+S_q.b:<comp> = nil
+S_r.b:<inv> = -
+S_r.b:<mode> = VP.t:<mode>
+S_r.t:<comp> = nil
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+S_r.b:<agr> = NP_1.t:<agr>
+S_r.b:<assign-case> = NP_1.t:<case>
+S_r.b:<control> = NP_1.t:<control>
+VP.b:<passive> = +
+VP.b:<mode> = V.t:<mode>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<tense> = V.t:<tense>
+VP.b:<agr> = V.t:<agr>
+VP.b:<mainv> = V.t:<mainv>
+VP.b:<compar> = -
+V.t:<mode> = ppart
+V.t:<passive> = +
+V.t:<punct struct> = nil
+VP.b:<passive> = V.t:<passive>
+PP_0.t:<trace> = PP.t:<trace>
+S_r.t:<conj> = nil
+NP_1.b:<agr> = N_1.t:<agr>
+D_1.t:<agr> = NP_1.b:<agr>
+N_1.t:<case> = nom/acc
+" :COMMENTS "Transitive idiom with V, D, A, and N anchors.
+Wh-question on object of extracted by-phrase from passive construction.
+
+EX: By whom was the other cheek turned?
+
+Topicalization:
+
+EX: By Madeline the other cheek was turned.
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "q"))) (((("PP" . "0"))) (((("P" . "0"))) (((("by" . "")))) )  (((("NP" . "0")) :substp T)) )  (((("S" . "r"))) (((("NP" . "1"))) (((("D" . "1")) :headp T))  (((("A" . "")) :headp T))  (((("N" . "1")) :headp T)) )  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("PP" . "")) :constraints "NA" :constraint-type :NA) (((("" . "")))) ) ) ) ) 
+("N0DAN1Vbynx0" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+NP_f.t:<agr> = NP_r.b:<agr>
+NP_f.t:<wh> = NP_r.b:<wh>
+NP_f.t:<case> = NP_r.b:<case>
+S_r.t:<mode> = ind/inf
+S_r.b:<comp> = nil
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<tense> = VP.t:<tense>
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+S_r.b:<agr> = NP_1.t:<agr>
+S_r.b:<assign-case> = NP_1.t:<case>
+S_r.b:<control> = NP_1.t:<control>
+VP.t:<mode> = ind
+VP.b:<passive> = +
+VP.b:<mode> = V.t:<mode>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<tense> = V.t:<tense>
+VP.b:<mainv> = V.t:<mainv>
+VP.b:<compar> = -
+V.t:<mode> = ppart
+V.t:<passive> = +
+VP.b:<passive> = V.t:<passive>
+VP.b:<agr> = V.t:<agr>
+NP_f.b:<refl> = -
+PP_0.b:<assign-case> = P_0.t:<assign-case>
+PP_0.b:<assign-case> = NP_0.t:<case>
+P_0.b:<assign-case> = acc
+S_r.t:<conj> = nil
+
+NP_w.t:<trace> = NP_0.b:<trace>
+NP_w.t:<case> = NP_0.b:<case>
+NP_w.t:<agr> = NP_0.b:<agr>
+NP_w.t:<wh> = +
+S_r.t:<comp> = nil
+NP_r.b:<rel-clause> = +
+NP_f.b:<case> = nom/acc
+PP_0.b:<wh> = NP_0:<wh>
+NP_1.b:<agr> = N_1.t:<agr>
+D_1.t:<agr> = NP_1.b:<agr>
+N_1.t:<case> = nom/acc
+" :COMMENTS "Transitive idiom with V, D, A, and N anchors.
+Relative clause, extraction from passive by-phrase:
+
+EX: [I saw] the man who the other cheek was turned by.
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("S" . "p")) :constraints "NA" :constraint-type :NA) (((("NP" . "w")) :substp T))  (((("S" . "r"))) (((("NP" . "1"))) (((("D" . "1")) :headp T))  (((("A" . "")) :headp T))  (((("N" . "1")) :headp T)) )  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("PP" . "0"))) (((("P" . "0"))) (((("by" . "")))) )  (((("NP" . "0")) :constraints "NA" :constraint-type :NA) (((("" . "")))) ) ) ) ) ) ) 
+("Nc0DAN1Vbynx0" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+NP_f.t:<agr> = NP_r.b:<agr>
+NP_f.t:<wh> = NP_r.b:<wh>
+NP_f.t:<case> = NP_r.b:<case>
+S_r.b:<comp> = nil
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<tense> = VP.t:<tense>
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+S_r.b:<agr> = NP_1.t:<agr>
+S_r.b:<assign-case> = NP_1.t:<case>
+S_r.b:<control> = NP_1.t:<control>
+VP.t:<mode> = ind
+VP.b:<passive> = +
+VP.b:<mode> = V.t:<mode>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<tense> = V.t:<tense>
+VP.b:<mainv> = V.t:<mainv>
+VP.b:<compar> = -
+V.t:<mode> = ppart
+V.t:<passive> = +
+VP.b:<passive> = V.t:<passive>
+VP.b:<agr> = V.t:<agr>
+NP_f.b:<refl> = -
+PP_0.b:<assign-case> = P_0.t:<assign-case>
+PP_0.b:<assign-case> = NP_0.t:<case>
+P_0.b:<assign-case> = acc
+S_r.t:<conj> = nil
+
+NP_w.t:<trace> = NP_0.b:<trace>
+NP_w.t:<case> = NP_0.b:<case>
+NP_w.t:<agr> = NP_0.b:<agr>
+NP_r.b:<rel-clause> = +
+S_r.t:<mode> = inf/ind
+S_r.t:<nocomp-mode> = ind
+VP.t:<assign-comp> = that/for/ind_nil
+S_r.b:<nocomp-mode> = S_r.b:<mode>
+NP_f.b:<case> = nom/acc
+PP_0.b:<wh> = NP_0:<wh>
+NP_1.b:<agr> = N_1.t:<agr>
+D_1.t:<agr> = NP_1.b:<agr>
+N_1.t:<case> = nom/acc
+" :COMMENTS "Transitive idiom with V, D, A, and N anchors.
+'That' relative clause, extraction from by-phrase:
+
+EX: [I saw] the man that the other cheek was turned by.
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("S" . "p")) :constraints "NA" :constraint-type :NA) (((("NP" . "w")) :constraints "NA" :constraint-type :NA) (((("" . "w")))) )  (((("S" . "r"))) (((("NP" . "1"))) (((("D" . "1")) :headp T))  (((("A" . "")) :headp T))  (((("N" . "1")) :headp T)) )  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("PP" . "0"))) (((("P" . "0"))) (((("by" . "")))) )  (((("NP" . "0")) :constraints "NA" :constraint-type :NA) (((("" . "")))) ) ) ) ) ) ) 
+("Ncnx0VDAN1" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+S_r.b:<extracted> = -
+
+
+
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+NP_0:<agr> = S_r.b:<agr>
+NP_0:<case> = S_r.b:<assign-case>
+NP_1:<case> = acc
+NP_0:<wh> = -
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+S_r.b:<assign-case> = VP.t:<assign-case>
+VP.b:<passive> = V.t:<passive>
+V.t:<passive> = -
+V.t:<contr> = -
+VP.b:<agr> = V.t:<agr>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<mode> = V.t:<mode>
+VP.b:<tense> = V.t:<tense>
+VP.b:<mainv> = V.t:<mainv>
+VP.b:<compar> = -
+S_r.b:<inv> = -
+S_r.b:<control> = NP_0.t:<control>
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<case> = NP_f.t:<case>
+NP_f.b:<case> = acc/nom
+S_r.t:<mode> = ind/inf
+S_r.t:<nocomp-mode> = ind
+VP.t:<assign-comp> = that/for/ind_nil
+S_r.b:<nocomp-mode> = S_r.b:<mode>
+NP_r.b:<rel-clause> = +
+NP_f.b:<case> = nom/acc
+NP_1.b:<agr> = N_1.t:<agr>
+D_1.t:<agr> = NP_1.b:<agr>
+N_1.t:<case> = nom/acc
+" :COMMENTS "Idiom with V, D, A, and N anchors.
+Adjunct relative clause, with overt Comp.
+
+EX: [The time] that I killed the fatted calf...
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("S" . "p")) :constraints "NA" :constraint-type :NA) (((("NP" . "w")) :constraints "NA" :constraint-type :NA) (((("" . "w")))) )  (((("S" . "r"))) (((("NP" . "0")) :substp T :constraints ""))  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("NP" . "1")) :constraints "") (((("D" . "1")) :headp T))  (((("A" . "")) :headp T))  (((("N" . "1")) :headp T)) ) ) ) ) ) 
+("Npxnx0VDAN1" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+S_r.b:<extracted> = -
+
+
+
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+NP_0:<agr> = S_r.b:<agr>
+NP_0:<case> = S_r.b:<assign-case>
+NP_1:<case> = acc
+NP_0:<wh> = -
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+S_r.b:<assign-case> = VP.t:<assign-case>
+VP.b:<passive> = V.t:<passive>
+V.t:<passive> = -
+V.t:<contr> = -
+VP.b:<agr> = V.t:<agr>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<mode> = V.t:<mode>
+VP.b:<tense> = V.t:<tense>
+VP.b:<mainv> = V.t:<mainv>
+VP.b:<compar> = -
+S_r.b:<inv> = -
+S_r.b:<control> = NP_0.t:<control>
+PP_w.t:<wh> = +
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<case> = NP_f.t:<case>
+NP_f.b:<case> = acc/nom
+S_r.t:<comp> = nil
+NP_r.b:<rel-clause> = +
+NP_f.b:<case> = nom/acc
+NP_1.b:<agr> = N_1.t:<agr>
+D_1.t:<agr> = NP_1.b:<agr>
+N_1.t:<case> = nom/acc
+" :COMMENTS "Transitive idiom with V, D, A, and N anchors. 
+Adjunct relative clause with PP.
+
+EX: [I know a place] where Madeline turned the other cheek.
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("S" . "p")) :constraints "NA" :constraint-type :NA) (((("PP" . "w")) :substp T))  (((("S" . "r"))) (((("NP" . "0")) :substp T :constraints ""))  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("NP" . "1")) :constraints "") (((("D" . "1")) :headp T))  (((("A" . "")) :headp T))  (((("N" . "1")) :headp T)) ) ) ) ) ) 
+("Gnx0VDAN1" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+NP_0:<wh> = NP_r.b:<wh>
+NP_r.t:<case> = nom/acc
+NP_r.t:<agr num> = sing
+NP_r.t:<agr pers> = 3
+NP_r.t:<agr 3rdsing> = +
+NP_1:<case> = acc
+
+
+
+VP.b:<mode> = none
+VP.b:<compar> = -
+NP_r.b:<gerund> = +
+V:<mode> = ger
+NP_1.b:<agr> = N_1.t:<agr>
+D_1.t:<agr> = NP_1.b:<agr>
+N_1:<case> = nom/acc
+NP_0:<case> = acc/gen
+" :COMMENTS "Transitive idiom with V, D, A, and N anchors - NP gerund
+
+[Graham('s) turning the other cheek] is the last thing we expected.
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "0")) :substp T :constraints ""))  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("NP" . "1")) :constraints "") (((("D" . "1")) :headp T))  (((("A" . "")) :headp T))  (((("N" . "1")) :headp T)) ) ) ) 
+("nx0VDAN1-PRO" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+S_r.b:<extracted> = -
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+S_r.b:<assign-case> = NP_0.t:<case>
+S_r.b:<control> = NP_0.t:<control>
+NP_0:<agr> = S_r.b:<agr>
+NP_0:<wh> = -
+NP_0.t:<case> = none
+S_r.b:<wh> = NP_0:<wh>
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+VP.b:<passive> = V.t:<passive>
+V.t:<passive> = -
+V.t:<contr> = -
+VP.t:<mode> = inf/ger
+VP.b:<agr> = V.t:<agr>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<mode> = V.t:<mode>
+VP.b:<tense> = V.t:<tense>
+VP.b:<mainv> = V.t:<mainv>
+VP.b:<compar> = -
+S_r.b:<inv> = -
+N_1:<case> = nom/acc
+D_1:<agr> = NP_1.b:<agr>
+NP_1.b:<agr> = N_1.t:<agr>
+NP_1:<case> = acc
+
+" :COMMENTS "Transitive idiom with V, D, A, and N anchors, w/ PRO subject
+
+John wanted [PRO to have a green thumb].
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("NP" . "0")) :constraints "NA" :constraint-type :NA) (((("PRO" . "")))) )  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("NP" . "1")) :constraints "") (((("D" . "1")) :headp T))  (((("A" . "")) :headp T))  (((("N" . "1")) :headp T)) ) ) ) 
+("Gnx0VDAN1-PRO" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+NP_0:<wh> = NP_r.b:<wh>
+NP_0.t:<case> = none
+NP_0.t:<wh> = -
+NP_r.t:<case> = nom/acc
+NP_r.t:<agr num> = sing
+NP_r.t:<agr pers> = 3
+NP_r.t:<agr 3rdsing> = +
+NP_1:<case> = acc
+
+VP.b:<mode> = none
+VP.b:<compar> = -
+NP_r.b:<gerund> = +
+V:<mode> = ger
+NP_1.b:<agr> = N_1.t:<agr>
+D_1.t:<agr> = NP_1.b:<agr>
+N_1:<case> = nom/acc
+
+" :COMMENTS "Transitive idiom with V, D, A, and N anchors - NP gerund w/ PRO subject
+
+[PRO turning the other cheek] is the last thing we expected of Graham.
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "0")) :constraints "NA" :constraint-type :NA) (((("PRO" . "")))) )  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("NP" . "1")) :constraints "") (((("D" . "1")) :headp T))  (((("A" . "")) :headp T))  (((("N" . "1")) :headp T)) ) ) ) 

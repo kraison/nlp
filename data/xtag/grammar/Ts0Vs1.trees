@@ -1,0 +1,106 @@
+("s0Vs1" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+S_r.b:<extracted> = -
+S_r.b:<inv> = -
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+
+
+
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<mainv> = VP.t:<mainv>
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+S_0:<mode> = inf/ind
+S_0:<comp> = that/whether/for/nil
+S_0:<assign-comp> = inf_nil
+S_0.t:<inv> = -
+S_0.t:<extracted> = -
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<passive> = VP.t:<passive>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<mode> = V.t:<mode>
+VP.b:<tense>=V.t:<tense>
+
+
+VP.b:<passive> = V.t:<passive>
+V.t:<passive> = -
+VP.t:<agr pers> = 3
+
+VP.b:<compar> = -
+S_1.t:<assign-comp> = inf_nil/ind_nil
+
+S_1.t:<inv>=-
+
+
+
+
+
+" :COMMENTS "Sentential subject with adjectival predicate, where adjective takes a
+sentential complement:
+	That Max continues to drive a Jaguar is certain to make Bill jealous.
+	For the Jaguar to be towed seems likely to make Max very angry.
+	
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("S" . "0")) :substp T))  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("S" . "1")) :footp T :constraints "NA" :constraint-type :NA)) ) ) 
+("W0s0Vs1" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+S_q.b:<extracted> = +
+
+S_q.b:<inv> = S_r.t:<inv>
+S_q.b:<mode> = S_r.t:<mode>
+S_q.b:<comp> = nil
+S_q.b:<wh> = NP_0:<wh>
+NP_0:<wh> = +
+S_0:<assign-case>=NP_0:<case>
+S_0:<trace>=NP_0:<trace>
+S_r.b:<extracted> = -
+S_r.b:<inv> = -
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+
+
+
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<mainv> = VP.t:<mainv>
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+S_0:<mode> = inf/ind
+S_0:<comp> = that/whether/for/nil
+S_0:<assign-comp> = inf_nil
+S_0.t:<inv> = -
+S_0.t:<extracted> = -
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<passive> = VP.t:<passive>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<mode> = V.t:<mode>
+VP.b:<tense>=V.t:<tense>
+
+
+VP.b:<passive> = V.t:<passive>
+V.t:<passive> = -
+VP.t:<agr pers> = 3
+
+VP.b:<compar> = -
+S_1.t:<assign-comp> = inf_nil/ind_nil
+
+S_1.t:<inv>=-
+
+
+
+
+
+" :COMMENTS "Sentential subject with adjectival predicate, where adjective takes a
+sentential complement:
+	That Max continues to drive a Jaguar is certain to make Bill jealous.
+	For the Jaguar to be towed seems likely to make Max very angry.
+	
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "q"))) (((("NP" . "0")) :substp T))  (((("S" . "r"))) (((("S" . "0"))) (((("" . "")))) )  (((("VP" . ""))) (((("V" . "")) :headp T))  (((("S" . "1")) :footp T :constraints "NA" :constraint-type :NA)) ) ) ) 

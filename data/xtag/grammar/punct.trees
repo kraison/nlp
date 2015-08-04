@@ -1,0 +1,707 @@
+("nxPUnxPU" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+NP_r.b:<const> = NP_f.t:<const>
+NP_r.b:<gen> = NP_f.t:<gen>
+NP_r.b:<definite> = NP_f.t:<definite>
+NP_r.b:<quan> = NP_f.t:<quan>
+NP_r.b:<card> = NP_f.t:<card>
+NP_r.b:<decreas> = NP_f.t:<decreas>
+NP_r.b:<predet> = NP_f.t:<predet>
+
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<case> = NP_f.t:<case>
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<conj> = NP_f.t:<conj>
+NP_f.t:<case> = acc/nom
+
+NP_r.b:<assign-comp> = NP_f.t:<assign-comp>
+Punct_1.t:<punct struct> = Punct_2.t:<punct struct>
+Punct_1.t:<punct bal> = Punct_2.t:<punct bal>
+Punct_1.t:<punct contains> = NP_r.b:<punct contains>
+Punct_1.t:<punct struct> = NP_r.b:<punct struct>
+Punct_1.t:<punct bal> = NP_r.b:<punct bal>
+NP_f.t:<conj> = and/or/nil
+NP.t:<case> = nom/acc
+NP_f.t:<compar> = NP_r.b:<compar>
+NP_f.t:<equiv> = NP_r.b:<equiv>
+" :COMMENTS "The symmetric (non-peripheral) tree for NP appositives,
+anchored by: comma, dash or parentheses: 
+    The music here, Russell Smith's ``Tetrameron'', sounded good. 
+    ...cost 2 million pounds (3 million dollars)
+
+The punctuation marks are the anchors and the appositive NP is
+substituted. The appositive can be conjoined, but only with a lexical
+conjunction (not with a comma). Appositives with commas or dashes
+cannot be pronouns, although they may be conjuncts containing
+pronouns; likewise, they cannot modify pronouns.  When used with
+parentheses this tree actually presents an alternative rather than an
+appositive, so a pronoun is possible. Finally, the appositive position
+is restricted to having nominative or accusative case to block PRO
+from appearing here.
+
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("Punct" . "1")) :headp T))  (((("NP" . "")) :substp T))  (((("Punct" . "2")) :headp T)) ) 
+("nxPUnx" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+NP_r.b:<const> = NP_f.t:<const>
+NP_r.b:<gen> = NP_f.t:<gen>
+NP_r.b:<definite> = NP_f.t:<definite>
+NP_r.b:<quan> = NP_f.t:<quan>
+NP_r.b:<card> = NP_f.t:<card>
+NP_r.b:<decreas> = NP_f.t:<decreas>
+NP_r.b:<predet> = NP_f.t:<predet>
+
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<case> = NP_f.t:<case>
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<conj> = NP_f.t:<conj>
+NP_f.t:<conj> = and/or/nil
+NP_f.t:<case> = acc/nom
+
+NP_r.b:<assign-comp> = NP_f.t:<assign-comp>
+NP_r.b:<punct contains> = Punct.t:<punct contains> 
+NP_r.b:<punct struct> = Punct.t:<punct struct> 
+NP.t:<case> = nom/acc
+NP.t:<pron> = -
+NP_r.b:<compar> = -
+" :COMMENTS "
+
+Anchored by a comma, dash or colon, handles
+asymmetric (peripheral) NP appositives and NP colon expansions of
+NPs.  Like the symmetric appostive tree, beta_nxPUnxpu, the
+asymmetric appositive cannot be a pronoun, while the colon expansion
+can. Thus, this constraint comes from the syntactic entry in both
+cases rather than being built into the tree.
+
+   ...said Chris Dillow, senior U.K. economist at Nomura
+         Research Institute. 
+   qualities that are seldom found in one work : Scrupulous
+         scholarship , a fund of personal experience ,... 
+   the bank's 90% shareholder -- Petroliam Nasional Bhd.
+
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("Punct" . "")) :headp T))  (((("NP" . "")) :substp T)) ) 
+("nPUnxPU" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+N_r.b:<const> = N_f.t:<const>
+N_r.b:<gen> = N_f.t:<gen>
+N_r.b:<definite> = N_f.t:<definite>
+N_r.b:<quan> = N_f.t:<quan>
+N_r.b:<card> = N_f.t:<card>
+N_r.b:<decreas> = N_f.t:<decreas>
+N_r.b:<predet> = N_f.t:<predet>
+
+N_r.b:<agr> = N_f.t:<agr>
+N_r.b:<case> = N_f.t:<case>
+N_r.b:<wh> = N_f.t:<wh>
+N_r.b:<conj> = N_f.t:<conj>
+N_f.t:<conj> = and/or/nil
+N_f.t:<case> = acc/nom
+N_f.t:<pron> = - 
+
+N_r.b:<assign-comp> = N_f.t:<assign-comp>
+Punct_1.t:<punct struct> = Punct_2.t:<punct struct>
+Punct_1.t:<punct bal> = Punct_2.t:<punct bal>
+Punct_1.t:<punct contains> = N_r.b:<punct contains>
+Punct_1.t:<punct struct> = N_r.b:<punct struct>
+Punct_1.t:<punct bal> = N_r.b:<punct bal>
+NP.t:<case> = nom/acc
+
+" :COMMENTS "
+The symmetric (non-peripheral) tree for N-level NP appositives, is
+anchored by comma. The modifier is typically an address.  It is clear
+from examples such as
+      An official at Consolidated Freightways Inc., a Menlo Park,
+            Calif., less-than-truckload carrier , said... 
+that these are attached at N, rather than NP. " :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("N" . "r"))) (((("N" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("Punct" . "1")) :headp T))  (((("NP" . "")) :substp T))  (((("Punct" . "2")) :headp T)) ) 
+("PUpxPUvx" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+Punct_1.t:<punct> = Punct_2.t:<punct>
+Punct_1.t:<punct struct> = comma/dash
+VP_r.b:<punct struct> = Punct_1.t:<punct struct>
+VP.t:<punct struct> = nil
+VP.t:<punct bal> = nil
+VP_r.b:<mode> = VP.t:<mode>
+VP_r.b:<assign-comp> = VP.t:<assign-comp>
+VP_r.b:<agr> = VP.t:<agr>
+VP_r.b:<tense> = VP.t:<tense>
+VP_r.b:<assign-case> = VP.t:<assign-case>
+
+VP_r.b:<compar> = -
+" :COMMENTS "Tree for pre-VP parenthetical PP, anchored by commas or dashes - 
+	John, in a fit of anger, broke the vase
+        Mary, just within the last year, has totalled two cars
+
+These are clearly not NP modifiers. 
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("VP" . "r"))) (((("Punct" . "1")) :headp T))  (((("PP" . "")) :substp T))  (((("Punct" . "2")) :headp T))  (((("VP" . "")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("PUs" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+S.t:<comp> = S_r.b:<comp>
+S.t:<assign-comp> = S_r.b:<assign-comp>
+S.t:<conj> = and/or/but/nil
+S.t:<tense> = S_r.b:<tense>
+S.t:<extracted> = S_r.b:<extracted>
+S.t:<mode> = S_r.b:<mode>
+S.t:<assign-case> = S_r.b:<assign-case>
+S.t:<agr> = S_r.b:<agr>
+
+S.t:<punct struct> = nil
+Punct.t:<punct struct>= S_r.b:<punct struct>
+S_r.b:<inv> = S.t:<inv>
+S_r.b:<invlink> = S_r.b:<inv>
+S_r.b:<nocomp-mode> = S.t:<nocomp-mode>
+" :COMMENTS "Anchored by comma: allows comma-separated clause initial
+adjunct . 
+
+   Here, as in ``Journal'', Mr. Louis has given himself the lion's
+share of the dancing...  
+
+  Choreographed by Mr. Nagrin, the work filled the second half of a
+program. 
+
+To keep this tree from appearing on root Ss (i.e. , sentence),
+we have a root constraint that punct struct = nil (similar
+to the requirement that root Ss be tensed, i.e. mode =
+ind/imp).  The punct struct$>$ = nil feature on the foot
+blocks stacking of multiple punctuation marks.
+
+This tree is also used for peripheral appositive relative clauses.
+
+   Interest may remain limited into tomorrow's U.K. trade figures,
+which the market will be watching closely to see if there is any
+improvement after disappointing numbers in the previous two months.
+
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("Punct" . "")) :headp T))  (((("S" . "")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("sPU" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+S_f.t:<comp> = nil
+S_f.t:<comp> = S_r.b:<comp>
+S_f.t:<assign-comp> = ind/ind_nil/inf_nil/that/whether/if/for
+S_f.t:<assign-comp> = S_r.b:<assign-comp>
+S_f.t:<tense> = S_r.b:<tense>
+S_f.t:<extracted> = S_r.b:<extracted>
+S_f.t:<mode> = S_r.b:<mode>
+S_f.t:<assign-case> = S_r.b:<assign-case>
+S_f.t:<agr> = S_r.b:<agr>
+
+S_f.t:<punct term> = nil
+Punct.t:<punct>= S_r.b:<punct>
+S_f.t:<punct term> = nil
+S_f.t:<punct bal> = nil
+S_r.b:<inv> = S_f.t:<inv>
+S_r.b:<invlink> = S_r.b:<inv>
+S_f.b:<comp> = nil
+S_r.b:<nocomp-mode> = S_f.t:<nocomp-mode>
+" :COMMENTS "
+
+This tree handles the sentence final punctuation marks when selected
+by a question mark, exclamation point or period. One could also
+require a final punctuation mark for all clauses, but such an approach
+would not allow non-periods to occur internally, for instance before a
+semi-colon or dash. This tree currently only adjoins to indicative or
+imperative (root) clauses.
+
+
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("S" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("Punct" . "")) :headp T)) ) 
+("sPUs" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+S_f:<punct struct>=nil
+S_f:<mode>=ind/imp
+S_1:<punct struct>=nil
+S_r.b:<punct contains> = Punct:<punct contains>
+S_r.b:<comp> = S_f:<comp>
+S_f:<conj> = and/or/but/nil
+S_r.b:<assign-comp> = S_f:<assign-comp>
+S_r.b:<tense> = S_f:<tense>
+S_r.b:<mode> = S_f:<mode>
+S_r.b:<assign-case> = S_f:<assign-case>
+S_r.b:<agr> = S_f:<agr>
+
+S_r.b:<wh> = S_f:<wh> 
+S_r.b:<comp> = nil
+S_1:<comp> = nil
+S_r.b:<nocomp-mode> = S_f.t:<nocomp-mode>
+" :COMMENTS "This tree handles clausal ``combination'' with comma, dash, colon,
+semi-colon or any of the terminal punctuation marks. The first clause
+must be either indicative or imperative. The second may also be
+infinitival with the separating punctuation marks, but must be
+indicative or imperative with the terminal marks; with a comma, it may
+only be indicative. The two clauses need not share the same mode. NB:
+Allowing the terminal punctuation marks to anchor this tree allows us
+to parse sequences of multiple sentences. This is not the usual mode
+of parsing; if it were, this sort of sequencing might be better
+handled by a higher level of processing.
+
+    For critics, Hardy has had no poetic periods -- one does not speak
+       of early Hardy or late Hardy, or of the London or Max Gate
+       period....
+
+    Then there was exercise, boating and hiking, which was not only
+       good for you but also made you more virile: the thought of
+       strenuous activity left him exhausted.
+
+This construction is one of the few where two non-bracketing
+punctuation marks can be adjacent. It is possible (if rare) for the
+first clause to end with a question mark or exclamation point, when
+the two clauses are conjoined with a semi-colon, colon or
+dash. Features on the foot node control this
+interaction. Complementizers are not permitted on either
+conjunct. Subordinating conjunctions sometimes appear on the right
+conjunct, but seem to be impossible on the left:
+
+    Killpath would just have to go out and drag Gun back by the heels
+        once an hour ; because he'd be damned if he was going to be a
+        mid-watch pencil-pusher.
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("S" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("Punct" . "")) :headp T))  (((("S" . "1")) :substp T)) ) 
+("vPU" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+V_r.b:<passive> = V.t:<passive>
+V.t:<contr> = V_r.b:<contr>
+V_r.b:<agr> = V.t:<agr>
+V_r.b:<assign-case> = V.t:<assign-case>
+V_r.b:<assign-comp> = V.t:<assign-comp>
+V_r.b:<mode> = V.t:<mode>
+V_r.b:<tense> = V.t:<tense>
+V_r.b:<mainv> = V.t:<mainv>
+V.t:<refl> = V_r.b:<refl>
+
+V.t:<punct struct> = nil
+Punct:<punct struct> = V_r.b:<punct struct>
+Punct:<punct contains> = V_r.b:<punct contains>
+" :COMMENTS "This tree is anchored by a colon or a dash, and occurs
+between a verb and its complement. These typically are lists.
+
+    Printed material Available , on request , from U.S. Department of
+       Agriculture , Washington 25 , D.C. , are : Cooperative Farm
+       Credit Can Assist......
+
+" :SHAPE NIL :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("V" . "r"))) (((("V" . "")) :footp T :constraints "NA" :constraint-type :NA))  (((("Punct" . "")) :headp T)) ) 
+("pPU" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+P_r.b:<wh> = P.t:<wh>
+Punct:<punct> = P_r.b:<punct>
+P.t:<punct struct> = nil
+P_r.b:<assign-case> = P.t:<assign-case>
+" :COMMENTS "This tree is anchored by a colon or a dash, and occurs between a
+preposition and its complement. It typically occurs with a sequence
+of complements. As with the tree above, this typically occurs with a
+conjoined complement.
+
+  ...and utilization such as: (A) the protection of forage...
+  ...can be represented as: Af.
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("P" . "r"))) (((("P" . "")) :footp T :constraints "NA" :constraint-type :NA))  (((("Punct" . "")) :headp T)) ) 
+("PUsPU" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+Punct_1.t:<punct bal> = Punct_2.t:<punct bal>
+Punct_1.t:<punct struct> = Punct_2.t:<punct struct>
+S_r.b:<punct bal> = Punct_1.t:<punct bal>
+S_r.b:<punct struct> = Punct_1.t:<punct struct>
+S_f.t:<comp> = S_r.b:<comp>
+S_f.t:<extracted> = S_r.b:<extracted>
+S_f.t:<assign-comp> = S_r.b:<assign-comp>
+S_f.t:<tense> = S_r.b:<tense>
+S_f.t:<wh> = S_r.b:<wh>
+S_f.t:<inv> = S_r.b:<inv>
+S_f.t:<invlink> = S_r.b:<invlink>
+S_f.t:<mode> = S_r.b:<mode>
+S_f.t:<assign-case> = S_r.b:<assign-case>
+S_f.t:<agr> = S_r.b:<agr>
+
+S_r.b:<nocomp-mode> = S_f.t:<nocomp-mode>
+" :COMMENTS " 
+This tree is selected by parentheses and quotes and can adjoin onto
+any node type, whether a head or a phrasal constituent.  This handles
+things in parentheses or quotes which are syntactically integrated
+into the surrounding context.
+
+     Dick Carroll and his accordion (which we now refer to as
+        ``Freida'') held over at Bahia Cabana where ``Sir'' Judson
+        Smith brings in his calypso capers Oct. 13 .
+
+This tree is also used for commas around non-peripheral appositive
+relative clauses; comma selecting this tree will need to specify
+features on S nodes to block adjunction at other locs
+
+     This news, announced by Jerome Toobin, the orchestra's
+        administrative director, brought applause ...
+
+This tree is not transparent to the conjunction feature. This is
+because elements contained in parentheses or quotes typically act as
+matrix clauses, so \"Mary left (and a good thing it was, too) and then
+the party continued.\" is fine with a discourse conjunct inside the
+parentheses.
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r")) :constraints "" :constraint-type :DUMMY) (((("Punct" . "1")) :headp T :constraints "" :constraint-type :DUMMY))  (((("S" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("Punct" . "2")) :headp T :constraints "" :constraint-type :DUMMY)) ) 
+("PUnPU" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+Punct_1.t:<punct bal> = Punct_2.t:<punct bal>
+N_r.b:<punct bal> = Punct_1.t:<punct bal>
+N_r.b:<punct struct> = N_f.t:<punct struct>
+N_r.b:<case> = N_f.t:<case>
+N_r.b:<agr> = N_f.t:<agr>
+N_r.b:<assign-comp> = N_f.t:<assign-comp>
+N_r.b:<pron> = N_f.t:<pron>
+N_r.b:<wh> = N_f.t:<wh>
+
+N_r.b:<conj> = N_f.t:<conj>
+N_r.b:<const> = N_f.t:<const>
+N_r.b:<gen> = N_f.t:<gen>
+N_r.b:<definite> = N_f.t:<definite>
+N_r.b:<quan> = N_f.t:<quan>
+N_r.b:<card> = N_f.t:<card>
+N_r.b:<decreas> = N_f.t:<decreas>
+N_r.b:<predet> = N_f.t:<predet>
+N_r.b:<compar> = N_f.t:<compar>
+N_r.b:<equiv> = N_f.t:<equiv>
+" :COMMENTS "
+This tree is selected by parentheses and quotes and can adjoin onto
+any node type, whether a head or a phrasal constituent.  This handles
+things in parentheses or quotes which are syntactically integrated
+into the surrounding context.
+
+     Dick Carroll and his accordion (which we now refer to as
+        ``Freida'') held over at Bahia Cabana where ``Sir'' Judson
+        Smith brings in his calypso capers Oct. 13 .
+" :SHAPE :NONE :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("N" . "r"))) (((("Punct" . "1")) :headp T))  (((("N" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("Punct" . "2")) :headp T)) ) 
+("PUarbPU" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+Punct_1.t:<punct bal> = Punct_2.t:<punct bal>
+Ad_r.b:<punct bal> = Punct_1.t:<punct bal>
+Ad_r.b:<punct struct> = Ad_f.t:<punct struct>
+
+Ad_r.b:<assign-comp> = Ad_f.t:<assign-comp>
+Ad_r.b:<compar> = Ad_f.t:<compar>
+Ad_r.b:<equiv> = Ad_f.t:<equiv>
+" :COMMENTS "
+This tree is selected by parentheses and quotes and can adjoin onto
+any node type, whether a head or a phrasal constituent.  This handles
+things in parentheses or quotes which are syntactically integrated
+into the surrounding context.
+
+     Dick Carroll and his accordion (which we now refer to as
+        ``Freida'') held over at Bahia Cabana where ``Sir'' Judson
+        Smith brings in his calypso capers Oct. 13 .
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("Ad" . "r"))) (((("Punct" . "1")) :headp T))  (((("Ad" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("Punct" . "2")) :headp T)) ) 
+("PUaPU" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+Punct_1.t:<punct bal> = Punct_2.t:<punct bal>
+A_r.b:<punct bal> = Punct_1.t:<punct bal>
+A_r.b:<punct struct> = A_f.t:<punct struct>
+A_r.b:<wh> = A_f.t:<wh>
+
+A_r.b:<assign-comp> = A_f.t:<assign-comp>
+A_r.b:<compar> = A_f.t:<compar>
+A_r.b:<equiv> = A_f.t:<equiv>
+" :COMMENTS "
+This tree is selected by parentheses and quotes and can adjoin onto
+any node type, whether a head or a phrasal constituent.  This handles
+things in parentheses or quotes which are syntactically integrated
+into the surrounding context.
+
+     Dick Carroll and his accordion (which we now refer to as
+        ``Freida'') held over at Bahia Cabana where ``Sir'' Judson
+        Smith brings in his calypso capers Oct. 13 .
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("A" . "r"))) (((("Punct" . "1")) :headp T))  (((("A" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("Punct" . "2")) :headp T)) ) 
+("PUnxPU" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+NP_r.b:<const> = NP_f.t:<const>
+NP_r.b:<gen> = NP_f.t:<gen>
+NP_r.b:<definite> = NP_f.t:<definite>
+NP_r.b:<quan> = NP_f.t:<quan>
+NP_r.b:<card> = NP_f.t:<card>
+NP_r.b:<decreas> = NP_f.t:<decreas>
+NP_r.b:<predet> = NP_f.t:<predet>
+
+Punct_1.t:<punct bal> = Punct_2.t:<punct bal>
+NP_r.b:<punct struct> = NP_f.t:<punct struct>
+NP_r.b:<punct bal> = Punct_1.t:<punct bal>
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<case> = NP_f.t:<case>
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<conj> = NP_f.t:<conj>
+NP_f.t:<case> = acc/nom
+
+NP_r.b:<assign-comp> = NP_f.t:<assign-comp>
+NP_r.b:<compar> = NP_f.t:<compar>
+NP_r.b:<equiv> = NP_f.t:<equiv>
+" :COMMENTS "
+This tree is selected by parentheses and quotes and can adjoin onto
+any node type, whether a head or a phrasal constituent.  This handles
+things in parentheses or quotes which are syntactically integrated
+into the surrounding context.
+
+     Dick Carroll and his accordion (which we now refer to as
+        ``Freida'') held over at Bahia Cabana where ``Sir'' Judson
+        Smith brings in his calypso capers Oct. 13 .
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("Punct" . "1")) :headp T))  (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("Punct" . "2")) :headp T)) ) 
+("PUvxPU" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+Punct_1.t:<punct bal> = Punct_2.t:<punct bal>
+VP_r.b:<punct bal> = Punct_1.t:<punct bal>
+VP_r.b:<punct struct> = VP_f.t:<punct struct>
+VP_r.b:<mode> = VP_f.t:<mode>
+VP_r.b:<assign-comp> = VP_f.t:<assign-comp>
+VP_r.b:<agr> = VP_f.t:<agr>
+VP_r.b:<tense> = VP_f.t:<tense>
+VP_r.b:<assign-case> = VP_f.t:<assign-case>
+
+VP_r.b:<compar> = VP_f.t:<compar>
+VP_r.b:<equiv> = VP_f.t:<equiv>
+" :COMMENTS "
+This tree is selected by parentheses and quotes and can adjoin onto
+any node type, whether a head or a phrasal constituent.  This handles
+things in parentheses or quotes which are syntactically integrated
+into the surrounding context.
+
+     Dick Carroll and his accordion (which we now refer to as
+        ``Freida'') held over at Bahia Cabana where ``Sir'' Judson
+        Smith brings in his calypso capers Oct. 13 .
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("VP" . "r"))) (((("Punct" . "1")) :headp T))  (((("VP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("Punct" . "2")) :headp T)) ) 
+("PUdPU" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+Punct_1.t:<punct> = Punct_2.t:<punct>
+D_r.b:<punct bal> = Punct_1.t:<punct>
+D_r.b:<punct struct> = D_f.t:<punct struct>
+D_r.b:<agr> = D_f.t:<agr>
+D_r.b:<const> = D_f.t:<const>
+D_r.b:<predet> = D_f.t:<predet>
+D_r.b:<definite> = D_f.t:<definite>
+D_r.b:<quan> = D_f.t:<quan>
+D_r.b:<card> = D_f.t:<card>
+D_r.b:<gen> = D_f.t:<gen>
+D_r.b:<decreas> = D_f.t:<decreas>
+D_r.b:<wh> = D_f.t:<wh>
+
+D_r.b:<assign-comp> = D_f.t:<assign-comp>
+" :COMMENTS "
+This tree is selected by parentheses and quotes and can adjoin onto
+any node type, whether a head or a phrasal constituent.  This handles
+things in parentheses or quotes which are syntactically integrated
+into the surrounding context.
+
+     Dick Carroll and his accordion (which we now refer to as
+        ``Freida'') held over at Bahia Cabana where ``Sir'' Judson
+        Smith brings in his calypso capers Oct. 13 .
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("D" . "r"))) (((("Punct" . "1")) :headp T))  (((("D" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("Punct" . "2")) :headp T)) ) 
+("PUvPU" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+Punct_1.t:<punct bal> = Punct_2.t:<punct bal>
+V_r.b:<punct bal> = Punct_1.t:<punct bal>
+V_r.b:<punct struct> = V_f.t:<punct struct>
+V_r.b:<mode> = V_f.t:<mode>
+V_r.b:<assign-comp> = V_f.t:<assign-comp>
+V_r.b:<agr> = V_f.t:<agr>
+V_r.b:<tense> = V_f.t:<tense>
+V_r.b:<assign-case> = V_f.t:<assign-case>
+V_r.b:<mainv> = V_f.t:<mainv>
+V_r.b:<passive> = V_f.t:<passive>
+V_r.b:<neg> = V_f.t:<neg>
+
+V_r.b:<contr> = V_f.t:<contr>
+" :COMMENTS "
+This tree is selected by parentheses and quotes and can adjoin onto
+any node type, whether a head or a phrasal constituent.  This handles
+things in parentheses or quotes which are syntactically integrated
+into the surrounding context.
+
+     Dick Carroll and his accordion (which we now refer to as
+        ``Freida'') held over at Bahia Cabana where ``Sir'' Judson
+        Smith brings in his calypso capers Oct. 13 .
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("V" . "r"))) (((("Punct" . "1")) :headp T))  (((("V" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("Punct" . "2")) :headp T)) ) 
+("PUpPU" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+Punct_1.t:<punct bal> = Punct_2.t:<punct bal>
+P_r.b:<punct bal> = Punct_1.t:<punct bal>
+P_r.b:<punct struct> = P_f.t:<punct struct>
+P_r.b:<wh> = P_f.t:<wh>
+" :COMMENTS "
+This tree is selected by parentheses and quotes and can adjoin onto
+any node type, whether a head or a phrasal constituent.  This handles
+things in parentheses or quotes which are syntactically integrated
+into the surrounding context.
+
+     Dick Carroll and his accordion (which we now refer to as
+        ``Freida'') held over at Bahia Cabana where ``Sir'' Judson
+        Smith brings in his calypso capers Oct. 13 .
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("P" . "r"))) (((("Punct" . "1")) :headp T))  (((("P" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("Punct" . "2")) :headp T)) ) 
+("PUpxPU" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+Punct_1.t:<punct bal> = Punct_2.t:<punct bal>
+PP_r.b:<punct bal> = Punct_1.t:<punct bal>
+PP_r.b:<punct struct> = PP_f.t:<punct struct>
+PP_r.b:<wh> = PP_f.t:<wh>
+
+PP_r.b:<assign-comp> = PP_f.t:<assign-comp>
+PP_r.b:<conj> = PP_f.t:<conj>
+" :COMMENTS "
+This tree is selected by parentheses and quotes and can adjoin onto
+any node type, whether a head or a phrasal constituent.  This handles
+things in parentheses or quotes which are syntactically integrated
+into the surrounding context.
+
+     Dick Carroll and his accordion (which we now refer to as
+        ``Freida'') held over at Bahia Cabana where ``Sir'' Judson
+        Smith brings in his calypso capers Oct. 13 .
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("PP" . "r"))) (((("Punct" . "1")) :headp T))  (((("PP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("Punct" . "2")) :headp T)) ) 
+("sPUnx" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+NP.t:<case> = nom/acc
+S.t:<comp> = nil
+S.t:<comp> = S_r.b:<comp>
+S.t:<extracted> = S_r.b:<extracted>
+S.t:<assign-comp> = S_r.b:<assign-comp>
+S.t:<tense> = S_r.b:<tense>
+S.t:<wh> = S_r.b:<wh>
+S.t:<inv> = S_r.b:<inv>
+S.t:<invlink> = S_r.b:<invlink>
+S.t:<mode> = S_r.b:<mode>
+S.t:<assign-case> = S_r.b:<assign-case>
+S.t:<agr> = S_r.b:<agr>
+
+Punct.t:<punct contains> =  S_r.b:<punct contains>
+NP.t:<punct struct> = nil
+NP.t:<conj> = and/or/but/nil
+S.t:<mode> = ind/imp
+S.t:<punct struct> = nil
+S_r.b:<nocomp-mode> = S.t:<nocomp-mode>
+" :COMMENTS "
+Sentence final vocative, anchored by comma:  
+ 
+         You were there, Stanley/my boy
+
+Also, when anchored by colon, NP expansion on S. These often appear to
+be extraposed modifiers of some internal NP. The NP must be quite
+heavy, and is usually a list:
+
+	Of the major expansions in 1960, three were financed
+        under the R. I. Industrial Building Authority's 100%
+        guaranteed mortgage plan: Collyer Wire, Leesona Corporation,
+        and American Tube & Controls.
+
+The NP cannot be a pronoun in either of these cases.  Both vocatives
+and colon expansions are restricted to appear on tensed clauses
+(indicative or imperative).
+
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("S" . "")) :footp T :constraints "NA" :constraint-type :NA))  (((("Punct" . "")) :headp T))  (((("NP" . "")) :substp T)) ) 
+("nxPUs" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+NP.t:<pron> = -
+NP.t:<case> = nom/acc
+S.t:<punct struct> = nil
+S.t:<comp> = nil
+S.t:<comp> = S_r.b:<comp>
+S.t:<conj> = and/or/but/nil
+S.t:<extracted> = S_r.b:<extracted>
+S.t:<assign-comp> = S_r.b:<assign-comp>
+S.t:<tense> = S_r.b:<tense>
+S.t:<wh> = S_r.b:<wh>
+S.t:<inv> = S_r.b:<inv>
+S.t:<invlink> = S_r.b:<invlink>
+S.t:<mode> = S_r.b:<mode>
+S.t:<assign-case> = S_r.b:<assign-case>
+S.t:<agr> = S_r.b:<agr>
+
+S.t:<mode> = ind/imp
+Punct.t:<punct struct> = comma
+S_r.b:<nocomp-mode> = S.t:<nocomp-mode>
+" :COMMENTS "
+Sentence initial vocatives, anchored by a comma: 
+   Stanley/my boy, you were there
+
+The noun phrase may be anything but a pronoun, although it is most
+commonly a proper noun. The clause adjoined to must be indicative or
+imperative. 
+
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("NP" . "")) :substp T))  (((("Punct" . "")) :headp T))  (((("S" . "")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("nxPUa" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+A.t:<punct struct> = nil
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<case> = NP_f.t:<case>
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<conj> = NP_f.t:<conj>
+NP_f.t:<case> = acc/nom
+NP_f.t:<punct struct> = nil
+
+NP_r.b:<assign-comp> = NP_f.t:<assign-comp>
+NP_r.b:<punct contains> = Punct.t:<punct contains> 
+" :COMMENTS "Anchored by colon or dash, allows for post-modification of NPs by
+adjectives.
+	
+   Make no mistake, this Gorky Studio drama is a respectable import --
+       aptly grave, carefully written, performed and directed.
+
+
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("Punct" . "")) :headp T))  (((("A" . "")) :substp T)) ) 
+("sPUsPU" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+
+Punct_1.t:<punct bal> = Punct_2.t:<punct bal>
+Punct_1.t:<punct struct> = Punct_2.t:<punct struct>
+S_r.b:<punct bal> = Punct_1.t:<punct bal>
+S_r.b:<punct struct> = Punct_1.t:<punct struct>
+S_f.t:<punct bal> = dquote/squote
+S_f.t:<punct struct> = nil
+S_f.t:<comp> = S_r.b:<comp>
+S_f.t:<extracted> = S_r.b:<extracted>
+S_f.t:<assign-comp> = S_r.b:<assign-comp>
+S_f.t:<tense> = S_r.b:<tense>
+S_f.t:<wh> = S_r.b:<wh>
+S_f.t:<inv> = S_r.b:<inv>
+S_f.t:<invlink> = S_r.b:<invlink>
+S_f.t:<mode> = S_r.b:<mode>
+S_f.t:<assign-case> = S_r.b:<assign-case>
+S_f.t:<agr> = S_r.b:<agr>
+
+S.t:<mode> = ind/imp
+S.t:<comp> = nil
+S.t:<punct bal> = dquote/squote
+S.t:<punct struct> = nil
+S_r.b:<nocomp-mode> = S_f.t:<nocomp-mode>
+" :COMMENTS " 
+This tree is selected by parentheses and allows a parenthesized clause
+to adjoin onto another, non-parenthesized, clause. 
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r")) :constraints "" :constraint-type :DUMMY) (((("S" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("Punct" . "1")) :headp T :constraints "" :constraint-type :DUMMY))  (((("S" . "")) :substp T))  (((("Punct" . "2")) :headp T :constraints "" :constraint-type :DUMMY)) ) 

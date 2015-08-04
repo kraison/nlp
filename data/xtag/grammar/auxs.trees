@@ -1,0 +1,296 @@
+("Vs" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+S_r.b:<inv> = +
+S_r.b:<mode> = ind
+S.b:<inv> = -
+S.b:<comp> = nil
+
+S.t:<agr> = V.b:<agr>
+S.t:<conj> = and/or/but/nil
+S_r.b:<assign-case> = S.t:<assign-case>
+S_r.b:<conditional> = S.t:<conditional>
+S_r.b:<perfect> = S.t:<perfect>
+S_r.b:<progressive> = S.t:<progressive>
+V.t:<assign-case> = S_r.b:<assign-case>
+V.t:<mode> = S_r.b:<mode>
+V.t:<tense> = S_r.b:<tense>
+V.t:<agr> = S_r.b:<agr>
+V.t:<neg> = S_r.b:<neg>
+V.t:<assign-case> = S.t:<assign-case>
+S_r.b:<nocomp-mode> = S.t:<nocomp-mode>
+" :COMMENTS "Auxiliary tree for inversion
+ \"Do (you think  S)\"
+ \"Has John thought S\"
+
+Note that when this is adjoined the non-finite
+verb in the S that it adjoins to will inherit
+the value for <agr>. This doesn't have any ill-
+effect, but looks strange." :SHAPE :NONE :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r")) :constraints "") (((("V" . "")) :headp T))  (((("S" . "")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("Vvx" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+VP_r.b:<conditional> = VP.t:<conditional>
+VP_r.b:<perfect> = VP.t:<perfect>
+VP_r.b:<progressive> = VP.t:<progressive>
+
+
+V.t:<assign-case> = VP_r.b:<assign-case>
+V.t:<mode> = VP_r.b:<mode>
+V.t:<tense> = VP_r.b:<tense>
+V.t:<mainv> = VP_r.b:<mainv>
+V.t:<agr> = VP_r.b:<agr>
+V.t:<neg> = VP_r.b:<neg>
+V.t:<assign-comp> = VP_r.b:<assign-comp>
+VP_r.b:<compar> = -
+VP.t:<compar> = -
+" :COMMENTS "Auxiliary tree
+ \"has (loved)\"
+ \"has been (loving)\"" :SHAPE :NONE :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("VP" . "r")) :constraints "") (((("V" . "")) :headp T))  (((("VP" . "")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("Vvx-adj" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+VP_r.b:<conditional> = VP.t:<conditional>
+VP_r.b:<perfect> = VP.t:<perfect>
+VP_r.b:<progressive> = VP.t:<progressive>
+
+
+A.t:<assign-case> = VP_r.b:<assign-case>
+A.t:<mode> = VP_r.b:<mode>
+A.t:<tense> = VP_r.b:<tense>
+A.t:<mainv> = VP_r.b:<mainv>
+A.t:<agr> = VP_r.b:<agr>
+A.t:<neg> = VP_r.b:<neg>
+A.t:<assign-comp> = VP_r.b:<assign-comp>
+VP_r.b:<compar> = -
+VP.t:<compar> = -
+VP.t:<mode> = inf
+VP.t:<assign-comp>=ecm
+A.b:<mode> = nom
+AP.b:<equiv> = A.t:<equiv>
+AP.b:<compar> = A.t:<compar>" :COMMENTS "Auxiliary tree
+ \"has (loved)\"
+ \"has been (loving)\"" :SHAPE :NONE :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("VP" . "r")) :constraints "") (((("V" . "")) :constraints "NA" :constraint-type :NA) (((("" . "")))) )  (((("AP" . ""))) (((("A" . "")) :headp T))  (((("VP" . "")) :footp T :constraints "NA" :constraint-type :NA)) ) ) 
+("Vpxvx" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+VP_r.b:<conditional> = VP.t:<conditional>
+VP_r.b:<perfect> = VP.t:<perfect>
+VP_r.b:<progressive> = VP.t:<progressive>
+
+VP.t:<assign-comp> = inf_nil/ind_nil
+
+V.t:<assign-case> = VP_r.b:<assign-case>
+V.t:<mode> = VP_r.b:<mode>
+V.t:<tense> = VP_r.b:<tense>
+V.t:<mainv> = VP_r.b:<mainv>
+V.t:<agr> = VP_r.b:<agr>
+V.t:<neg> = VP_r.b:<neg>
+V.t:<assign-comp> = VP_r.b:<assign-comp>
+VP_r.b:<compar> = -
+VP.t:<compar> = -
+PP.b:<wh> = NP:<wh>
+PP.b:<assign-case> = P.t:<assign-case>
+PP.b:<assign-case> = NP.t:<case>
+P.t:<assign-case> = acc" :COMMENTS NIL :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("VP" . "r"))) (((("V" . "")) :headp T))  (((("PP" . ""))) (((("P" . ""))) (((("to" . "")))) )  (((("NP" . "")) :substp T)) )  (((("VP" . "")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("Vbynxvx" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+VP_r.b:<conditional> = VP.t:<conditional>
+VP_r.b:<perfect> = VP.t:<perfect>
+VP_r.b:<progressive> = VP.t:<progressive>
+
+VP.t:<assign-comp> = ecm
+
+V.t:<assign-case> = VP_r.b:<assign-case>
+V.t:<mode> = VP_r.b:<mode>
+V.t:<tense> = VP_r.b:<tense>
+V.t:<mainv> = VP_r.b:<mainv>
+V.t:<agr> = VP_r.b:<agr>
+V.t:<neg> = VP_r.b:<neg>
+V.t:<assign-comp> = VP_r.b:<assign-comp>
+VP_r.b:<compar> = -
+VP.t:<compar> = -
+PP.b:<wh> = NP:<wh>
+PP.b:<assign-case> = P.t:<assign-case>
+PP.b:<assign-case> = NP.t:<case>
+P.t:<assign-case> = acc
+" :COMMENTS "Auxiliary tree
+ \"has (loved)\"
+ \"has been (loving)\"" :SHAPE :NONE :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("VP" . "r")) :constraints "") (((("V" . "")) :headp T))  (((("PP" . ""))) (((("p" . ""))) (((("by" . "")))) )  (((("NP" . "")) :substp T)) )  (((("VP" . "")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("Vvxbynx" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+VP_r.b:<conditional> = VP.t:<conditional>
+VP_r.b:<perfect> = VP.t:<perfect>
+VP_r.b:<progressive> = VP.t:<progressive>
+
+VP.t:<assign-comp> = ecm
+
+V.t:<assign-case> = VP_r.b:<assign-case>
+V.t:<mode> = VP_r.b:<mode>
+V.t:<tense> = VP_r.b:<tense>
+V.t:<mainv> = VP_r.b:<mainv>
+V.t:<agr> = VP_r.b:<agr>
+V.t:<neg> = VP_r.b:<neg>
+V.t:<assign-comp> = VP_r.b:<assign-comp>
+VP_r.b:<compar> = -
+VP.t:<compar> = -
+PP.b:<wh> = NP:<wh>
+PP.b:<assign-case> = P.t:<assign-case>
+PP.b:<assign-case> = NP.t:<case>
+P.t:<assign-case> = acc
+" :COMMENTS "Auxiliary tree
+ \"has (loved)\"
+ \"has been (loving)\"" :SHAPE :NONE :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("VP" . "r")) :constraints "") (((("V" . "")) :headp T))  (((("VP" . "")) :footp T :constraints "NA" :constraint-type :NA))  (((("PP" . ""))) (((("p" . ""))) (((("by" . "")))) )  (((("NP" . "")) :substp T)) ) ) 
+("IVs" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+
+
+
+
+
+S_r.b:<inv> = +
+S_r.b:<mode> = imp
+S.b:<inv> = -
+S.b:<comp> = nil
+
+S.t:<agr> = V.b:<agr>
+S_r.b:<conditional> = S.t:<conditional>
+S_r.b:<perfect> = S.t:<perfect>
+S_r.b:<progressive> = S.t:<progressive>
+V.t:<tense> = S_r.b:<tense>
+V.t:<agr> = S_r.b:<agr>
+V.t:<neg> = S_r.b:<neg>
+S_r.b:<nocomp-mode> = S.t:<nocomp-mode>
+V.b:<mode> = base
+" :COMMENTS NIL :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r")) :display-feature? T :constraints "") (((("V" . "")) :display-feature? T :headp T))  (((("S" . "")) :display-feature? T :footp T :constraints "NA" :constraint-type :NA)) ) 
+("Vvx-arb" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+VP_r.t:<mainv> = -
+VP_r.b:<conditional> = VP.t:<conditional>
+VP_r.b:<perfect> = VP.t:<perfect>
+VP_r.b:<progressive> = VP.t:<progressive>
+
+
+Ad.t:<assign-case> = VP_r.b:<assign-case>
+Ad.t:<mode> = VP_r.b:<mode>
+Ad.t:<tense> = VP_r.b:<tense>
+Ad.t:<mainv> = VP_r.b:<mainv>
+Ad.t:<agr> = VP_r.b:<agr>
+Ad.t:<neg> = VP_r.b:<neg>
+Ad.t:<assign-comp> = VP_r.b:<assign-comp>
+VP_r.b:<compar> = -
+VP.t:<compar> = -
+VP.t:<mode> = inf
+VP.t:<assign-comp>=ecm
+Ad.b:<mode> = nom
+Ad_r.b:<equiv> = Ad.t:<equiv>
+Ad_r.b:<compar> = Ad.t:<compar>
+" :COMMENTS "Auxiliary tree
+ \"has (loved)\"
+ \"has been (loving)\"" :SHAPE :NONE :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("VP" . "r")) :constraints "") (((("V" . "")) :constraints "NA" :constraint-type :NA) (((("" . "")))) )  (((("Ad" . "r"))) (((("Ad" . "")) :headp T))  (((("VP" . "")) :footp T :constraints "NA" :constraint-type :NA)) ) ) 

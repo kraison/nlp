@@ -1,0 +1,180 @@
+("W0s0V" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+S_q.b:<extracted> = +
+
+S_q.b:<inv> = S_r.t:<inv>
+S_r.b:<assign-comp> = inf_nil/ind_nil
+S_r.t:<comp> = nil
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+S_r.b:<assign-case> = VP.t:<assign-case>
+
+
+
+
+VP.b:<compar> = -
+S_q.b:<wh> = NP_0:<wh>
+S_q.b:<comp> = nil
+S_q.b:<mode> = S_r.t:<mode>
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+S_r.b:<inv> = -
+NP_0:<trace> = S_0:<trace>
+NP_0:<wh> = +
+S_r.b:<agr> = VP.t:<agr>
+V.t:<passive> = -
+V.t:<punct struct> = nil
+VP.b:<agr> = V.t:<agr>
+VP.b:<mode> = V.t:<mode>
+VP.b:<tense> = V.t:<tense>
+VP.b:<mainv> = V.t:<mainv>
+VP.b:<passive> = V.t:<passive>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<assign-case> = V.t:<assign-case>
+S_r.t:<conj> = nil
+" :COMMENTS "Intransitive sentential subject with wh question on the subject:
+ 	What matters? (That we arrive on time)
+
+This also parses with the regular intransitive.
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "q"))) (((("NP" . "0")) :substp T :constraints "" :constraint-type :DUMMY))  (((("S" . "r"))) (((("S" . "0")) :constraints "NA" :constraint-type :NA) (((("" . "")))) )  (((("VP" . ""))) (((("V" . "")) :headp T)) ) ) ) 
+("s0V" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+S_r.b:<extracted> = -
+S_r.b:<inv> = -
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+S_r.b:<assign-case> = VP.t:<assign-case>
+
+
+S_r.b:<mainv> = VP.t:<mainv>
+S_r.b:<passive> = VP.t:<passive>
+
+VP.b:<compar> = -
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+S_r.b:<agr> = VP.t:<agr>
+VP.t:<agr pers> = 3
+S_0.t:<mode> = inf/ind
+S_0.t:<comp> = that/for/whether/nil
+S_0.t:<assign-comp> = inf_nil
+S_0.t:<inv> = -
+S_0.t:<extracted> = -
+VP.b:<passive> = V.t:<passive>
+V.t:<passive> = -
+V.t:<punct struct> = nil
+VP.b:<agr> = V.t:<agr>
+VP.b:<mode> = V.t:<mode>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<assign-case> = V.t:<assign-case>
+VP.b:<tense> = V.t:<tense>
+VP.b:<mainv> = V.t:<mainv>
+" :COMMENTS "Sentential subject intransitive:
+ 	To arrive on time matters considerably.
+ 
+These sound better with heavier VPs; we had some debate about 
+whether these should be in the Ts0Vtonx1 family, requiring a to-PP
+complement, but concluded that they did not.
+ 
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r")) :constraints "") (((("S" . "0")) :substp T))  (((("VP" . ""))) (((("V" . "")) :headp T)) ) ) 
+("Npxs0V" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+S_r.b:<extracted> = -
+S_r.b:<inv> = -
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+
+
+
+VP.b:<compar> = -
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+VP.b:<agr num> = sing
+VP.b:<agr pers> = 3
+VP.b:<agr 3rdsing> = +
+S_0.t:<mode> = inf/ind
+S_0.t:<comp> = that/for/whether/nil
+S_0.t:<assign-comp> = inf_nil
+S_0.t:<inv> = -
+S_0.t:<extracted> = -
+VP.b:<passive> = V.t:<passive>
+V.t:<passive> = -
+V.t:<punct struct> = nil
+VP.b:<agr> = V.t:<agr>
+VP.b:<mode> = V.t:<mode>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<tense> = V.t:<tense>
+VP.b:<mainv> = V.t:<mainv>
+S_r.t:<inv> = -
+PP_w.t:<wh> = +
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<case> = NP_f.t:<case>
+NP_f.b:<case> = acc/nom
+S_r.t:<comp> = nil
+NP_r.b:<rel-clause> = +
+NP_f.b:<case> = nom/acc
+NP_r.b:<pron> = NP_f.t:<pron>
+
+" :COMMENTS "Sentential subject intransitive:
+ 	To arrive on time matters considerably.
+ 
+These sound better with heavier VPs; we had some debate about 
+whether these should be in the Ts0Vtonx1 family, requiring a to-PP
+complement, but concluded that they did not.
+ 
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("S" . "p")) :constraints "NA" :constraint-type :NA) (((("PP" . "w")) :substp T))  (((("S" . "r"))) (((("S" . "0")) :substp T))  (((("VP" . ""))) (((("V" . "")) :headp T)) ) ) ) ) 
+("Ncs0V" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+S_r.b:<extracted> = -
+S_r.b:<inv> = -
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+
+
+
+VP.b:<compar> = -
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+VP.b:<agr num> = sing
+VP.b:<agr pers> = 3
+VP.b:<agr 3rdsing> = +
+S_0.t:<mode> = inf/ind
+S_0.t:<comp> = that/for/whether/nil
+S_0.t:<assign-comp> = inf_nil
+S_0.t:<inv> = -
+S_0.t:<extracted> = -
+VP.b:<passive> = V.t:<passive>
+V.t:<passive> = -
+V.t:<punct struct> = nil
+VP.b:<agr> = V.t:<agr>
+VP.b:<mode> = V.t:<mode>
+VP.b:<assign-comp> = V.t:<assign-comp>
+VP.b:<tense> = V.t:<tense>
+VP.b:<mainv> = V.t:<mainv>
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<case> = NP_f.t:<case>
+NP_f.b:<case> = acc/nom
+S_r.t:<inv> = -
+S_r.t:<mode> = ind/inf
+S_r.t:<nocomp-mode> = ind
+VP.t:<assign-comp> = that/for/ind_nil
+S_r.b:<nocomp-mode> = S_r.b:<mode>
+NP_r.b:<rel-clause> = +
+NP_f.b:<case> = nom/acc
+NP_r.b:<pron> = NP_f.t:<pron>
+
+" :COMMENTS "Sentential subject intransitive:
+ 	To arrive on time matters considerably.
+ 
+These sound better with heavier VPs; we had some debate about 
+whether these should be in the Ts0Vtonx1 family, requiring a to-PP
+complement, but concluded that they did not.
+ 
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("S" . "p")) :constraints "NA" :constraint-type :NA) (((("NP" . "w")) :constraints "NA" :constraint-type :NA) (((("" . "w")))) )  (((("S" . "r"))) (((("S" . "0")) :substp T))  (((("VP" . ""))) (((("V" . "")) :headp T)) ) ) ) ) 

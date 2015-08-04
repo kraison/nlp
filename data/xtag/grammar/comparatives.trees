@@ -1,0 +1,148 @@
+("CARBn" :COMMENT-DISPLAY? T :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+N_r.b:<pron>=-
+N_r.b:<wh>=-
+N_r.b:<definite>=-
+N_r.b:<quan>=-
+N_r.b:<gen>=-
+N_r.b:<refl>=-
+N_r.b:<compar> = +
+N_r.b:<super> = -
+N_r.t:<rel-clause>=-
+N_r.b:<wh> = N_f.t:<wh>
+N_r.b:<agr>=N_f.t:<agr>
+N_r.b:<gen> = N_f.t:<gen>
+N_r.b:<conj>=N_f.t:<conj>
+N_r.b:<case>=N_f.t:<case>
+N_r.b:<pron> = N_f.t:<pron>
+N_r.b:<card> = N_f.t:<card>
+N_r.b:<quan> = N_f.t:<quan>
+N_r.b:<const> = N_f.t:<const>
+N_r.b:<decreas> = N_f.t:<decreas>
+N_r.b:<definite> = N_f.t:<definite>
+
+N_r.b:<assign-comp> = N_f.t:<assign-comp>
+
+Ad.t:<super> = -
+Ad.t:<compar> = +
+Ad.t:<equiv> = N_r.b:<equiv>
+
+N_f.t:<wh>=-
+N_f.t:<gen>=-
+N_f.t:<pron>=-
+N_f.t:<quan>=-
+N_f.t:<card>=-
+N_f.t:<refl>=-
+N_f.t:<const>=-
+N_f.t:<super>=-
+N_f.t:<compar>=-
+N_f.t:<decreas>=-
+N_f.t:<definite>=-
+" :COMMENTS "John drank more wine." :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("N" . "r"))) (((("Ad" . "")) :headp T))  (((("N" . "f")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("CARB" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+NP.b:<definite> = -
+NP.b:<compar> = Ad.t:<compar>
+NP.b:<super> = Ad.t:<super>
+NP.b:<equiv> = Ad.t:<equiv>
+
+" :COMMENTS "Children always want more.
+Less is best!
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . ""))) (((("Ad" . "")) :headp T))  (((("N" . "")) :constraints "NA" :constraint-type :NA) (((("" . "")))) ) ) 
+("CARBarb" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+Ad_r.b:<conj> = Ad_f.t:<conj>
+Ad_r.b:<super> = Ad.t:<super>
+Ad_r.b:<equiv> = Ad.t:<equiv>
+Ad_r.b:<compar> = Ad.t:<compar>
+
+Ad_r.b:<assign-comp> = Ad_f.t:<assign-comp>
+
+Ad.t:<compar> = +
+
+Ad_f.t:<compar> = -
+Ad_f.t:<super> = -
+" :COMMENTS "John ran more quickly." :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("Ad" . "r"))) (((("Ad" . "")) :headp T))  (((("Ad" . "f")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("axPnx" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+AP_r.b:<compar> = -
+AP_r.b:<super> = +
+
+AP_f.t:<compar> = P.t:<compar>
+AP_f.t:<equiv> = P.t:<equiv>
+
+PP.b:<compar> = -
+PP.b:<assign-case> = P.t:<assign-case>
+PP.b:<assign-case> = NP.t:<case>
+" :COMMENTS "Adjoins to comparative AP's in sentences like \"Albert is more
+energetic.\" and \"Joyce is faster.\" to produce sentences such as the
+following:
+
+Albert is more energetic than Sam.
+
+Joyce is faster than James.
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("AP" . "r"))) (((("AP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("PP" . ""))) (((("P" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("NP" . "")) :substp T)) ) ) 
+("CARBa" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+A_r.b:<equiv> = Ad.t:<equiv>
+A_r.b:<compar> = Ad.t:<compar>
+A_r.b:<wh> = A_f.t:<wh> 
+
+Ad.t:<compar> = +
+
+A_f.t:<wh> = -
+A_f.t:<compar> = -
+A_f.t:<super> = -
+" :COMMENTS "The driver in that car is more crazy.
+
+The less evil option was to sign the treaty.
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("A" . "r"))) (((("Ad" . "")) :headp T))  (((("A" . "f")) :footp T :constraints "NA" :constraint-type :NA)) ) 
+("ARBaPa" :COMMENT-DISPLAY? T :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+A_f.t:<compar> = -
+A_f.t:<super> = -
+A_r.b:<compar> = -
+A_r.b:<super> = +
+A.t:<compar> = -
+A.t:<super> = -
+
+" :COMMENTS "The child is more upset than scared." :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("A" . "r"))) (((("Ad" . "")) :headp T))  (((("A" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("PP" . ""))) (((("P" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("A" . "")) :substp T)) ) ) 
+("ARBPa" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+A_f.t:<compar> = -
+A_f.t:<super> = -
+A_r.b:<compar> = A_f.t:<compar>
+A_r.b:<super> = +
+" :COMMENTS "The dog is [more than ugly].
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("A" . "r"))) (((("Ad" . "")) :headp T))  (((("A" . "")) :constraints "NA" :constraint-type :NA) (((("" . "")))) )  (((("PP" . ""))) (((("P" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("A" . "f")) :footp T :constraints "NA" :constraint-type :NA)) ) ) 
+("CnxPnx" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<case> = NP_f.t:<case>
+NP_r.b:<assign-comp> = NP_f.t:<assign-comp>
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<conj> = NP_f.t:<conj>
+
+NP_r.b:<card> = NP_f.t:<card>
+NP_r.b:<const> = NP_f.t:<const>
+NP_r.b:<quan> = NP_f.t:<quan>
+NP_r.b:<decreas> = NP_f.t:<decreas>
+NP_r.b:<definite> = NP_f.t:<definite>
+NP_r.b:<gen> = NP_f.t:<gen>
+NP_f.t:<rel-clause> = NP_r.b:<rel-clause>
+NP_r.b:<pron> = NP_f.t:<pron>
+NP_r.b:<refl> = NP_f.t:<refl>
+NP:<wh> = -
+NP_f.t:<compar> = +
+NP_f.t:<super> = -
+NP_r.b:<compar> = -
+NP_r.b:<super> = +
+NP_f.t:<equiv> = P.t:<equiv>
+PP.b:<assign-case> = P.t:<assign-case>
+PP.b:<assign-case> = NP.t:<case>
+" :COMMENTS "This tree adjoins to comparative NP's in sentences like \"Abe ate more
+apples\" to produce sentences like the following:
+
+Abe eats more apples than Mary.
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("PP" . ""))) (((("P" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("NP" . "")) :substp T)) ) ) 

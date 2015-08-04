@@ -1,0 +1,592 @@
+("A" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+
+
+
+" :COMMENTS "Adjective" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("A" . "")) :headp T)) 
+("N" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+
+
+
+N.b:<compar> = -
+" :COMMENTS "Noun" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("N" . "")) :headp T)) 
+("NXN" :COMMENT-DISPLAY? T :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+
+
+
+NP.b:<agr> = N.t:<agr>
+NP.b:<refl> = N.t:<refl>
+NP.b:<case> = N.t:<case>
+NP.b:<wh> = N.t:<wh>
+NP.b:<case> = nom/acc
+NP.b:<pron> = N.t:<pron>
+NP.b:<conj> = N.t:<conj>
+NP.b:<card> = N.t:<card>
+NP.b:<const> = N.t:<const>
+NP.b:<quan> = N.t:<quan>
+NP.b:<decreas> = N.t:<decreas>
+NP.b:<definite> = N.t:<definite>
+NP.b:<gen> = N.t:<gen>
+NP.b:<compl> = N.t:<compl>
+NP.b:<compar> = N.t:<compar>
+NP.b:<super> = N.t:<super>
+NP.b:<equiv> = N.t:<equiv>
+N.b:<compar> = -
+" :COMMENTS "Noun Phrase with no determiner
+ \"men\"
+ " :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . ""))) (((("N" . "")) :headp T)) ) 
+("P" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+
+
+
+" :COMMENTS "Preposition" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("P" . "")) :headp T)) 
+("PXPnx" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+
+
+
+PP.b:<wh> = NP:<wh>
+PP.b:<assign-case> = P.t:<assign-case>
+PP.b:<assign-case> = NP.t:<case>
+" :COMMENTS "Preposition with NP argument" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("PP" . ""))) (((("P" . "")) :headp T))  (((("NP" . "")) :substp T)) ) 
+("PXP" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+
+
+
+PP.b:<wh> = P.t:<wh>
+" :COMMENTS "Exhaustive PP
+
+\"up\", \"inside\", etc." :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("PP" . ""))) (((("P" . "")) :headp T)) ) 
+("Ad" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+
+
+
+" :COMMENTS "Adverb" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("Ad" . "")) :headp T)) 
+("NXNs" :COMMENT-DISPLAY? T :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+
+
+
+NP_r.b:<wh> = N.t:<wh>
+NP_r.b:<agr> = N.t:<agr>
+NP_r.b:<case> = N.t:<case>
+NP_r.b:<pron> = N.t:<pron>
+NP_r.b:<conj> = N.t:<conj>
+NP_r.b:<card> = N.t:<card>
+NP_r.b:<const> = N.t:<const>
+NP_r.b:<quan> = N.t:<quan>
+NP_r.b:<decreas> = N.t:<decreas>
+NP_r.b:<definite> = N.t:<definite>
+NP_r.b:<gen> = N.t:<gen>
+NP_r.b:<compar> = N.t:<compar>
+NP_r.b:<equiv> = N.t:<equiv>
+NP_r.b:<super> = N.t:<super>
+N.b:<compar> = -
+S.t:<extracted> = -
+S.t:<inv> = - 
+S.t:<comp> = that/nil
+S.t:<mode> = inf/ind
+
+
+
+" :COMMENTS "Noun taking a sentential complement:
+
+\"[Miranda's claim that Fuzzy was a smart dog] ... was laughed at\"." :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("N" . "")) :headp T))  (((("S" . "")) :substp T)) ) 
+("NXG" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+
+
+
+NP.b:<wh> = G.t:<wh>
+NP.t:<case> = nom/acc/gen
+NP.b:<compar> = -
+NP.b:<super> = -" :COMMENTS "genitive NP, anchored by \"hers\" \"mine\", etc.
+
+\"He took [mine].\"
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "")) :constraints "NA" :constraint-type :NA) (((("G" . "")) :headp T)) ) 
+("NXnxG" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+
+
+
+NP.t:<case> = nom/acc
+NP_g.b:<wh> = NP.t:<wh>
+NP_g.t:<case> = gen/nom/acc
+NP_g.b:<compar> = -
+NP_g.b:<super> = -
+" :COMMENTS "Possessive \"'s\" on NP (non-overt head noun):
+
+\"He took [John's].\"
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "g")) :constraints "NA" :constraint-type :NA) (((("NP" . "")) :substp T))  (((("G" . "")) :headp T)) ) 
+("D" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+
+
+
+" :COMMENTS "determiner (also anchored by possesive pronouns, like \"her\", \"his\" etc.)" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("D" . "")) :headp T)) 
+("AXA" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+
+
+
+A.t:<wh> = AP.b:<wh>
+A.t:<compar> = AP.b:<compar>
+A.t:<equiv> = AP.b:<equiv>
+A.t:<super> = AP.b:<super>
+" :COMMENTS "(non-complement) adjective phrase " :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("AP" . ""))) (((("A" . "")) :headp T)) ) 
+("AXAs" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+
+
+
+S.t:<mode> = ind/inf
+S.t:<comp> = nil/that
+S.t:<inv> = -
+S.t:<extracted> = -
+A.t:<compar> = AP.b:<compar>
+A.t:<equiv> = AP.b:<equiv>
+A.t:<super> = AP.b:<super>
+" :COMMENTS "Adjective argument, for adjective taking sentential complement:
+
+\"Miranda felt [sure that she would in the game].\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("AP" . ""))) (((("A" . "")) :headp T))  (((("S" . "")) :substp T)) ) 
+("Pu" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+
+
+
+" :COMMENTS "Punctuation" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("Punct" . "")) :headp T)) 
+("PXAPnx" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+
+
+
+PP.b:<wh> = NP:<wh>
+PP.b:<assign-case> = P_1.t:<assign-case>
+PP.b:<assign-case> = NP.t:<case>
+" :COMMENTS "Preposition phrase argument; 
+two-word preposition where the first word is an Adjective:
+
+\"Henry put the snake so [near to me], I almost died of terror.\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("PP" . ""))) (((("P" . "1"))) (((("A" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("P" . "")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("NP" . "")) :substp T)) ) 
+("PXARBPnx" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+
+
+
+PP.b:<wh> = NP:<wh>
+PP.b:<assign-case> = P_1.t:<assign-case>
+PP.b:<assign-case> = NP.t:<case>
+" :COMMENTS "Preposition phrase argument; 
+first word of the Preposition is an adverb.
+
+\"Dave put his tennis racket [next to mine].\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("PP" . ""))) (((("P" . "1"))) (((("Ad" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("P" . "")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("NP" . "")) :substp T)) ) 
+("PXPPnx" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+
+
+
+PP.b:<wh> = NP:<wh>
+PP.b:<assign-case> = P.t:<assign-case>
+PP.b:<assign-case> = NP.t:<case>
+" :COMMENTS "Preposition phrase argument; 
+both the first and second words are prepositions
+
+\"Jen put the new concoction [inside of the old casing].\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("PP" . ""))) (((("P" . ""))) (((("P" . "1")) :headp T :constraints "NA" :constraint-type :NA))  (((("P" . "2")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("NP" . "")) :substp T)) ) 
+("PXPNaPnx" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+
+
+
+PP.b:<wh> = NP:<wh>
+PP.b:<assign-case> = P.t:<assign-case>
+PP.b:<assign-case> = NP.t:<case>
+" :COMMENTS "3-word Preposition phrase argument; 
+all three words are prepositions
+
+Unlike the PXPNPnx trees, this tree *does not* allow adjectives to 
+adjoin at the N.
+
+\"Thea put the pan [on top of the stove].\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("PP" . ""))) (((("P" . ""))) (((("P" . "1")) :headp T :constraints "NA" :constraint-type :NA))  (((("N" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("P" . "2")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("NP" . "")) :substp T)) ) 
+("DD" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+
+
+
+" :COMMENTS NIL :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("D" . ""))) (((("D" . "1")) :headp T :constraints "NA" :constraint-type :NA))  (((("D" . "2")) :headp T :constraints "NA" :constraint-type :NA)) ) 
+("ARBP" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+
+
+
+" :COMMENTS "Two-word preposition tree for substitution; 
+first word is adverb
+
+\"She put down the stone [together with] the box.\"
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("P" . "1"))) (((("Ad" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("P" . "")) :headp T :constraints "NA" :constraint-type :NA)) ) 
+("AP" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+
+
+
+" :COMMENTS "Two-word Preposition substitution tree;
+first word is adjective:
+
+\"She put the duck [near to] the edge of the lake.\"
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("P" . "1"))) (((("A" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("P" . "")) :headp T :constraints "NA" :constraint-type :NA)) ) 
+("PP" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+
+
+
+" :COMMENTS "2-word preposition substitution tree 
+
+both words are prepositions
+
+\"She put the duck [inside of] its container\"
+
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("P" . ""))) (((("P" . "1")) :headp T :constraints "NA" :constraint-type :NA))  (((("P" . "2")) :headp T :constraints "NA" :constraint-type :NA)) ) 
+("PNaP" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+
+
+
+" :COMMENTS "Three-word preposition tree for substitution;
+middle word is noun (which cannot be modified):
+
+\"She put the green piece [in front of] the blue piece.\"
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("P" . ""))) (((("P" . "1")) :headp T :constraints "NA" :constraint-type :NA))  (((("N" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("P" . "2")) :headp T :constraints "NA" :constraint-type :NA)) ) 
+("PXPNPnx" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+
+
+
+PP.b:<wh> = NP:<wh>
+PP.b:<assign-case> = P.t:<assign-case>
+PP.b:<assign-case> = NP.t:<case>
+" :COMMENTS "3-word Preposition phrase argument;
+all three words are prepositions
+
+Unlike the PXPNaPnx, with this tree, adjectives *can* adjoin to the N.
+
+\"The marriage was [in (complete) accordance with local law].\"
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("PP" . ""))) (((("P" . ""))) (((("P" . "1")) :headp T :constraints "NA" :constraint-type :NA))  (((("N" . "")) :headp T))  (((("P" . "2")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("NP" . "")) :substp T)) ) 
+("PNP" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+
+
+
+" :COMMENTS "three-word preposition tree for substitution;
+the middle noun node can be modified
+
+\"They married [in (strict) accordance with Islamic law].\"
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("P" . ""))) (((("P" . "1")) :headp T :constraints "NA" :constraint-type :NA))  (((("N" . "")) :headp T))  (((("P" . "2")) :headp T :constraints "NA" :constraint-type :NA)) ) 
+("PXPDNPnx" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+
+
+
+PP.b:<wh> = NP:<wh>
+PP.b:<assign-case> = P.t:<assign-case>
+PP.b:<assign-case> = NP.t:<case>
+NP_1.b:<agr> = N.t:<agr>
+NP_1.b:<case> = N.t:<case>
+NP_1.b:<conj> = N.t:<conj>
+NP_1.b:<const> = D.t:<const>
+NP_1.b:<definite> = D.t:<definite>
+NP_1.b:<quan> = D.t:<quan>
+NP_1.b:<card> = D.t:<card>
+NP_1.b:<gen> = D.t:<gen>
+NP_1.b:<decreas> = D.t:<decreas>
+NP_1.b:<wh> = D.t:<wh>
+NP_1.t:<case> = nom/acc
+" :COMMENTS "3-word Prepositional phrase argument;
+determiner on the (middle) noun which can be modified.
+
+\"... [in the face of the opposition].\" 
+
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("PP" . ""))) (((("P" . ""))) (((("P" . "1")) :headp T :constraints "NA" :constraint-type :NA))  (((("NP" . "1"))) (((("D" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("N" . "")) :headp T)) )  (((("P" . "2")) :headp T :constraints "NA" :constraint-type :NA)) )  (((("NP" . "")) :substp T)) ) 
+("PDNP" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+
+
+
+NP_1.b:<agr> = N.t:<agr>
+NP_1.b:<case> = N.t:<case>
+NP_1.b:<conj> = N.t:<conj>
+NP_1.b:<const> = D.t:<const>
+NP_1.b:<definite> = D.t:<definite>
+NP_1.b:<quan> = D.t:<quan>
+NP_1.b:<card> = D.t:<card>
+NP_1.b:<gen> = D.t:<gen>
+NP_1.b:<decreas> = D.t:<decreas>
+NP_1.b:<wh> = D.t:<wh>
+NP_1.t:<case> = nom/acc
+" :COMMENTS "Three-word preposition tree for substitution; 
+
+determiner on the (middle) noun node which can be modified.
+
+\"... [in the midst of] ...\"" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("P" . ""))) (((("P" . "1")) :headp T :constraints "NA" :constraint-type :NA))  (((("NP" . "1"))) (((("D" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("N" . "")) :headp T)) )  (((("P" . "2")) :headp T :constraints "NA" :constraint-type :NA)) ) 
+("DnxG" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+
+
+
+
+NP:<case> = nom/acc
+D.b:<wh> = NP:<wh>
+D.b:<gen> = G.t:<gen>
+G.b:<gen> = +
+" :COMMENTS "Possessive \"'s\" on NP heading a Determiner tree used for substitution :
+determiner substitution trees appear only in gerund NP's where the verb
+subcategorizes for a PP: 
+
+\"... [Washington's] bashing of Wall Street.\"
+ " :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("D" . ""))) (((("NP" . "")) :substp T))  (((("G" . "")) :headp T)) ) 
+("VN" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+NP.b:<compar> = -
+NP.b:<super> = -
+
+" :COMMENTS "Multi-word tree for verb-noun compoundslike,
+
+\"melting pot\", \"punching bag\".
+" :SHAPE :NONE :BORDER-WIDTH 1 :CONSTRAINT-STYLE (:DUTCH :ITALIC :NORMAL) :CONNECTOR :LINE :DEFAULT-STYLE (:DUTCH :BOLD :NORMAL) :SUBSCRIPT-STYLE (:DUTCH :ROMAN :SMALL) :WHITE-SPACE 3  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . ""))) (((("V" . "")) :headp T :constraints "NA" :constraint-type :NA))  (((("N" . "")) :headp T :constraints "NA" :constraint-type :NA)) ) 

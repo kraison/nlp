@@ -1,0 +1,388 @@
+("nx0nx1ARB" :COMMENT-DISPLAY? T :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+S_r.b:<extracted> = -
+S_r.b:<inv> = -
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+
+
+
+VP.b:<compar> = -
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<mainv> = VP.t:<mainv>
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+NP_0:<agr> = S_r.b:<agr>
+NP_0:<case> = S_r.b:<assign-case>
+NP_0:<wh> = -
+NP_1.t:<case> = nom/acc
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<passive> = VP.t:<passive>
+VP.t:<passive> = -
+VP.b:<mode> = prep
+VP.b:<assign-case> = acc
+S_r.b:<control> = NP_0.t:<control>
+AdvP_1.b:<wh> = NP_1:<wh>
+" :COMMENTS "Declarative tree for predicative locative phrases such as 'three blocks ahead'
+and 'seven kilometers downstream'. 
+This tree family, like other predicative tree families, is anchored by the
+predicated object (here, the Ad), with the verb, if any, adjoining in.
+
+EX: John is many feet ahead.
+       The emu is five houses down.
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("NP" . "0")) :substp T))  (((("VP" . ""))) (((("V" . "")) :constraints "NA" :constraint-type :NA) (((("" . "v")))) )  (((("AdvP" . "1"))) (((("NP" . "1")) :substp T))  (((("Ad" . "")) :headp T)) ) ) ) 
+("W0nx0nx1ARB" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+S_q.b:<extracted> = +
+
+S_q.b:<inv> = S_r.t:<inv>
+S_q.b:<wh> = NP_0:<wh>
+S_r.t:<comp> = nil
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+
+
+
+VP.b:<compar> = -
+VP.t:<passive> = -
+S_q.b:<comp> = nil
+S_q.b:<mode> = S_r.t:<mode>
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+S_r.b:<inv> = -
+NP:<trace> = NP_0:<trace>
+NP:<agr> = NP_0:<agr>
+NP:<case> = NP_0:<case>
+NP:<wh> = NP_0:<wh>
+NP_0:<wh> = +
+NP_1.t:<case> = nom/acc
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<agr> = NP.t:<agr>
+S_r.b:<assign-case> = NP.t:<case>
+VP.b:<mode> = prep
+VP.b:<assign-case> = acc
+S_r.t:<conj> = nil
+S_r.b:<assign-comp> = inf_nil/ind_nil/ecm
+
+AdvP_1.b:<wh> = NP_1:<wh>
+" :COMMENTS "Wh subject extraction tree for predicative locative phrases, 
+such as 'five meters away'.  This tree does wh+ sentences only, no
+topicalization, since subject can not topicalize. 
+This tree family, like other predicative tree families, is anchored by the
+predicated object (here, the Ad), with the verb, if any, adjoining in.  
+EX: who is many kilometers away?
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "q"))) (((("NP" . "0")) :substp T))  (((("S" . "r"))) (((("NP" . "")) :constraints "NA" :constraint-type :NA) (((("" . "")))) )  (((("VP" . ""))) (((("V" . "")) :constraints "NA" :constraint-type :NA) (((("" . "v")))) )  (((("AdvP" . "1"))) (((("NP" . "1")) :substp T))  (((("Ad" . "")) :headp T)) ) ) ) ) 
+("N0nx0nx1ARB" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+
+
+
+
+VP.b:<compar> = -
+S_r.b:<mode> = VP.t:<mode>
+S_r.t:<mode> = ind/inf
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+S_r.t:<inv> = -
+S_r.b:<assign-case> = NP_0.t:<case>
+S_r.b:<agr> = NP_0.t:<agr>
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<mainv> = VP.t:<mainv>
+S_r.b:<passive> = VP.t:<passive>
+VP.t:<passive> = -
+VP.b:<mode> = nom
+VP.b:<assign-case> = acc
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<case> = NP_f.t:<case>
+S_r.t:<conj> = nil
+
+NP_w.t:<trace> = NP_0.b:<trace>
+NP_w.t:<case> = NP_0.b:<case>
+NP_w.t:<agr> = NP_0.b:<agr>
+NP_w.t:<wh> = +
+S_r.t:<comp> = nil
+NP_r.b:<rel-clause> = +
+NP_f.b:<case> = nom/acc
+NP_1.t:<case> = nom/acc
+NP_r.b:<pron> = NP_f.t:<pron>
+
+" :COMMENTS "Tree for predicative locative phrases with a relative clause on the subject. 
+This tree uses a wh+ NP such as 'who' rather than a Comp.
+
+EX: The man who is many nautical miles offshore will sink soon.
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("S" . "p")) :constraints "NA" :constraint-type :NA) (((("NP" . "w")) :substp T))  (((("S" . "r"))) (((("NP" . "0")) :constraints "NA" :constraint-type :NA) (((("" . "")))) )  (((("VP" . "")) :constraints "") (((("V" . "")) :constraints "NA" :constraint-type :NA) (((("" . "v")))) )  (((("AdvP" . ""))) (((("NP" . "1")) :substp T))  (((("Ad" . "")) :headp T)) ) ) ) ) ) 
+("Nc0nx0nx1ARB" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+
+
+
+
+VP.b:<compar> = -
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+S_r.t:<inv> = -
+S_r.b:<assign-case> = NP_0.t:<case>
+S_r.b:<agr> = NP_0.t:<agr>
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<mainv> = VP.t:<mainv>
+S_r.b:<passive> = VP.t:<passive>
+VP.t:<passive> = -
+VP.b:<mode> = nom
+VP.b:<assign-case> = acc
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<case> = NP_f.t:<case>
+S_r.t:<conj> = nil
+
+NP_w.t:<trace> = NP_0.b:<trace>
+NP_w.t:<case> = NP_0.b:<case>
+NP_w.t:<agr> = NP_0.b:<agr>
+NP_r.b:<rel-clause> = +
+S_r.t:<mode> = inf/ger/ind/nom
+S_r.t:<nocomp-mode> = inf/ger/nom
+VP.t:<assign-comp> = that/ind_nil/inf_nil/ecm
+S_r.b:<nocomp-mode> = S_r.b:<mode>
+NP_f.b:<case> = nom/acc
+NP_1.t:<case> = nom/acc
+NP_r.b:<pron> = NP_f.t:<pron>
+
+" :COMMENTS "Relative clause on the subject with Comp for predicative locative phrases.
+
+EX: The man that is seven miles away just left. 
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("S" . "p")) :constraints "NA" :constraint-type :NA) (((("NP" . "w")) :constraints "NA" :constraint-type :NA) (((("" . "w")))) )  (((("S" . "r"))) (((("NP" . "0")) :constraints "NA" :constraint-type :NA) (((("" . "")))) )  (((("VP" . "")) :constraints "") (((("V" . "")) :constraints "NA" :constraint-type :NA) (((("" . "v")))) )  (((("AdvP" . ""))) (((("NP" . "1")) :substp T))  (((("Ad" . "")) :headp T)) ) ) ) ) ) 
+("W1ARBnx0nx1ARB" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+S_q.b:<extracted> = +
+
+S_q.b:<inv> = S_r.t:<inv>
+S_q.b:<inv> = S_q.b:<invlink>
+S_q.b:<wh> = AdvP_1.t:<wh>
+S_r.t:<comp> = nil
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+
+
+
+VP.b:<compar> = -
+S_q.b:<mode> = S_r.t:<mode>
+S_q.b:<comp> = nil
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<comp> = nil
+S_r.b:<inv> = -
+NP_0:<agr> = S_r.b:<agr>
+NP_0:<case> = S_r.b:<assign-case>
+NP_1.t:<case> = nom/acc
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<control> = NP_0.t:<control>
+S_r.b:<tense> = VP.t:<tense>
+S_r.b:<mainv> = VP.t:<mainv>
+S_r.b:<passive> = VP.t:<passive>
+VP.t:<passive> = -
+AdvP:<trace> = AdvP_1:<trace>
+AdvP:<wh> = AdvP_1.t:<wh>
+AdvP_1.b:<wh> = NP_1.t:<wh>
+
+VP.b:<mode> = prep
+VP.b:<assign-case> = acc
+S_r.t:<conj> = nil
+" :COMMENTS "Tree for predicative locative phrase that has been 
+wh-moved. This tree, like the declarative version, 
+is anchored by the locative adverb in the locative 
+phrase.
+
+EX: How many miles ahead is John?
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "q"))) (((("AdvP" . "1"))) (((("NP" . "1")) :substp T))  (((("Ad" . "")) :headp T)) )  (((("S" . "r"))) (((("NP" . "0")) :substp T))  (((("VP" . ""))) (((("V" . "")) :constraints "NA" :constraint-type :NA) (((("" . "v")))) )  (((("AdvP" . "")) :constraints "NA" :constraint-type :NA) (((("" . "")))) ) ) ) ) 
+("Inx0nx1ARB" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+S_r.b:<extracted> = -
+S_r.b:<inv> = -
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+
+
+
+VP.b:<compar> = -
+S_r.b:<mode> = imp
+S_r.b:<mainv> = VP.t:<mainv>
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+NP_0:<agr> = S_r.b:<agr>
+NP_0:<case> = S_r.b:<assign-case>
+NP_0:<wh> = -
+NP_0:<agr pers> = 2
+NP_0:<agr 3rdsing> = -
+NP_0:<agr num> = plur/sing
+NP_0:<case> = nom
+NP_1.t:<case> = nom/acc
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<passive> = VP.t:<passive>
+VP.t:<passive> = -
+VP.t:<tense> = pres
+VP.t:<mode> = base
+VP.t:<neg> = -
+VP.b:<mode> = prep
+VP.b:<assign-case> = acc
+AdvP_1.b:<wh> = NP_1:<wh>
+" :COMMENTS "Imperative tree for predicative locative phrases.
+
+EX: Be three miles away!
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("NP" . "0")) :constraints "NA" :constraint-type :NA) (((("" . "")))) )  (((("VP" . ""))) (((("V" . "")) :constraints "NA" :constraint-type :NA) (((("" . "v")))) )  (((("AdvP" . "1"))) (((("NP" . "1")) :substp T))  (((("Ad" . "")) :headp T)) ) ) ) 
+("W1nx0nx1ARB" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+S_r.b:<inv> = -
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+
+
+
+VP.b:<compar> = -
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<mainv> = VP.t:<mainv>
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+NP_0:<agr> = S_r.b:<agr>
+NP_0:<case> = S_r.b:<assign-case>
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+VP.b:<mode> = prep
+VP.b:<assign-case> = acc
+AdvP_1.b:<wh> = NP_1:<wh>
+S_r.b:<control> = NP_0.t:<control>
+
+S_q.b:<wh> = NP_1:<wh>
+S_q.b:<extracted> = +
+S_q.b:<inv> = S_q.b:<invlink>
+S_q.b:<inv> = S_r.t:<inv>
+S_q.b:<mode> = S_r.t:<mode>
+S_q.b:<comp> = nil
+S_r.t:<comp> = nil
+S_r.t:<conj> = nil
+V.t:<punct struct> = nil
+NP.t:<trace> = NP_1.t:<trace>
+NP.t:<agr> = NP_1.t:<agr>
+NP.t:<case> = NP_1.t:<case>
+NP.t:<wh> = NP_1.t:<wh>
+" :COMMENTS "Declarative tree for predicative locative phrases such as 'three blocks ahead'
+and 'seven kilometers downstream'. 
+This tree family, like other predicative tree families, is anchored by the
+predicated object (here, the Ad), with the verb, if any, adjoining in.
+
+EX: John is many feet ahead.
+       The emu is five houses down.
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "q"))) (((("NP" . "1")) :substp T))  (((("S" . "r"))) (((("NP" . "0")) :substp T))  (((("VP" . ""))) (((("V" . "")) :constraints "NA" :constraint-type :NA) (((("" . "v")))) )  (((("AdvP" . "1"))) (((("NP" . "")) :constraints "NA" :constraint-type :NA) (((("" . "")))) )  (((("Ad" . "")) :headp T)) ) ) ) ) 
+("Gnx0nx1ARB" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+NP_0:<wh> = NP_r.b:<wh>
+NP_1.t:<case> = nom/acc
+VP.t:<mode> = ger
+NP_r.b:<case> = nom/acc
+NP_r.b:<agr num> = sing
+NP_r.b:<agr pers> = 3
+NP_r.b:<agr 3rdsing> = +
+VP.b:<mode> = prep
+VP.b:<assign-case> = acc
+VP.b:<compar> = -
+
+
+
+NP_r.b:<gerund> = +
+AdvP_1.b:<wh> = NP_1:<wh>
+NP_0:<case> = acc/gen
+" :COMMENTS "Gerund NP tree for predicative locative phrases such as 'three miles away'. 
+This tree family, like other predicative tree families, 
+is anchored by the predicated object (here, the Ad), with the verb, if any, adjoining in. 
+There is no corresponding D tree (*the being of three meters ahead; *the being three miles away).
+
+[John('s) being seven feet downstream] is fine because there are more fish there.
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "0")) :substp T))  (((("VP" . ""))) (((("V" . "")) :constraints "NA" :constraint-type :NA) (((("" . "v")))) )  (((("AdvP" . ""))) (((("NP" . "1")) :substp T))  (((("Ad" . "")) :headp T)) ) ) ) 
+("nx0nx1ARB-PRO" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+S_r.b:<extracted> = -
+S_r.b:<inv> = -
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+VP.b:<compar> = -
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<mainv> = VP.t:<mainv>
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+S_r.b:<assign-case> = NP_0.t:<case>
+NP_0:<agr> = S_r.b:<agr>
+NP_0:<wh> = -
+NP_0.t:<case> = none
+NP_1.t:<case> = nom/acc
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<passive> = VP.t:<passive>
+VP.t:<passive> = -
+VP.b:<mode> = prep
+VP.b:<assign-case> = acc
+S_r.b:<control> = NP_0.t:<control>
+AdvP_1.b:<wh> = NP_1:<wh>
+VP.t:<mode> = inf/ger
+
+" :COMMENTS "Predicative locative phrases w/ PRO subject.
+This tree family, like other predicative tree families, is anchored by the
+predicated object (here, the Ad), with the verb, if any, adjoining in.
+
+John wants [PRO to be many miles ahead].
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("NP" . "0")) :constraints "NA" :constraint-type :NA) (((("PRO" . "")))) )  (((("VP" . ""))) (((("V" . "")) :constraints "NA" :constraint-type :NA) (((("" . "v")))) )  (((("AdvP" . "1"))) (((("NP" . "1")) :substp T))  (((("Ad" . "")) :headp T)) ) ) ) 
+("Gnx0nx1ARB-PRO" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+NP_0:<wh> = NP_r.b:<wh>
+NP_0.t:<case> = none
+NP_0.t:<wh> = -
+NP_1.t:<case> = nom/acc
+VP.t:<mode> = ger
+NP_r.b:<case> = nom/acc
+NP_r.b:<agr num> = sing
+NP_r.b:<agr pers> = 3
+NP_r.b:<agr 3rdsing> = +
+VP.b:<mode> = prep
+VP.b:<assign-case> = acc
+VP.b:<compar> = -
+NP_r.b:<gerund> = +
+AdvP_1.b:<wh> = NP_1:<wh>
+
+" :COMMENTS "Gerund NP tree for predicative locative phrases w/ PRO subject.
+This tree family, like other predicative tree families, is anchored by the predicated object (here, the Ad), with the verb, if any, adjoining in. 
+
+[PRO being seven feet downstream] is fine because we can still see the others.
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "0")) :constraints "NA" :constraint-type :NA) (((("PRO" . "")))) )  (((("VP" . ""))) (((("V" . "")) :constraints "NA" :constraint-type :NA) (((("" . "v")))) )  (((("AdvP" . ""))) (((("NP" . "1")) :substp T))  (((("Ad" . "")) :headp T)) ) ) ) 
+
+
+
+
+

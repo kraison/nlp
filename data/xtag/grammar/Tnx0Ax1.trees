@@ -1,0 +1,498 @@
+("nx0Ax1" :COMMENT-DISPLAY? T :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+S_r.b:<inv> = -
+S_r.b:<comp> = nil
+S_r.b:<extracted> = -
+
+
+NP_0:<wh> = -
+
+VP.b:<compar> = -
+VP.b:<mode> = nom
+VP.b:<assign-case> = acc
+
+
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+
+S_r.b:<agr> = NP_0:<agr>
+S_r.b:<assign-case> = NP_0:<case>
+S_r.b:<control> = NP_0.t:<control>
+
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<mainv> = VP.t:<mainv>
+S_r.b:<tense> = VP.t:<tense>
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+
+S_r.b:<passive> = VP.t:<passive>
+VP.t:<passive> = -
+
+AP_1.b:<equiv> = A.t:<equiv>
+AP_1.b:<compar> = A.t:<compar>
+AP_1.b:<wh> = A.t:<wh>
+
+" :COMMENTS "Predicative Adjective.
+Small Clause construction.
+Simple declarative.
+
+Predicative \"be\" is forced to adjoin in matrix clauses. 
+Adjunction of predicative \"be\" is optional in embedded clauses
+
+e.g.
+     Ernest is stupid.
+     Everyone considers Ernest stupid.
+     Everyone thinks Ernest is stupid.
+
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("NP" . "0")) :substp T))  (((("VP" . ""))) (((("V" . "")) :constraints "NA" :constraint-type :NA) (((("" . "v")))) )  (((("AP" . "1"))) (((("A" . "")) :headp T)) ) ) ) 
+("W0nx0Ax1" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+S_q.b:<extracted> = +
+
+S_q.b:<inv> = S_r.t:<inv>
+S_q.b:<wh> = NP_0.t:<wh>
+S_r.t:<comp> = nil
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+
+
+
+S_q.b:<comp> = nil
+S_q.b:<mode> = S_r.t:<mode>
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+S_r.b:<inv> = -
+S_r.b:<assign-case> = NP.t:<case>
+S_r.b:<agr> = NP.t:<agr>
+NP:<trace> = NP_0:<trace>
+NP_0:<agr> = NP.t:<agr>
+NP_0:<case> = NP.t:<case>
+NP:<wh> = NP_0:<wh>
+NP_0:<wh> = +
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+VP.b:<mode> = nom
+VP.b:<assign-case> = acc
+S_r.t:<conj> = nil
+S_r.b:<assign-comp> = inf_nil/ind_nil/ecm
+
+A.t:<compar> = AP_1.b:<compar>
+A.t:<equiv> = AP_1.b:<equiv>
+AP_1.b:<wh> = A.t:<wh>
+VP.b:<compar> = -
+VP.t:<passive> = -
+" :COMMENTS "Predicative Adjective
+Small Clause construction
+Wh-extraction on the subject
+
+
+e.g.
+
+     Who is stupid?
+     Who does everyone consider stupid?
+     Who does everyone think is stupid?
+
+
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "q"))) (((("NP" . "0")) :substp T))  (((("S" . "r"))) (((("NP" . "")) :constraints "NA" :constraint-type :NA) (((("" . "")))) )  (((("VP" . ""))) (((("V" . "")) :constraints "NA" :constraint-type :NA) (((("" . "v")))) )  (((("AP" . "1"))) (((("A" . "")) :headp T)) ) ) ) ) 
+("WA1nx0Ax1" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+
+
+
+
+S_q.b:<extracted> = +
+
+S_q.b:<inv> = S_r.t:<inv>
+S_q.b:<inv> = S_q.b:<invlink>
+AP_1.t:<wh> = S_q.b:<wh>
+S_r.t:<comp> = nil
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+
+
+
+S_q.b:<mode> = S_r.t:<mode>
+S_q.b:<comp> = nil
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<comp> = nil
+S_r.b:<inv> = -
+NP_0:<agr> = S_r.b:<agr>
+NP_0:<case> = S_r.b:<assign-case>
+S_r.b:<tense> = VP.t:<tense>
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+AP.t:<trace> = AP_1.t:<trace>
+AP.t:<wh> = AP_1.t:<wh>
+AP_1.b:<wh> = A.t:<wh>
+AP_1.b:<equiv> = A.t:<equiv>
+AP_1.b:<compar> = A.t:<compar>
+S_r.b:<mainv> = VP.t:<mainv>
+VP.b:<mode> = nom
+VP.b:<assign-case> = acc
+S_r.t:<conj> = nil
+S_r.b:<control> = NP_0.t:<control>
+S_r.b:<passive> = VP.t:<passive>
+VP.t:<passive> = -
+VP.b:<compar> = -
+" :COMMENTS "Predicative Adjective
+Small clause construction
+Wh-extraction on the predicative adjective
+
+e.g.
+
+     What/How is Ernest?
+     What/How does everyone consider Ernest?
+     What/How does everyone think Ernest is?
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "q"))) (((("AP" . "1"))) (((("A" . "")) :headp T)) )  (((("S" . "r"))) (((("NP" . "0")) :substp T))  (((("VP" . ""))) (((("V" . "")) :constraints "NA" :constraint-type :NA) (((("" . "v")))) )  (((("AP" . "")) :constraints "NA" :constraint-type :NA) (((("" . "")))) ) ) ) ) 
+("Inx0Ax1" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+
+S_r.b:<extracted> = -
+S_r.b:<inv> = -
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+
+
+
+S_r.b:<mode> = imp
+S_r.b:<mainv> = VP.t:<mainv>
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+NP_0:<agr> = S_r.b:<agr>
+NP_0:<case> = S_r.b:<assign-case>
+NP_0:<wh> = -
+NP_0:<agr pers> = 2
+NP_0:<agr 3rdsing> = -
+NP_0:<agr num> = plur/sing
+NP_0:<case> = nom
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<passive> = VP.t:<passive>
+VP.t:<passive> = -
+VP.t:<tense> = pres
+VP.t:<mode> = base
+VP.t:<neg> = -
+VP.b:<mode> = nom
+VP.b:<assign-case> = acc
+A.t:<compar> = AP_1.b:<compar>
+A.t:<equiv> = AP_1.b:<equiv>
+AP_1.b:<wh> = A.t:<wh>
+VP.b:<compar> = -
+" :COMMENTS "Predicative Adjective
+Small clause construction
+Imperative
+
+e.g.
+
+     Be stupid.
+
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("NP" . "0")) :constraints "NA" :constraint-type :NA) (((("" . "")))) )  (((("VP" . ""))) (((("V" . "")) :constraints "NA" :constraint-type :NA) (((("" . "v")))) )  (((("AP" . "1"))) (((("A" . "")) :headp T)) ) ) ) 
+("N0nx0Ax1" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+
+
+
+
+S_r.b:<mode> = VP.t:<mode>
+S_r.t:<mode> = ind/inf
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+S_r.t:<inv> = -
+S_r.b:<assign-case> = NP_0.t:<case>
+S_r.b:<agr> = NP_0.t:<agr>
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<mainv> = VP.t:<mainv>
+S_r.b:<passive> = VP.t:<passive>
+VP.t:<passive> = -
+VP.b:<mode> = nom
+VP.b:<assign-case> = acc
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<case> = NP_f.t:<case>
+S_r.t:<conj> = nil
+
+NP_w.t:<trace> = NP_0.b:<trace>
+NP_w.t:<case> = NP_0.b:<case>
+NP_w.t:<agr> = NP_0.b:<agr>
+NP_w.t:<wh> = +
+S_r.t:<comp> = nil
+NP_r.b:<rel-clause> = +
+NP_f.b:<case> = nom/acc
+A.t:<compar> = AP_1.b:<compar>
+A.t:<equiv> = AP_1.b:<equiv>
+VP.b:<compar> = -
+NP_r.b:<pron> = NP_f.t:<pron>
+
+" :COMMENTS "Predicative Adjective
+Small clause construction
+Relative clause on the subject
+
+
+e.g.
+
+     [the person] who is stupid
+     [the most likely guy] to be stupid
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("S" . "p")) :constraints "NA" :constraint-type :NA) (((("NP" . "w")) :substp T))  (((("S" . "r"))) (((("NP" . "0")) :constraints "NA" :constraint-type :NA) (((("" . "")))) )  (((("VP" . "")) :constraints "") (((("V" . "")) :constraints "NA" :constraint-type :NA) (((("" . "v")))) )  (((("AP" . "1"))) (((("A" . "")) :headp T)) ) ) ) ) ) 
+("Npxnx0Ax1" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+S_r.b:<extracted> = -
+S_r.b:<inv> = -
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+
+
+
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<mainv> = VP.t:<mainv>
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+NP_0:<agr> = S_r.b:<agr>
+NP_0:<case> = S_r.b:<assign-case>
+NP_0:<wh> = -
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<passive> = VP.t:<passive>
+VP.t:<passive> = -
+VP.b:<mode> = nom
+VP.b:<assign-case> = acc
+S_r.b:<control> = NP_0.t:<control>
+S_r.t:<inv> = -
+PP_w.t:<wh> = +
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<case> = NP_f.t:<case>
+NP_f.b:<case> = acc/nom
+S_r.t:<comp> = nil
+NP_r.b:<rel-clause> = +
+NP_f.b:<case> = nom/acc
+A.t:<compar> = AP_1.b:<compar>
+A.t:<equiv> = AP_1.b:<equiv>
+VP.b:<compar> = -
+NP_r.b:<pron> = NP_f.t:<pron>
+
+" :COMMENTS "Predicative Adjective.
+Small Clause construction.
+Simple declarative.
+
+Predicative \"be\" is forced to adjoin in matrix clauses. 
+Adjunction of predicative \"be\" is optional in embedded clauses
+
+e.g.
+     Ernest is stupid.
+     Everyone considers Ernest stupid.
+     Everyone thinks Ernest is stupid.
+
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("S" . "p")) :constraints "NA" :constraint-type :NA) (((("PP" . "w")) :substp T))  (((("S" . "r"))) (((("NP" . "0")) :substp T))  (((("VP" . ""))) (((("V" . "")) :constraints "NA" :constraint-type :NA) (((("" . "v")))) )  (((("AP" . "1"))) (((("A" . "")) :headp T)) ) ) ) ) ) 
+("Nc0nx0Ax1" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+
+
+
+
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+S_r.t:<inv> = -
+S_r.b:<assign-case> = NP_0.t:<case>
+S_r.b:<agr> = NP_0.t:<agr>
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<mainv> = VP.t:<mainv>
+S_r.b:<passive> = VP.t:<passive>
+VP.t:<passive> = -
+VP.b:<mode> = nom
+VP.b:<assign-case> = acc
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<case> = NP_f.t:<case>
+S_r.t:<conj> = nil
+
+NP_w.t:<trace> = NP_0.b:<trace>
+NP_w.t:<case> = NP_0.b:<case>
+NP_w.t:<agr> = NP_0.b:<agr>
+NP_r.b:<rel-clause> = +
+S_r.t:<mode> = inf/ger/ind
+S_r.t:<nocomp-mode> = inf/ger
+VP.t:<assign-comp> = that/ind_nil/inf_nil/ecm
+S_r.b:<nocomp-mode> = S_r.b:<mode>
+NP_f.b:<case> = nom/acc
+A.t:<compar> = AP_1.b:<compar>
+A.t:<equiv> = AP_1.b:<equiv>
+VP.b:<compar> = -
+NP_r.b:<pron> = NP_f.t:<pron>
+
+" :COMMENTS "Predicative Adjective
+Small clause construction
+Relative clause on the subject
+
+
+e.g.
+
+     [the person] who is stupid
+     [the most likely guy] to be stupid
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("S" . "p")) :constraints "NA" :constraint-type :NA) (((("NP" . "w")) :constraints "NA" :constraint-type :NA) (((("" . "w")))) )  (((("S" . "r"))) (((("NP" . "0")) :constraints "NA" :constraint-type :NA) (((("" . "")))) )  (((("VP" . "")) :constraints "") (((("V" . "")) :constraints "NA" :constraint-type :NA) (((("" . "v")))) )  (((("AP" . "1"))) (((("A" . "")) :headp T)) ) ) ) ) ) 
+("Ncnx0Ax1" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+S_r.b:<extracted> = -
+S_r.b:<inv> = -
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+
+
+
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<mainv> = VP.t:<mainv>
+S_r.b:<comp> = nil
+S_r.b:<tense> = VP.t:<tense>
+NP_0:<agr> = S_r.b:<agr>
+NP_0:<case> = S_r.b:<assign-case>
+NP_0:<wh> = -
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<passive> = VP.t:<passive>
+VP.t:<passive> = -
+VP.b:<mode> = nom
+VP.b:<assign-case> = acc
+S_r.b:<control> = NP_0.t:<control>
+NP_r.b:<wh> = NP_f.t:<wh>
+NP_r.b:<agr> = NP_f.t:<agr>
+NP_r.b:<case> = NP_f.t:<case>
+NP_f.b:<case> = acc/nom
+S_r.t:<inv> = -
+S_r.t:<mode> = ind/inf
+S_r.t:<nocomp-mode> = ind
+VP.t:<assign-comp> = that/for/ind_nil
+S_r.b:<nocomp-mode> = S_r.b:<mode>
+NP_r.b:<rel-clause> = +
+NP_f.b:<case> = nom/acc
+A.t:<compar> = AP_1.b:<compar>
+A.t:<equiv> = AP_1.b:<equiv>
+VP.b:<compar> = -
+NP_r.b:<pron> = NP_f.t:<pron>
+
+" :COMMENTS "Predicative Adjective.
+Small Clause construction.
+Simple declarative.
+
+Predicative \"be\" is forced to adjoin in matrix clauses. 
+Adjunction of predicative \"be\" is optional in embedded clauses
+
+e.g.
+     Ernest is stupid.
+     Everyone considers Ernest stupid.
+     Everyone thinks Ernest is stupid.
+
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "f")) :footp T :constraints "NA" :constraint-type :NA))  (((("S" . "p")) :constraints "NA" :constraint-type :NA) (((("NP" . "w")) :constraints "NA" :constraint-type :NA) (((("" . "w")))) )  (((("S" . "r"))) (((("NP" . "0")) :substp T))  (((("VP" . ""))) (((("V" . "")) :constraints "NA" :constraint-type :NA) (((("" . "v")))) )  (((("AP" . "1"))) (((("A" . "")) :headp T)) ) ) ) ) ) 
+("Gnx0Ax1" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? NIL :UNIFICATION-EQUATIONS "
+
+
+NP_0:<wh> = NP_r.b:<wh>
+VP.t:<mode> = ger
+NP_r.b:<case> = nom/acc
+NP_r.b:<agr num> = sing
+NP_r.b:<agr pers> = 3
+NP_r.b:<agr 3rdsing> = +
+VP.b:<mode> = nom
+VP.b:<assign-case> = acc
+
+
+
+NP_r.b:<gerund> = +
+A.t:<compar> = AP_1.b:<compar>
+A.t:<equiv> = AP_1.b:<equiv>
+VP.b:<compar> = -
+NP_0:<case> = acc/gen
+" :COMMENTS "Predicative adjective
+Small clause construction
+Gerund NP
+  
+...Ernest('s) being stupid... 
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "0")) :substp T))  (((("VP" . ""))) (((("V" . "")) :constraints "NA" :constraint-type :NA) (((("" . "v")))) )  (((("AP" . "1"))) (((("A" . "")) :headp T)) ) ) ) 
+("nx0Ax1-PRO" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+S_r.b:<inv> = -
+S_r.b:<comp> = nil
+S_r.b:<extracted> = -
+NP_0:<wh> = -
+VP.b:<compar> = -
+VP.b:<mode> = nom
+S_r.b:<agr> = VP.t:<agr>
+S_r.b:<agr> = NP_0:<agr>
+S_r.b:<control> = NP_0.t:<control>
+S_r.b:<mode> = VP.t:<mode>
+S_r.b:<mainv> = VP.t:<mainv>
+S_r.b:<tense> = VP.t:<tense>
+S_r.b:<assign-comp> = VP.t:<assign-comp>
+S_r.b:<assign-case> = VP.t:<assign-case>
+S_r.b:<passive> = VP.t:<passive>
+VP.t:<passive> = -
+AP_1.b:<equiv> = A.t:<equiv>
+AP_1.b:<compar> = A.t:<compar>
+AP_1.b:<wh> = A.t:<wh>
+VP.t:<mode> = inf/ger
+NP_0.t:<wh> = -
+NP_0.t:<case> = none
+S_r.b:<assign-case> = NP_0.t:<case>
+" :COMMENTS "Predicative Adjective.
+Small Clause construction.
+PRO subject
+
+Ernest doesn't want [PRO to be stupid].
+While [PRO being stupid] Ernest shot his eye out.
+
+
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("S" . "r"))) (((("NP" . "0")) :constraints "NA" :constraint-type :NA) (((("PRO" . "")))) )  (((("VP" . ""))) (((("V" . "")) :constraints "NA" :constraint-type :NA) (((("" . "v")))) )  (((("AP" . "1"))) (((("A" . "")) :headp T)) ) ) ) 
+("Gnx0Ax1-PRO" :COMMENT-DISPLAY? NIL :FEATURE-DISPLAY? NIL :EQUATION-DISPLAY? T :UNIFICATION-EQUATIONS "
+
+NP_0:<wh> = NP_r.b:<wh>
+VP.t:<mode> = ger
+NP_r.b:<case> = nom/acc
+NP_r.b:<agr num> = sing
+NP_r.b:<agr pers> = 3
+NP_r.b:<agr 3rdsing> = +
+VP.b:<mode> = nom
+NP_r.b:<gerund> = +
+A.t:<compar> = AP_1.b:<compar>
+A.t:<equiv> = AP_1.b:<equiv>
+VP.b:<compar> = -
+NP_0.t:<wh> = -
+NP_0.t:<case> = none
+" :COMMENTS "Predicative adjective
+Small clause construction
+Gerund NP w/ PRO subject
+
+[PRO being silly] was all that Ernest knew how to do.
+
+" :SHAPE NIL :BORDER-WIDTH NIL :CONSTRAINT-STYLE NIL :CONNECTOR NIL :DEFAULT-STYLE NIL :SUBSCRIPT-STYLE NIL :WHITE-SPACE NIL  :MINIMUM-NODE-SEPARATION NIL :LEVEL-SEPARATION NIL)
+ (((("NP" . "r"))) (((("NP" . "0")) :constraints "NA" :constraint-type :NA) (((("PRO" . "")))) )  (((("VP" . ""))) (((("V" . "")) :constraints "NA" :constraint-type :NA) (((("" . "v")))) )  (((("AP" . "1"))) (((("A" . "")) :headp T)) ) ) ) 
