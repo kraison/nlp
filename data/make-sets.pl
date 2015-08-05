@@ -27,7 +27,7 @@ close(IN);
 sub make_random {
   my($i) = @_;
   my(@r);
-  until(scalar(@r) > (0.1 * $i)) {
+  until(scalar(@r) > (0.05 * $i)) {
     my $rand = 1 + int(rand($i));
     unless(grep(/^$rand$/, @r)) {
       unshift(@r,$rand);
