@@ -39,7 +39,7 @@
                     (mapcar (lambda (p) (intern p :nlp)) (split "\\s+" pos))))))
 	    (incf (gethash word frequencies 0))
 	    (dolist (p pos-list)
-	      (format t "~A: ~A / ~A~%" word pos p)
+	      ;;(format t "~A: ~A / ~A~%" word pos p)
 	      (if (gethash word lexicon)
 		  (pushnew p (gethash word lexicon) :test 'equal)
 		  (setf (gethash word lexicon) (list p)))
@@ -103,6 +103,9 @@ lexicon.  Also takes an additional user-file with either Moby or Penn style tags
 	  (setf (gethash (first list) lexicon)
 		(mapcar 'intern (rest list))))))
     lexicon))
+
+(defun map-lexicon (fn &optional (pos-db *pos-db*))
+  (maphash fn (pos-lexicon pos-db)))
 
 (let ((number-regex (create-scanner "^[0-9./,:]+\\%?$" :single-line-mode t))
       (verb-regex (create-scanner "\\w(ing|ate|ify|ize|ise|ed)$"
@@ -231,7 +234,7 @@ lexicon.  Also takes an additional user-file with either Moby or Penn style tags
                                                (list word))
                             maximizing (gethash word (pos-word-freq *pos-db*) 1)
                             finally (return word)))
-		       (make-word-list text))))
+		       (tokenize text))))
     (if join?
 	(if (member (last1 words) '(#\. #\? #\!))
 	    (format nil "~{~A~^ ~}~A" (butlast words) (last1 words))

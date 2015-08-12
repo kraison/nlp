@@ -98,7 +98,7 @@
   "return observations of WORD as POS"
   (let ((table (gethash word (pos-observations pos-db))))
     (if (hash-table-p table)
-	(or (gethash pos table) 0)
+	(gethash pos table 0)
 	(pos-unknown-probability pos-db))))
 
 (defun get-observations (pos-db word)
@@ -136,9 +136,16 @@
   (add-observation pos-db "</s>" *sentence-end*))
 
 (defun train-tagger (file &optional pos-db)
-  "Train the POS tagger against the corpus FILE"
+  "Train the POS tagger against the corpus FILE. Augent unigrams with lexicon entries."
   (let ((pos-db (or pos-db (make-parts-of-speech)))
 	(sentence nil) (pos-seq nil))
+    (map-lexicon
+     (lambda (word pos-list)
+       (dolist (pos pos-list)
+         (add-unigram pos-db pos)
+         (add-word-occurance pos-db word)
+         (add-observation pos-db word pos)))
+     pos-db)
     (map-tagged-corpus
      (lambda (word pos)
        (add-unigram pos-db pos)
@@ -202,15 +209,15 @@
     (nreverse path)))
 
 (defun possible-tags (text &key p?)
-  "Get all possible tags for all words in TEXT. If P?, return probabilities as well"
-  (let ((words (if (stringp text) (make-word-list text) text)))
+  "Get all possible tags for all words in TEXT. If P?, return probabilities too"
+  (let ((words (if (stringp text) (tokenize text) text)))
     (if p?
 	(values (mapcar 'get-pos-probabilities words) words)
 	(values (mapcar 'lookup-pos words) words))))
 
 (defun tag-sentence (words &key (pos-db *pos-db*) debug)
   "POS tag an individual sentence"
-  (let* ((words (if (stringp words) (make-word-list words) words))
+  (let* ((words (if (stringp words) (tokenize words) words))
 	 (states (possible-states pos-db words))
 	 (viterbi (make-array (list (length states) (length words))
 			      :initial-element 0)))
@@ -234,8 +241,10 @@
     (loop for j from 1 to (1- (length words)) do
 	 (when debug (format t "Doing word '~A'~%" (elt words j)))
 	 (dotimes (i (length states))
-           ;; This speeds things up, but kills accuracy
-           ;;(when (is-a (elt words j) (elt states i) pos-db)
+           ;; Efficiency hack;  improves accuracy when lexicon is integrated with
+           ;; unigrams, kills accuracy when lexicon is not in use
+           (when (or (null (lookup-pos (elt words j) pos-db))
+                     (is-a (elt words j) (elt states i) pos-db))
              (setf (aref viterbi i j)
                    (* (let ((pp nil))
                         (dotimes (i1 (length states))
@@ -258,7 +267,8 @@
                         (if pp (apply 'max pp) 0))
                       (get-observation pos-db
                                        (elt words j)
-                                       (elt states i)))))) ;;)
+                                       (elt states i))))))
+    )
     (values (calculate-path viterbi words states) words)))
 
 (defun tag (text)

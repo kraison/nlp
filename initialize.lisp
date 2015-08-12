@@ -29,7 +29,7 @@
       (multiple-value-bind (match-p matches)
           (scan-to-strings "^([a-zA-Z']+)\\s+(.*)$" line)
         (when match-p
-          (format t "Adding ~A -> ~A~%" (elt matches 0) (split "\\s+" (elt matches 1)))
+          ;;(format t "Adding ~A -> ~A~%" (elt matches 0) (split "\\s+" (elt matches 1)))
           (setf (gethash (elt matches 0) (pos-contraction-table pos-db))
                 (split "\\s+" (elt matches 1))))))))
 
@@ -42,6 +42,7 @@
                     (contraction-file "data/contractions.txt")
                     user-lexicon-file
                     user-pos-regex
+                    np-regexes
                     save? profile?)
   (flet ((build-it ()
 	   (reset-nlp)
@@ -49,6 +50,7 @@
 	   (format t "Building and training lexicon...~%")
            (dolist (pair user-pos-regex)
              (add-pos-regex (car pair) (cdr pair)))
+           (setf (pos-np-regexes *pos-db*) np-regexes)
            (load-contraction-table contraction-file *pos-db*)
 	   (multiple-value-bind (lex p-lex freq)
                (maybe-profile (make-lexicon pos-lex

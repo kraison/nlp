@@ -76,6 +76,10 @@
   "Increment or add a value for this hash key"
   (incf (gethash thing hash 0)))
 
-(defun join (list)
+(defun join (list &optional (delimiter " "))
   "Join a list into a space-delimited string"
-  (format nil "~{~A~^ ~}" list))
+  (with-output-to-string (out)
+    (dotimes (i (length list))
+      (format out "~A" (nth i list))
+      (unless (= i (1- (length list)))
+        (format out "~A" delimiter)))))

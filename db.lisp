@@ -13,6 +13,7 @@
 	     (:predicate pos-db?)
 	     (:conc-name pos-)
 	     (:print-function print-pos))
+  ;; POS tagging
   (total-count 0)
   (gammas (make-hash-table))
   (probabilities (make-hash-table :test 'equal))
@@ -23,11 +24,28 @@
   (word-occurances (make-hash-table :test 'equal))
   (observations (make-hash-table :test 'equal))
   (unknown-probability 0)
+
+  ;; HMM Chunking
+  (np-total-count 0)
+  (np-gammas (make-hash-table))
+  (np-probabilities (make-hash-table :test 'equal))
+  (np-unigrams (make-hash-table :test 'equal))
+  (np-bigrams (make-hash-table :test 'equal))
+  (np-trigrams (make-hash-table :test 'equal))
+  (np-tag-occurances (make-hash-table :test 'equal))
+  (np-pos-occurances (make-hash-table :test 'equal))
+  (np-observations (make-hash-table :test 'equal))
+  (np-unknown-probability 0)
+
+  ;; Lexicon
   (lexicon (make-hash-table :test 'equal))
   (plexicon (make-hash-table :test 'equal))
   (user-pos-regex nil)
   (contraction-table (make-hash-table :test 'equalp))
   (word-freq (make-hash-table :test 'equal))
+
+  ;; Parsing
+  (np-regexes nil)
   (cfg (make-hash-table))
   (cfg-idx (make-hash-table))
   (pcfg (make-hash-table :test 'equalp))

@@ -62,7 +62,7 @@
       (dotimes (i (length words))
 	(let ((word (nth i words)) (tags (nth i tags)))
 	  (dolist (pos tags)
-	    ;;(format t "Adding edge for ~A/~A~%" word pos)
+	    (format t "Adding edge for ~A/~A~%" word pos)
 	    (let ((edge (make-edge :left-vertex i
 				   :right-vertex (1+ i)
 				   :label pos
@@ -192,4 +192,5 @@
   (pcp-add-edge-to-chart chart edge)
   (pcp-fundamental-rule chart e-agenda edge)
   ;;(pcp-top-down-rule f-agenda words edge)
-  (pcp-bottom-up-rule f-agenda edge))
+  (pcp-bottom-up-rule f-agenda edge)
+  )

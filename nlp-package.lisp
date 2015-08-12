@@ -1,14 +1,14 @@
 (in-package #:cl-user)
 
 (defpackage #:nlp
-  (:use #:cl #:cl-ppcre #:parse-number #:cffi-wordnet)
+  (:use #:cl #:cl-ppcre #:parse-number #:cffi-wordnet #:dso-lex #:yacc)
   (:export #:*pos-db*
 	   #:init-nlp
 	   #:build-nlp
 	   #:reset-nlp
 	   #:edit-distance
 	   #:split-sentences
-	   #:make-word-list
+	   #:tokenize
 	   #:train-tagger
 	   #:tag-sentence
 	   #:tag
