@@ -7,7 +7,7 @@
   :name "Natural Language Processing Utilities"
   :maintainer "Kevin Raison"
   :author "Kevin Raison <last name @ chatsubo dot net>"
-  :version "0.1"
+  :version "0.9"
   :description "NLP Utils"
   :long-description "NLP Utils."
   :depends-on (:cl-ppcre :cl-store :parse-number :cffi-wordnet :dso-lex :yacc)
