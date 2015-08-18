@@ -99,7 +99,7 @@
 		    (mark-sentence-boundaries text))))))
 
 (defun split-contractions (word &optional (pos-db *pos-db*))
-  (gethash word (pos-contraction-table pos-db) nil))
+  (gethash word (pos-contraction-table pos-db)))
 
 (defun tokenize (text)
   "Split text into tokens"
@@ -123,15 +123,16 @@
 	   (cl-ppcre:scan-to-strings "[\\.\\?\\!]$" text)))
       (when punctuation
 	(setq text (subseq text 0 (1- (length text)))))
-      (mapcan (lambda (word)
-                (cond ((cl-ppcre:scan "\\'s$" word)
-                       (list (cl-ppcre:regex-replace "\\'s$" word "")
-                             "'s"))
-                      ((cl-ppcre:scan "\\'d$" word)
-                       (list (cl-ppcre:regex-replace "\\'d$" word "")
-                             "'d"))
-                      (t
-                       (or (split-contractions word) (list word)))))
-	      (append (cl-ppcre:split "\\s+" text)
-		      (when punctuation (list punctuation))
-		      (when final-quote (list "''")))))))
+      (flatten
+       (mapcar (lambda (word)
+                 (cond ((cl-ppcre:scan "\\'s$" word)
+                        (list (cl-ppcre:regex-replace "\\'s$" word "")
+                              "'s"))
+                       ((cl-ppcre:scan "\\'d$" word)
+                        (list (cl-ppcre:regex-replace "\\'d$" word "")
+                              "'d"))
+                       (t
+                        (or (split-contractions word) (list word)))))
+               (append (cl-ppcre:split "\\s+" text)
+                       (when punctuation (list punctuation))
+                       (when final-quote (list "''"))))))))
