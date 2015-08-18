@@ -10,6 +10,7 @@
 	   #:split-sentences
 	   #:tokenize
 	   #:train-tagger
+           #:extract-phrases
 	   #:tag-sentence
 	   #:tag
 	   #:tag-as-text

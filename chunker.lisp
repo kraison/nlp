@@ -155,6 +155,7 @@
                ;;(eql (search "WHNP" string) 0)
                (eql (search "NAC" string) 0))
            'NP)
+#|
           ((eql (search "VP" string) 0)
            'VP)
           ((or (eql (search "PP" string) 0)
@@ -178,6 +179,7 @@
                (eql (search "SBAR" string) 0)
                (eql (search "S" string) 0))
            'S)
+|#
           (t
            'OTHER))))
 
@@ -266,6 +268,26 @@
 	  (pushnew w-state states :test 'equal))))
     states))
 
+(defun reconstruct-phrases (markers words)
+  (let ((phrases nil) (this-phrase nil) (in-phrase nil))
+    (dotimes (i (length markers))
+      (cond ((or (eql (elt markers i) 'NP-BEGIN)
+                 (eql (elt markers i) 'NP-IN))
+             (if in-phrase
+                 (push (elt words i) this-phrase)
+                 (progn
+                   (when this-phrase
+                     (push (nreverse this-phrase) phrases)
+                     (setq this-phrase nil))
+                   (setq in-phrase t)
+                   (push (elt words i) this-phrase))))
+            (t
+             (when (and in-phrase this-phrase)
+               (push (nreverse this-phrase) phrases)
+               (setq in-phrase nil
+                     this-phrase nil)))))
+    (nreverse phrases)))
+
 (defun extract-phrases (sentence &key (pos-db *pos-db*) debug)
   "extract phrases from an individual sentence"
   (multiple-value-bind (pos-tags words) (tag-sentence sentence)
@@ -315,4 +337,8 @@
                       (get-np-observation pos-db
                                           (elt pos-tags j)
                                           (elt states i))))))
-      (values (calculate-path viterbi pos-tags states) pos-tags words))))
+      (let ((markers (calculate-path viterbi pos-tags states)))
+        (values (reconstruct-phrases markers words)
+                markers
+                pos-tags
+                words)))))

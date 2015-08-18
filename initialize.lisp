@@ -42,6 +42,7 @@
                     (contraction-file "data/contractions.txt")
                     user-lexicon-file
                     user-pos-regex
+                    (chunker-train "data/all-parsed.txt")
                     np-regexes
                     save? profile?)
   (flet ((build-it ()
@@ -61,6 +62,8 @@
 		   (pos-word-freq *pos-db*) freq))
 	   (format t "Training POS tagger...~%")
            (maybe-profile  (train-tagger pos-train *pos-db*))
+           (format t "Training HMM Chunker...~%")
+           (maybe-profile (train-phrase-extractor chunker-train))
 	   (format t "Training grammar parser...~%")
 	   (if grammar-load
                (maybe-profile
