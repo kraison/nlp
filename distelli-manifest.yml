@@ -12,5 +12,5 @@ answerdash/KevinR_Test:
   #The PreRelease section is for specifying build and pre-packaging steps: http://distel.li/prereleasesection
   PreRelease:
     - echo "Begin PreRelease"
-    - sbcl --load "compile.lisp" 
+    - /usr/bin/sbcl --load "compile.lisp" 
     - echo "finished"
