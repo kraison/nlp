@@ -1,6 +1,5 @@
 answerdash/KevinR_Test:
 
-  #The below represents integration with the application repo: http://distel.li/commitdatasection
   CommitData:
     - RepoType: Git
     - RepoPath: .
