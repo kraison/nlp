@@ -1,0 +1,15 @@
+answerdash/KevinR_Test:
+
+  #The below represents integration with the application repo: http://distel.li/commitdatasection
+  CommitData:
+    - RepoType: Git
+    - RepoPath: .
+
+  #The PkgInclude is to identify files that must be included in the application deployment: http://distel.li/pkgincludesection
+  PkgInclude:
+    - '*'
+
+  #The PreRelease section is for specifying build and pre-packaging steps: http://distel.li/prereleasesection
+  PreRelease:
+    - echo "Begin PreRelease"
+
