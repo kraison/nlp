@@ -162,6 +162,9 @@ lexicon.  Also takes an additional user-file with either Moby or Penn style tags
   "Parts of speech with learned probabilities for WORD"
   (gethash word (pos-plexicon *pos-db*)))
 
+(defun get-lexical-pos-probability (word)
+  )
+
 ;; Spelling corrector based on Norvig's:
 ;; http://mikael.jansson.be/log/spellcheck-in-lisp
 (defvar *alphabet* "abcdefghijklmnopqrstuvwxyz0123456789-'/")

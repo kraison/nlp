@@ -1,7 +1,7 @@
 (in-package #:cl-user)
 
 (defpackage #:nlp
-  (:use #:cl #:cl-ppcre #:parse-number #:cffi-wordnet #:dso-lex #:yacc)
+  (:use #:cl #:cl-ppcre #:parse-number #:cffi-wordnet #:dso-lex #:yacc #:graph-utils)
   (:export #:*pos-db*
 	   #:init-nlp
 	   #:build-nlp

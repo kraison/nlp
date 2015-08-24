@@ -10,7 +10,8 @@
                             (and (complete? e)
                                  (= (left-vertex e) 0)
                                  (eq :start (label e))))
-			  (elt (chart-edges chart) (1- (length (chart-edges chart)))))
+			  (elt (chart-edge-vec chart)
+                               (1- (length (chart-edge-vec chart)))))
 	   '>
 	   :key 'probability)))
 
@@ -40,12 +41,12 @@
                                  :found nil
                                  :probability p)))))
 		 p-hash)))
-    (setf (elt (chart-edges chart) (left-vertex edge))
-	  (sort (elt (chart-edges chart) (left-vertex edge))
+    (setf (elt (chart-edge-vec chart) (left-vertex edge))
+	  (sort (elt (chart-edge-vec chart) (left-vertex edge))
 		'> :key 'probability))))
 
 (defun p-fundamental-rule (chart child-edge)
-  (dolist (edge (elt (chart-edges chart) (left-vertex child-edge)))
+  (dolist (edge (elt (chart-edge-vec chart) (left-vertex child-edge)))
     (when (and (eq (label child-edge) (first (to-find edge)))
 	       (>= (left-vertex child-edge)
 		   (left-vertex edge))
@@ -61,8 +62,8 @@
 	      (* (probability edge)
 		 (reduce '* (found edge) :key 'probability)))
 	(when (add-edge-to-chart chart new-edge)
-	  (setf (elt (chart-edges chart) (right-vertex new-edge))
-		(sort (elt (chart-edges chart)
+	  (setf (elt (chart-edge-vec chart) (right-vertex new-edge))
+		(sort (elt (chart-edge-vec chart)
 			   (right-vertex new-edge))
 		      '> :key 'probability))
 	  (when (null (to-find new-edge))
@@ -83,7 +84,7 @@
 
 (defun p-chart-parse (text)
   (multiple-value-bind (pos-with-p words) (possible-tags text :p? t)
-    (let ((chart (make-chart :edges
+    (let ((chart (make-chart :edge-vec
 			     (make-array (1+ (length words))
 					 :initial-element nil))))
       (dotimes (i (length words))

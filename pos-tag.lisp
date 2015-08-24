@@ -265,10 +265,11 @@
                                           p))
                                 (push p pp)))))
                         (if pp (apply 'max pp) 0))
+                      ;; FIXME: how do things change if we use the probabilities
+                      ;; from the lexicon?
                       (get-observation pos-db
                                        (elt words j)
-                                       (elt states i))))))
-    )
+                                       (elt states i)))))))
     (values (calculate-path viterbi words states) words)))
 
 (defun tag (text)

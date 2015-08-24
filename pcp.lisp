@@ -1,43 +1,43 @@
 (in-package #:nlp)
 
-(defstruct agenda edges (memory (make-edge-table)))
+(defstruct agenda edge-list (memory (make-edge-table)))
 
 (defun add-to-agenda (agenda edge)
   "Add an edge to the agenda"
   (unless (gethash edge (agenda-memory agenda))
-    (pushnew edge (agenda-edges agenda) :test 'edge-equalp)))
+    (pushnew edge (agenda-edge-list agenda) :test 'edge-equalp)))
 
 (defun pop-agenda (agenda)
   "Get next edge off of the agenda"
-  (let ((edge (pop (agenda-edges agenda))))
+  (let ((edge (pop (agenda-edge-list agenda))))
     (setf (gethash edge (agenda-memory agenda)) t)
     edge))
 
 (defun pcp-add-edge-to-chart (chart edge)
   "Add an edge to the chart"
-  (unless (member edge (elt (chart-edges chart) (right-vertex edge))
+  (unless (member edge (elt (chart-edge-vec chart) (right-vertex edge))
 		  :test 'edge-equalp)
     ;;(format t "Adding ~A to chart~%" edge)
-    (push edge (elt (chart-edges chart) (right-vertex edge)))))
+    (push edge (elt (chart-edge-vec chart) (right-vertex edge)))))
 
 (defun pcp-parse (text)
   "Probabilistic parser based on Klein & Manning 2001"
   (multiple-value-bind (words tags chart f-agenda e-agenda)
       (pcp-initialize text)
-    (while (not (null (agenda-edges f-agenda)))
+    (while (not (null (agenda-edge-list f-agenda)))
       ;; First, go through the exploration agenda
-      (while (not (null (agenda-edges e-agenda)))
-	(let ((traversal (pop (agenda-edges e-agenda))))
+      (while (not (null (agenda-edge-list e-agenda)))
+	(let ((traversal (pop (agenda-edge-list e-agenda))))
 	  (explore-traversal f-agenda traversal)))
       ;; Then go through the finishing agenda
-      (setf (agenda-edges f-agenda)
-	    (sort (agenda-edges f-agenda) '> :key 'probability))
+      (setf (agenda-edge-list f-agenda)
+	    (sort (agenda-edge-list f-agenda) '> :key 'probability))
       (let ((edge (pop-agenda f-agenda)))
 	(finish-edge chart words f-agenda e-agenda edge))
-      (while (not (null (agenda-edges e-agenda)))
-	(let ((traversal (pop (agenda-edges e-agenda))))
+      (while (not (null (agenda-edge-list e-agenda)))
+	(let ((traversal (pop (agenda-edge-list e-agenda))))
 	  (explore-traversal f-agenda traversal)))
-      (dolist (edge (elt (chart-edges chart) (length words)))
+      (dolist (edge (elt (chart-edge-vec chart) (length words)))
 	(when (and (eq :start (label edge))
 		   (= 0 (left-vertex edge))
 		   (= (length words) (right-vertex edge)))
@@ -54,11 +54,11 @@
                              (lookup-pos word)
                              (list tag)))
 		       tags words))
-    (let ((chart (make-chart :edges
+    (let ((chart (make-chart :edge-vec
 			     (make-array (1+ (length words))
 					 :initial-element nil)))
-	  (f-agenda (make-agenda :edges nil))
-	  (e-agenda (make-agenda :edges nil)))
+	  (f-agenda (make-agenda :edge-list nil))
+	  (e-agenda (make-agenda :edge-list nil)))
       (dotimes (i (length words))
 	(let ((word (nth i words)) (tags (nth i tags)))
 	  (dolist (pos tags)
@@ -107,8 +107,8 @@
                        (setf (probability new-edge)
                              (probability edge)))
                    (push (list edge p-edge new-edge)
-                         (agenda-edges e-agenda))))))
-	   (chart-edges chart))
+                         (agenda-edge-list e-agenda))))))
+	   (chart-edge-vec chart))
       (map nil
 	   (lambda (edge-list)
              (dolist (a-edge edge-list)
@@ -134,8 +134,8 @@
                        (setf (probability new-edge)
                              (probability a-edge)))
                    (push (list a-edge edge new-edge)
-                         (agenda-edges e-agenda))))))
-	   (chart-edges chart))))
+                         (agenda-edge-list e-agenda))))))
+	   (chart-edge-vec chart))))
 
 (defun pcp-bottom-up-rule (f-agenda edge)
   "Bottom up rule for PCP"

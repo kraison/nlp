@@ -10,7 +10,14 @@
   :version "0.9"
   :description "NLP Utils"
   :long-description "NLP Utils."
-  :depends-on (:cl-ppcre :cl-store :parse-number :cffi-wordnet :dso-lex :yacc)
+  :depends-on (:cl-ppcre
+               :cl-store
+               :parse-number
+               :cffi-wordnet
+               :dso-lex
+               :yacc
+               :alexandria
+               :graph-utils)
   :components ((:file "nlp-package")
 	       (:file "globals" :depends-on ("nlp-package"))
 	       (:file "utilities" :depends-on ("globals"))
