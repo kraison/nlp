@@ -271,7 +271,7 @@
 
 (defun reconstruct-phrases (markers words pos-tags)
   "Convert NP markers to lists of noun phrase words."
-  (let ((phrases nil) (this-phrase nil) (in-phrase nil))
+  (let ((phrases nil) (this-phrase nil) (in-phrase nil) (tags nil) (these-tags nil))
     (dotimes (i (length markers))
       (cond ((and (or (eql (elt markers i) 'NP-BEGIN)
                       (eql (elt markers i) 'NP-IN))
@@ -284,20 +284,31 @@
                   (not (eql (elt pos-tags i) '|''|))
                   (not (eql (elt pos-tags i) 'DT)))
              (if (and in-phrase (not (eql (elt pos-tags i) 'CC)))
-                 (push (elt words i) this-phrase)
+                 (progn
+                   (push (elt words i) this-phrase)
+                   (push (elt pos-tags i) these-tags))
                  (progn
                    (when this-phrase
                      (push (nreverse this-phrase) phrases)
-                     (setq this-phrase nil))
+                     (push (nreverse these-tags) tags)
+                     (setq this-phrase nil)
+                     (setq these-tags nil))
                    (when (not (eql (elt pos-tags i) 'CC))
-                     (push (elt words i) this-phrase))
+                     (push (elt words i) this-phrase)
+                     (push (elt pos-tags i) these-tags))
                    (setq in-phrase t))))
             (t
              (when (and in-phrase this-phrase)
-               (push (nreverse this-phrase) phrases)
+               (unless (and (= 1 (length this-phrase))
+                            (or (eql (elt these-tags 0) 'POS)
+                                (eql (elt these-tags 0) 'JJ)))
+                 (push (nreverse this-phrase) phrases)
+                 (push (nreverse these-tags) tags))
                (setq in-phrase nil
+                     these-tags nil
                      this-phrase nil)))))
-    (nreverse phrases)))
+    (values (nreverse phrases)
+            (nreverse tags))))
 
 (defun extract-phrases (sentence &key (pos-db *pos-db*) debug)
   "Extract noun phrases from an individual sentence using Viterbi / HMM strategy."
@@ -349,7 +360,10 @@
                                           (elt pos-tags j)
                                           (elt states i))))))
       (let ((markers (calculate-path viterbi pos-tags states)))
-        (values (reconstruct-phrases markers words pos-tags)
-                markers
-                pos-tags
-                words)))))
+        (multiple-value-bind (phrases tags)
+            (reconstruct-phrases markers words pos-tags)
+          (values phrases
+                  tags
+                  markers
+                  pos-tags
+                  words))))))

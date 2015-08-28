@@ -74,7 +74,7 @@
      ;;(sort bigrams 'string< :key 'caar))))
 
 (defun kl-divergence (corpus1 corpus2 &key (n 1))
-  "Compute the Kullback–Leibler divergence between to corpora"
+  "Compute the Kullback–Leibler divergence between two corpora"
   (let ((divergence 0))
     (maphash (lambda (word p)
                (setq divergence

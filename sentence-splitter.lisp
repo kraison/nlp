@@ -105,6 +105,7 @@
   "Split text into tokens"
   (let ((text (cl-ppcre:regex-replace "(’|´)" (cl-ppcre:regex-replace "\\s+$" text "") "'"))
         (final-quote nil))
+    (setq text (regex-replace-all "([\\.\\?\\!])([\'\"])$" text " \\1 \\2 "))
     (setq text (regex-replace-all "(,)(['\\\"])" text "\\1 \\2"))
     (setq text (regex-replace-all "((^| )')([^']+)('( |$))" text " `` \\3 '' "))
     (setq text (regex-replace-all "(\")([^\"]+)(\")" text "`` \\2 '' "))
@@ -116,7 +117,7 @@
     (setq text (regex-replace-all "(\\()" text "\\1 "))
     ;;(setq text (regex-replace-all "([\\)\\.\\?\\!]{1})" text " \\1 "))
     (setq text (regex-replace-all "(\\))" text " \\1 "))
- (when (scan "[\\.\\?\\!] ''$" text)
+    (when (scan "[\\.\\?\\!] ''$" text)
       (setq final-quote t)
       (setq text (regex-replace-all " ''$" text "")))
     (let ((punctuation
