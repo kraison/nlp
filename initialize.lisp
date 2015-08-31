@@ -41,17 +41,12 @@
                     (moby-file "data/moby/mobypos.txt")
                     (contraction-file "data/contractions.txt")
                     user-lexicon-file
-                    user-pos-regex
                     (chunker-train "data/all-parsed.txt")
-                    np-regexes
                     save? profile?)
   (flet ((build-it ()
 	   (reset-nlp)
 	   (format t "Training NLP system...~%")
 	   (format t "Building and training lexicon...~%")
-           (dolist (pair user-pos-regex)
-             (add-pos-regex (car pair) (cdr pair)))
-           (setf (pos-np-regexes *pos-db*) np-regexes)
            (load-contraction-table contraction-file *pos-db*)
 	   (multiple-value-bind (lex p-lex freq)
                (maybe-profile (make-lexicon pos-lex

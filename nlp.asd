@@ -23,6 +23,7 @@
 	       (:file "utilities" :depends-on ("globals"))
 	       (:file "db" :depends-on ("utilities"))
 	       (:file "corpora" :depends-on ("utilities"))
+               (:file "singularize" :depends-on ("globals"))
 	       (:file "lexicon" :depends-on ("utilities"))
                (:file "fuzzy" :depends-on ("utilities"))
 	       (:file "sentence-splitter" :depends-on ("utilities"))

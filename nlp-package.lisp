@@ -21,6 +21,7 @@
            #:extract-phrases
            #:all-phrases
            #:train-phrase-extractor
+           #:singularize
 	   #:in-lexicon?
            #:add-to-lexicon
 	   #:lookup-pos
@@ -30,4 +31,5 @@
            #:pos-edit-distance
            #:spell-check
            #:correct-spelling
+           #:singularize
            #:get-synonyms))
