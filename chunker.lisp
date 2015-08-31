@@ -368,3 +368,11 @@
                   markers
                   pos-tags
                   words))))))
+
+(defun all-phrases (text)
+  "Split TEXT into sentences and extract phrases from each one"
+  (mapcar (lambda (sentence)
+            (nconc
+             (multiple-value-list (extract-phrases sentence))
+             (list sentence)))
+	  (split-sentences text)))

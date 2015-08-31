@@ -10,7 +10,6 @@
 	   #:split-sentences
 	   #:tokenize
 	   #:train-tagger
-           #:extract-phrases
 	   #:tag-sentence
 	   #:tag
 	   #:tag-as-text
@@ -19,8 +18,10 @@
 	   #:cyk-parse
 	   #:pcp-parse
 	   #:p-chart-parse
+           #:extract-phrases
+           #:all-phrases
+           #:train-phrase-extractor
 	   #:in-lexicon?
-           #:add-pos-regex
            #:add-to-lexicon
 	   #:lookup-pos
 	   #:possible-tags
