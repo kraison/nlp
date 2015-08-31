@@ -282,6 +282,7 @@
                   (not (eql (elt pos-tags i) '|)|))
                   (not (eql (elt pos-tags i) '|``|))
                   (not (eql (elt pos-tags i) '|''|))
+                  (not (eql (elt pos-tags i) '|:|))
                   (not (eql (elt pos-tags i) 'DT)))
              (if (and in-phrase (not (eql (elt pos-tags i) 'CC)))
                  (progn
