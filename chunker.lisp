@@ -277,6 +277,7 @@
                       (eql (elt markers i) 'NP-IN))
                   (not (eql (elt pos-tags i) 'PRP))
                   (not (eql (elt pos-tags i) 'PRP$))
+                  (not (eql (elt pos-tags i) 'SYM))
                   (not (eql (elt pos-tags i) '|,|))
                   (not (eql (elt pos-tags i) '|(|))
                   (not (eql (elt pos-tags i) '|)|))

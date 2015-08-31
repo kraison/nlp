@@ -167,6 +167,7 @@
                  (scan (format nil "(~A)$" y) x))))
 
 (defun singularize (word)
+  "Singularize a word."
   (let ((word (string-downcase word)))
     (when (scan "\-" word)
       (let ((words (split "\-" word)))
