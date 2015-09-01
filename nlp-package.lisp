@@ -6,6 +6,8 @@
 	   #:init-nlp
 	   #:build-nlp
 	   #:reset-nlp
+           #:freeze-nlp
+           #:thaw-nlp
 	   #:edit-distance
 	   #:split-sentences
 	   #:tokenize
