@@ -53,6 +53,7 @@
     ("(?i)(hive)s$" . "\\1")
     ("(?i)([^f])ves$" . "\\1fe")
 
+    ("(?i)(^analy)sis$" . "\\1sis") ;; FIXME: filter this out in a better way
     ("(?i)(^analy)ses$" . "\\1sis")
     ("(?i)((a)naly|(b)a|(d)iagno|(p)arenthe|(p)rogno|(s)ynop|(t)he)ses$" . "\\1\\2sis")
     ("(?i)(.)opses$" . "\\1opsis")

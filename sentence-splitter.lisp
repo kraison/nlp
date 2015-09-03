@@ -49,15 +49,14 @@
 
 (let ((abbr-scanner-nocase
        (create-scanner
-        (let ((r (with-output-to-string (regex)
-                   (format regex "[^\\\w](")
-                   (format regex "~{~A~^|~}"
-                           (append *people* *months* *misc* *company* *army*
-                                   *institutes* *places*))
-                   (format regex ")~A~A" *punctuation* +eos+))))
-          r)
-	:multi-line-mode t
-	:case-insensitive-mode t))
+        (with-output-to-string (regex)
+          (format regex "([^\\\w]")
+          (format regex "~{~A~^|~}"
+                  (append *people* *months* *misc* *company* *army*
+                          *institutes* *places*))
+          (format regex ")~A~A" *punctuation* +eos+))
+        :multi-line-mode t
+        :case-insensitive-mode t))
       (abbr-scanner-case
        (create-scanner
 	(format nil "(~{~A~^|~})~A~A" *states* *punctuation* +eos+)
