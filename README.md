@@ -12,7 +12,7 @@ First, load the library:
 
 Then, download or train an NLP data file:
 
-  wget http://chatsubo.net/~raison/nlp.dat
+  ```wget http://chatsubo.net/~raison/nlp.dat```
 
   ```
   (thaw-nlp "nlp.dat")
