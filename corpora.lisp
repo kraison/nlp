@@ -13,22 +13,22 @@ s/[.,`':;#|]{1}/\\$1/g"
       ;;(set-macro-character #\' (lambda (stream char) '|'|) nil *readtable*)
       ;;(set-macro-character #\" (lambda (stream char) '|"|) nil *readtable*)
       (with-open-file (in file)
-	(do ((tree (read in nil :eof) (read in nil :eof)))
-	    ((eql tree :eof))
-	  (if collect?
-	      (push (funcall fn (first tree)) result)
-	      (funcall fn (first tree))))))
+        (do ((tree (read in nil :eof) (read in nil :eof)))
+            ((eql tree :eof))
+          (if collect?
+              (push (funcall fn (first tree)) result)
+              (funcall fn (first tree))))))
     (nreverse result)))
 
 (defun read-tagged-word (stream)
   "Read a tagged word from the stream"
   (let ((word (make-array 0
-			  :element-type 'character
-			  :fill-pointer t
-			  :adjustable t)))
+                          :element-type 'character
+                          :fill-pointer t
+                          :adjustable t)))
     (peek-char t stream nil :eof)
     (do ((c (read-char stream nil :eof) (read-char stream nil :eof)))
-	((or (eql c :eof) (member c *whitespace*)))
+        ((or (eql c :eof) (member c *whitespace*)))
       (vector-push-extend c word))
     (when (> (length word) 0)
       word)))
@@ -37,22 +37,22 @@ s/[.,`':;#|]{1}/\\$1/g"
   "Split a tagged word into word and POS tag"
   (let ((position (position #\/ word :from-end t)))
     (if (numberp position)
-	(let ((pos (remove #\^ (subseq word (1+ position)))))
-	  (values (subseq word 0 position)
-		  (intern pos)))
-	(values word nil))))
+        (let ((pos (remove #\^ (subseq word (1+ position)))))
+          (values (subseq word 0 position)
+                  (intern pos)))
+        (values word nil))))
 
 (defun map-tagged-corpus (fn file &key collect?)
   "Apply fn to each tagged word in FILE"
   (let ((result nil))
     (with-open-file (in file)
       (do ((word (read-tagged-word in) (read-tagged-word in)))
-	  ((null word))
-	(multiple-value-bind (word pos) (tagged-split word)
-	  (when (and word pos)
-	    (if collect?
-		(push (funcall fn word pos) result)
-		(funcall fn word pos))))))
+          ((null word))
+        (multiple-value-bind (word pos) (tagged-split word)
+          (when (and word pos)
+            (if collect?
+                (push (funcall fn word pos) result)
+                (funcall fn word pos))))))
     (nreverse result)))
 
 (defun extract-tagged-sentences (file)
@@ -90,7 +90,6 @@ s/[.,`':;#|]{1}/\\$1/g"
                                   (append processed-seq (list pos))))))))
       (walk-it pos-seq nil))
     seqs))
-
 
 (defun cleanup-corpus (in-file)
   (with-open-file (out (format nil "~A.new" in-file)

@@ -1,3 +1,4 @@
+5miles\NNP NN
 ’s\POS VBP IN NNPS NNS PRP NNP VBZ
 alot\PRP RB
 animations\NNS
@@ -53,6 +54,7 @@ breaks-in\VBZ
 breakroom\NN
 breakrooms\NNS
 browsers\NNS
+bsd\NNP
 build-essentials\NN NNS
 c++\NNP NN
 c4\NN NNP
@@ -145,6 +147,7 @@ f5\NNP
 facebook\NNP
 favicon\NN
 favicons\NNS
+firefox\NNP
 flavour\NN VB VBP
 flavours\NNS VBZ
 folios\NNS
@@ -152,6 +155,7 @@ fone\NN
 fonts\NNS
 foto\NN
 fotos\NNS
+freebsd\NNP
 ftp\NN
 gemstones\NNS
 geoip\NN VB VBP
@@ -230,6 +234,7 @@ levees\NNS
 lib\NN
 libs\NNS
 linens\NNS
+linux\NNP
 localhost\NN
 log-in\NN VB VBZ
 login\NN VB VBP
@@ -274,6 +279,7 @@ one-click\JJ
 online\JJ
 on-page\JJ
 onsite\JJ
+openbsd\NNP
 opt-in\JJ VB
 opt-out\JJ VB
 opt-outs\NN
@@ -398,6 +404,9 @@ translators\NNS
 turn-around\JJ RP RB IN
 ubuntu\NNP NN
 ultrafone\NNP NN
+unfollow\VB VBP VBG VBZ
+unfollows\VBP VBG VBZ
+unfollowed\VBN
 uninstall\VB VBP NN
 unsub\VB VBP
 unsubscribe\VB VBP

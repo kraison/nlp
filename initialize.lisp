@@ -34,6 +34,7 @@
                 (split "\\s+" (elt matches 1))))))))
 
 (defun build-nlp (&key
+                    (wordnet-path "prolog")
                     grammar-train
                     (grammar-load "data/p-grammar.txt")
                     (pos-train "data/all-pos.txt")
@@ -44,30 +45,30 @@
                     (chunker-train "data/all-parsed.txt")
                     save? profile?)
   (flet ((build-it ()
-	   (reset-nlp)
-	   (format t "Training NLP system...~%")
-	   (format t "Building and training lexicon...~%")
+           (reset-nlp)
+           (format t "Training NLP system...~%")
+           (format t "Building and training lexicon...~%")
            (load-contraction-table contraction-file *pos-db*)
-	   (multiple-value-bind (lex p-lex freq)
+           (populate-wordnet-database :path wordnet-path :pos-db *pos-db*)
+           (multiple-value-bind (lex p-lex freq)
                (maybe-profile (make-lexicon pos-lex
                                             :moby-file moby-file
                                             :user-file user-lexicon-file))
-	     (setf (pos-lexicon *pos-db*) lex
-		   (pos-plexicon *pos-db*) p-lex
-		   (pos-word-freq *pos-db*) freq))
-	   (format t "Training POS tagger...~%")
+             (setf (pos-lexicon *pos-db*) lex
+                   (pos-plexicon *pos-db*) p-lex
+                   (pos-word-freq *pos-db*) freq))
+           (format t "Training POS tagger...~%")
            (maybe-profile  (train-tagger pos-train *pos-db*))
            (format t "Training HMM Chunker...~%")
            (maybe-profile (train-phrase-extractor chunker-train))
-	   (format t "Training grammar parser...~%")
-	   (if grammar-load
-               (maybe-profile
-                (load-pcfg grammar-load *pos-db*))
+           (format t "Training grammar parser...~%")
+           (if grammar-load
+               (maybe-profile (load-pcfg grammar-load *pos-db*))
                (maybe-profile (extract-grammar-rules grammar-train *pos-db*)))
-	   ;;(format t "Converting CFG to CNF...~%")
+           ;;(format t "Converting CFG to CNF...~%")
            ;;(maybe-profile (make-cnf-grammar (pos-cfg *pos-db*) *pos-db*))
-	   (when save?
-	     (format t "Freezing POS database...~%")
+           (when save?
+             (format t "Freezing POS database...~%")
              (maybe-profile (freeze-nlp)))))
     (maybe-profile (build-it)))
   *pos-db*)

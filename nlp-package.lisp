@@ -1,37 +1,115 @@
 (in-package #:cl-user)
 
 (defpackage #:nlp
-  (:use #:cl #:cl-ppcre #:parse-number #:cffi-wordnet #:dso-lex #:yacc #:graph-utils)
+  (:use #:cl #:cl-ppcre #:parse-number #:dso-lex #:yacc
+        #:graph-utils #:porter-stemmer #:cffi-wordnet
+        )
   (:export #:*pos-db*
-	   #:init-nlp
-	   #:build-nlp
-	   #:reset-nlp
+           #:init-nlp
+           #:build-nlp
+           #:reset-nlp
            #:freeze-nlp
            #:thaw-nlp
-	   #:edit-distance
-	   #:split-sentences
-	   #:tokenize
-	   #:train-tagger
-	   #:tag-sentence
-	   #:tag
-	   #:tag-as-text
-	   #:earley-parse
-	   #:chart-parse
-	   #:cyk-parse
-	   #:pcp-parse
-	   #:p-chart-parse
+           #:edit-distance
+           #:longest-common-subseq
+           #:split-sentences
+           #:tokenize
+           #:train-tagger
+           #:tag-sentence
+           #:tag
+           #:tag-as-text
+           #:earley-parse
+           #:chart-parse
+           #:cyk-parse
+           #:pcp-parse
+           #:p-chart-parse
            #:extract-phrases
            #:all-phrases
            #:train-phrase-extractor
            #:singularize
-	   #:in-lexicon?
+           #:in-lexicon?
            #:add-to-lexicon
-	   #:lookup-pos
-	   #:possible-tags
+           #:lookup-pos
+           #:possible-tags
            #:pos-similarity
            #:tree-similarity
            #:pos-edit-distance
            #:spell-check
            #:correct-spelling
+           #:punctuation-p
+           #:join
+
+           #:synset
            #:singularize
-           #:get-synonyms))
+           #:verb-base-form
+           #:synonyms
+           #:synonym-p
+           #:hypernyms
+           #:meronyms
+           #:instances
+           #:holonyms
+           #:hyponyms
+           #:semantic-neighborhood
+           #:semantic-parents
+           #:semantic-children
+           #:gloss
+           #:wordnet-pos
+           #:synset-word-list
+           #:populate-wordnet-database
+
+           #:flatten
+           #:total-word-count
+           #:word-occurrence
+
+           #:</S>
+           #:<S>
+           #:|#|
+           #:PRP$R
+           #:WP$
+           #:NPS
+           #:NP
+           #:$
+           #:|)|
+           #:|(|
+           #:|:|
+           #:EX
+           #:PRP$
+           #:MD
+           #:WRB
+           #:JJS
+           #:RBS
+           #:JJSS
+           #:LS
+           #:TO
+           #:JJR
+           #:RBR
+           #:|.|
+           #:WP
+           #:WDT
+           #:PDT
+           #:|''|
+           #:SYM
+           #:UH
+           #:|``|
+           #:POS
+           #:VBZ
+           #:PRP
+           #:NNS
+           #:RP
+           #:CC
+           #:|,|
+           #:VBD
+           #:VBN
+           #:VBG
+           #:FW
+           #:NNPS
+           #:DT
+           #:JJ
+           #:IN
+           #:NNP
+           #:CD
+           #:VBP
+           #:NN
+           #:VB
+           #:RB
+           ))

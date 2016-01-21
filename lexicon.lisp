@@ -24,9 +24,9 @@
   "Augment our learned lexicon with Moby's POS lexicon or a user-supplied lexicon using Penn tags."
   (with-open-file (stream file :element-type 'character)
     (do ((line (read-line stream nil :eof) (read-line stream nil :eof)))
-	((eq line :eof))
+        ((eq line :eof))
       (when (> (length line) 1)
-	(destructuring-bind (word pos) (split "\\\\" line :limit 2)
+        (destructuring-bind (word pos) (split "\\\\" line :limit 2)
           (let ((pos-list
                  (case type
                    (:moby
@@ -37,25 +37,25 @@
                                      pos))))
                    (:penn
                     (mapcar (lambda (p) (intern p :nlp)) (split "\\s+" pos))))))
-	    (incf (gethash word frequencies 0))
-	    (dolist (p pos-list)
-	      ;;(format t "~A: ~A / ~A~%" word pos p)
-	      (if (gethash word lexicon)
-		  (pushnew p (gethash word lexicon) :test 'equal)
-		  (setf (gethash word lexicon) (list p)))
-	      (unless (hash-table-p (gethash word counts))
-		(setf (gethash word counts) (make-hash-table)))
-	      (setf (gethash p (gethash word counts))
-		    (1+ (gethash p (gethash word counts) 1))))))))))
+            (incf (gethash word frequencies 0))
+            (dolist (p pos-list)
+              ;;(format t "~A: ~A / ~A~%" word pos p)
+              (if (gethash word lexicon)
+                  (pushnew p (gethash word lexicon) :test 'equal)
+                  (setf (gethash word lexicon) (list p)))
+              (unless (hash-table-p (gethash word counts))
+                (setf (gethash word counts) (make-hash-table)))
+              (setf (gethash p (gethash word counts))
+                    (1+ (gethash p (gethash word counts) 1))))))))))
 
 (defun make-lexicon (infile &key (equality 'equalp) outfile moby-file user-file)
   "Derive a lexicon from a tagged corpus.  Also accepts a Moby parts-of-speech file
 as an optional argument;  will translate the Moby data into Penn tags and add to the
 lexicon.  Also takes an additional user-file with either Moby or Penn style tags."
   (let ((lexicon (make-hash-table :test equality))
-	(p-lexicon (make-hash-table :test equality))
-	(counts (make-hash-table :test equality))
-	(frequencies (make-hash-table :test 'equal)))
+        (p-lexicon (make-hash-table :test equality))
+        (counts (make-hash-table :test equality))
+        (frequencies (make-hash-table :test 'equal)))
     (map-tagged-corpus
      (lambda (word pos)
        (setf (gethash word frequencies)
@@ -86,11 +86,11 @@ lexicon.  Also takes an additional user-file with either Moby or Penn style tags
      counts)
     (when outfile
       (with-open-file (out outfile :direction :output
-			   :if-exists :supersede
-			   :if-does-not-exist :create)
-	(maphash (lambda (word p)
+                           :if-exists :supersede
+                           :if-does-not-exist :create)
+        (maphash (lambda (word p)
                    (format out "~A ~{~A~^ ~}~%" word p))
-		 lexicon)))
+                 lexicon)))
     (values lexicon p-lexicon frequencies)))
 
 (defun load-lexicon (file &key (equality 'equal))
@@ -98,10 +98,10 @@ lexicon.  Also takes an additional user-file with either Moby or Penn style tags
   (let ((lexicon (make-hash-table :test equality)))
     (with-open-file (in file)
       (do ((line (read-line in nil :eof) (read-line in nil :eof)))
-	  ((or (null line) (eql line :eof)))
-	(let ((list (cl-ppcre:split "\\s+" line)))
-	  (setf (gethash (first list) lexicon)
-		(mapcar 'intern (rest list))))))
+          ((or (null line) (eql line :eof)))
+        (let ((list (cl-ppcre:split "\\s+" line)))
+          (setf (gethash (first list) lexicon)
+                (mapcar 'intern (rest list))))))
     lexicon))
 
 (defun map-lexicon (fn &optional (pos-db *pos-db*))
@@ -109,28 +109,34 @@ lexicon.  Also takes an additional user-file with either Moby or Penn style tags
 
 (let ((number-regex (create-scanner "^[0-9./,:]+\\%?$" :single-line-mode t))
       (verb-regex (create-scanner "\\w(ing|ate|ify|ize|ise|ed)$"
-				  :single-line-mode t :case-insensitive-mode t))
+                                  :single-line-mode t :case-insensitive-mode t))
       (adj-regex (create-scanner "\\w(able|ible|al|ial|ic|y|ing|ed|ful|ish|ive|ous|ious)$"
-				 :single-line-mode t :case-insensitive-mode t))
+                                 :single-line-mode t :case-insensitive-mode t))
       (adv-regex (create-scanner "\\w(ly|ally|ily)$"
-				 :single-line-mode t :case-insensitive-mode t))
+                                 :single-line-mode t :case-insensitive-mode t))
       (noun-regex
        (create-scanner
-	"\\w(er|or|ance|ence|ant|ent|ee|ess|ian|ism|ics|ist|ity|ment|ness|ship|tion|ation|ure|man|woman|eur|ing|hood)$"
-	:single-line-mode t :case-insensitive-mode t))
+        "\\w(er|or|ance|ence|ant|ent|ee|ess|ian|ism|ics|ist|ity|ment|ness|ship|tion|ation|ure|man|woman|eur|ing|hood)$"
+        :single-line-mode t :case-insensitive-mode t))
+      (host-regex (create-scanner
+                   "([a-z\\d]([a-z\\d\\-]{0,61}[a-z\\d])?(\\.[a-z\\d]([a-z\\d\\-]{0,61}[a-z\\d])?)+)"
+                   :single-line-mode t :case-insensitive-mode t))
+      (ip-regex (create-scanner
+                 "(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])"
+                 :single-line-mode t :case-insensitive-mode t))
       (pnoun-regex (create-scanner "^[A-Z]\\w" :single-line-mode t :case-insensitive-mode nil)))
   (defun in-lexicon? (pos-db word pos)
     "Is word as pos in the lexicon?"
     (when (symbolp word) (setq word (symbol-name word)))
     (or (member pos (gethash word (pos-lexicon pos-db)) :test 'equal)
-	(member pos (gethash (string-downcase word) (pos-lexicon pos-db)) :test 'equal)
-	(and (eq pos 'CD) (scan number-regex word))))
+        (member pos (gethash (string-downcase word) (pos-lexicon pos-db)) :test 'equal)
+        (and (eq pos 'CD) (scan number-regex word))))
 
   (defun lookup-pos (word &optional (pos-db *pos-db*))
     "Return all possible parts of speech for word"
     (let ((pos-list (gethash word (pos-lexicon pos-db))))
       (when (scan number-regex word)
-	(pushnew 'CD pos-list))
+        (pushnew 'CD pos-list))
       (remove-duplicates
        (remove-if
         'null
@@ -138,6 +144,8 @@ lexicon.  Also takes an additional user-file with either Moby or Penn style tags
          (or pos-list
              (append
               (and (scan noun-regex word)  '(NN))
+              (and (scan host-regex word)  '(NNP))
+              (and (scan ip-regex word)    '(NNP))
               (and (scan pnoun-regex word) '(NNP))
               (and (scan verb-regex word)  '(VB))
               (and (scan adv-regex word)   '(RB))
@@ -172,47 +180,47 @@ lexicon.  Also takes an additional user-file with either Moby or Penn style tags
 (defun edits-1 (word)
   "Find edits of one character"
   (let* ((splits (loop for i from 0 upto (length word)
-		    collecting (cons (subseq word 0 i) (subseq word i))))
+                    collecting (cons (subseq word 0 i) (subseq word i))))
          (deletes (loop for (a . b) in splits
-		     when (not (zerop (length b)))
-		     collect (concatenate 'string a (subseq b 1))))
+                     when (not (zerop (length b)))
+                     collect (concatenate 'string a (subseq b 1))))
          (transposes (loop for (a . b) in splits
-			when (> (length b) 1)
-			collect (concatenate 'string a (subseq b 1 2)
+                        when (> (length b) 1)
+                        collect (concatenate 'string a (subseq b 1 2)
                                              (subseq b 0 1) (subseq b 2))))
          (replaces (loop for (a . b) in splits
-		      nconcing (loop for c across *alphabet*
-				  when (not (zerop (length b)))
-				  collect (concatenate 'string a (string c)
+                      nconcing (loop for c across *alphabet*
+                                  when (not (zerop (length b)))
+                                  collect (concatenate 'string a (string c)
                                                        (subseq b 1)))))
          (inserts (loop for (a . b) in splits
-		     nconcing (loop for c across *alphabet*
-				 collect (concatenate 'string a (string c) b)))))
+                     nconcing (loop for c across *alphabet*
+                                 collect (concatenate 'string a (string c) b)))))
     (remove-if (lambda (w1)
                  (> (edit-distance word w1) 1))
-	       (remove-duplicates
-		(nconc deletes transposes replaces inserts)
-		:test 'equal))))
+               (remove-duplicates
+                (nconc deletes transposes replaces inserts)
+                :test 'equal))))
 
 (defun known-edits-2 (word)
   "Find edits of 2 characters"
   (remove-duplicates
    (loop for e1 in (edits-1 word) nconcing
-	(loop for e2 in (edits-1 e1)
-	   when (multiple-value-bind (value pp)
-		    (gethash e2 (pos-word-freq *pos-db*) 1)
-		  (declare (ignore value))
-		  pp)
-	   collect e2))
+        (loop for e2 in (edits-1 e1)
+           when (multiple-value-bind (value pp)
+                    (gethash e2 (pos-word-freq *pos-db*) 1)
+                  (declare (ignore value))
+                  pp)
+           collect e2))
    :test 'equal))
 
 (defun known (words)
   "Remove unknown words from list"
   (loop for word in words
      when (multiple-value-bind (value pp)
-	      (gethash word (pos-word-freq *pos-db*) 1)
-	    (declare (ignore value))
-	    pp)
+              (gethash word (pos-word-freq *pos-db*) 1)
+            (declare (ignore value))
+            pp)
      collect word))
 
 (defun correct-spelling (word)
@@ -223,9 +231,9 @@ lexicon.  Also takes an additional user-file with either Moby or Penn style tags
                         (known-edits-2 word)
                         (list word)))
       (let ((f (gethash n-word (pos-word-freq *pos-db*) 1)))
-	;;(format t "Trying word ~A: F -> ~D~%" n-word f)
-	(when (> f max-f)
-	  (setq winner n-word max-f f))))
+        ;;(format t "Trying word ~A: F -> ~D~%" n-word f)
+        (when (> f max-f)
+          (setq winner n-word max-f f))))
     winner))
 
 (defun spell-check (text &key join?)
@@ -237,85 +245,9 @@ lexicon.  Also takes an additional user-file with either Moby or Penn style tags
                                                (list word))
                             maximizing (gethash word (pos-word-freq *pos-db*) 1)
                             finally (return word)))
-		       (tokenize text))))
+                       (tokenize text))))
     (if join?
-	(if (member (last1 words) '(#\. #\? #\!))
-	    (format nil "~{~A~^ ~}~A" (butlast words) (last1 words))
-	    (format nil "~{~A~^ ~}" words))
-	words)))
-
-(defun get-synonyms (word &key (include-original? t))
-  "Use Wordnet to get synonyms for all senses of the given word"
-  (let ((synonyms
-         (remove-duplicates
-          (mapcan (lambda (tag)
-                    (let ((wordnet-pos (wordnet-pos tag)))
-                      (when wordnet-pos
-                        (wordnet-search word
-                                        :part-of-speech wordnet-pos
-                                        :sense +all-senses+
-                                        :search-type +synonyms+))))
-                  (lookup-pos word))
-          :test 'equalp)))
-    (if include-original?
-        (nconc (list word) synonyms)
-        synonyms)))
-
-(defun get-hypernyms (word &key pos (include-original? nil))
-  "Use Wordnet to get hypernyms for all senses of the given word"
-  (let ((hypernyms
-         (mapcar (lambda (tag)
-                   (let ((wordnet-pos (wordnet-pos tag)))
-                     (when wordnet-pos
-                       (list tag
-                             (wordnet-search word
-                                             :part-of-speech wordnet-pos
-                                             :sense +all-senses+
-                                             :search-type cffi-wordnet::HYPERPTR)))))
-                 (or (if pos (list pos) (lookup-pos word))))))
-    (if include-original?
-        (push (list word) hypernyms)
-        hypernyms)))
-
-(defun get-meronyms (word &key (include-original? t))
-  "Use Wordnet to get synonyms for all senses of the given word"
-  (let ((meronyms
-         (remove-duplicates
-          (mapcan (lambda (tag)
-                    (let ((wordnet-pos (wordnet-pos tag)))
-                      (when wordnet-pos
-                        (wordnet-search word
-                                        :part-of-speech wordnet-pos
-                                        :sense +all-senses+
-                                        :search-type +meronym+))))
-                  (lookup-pos word))
-          :test 'equalp)))
-    (if include-original?
-        (nconc (list word) meronyms)
-        meronyms)))
-
-(defun get-holonyms (word &key (include-original? t))
-  "Use Wordnet to get synonyms for all senses of the given word"
-  (let ((holonyms
-         (remove-duplicates
-          (mapcan (lambda (tag)
-                    (let ((wordnet-pos (wordnet-pos tag)))
-                      (when wordnet-pos
-                        (wordnet-search word
-                                        :part-of-speech wordnet-pos
-                                        :sense +all-senses+
-                                        :search-type cffi-wordnet::HHOLONYM))))
-                  (lookup-pos word))
-          :test 'equalp)))
-    (if include-original?
-        (nconc (list word) holonyms)
-        holonyms)))
-
-(defun wordnet-pos (tag)
-  "Translate a PennTreebank POS tag into a Wordnet POS id"
-  (case tag
-    ((NN NNS NNP NNPS)    +noun+)
-    ((VB VBD VBG VBN VBZ) +verb+)
-    ((JJ JJR JJS)         +adjective+)
-    ((RB RBR RBS)         +adverb+)
-    (:otherwise           nil)))
+        (if (member (last1 words) '(#\. #\? #\!))
+            (format nil "~{~A~^ ~}~A" (butlast words) (last1 words))
+            (format nil "~{~A~^ ~}" words))
+        words)))

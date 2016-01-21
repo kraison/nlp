@@ -23,13 +23,13 @@
      corpus-file)
     patterns))
 
-(defun np-tag-occurance (pos-db tag)
+(defun np-tag-occurrence (pos-db tag)
   "How many time was tag seen in the corpus?"
-  (gethash tag (pos-np-tag-occurances pos-db)))
+  (gethash tag (pos-np-tag-occurrences pos-db)))
 
-(defun add-np-tag-occurance (pos-db tag)
+(defun add-np-tag-occurrence (pos-db tag)
   "See the tag again"
-  (init-or-increment (pos-np-tag-occurances pos-db) tag))
+  (init-or-increment (pos-np-tag-occurrences pos-db) tag))
 
 (defun add-np-unigram (pos-db unigram)
   "Add a unigram to the db"
@@ -60,7 +60,7 @@
   "Add an observation for pos-tag"
   (unless (hash-table-p (gethash pos-tag (pos-np-observations pos-db)))
     (setf (gethash pos-tag (pos-np-observations pos-db))
-	  (make-hash-table :test 'equal)))
+          (make-hash-table :test 'equal)))
   (if (numberp (gethash np-tag (gethash pos-tag (pos-np-observations pos-db))))
       (incf (gethash np-tag (gethash pos-tag (pos-np-observations pos-db))))
       (setf (gethash np-tag (gethash pos-tag (pos-np-observations pos-db))) 1)))
@@ -69,31 +69,31 @@
   "return observations of pos-tag as np-tag"
   (let ((table (gethash pos-tag (pos-np-observations pos-db))))
     (if (hash-table-p table)
-	(gethash np-tag table 0)
-	(pos-np-unknown-probability pos-db))))
+        (gethash np-tag table 0)
+        (pos-np-unknown-probability pos-db))))
 
 (defun get-np-observations (pos-db pos-tag)
   "Get all observations for pos-tag"
   (let ((table (gethash pos-tag (pos-np-observations pos-db))))
     (if (hash-table-p table)
-	(let ((o nil))
-	  (maphash (lambda (pos p)
+        (let ((o nil))
+          (maphash (lambda (pos p)
                      (push (cons pos p) o))
-		   table)
-	  (sort o '> :key 'cdr))
-	nil)))
+                   table)
+          (sort o '> :key 'cdr))
+        nil)))
 
 (defun compute-np-observation-likelihoods (pos-db)
   "Compute all pos-tag / np-tag observation likelihoods"
   (setf (pos-np-unknown-probability pos-db)
-	(/ 1 (hash-table-count (pos-np-unigrams pos-db))))
+        (/ 1 (hash-table-count (pos-np-unigrams pos-db))))
   (maphash (lambda (pos-tag table)
              (declare (ignore pos-tag))
              (maphash (lambda (np-tag count)
                         (setf (gethash np-tag table)
                               (/ count (get-np-unigram pos-db np-tag))))
                       table))
-	   (pos-np-observations pos-db)))
+           (pos-np-observations pos-db)))
 
 (defun calculate-np-gammas (pos-db)
   "Calculate gammas for deleted interpolation"
@@ -115,27 +115,27 @@
      (pos-np-trigrams pos-db))
     (let ((total (+ g1 g2 g3)))
       (values (setf (gethash 1 (pos-np-gammas pos-db)) (/-safe g1 total))
-	      (setf (gethash 2 (pos-np-gammas pos-db)) (/-safe g2 total))
-	      (setf (gethash 3 (pos-np-gammas pos-db)) (/-safe g3 total))))))
+              (setf (gethash 2 (pos-np-gammas pos-db)) (/-safe g2 total))
+              (setf (gethash 3 (pos-np-gammas pos-db)) (/-safe g3 total))))))
 
 (defun compute-np-trigram-probability (pos-db trigram)
   "Compute trigram probability"
   (+ (* (gethash 3 (pos-np-gammas pos-db))
-	(/-safe (gethash trigram (pos-np-trigrams pos-db))
-		(get-np-bigram pos-db (subseq trigram 0 2))))
+        (/-safe (gethash trigram (pos-np-trigrams pos-db))
+                (get-np-bigram pos-db (subseq trigram 0 2))))
      (* (gethash 2 (pos-np-gammas pos-db))
-	(/-safe (get-np-bigram pos-db (subseq trigram 1 3))
-		(get-np-unigram pos-db (second trigram))))
+        (/-safe (get-np-bigram pos-db (subseq trigram 1 3))
+                (get-np-unigram pos-db (second trigram))))
      (* (gethash 1 (pos-np-gammas pos-db))
-	(/-safe (get-np-unigram pos-db (third trigram))
-		(pos-np-total-count pos-db)))))
+        (/-safe (get-np-unigram pos-db (third trigram))
+                (pos-np-total-count pos-db)))))
 
 (defun np-trigram-probability (pos-db trigram)
   "Lookup np-trigram probability"
   (let ((p (gethash trigram (pos-np-probabilities pos-db))))
     (if (and (numberp p) (> p 0))
-	p
-	(compute-np-trigram-probability pos-db trigram))))
+        p
+        (compute-np-trigram-probability pos-db trigram))))
 
 (defun compute-np-ngram-probabilities (pos-db)
   "Compute and store gammas and probabilities for all Ngrams in the db"
@@ -155,9 +155,13 @@
                ;;(eql (search "WHNP" string) 0)
                (eql (search "NAC" string) 0))
            'NP)
-#|
           ((eql (search "VP" string) 0)
            'VP)
+#|
+          ((search "ADJ" string)
+           'ADJP)
+          ((search "ADV" string)
+           'ADVP)
           ((or (eql (search "PP" string) 0)
                (eql (search "WHPP" string) 0))
            'PP)
@@ -167,10 +171,6 @@
            'INTP)
           ((eql (search "FRAG" string) 0)
            'FRAG)
-          ((search "ADJ" string)
-           'ADJP)
-          ((search "ADV" string)
-           'ADVP)
           ((equal "PRT" string)
            'PRT)
           ((eql (search "WH" string) 0)
@@ -187,8 +187,8 @@
   "Add sentence markers to db for a new sentence"
   (add-np-unigram pos-db *sentence-start*)
   (add-np-unigram pos-db *sentence-end*)
-  (add-np-tag-occurance pos-db "<s>")
-  (add-np-tag-occurance pos-db "</s>")
+  (add-np-tag-occurrence pos-db "<s>")
+  (add-np-tag-occurrence pos-db "</s>")
   (add-np-bigram pos-db (list *sentence-start* *sentence-start*))
   (add-np-bigram pos-db (list *sentence-end* *sentence-end*))
   (add-np-observation pos-db "<s>" *sentence-start*)
@@ -212,7 +212,7 @@
                              pattern))))
     (dotimes (i (length pos-seq))
       (add-np-unigram pos-db (elt marker-seq i))
-      (add-np-tag-occurance pos-db (elt pos-seq i))
+      (add-np-tag-occurrence pos-db (elt pos-seq i))
       (add-np-observation pos-db (elt pos-seq i) (elt marker-seq i)))
     (increment-np-sentence-markers pos-db)
     (add-np-bigram pos-db
@@ -240,6 +240,16 @@
                                         (elt marker-seq (1- i))
                                         (elt marker-seq i)))))))
 
+(defun flatten-parsed-corpus (in-file out-file)
+  (with-open-file (out out-file
+                       :direction :output
+                       :if-exists :supersede
+                       :if-does-not-exist :create)
+    (map-parsed-corpus
+     (lambda (tree)
+       (format out "~S~%" (flatten-phrase-tree tree)))
+     in-file)))
+
 (defun train-phrase-extractor (file &optional (pos-db *pos-db*))
   "Train the noun phrase extractor on a given labeled corpus."
   (setf (pos-np-total-count pos-db) 0
@@ -248,8 +258,8 @@
         (pos-np-unigrams pos-db) (make-hash-table :test 'equal)
         (pos-np-bigrams pos-db) (make-hash-table :test 'equal)
         (pos-np-trigrams pos-db) (make-hash-table :test 'equal)
-        (pos-np-tag-occurances pos-db) (make-hash-table :test 'equal)
-        (pos-np-pos-occurances pos-db) (make-hash-table :test 'equal)
+        (pos-np-tag-occurrences pos-db) (make-hash-table :test 'equal)
+        (pos-np-pos-occurrences pos-db) (make-hash-table :test 'equal)
         (pos-np-observations pos-db) (make-hash-table :test 'equal)
         (pos-np-unknown-probability pos-db) 0)
   (map-parsed-corpus
@@ -265,8 +275,8 @@
   (let ((states nil))
     (dolist (pos-tag pos-tags)
       (let ((w-states (mapcar 'car (get-np-observations pos-db pos-tag))))
-	(dolist (w-state w-states)
-	  (pushnew w-state states :test 'equal))))
+        (dolist (w-state w-states)
+          (pushnew w-state states :test 'equal))))
     states))
 
 (defun reconstruct-phrases (markers words pos-tags)
@@ -309,14 +319,22 @@
                (setq in-phrase nil
                      these-tags nil
                      this-phrase nil)))))
+    (when (and in-phrase this-phrase)
+      (unless (and (= 1 (length this-phrase))
+                   (or (eql (elt these-tags 0) 'POS)
+                       (eql (elt these-tags 0) 'JJ)))
+        (push (nreverse this-phrase) phrases)
+        (push (nreverse these-tags) tags)))
     (values (nreverse phrases)
             (nreverse tags))))
 
 (defun extract-phrases (sentence &key (pos-db *pos-db*) debug)
   "Extract noun phrases from an individual sentence using Viterbi / HMM strategy."
+  (declare (optimize (speed 3) (safety 0)))
   (multiple-value-bind (pos-tags words) (tag-sentence sentence)
     (let* ((states (possible-np-states pos-db pos-tags))
            (viterbi (make-array (list (length states) (length pos-tags))
+                                :element-type 'float
                                 :initial-element 0)))
       (when debug (format t "EXTRACT-PHRASES: Doing word '~A/~A'~%" (elt words 0) (elt pos-tags 0)))
       (dotimes (i (length states))
@@ -376,4 +394,4 @@
             (nconc
              (multiple-value-list (extract-phrases sentence))
              (list sentence)))
-	  (split-sentences text)))
+          (split-sentences text)))

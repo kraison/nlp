@@ -20,8 +20,8 @@
   (unigrams (make-hash-table :test 'equal))
   (bigrams (make-hash-table :test 'equal))
   (trigrams (make-hash-table :test 'equal))
-  (tag-occurances (make-hash-table :test 'equal))
-  (word-occurances (make-hash-table :test 'equal))
+  (tag-occurrences (make-hash-table :test 'equal))
+  (word-occurrences (make-hash-table :test 'equalp))
   (observations (make-hash-table :test 'equal))
   (unknown-probability 0)
 
@@ -32,8 +32,8 @@
   (np-unigrams (make-hash-table :test 'equal))
   (np-bigrams (make-hash-table :test 'equal))
   (np-trigrams (make-hash-table :test 'equal))
-  (np-tag-occurances (make-hash-table :test 'equal))
-  (np-pos-occurances (make-hash-table :test 'equal))
+  (np-tag-occurrences (make-hash-table :test 'equal))
+  (np-pos-occurrences (make-hash-table :test 'equal))
   (np-observations (make-hash-table :test 'equal))
   (np-unknown-probability 0)
 
@@ -43,6 +43,12 @@
   (user-pos-regex nil)
   (contraction-table (make-hash-table :test 'equalp))
   (word-freq (make-hash-table :test 'equal))
+
+  ;; Wordnet
+  (synset-table (make-hash-table))
+  (word-to-synset-table (make-hash-table :test 'equalp))
+  (word-sense-to-synset-table (make-hash-table :test 'equalp))
+  (word-pos-to-synset-table (make-hash-table :test 'equalp))
 
   ;; Parsing
   (np-regexes nil)

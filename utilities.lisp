@@ -11,8 +11,43 @@
       (declare (ignore c))
       0)))
 
+(defun vector-last (vector)
+  (elt vector (1- (array-dimension vector 0))))
+
 (defmacro while (pred &body body)
   `(loop (unless ,pred (return nil)) ,@body))
+
+(defmethod counting-intersection ((v1 array) (v2 array) &key (test 'eql))
+  (let ((i (make-array '(0) :adjustable t :fill-pointer t)) (count 0))
+    (loop for n across v1 do
+         (when (find n v2 :test test)
+           (incf count)
+           (vector-push-extend n i)))
+    (values i count)))
+
+(defmethod counting-intersection ((v1 list) (v2 list) &key (test 'eql))
+  (let ((i ()) (count 0))
+    (loop for n in v1 do
+         (when (find n v2 :test test)
+           (incf count)
+           (push n i)))
+    (values i count)))
+
+(defun union-all (list-of-lists &key (test 'eql) (key 'identity))
+  "Find the union of an arbitrary number of sets"
+  (labels
+      ((my-union (ll)
+         (let ((length (list-length ll)))
+           (cond ((= length 0) nil)
+                 ((= length 1) (first ll))
+                 ((= length 2)
+                  (union (first ll) (second ll) :test test :key key))
+                 ((> length 2)
+                  (my-union
+                   (cons
+                    (union (first ll) (second ll) :test test :key key)
+                    (cddr ll))))))))
+    (my-union (sort list-of-lists #'> :key #'length))))
 
 ;;; Thanks, Mr. Norvig for this queueing code
 (defun print-queue (q stream depth)
@@ -26,7 +61,7 @@
 
 (defun make-empty-queue () (make-queue))
 
-(defun empty-queue? (q)
+(defun empty-queue-p (q)
   (= (length (queue-elements q)) 0))
 
 (defun queue-front (q)
@@ -53,7 +88,7 @@
   (if (atom tree)
       (if (eql item tree) tree)
       (or (find-anywhere item (first tree))
-	  (find-anywhere item (rest tree)))))
+          (find-anywhere item (rest tree)))))
 
 (defun last1 (list)
   "Return the last item in a list"
@@ -68,9 +103,9 @@
 (defun flatten (lis)
   "Flatten a tree into a list"
   (cond ((atom lis) lis)
-	((listp (car lis))
-	 (append (flatten (car lis)) (flatten (cdr lis))))
-	(t (append (list (car lis)) (flatten (cdr lis))))))
+        ((listp (car lis))
+         (append (flatten (car lis)) (flatten (cdr lis))))
+        (t (append (list (car lis)) (flatten (cdr lis))))))
 
 (defun init-or-increment (hash thing)
   "Increment or add a value for this hash key"

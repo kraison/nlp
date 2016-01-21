@@ -1,12 +1,15 @@
 (in-package #:nlp)
 
-(defun word-occurance (pos-db word)
+(defun word-occurrence (word &optional (pos-db *pos-db*))
   "How many time was word seen in the corpus?"
-  (gethash word (pos-word-occurances pos-db)))
+  (gethash word (pos-word-occurrences pos-db) 0))
 
-(defun add-word-occurance (pos-db word)
+(defun total-word-count (&optional (pos-db *pos-db*))
+  (pos-total-count pos-db))
+
+(defun add-word-occurrence (pos-db word)
   "See the word again"
-  (init-or-increment (pos-word-occurances pos-db) word))
+  (init-or-increment (pos-word-occurrences pos-db) word))
 
 (defun add-unigram (pos-db unigram)
   "Add a unigram to the db"
@@ -52,21 +55,21 @@
                 (setq g1 (+ g1 count))))))
      (pos-trigrams pos-db))
     (let ((total (+ g1 g2 g3)))
-      (values (setf (gethash 1 (pos-gammas pos-db)) (/ g1 total))
-	      (setf (gethash 2 (pos-gammas pos-db)) (/ g2 total))
-	      (setf (gethash 3 (pos-gammas pos-db)) (/ g3 total))))))
+      (values (setf (gethash 1 (pos-gammas pos-db)) (/-safe g1 total))
+              (setf (gethash 2 (pos-gammas pos-db)) (/-safe g2 total))
+              (setf (gethash 3 (pos-gammas pos-db)) (/-safe g3 total))))))
 
 (defun compute-trigram-probability (pos-db trigram)
   "Compute trigram probability"
   (+ (* (gethash 3 (pos-gammas pos-db))
-	(/-safe (gethash trigram (pos-trigrams pos-db))
-		(get-bigram pos-db (subseq trigram 0 2))))
+        (/-safe (gethash trigram (pos-trigrams pos-db))
+                (get-bigram pos-db (subseq trigram 0 2))))
      (* (gethash 2 (pos-gammas pos-db))
-	(/-safe (get-bigram pos-db (subseq trigram 1 3))
-		(get-unigram pos-db (second trigram))))
+        (/-safe (get-bigram pos-db (subseq trigram 1 3))
+                (get-unigram pos-db (second trigram))))
      (* (gethash 1 (pos-gammas pos-db))
-	(/-safe (get-unigram pos-db (third trigram))
-		(pos-total-count pos-db)))))
+        (/-safe (get-unigram pos-db (third trigram))
+                (pos-total-count pos-db)))))
 
 (defun compute-ngram-probabilities (pos-db)
   "Compute and store gammas and probabilities for all Ngrams in the db"
@@ -82,14 +85,14 @@
   "Lookup trigram probability"
   (let ((p (gethash trigram (pos-probabilities pos-db))))
     (if (and (numberp p) (> p 0))
-	p
-	(compute-trigram-probability pos-db trigram))))
+        p
+        (compute-trigram-probability pos-db trigram))))
 
 (defun add-observation (pos-db word pos)
   "Add an observation for WORD"
   (unless (hash-table-p (gethash word (pos-observations pos-db)))
     (setf (gethash word (pos-observations pos-db))
-	  (make-hash-table :test 'equal)))
+          (make-hash-table :test 'equal)))
   (if (numberp (gethash pos (gethash word (pos-observations pos-db))))
       (incf (gethash pos (gethash word (pos-observations pos-db))))
       (setf (gethash pos (gethash word (pos-observations pos-db))) 1)))
@@ -98,38 +101,38 @@
   "return observations of WORD as POS"
   (let ((table (gethash word (pos-observations pos-db))))
     (if (hash-table-p table)
-	(gethash pos table 0)
-	(pos-unknown-probability pos-db))))
+        (gethash pos table 0)
+        (pos-unknown-probability pos-db))))
 
 (defun get-observations (pos-db word)
   "Get all observations for WORD"
   (let ((table (gethash word (pos-observations pos-db))))
     (if (hash-table-p table)
-	(let ((o nil))
-	  (maphash (lambda (pos p)
+        (let ((o nil))
+          (maphash (lambda (pos p)
                      (push (cons pos p) o))
-		   table)
-	  (sort o '> :key 'cdr))
-	nil)))
+                   table)
+          (sort o '> :key 'cdr))
+        nil)))
 
 (defun compute-observation-likelihoods (pos-db)
   "Compute all word / POS observation likelihoods"
   (setf (pos-unknown-probability pos-db)
-	(/ 1 (hash-table-count (pos-unigrams pos-db))))
+        (/-safe 1 (hash-table-count (pos-unigrams pos-db))))
   (maphash (lambda (word table)
              (declare (ignore word))
              (maphash (lambda (pos count)
                         (setf (gethash pos table)
-                              (/ count (get-unigram pos-db pos))))
+                              (/-safe count (get-unigram pos-db pos))))
                       table))
-	   (pos-observations pos-db)))
+           (pos-observations pos-db)))
 
 (defun increment-sentence-markers (pos-db)
   "Add sentence markers to db for a new sentence"
   (add-unigram pos-db *sentence-start*)
   (add-unigram pos-db *sentence-end*)
-  (add-word-occurance pos-db "<s>")
-  (add-word-occurance pos-db "</s>")
+  (add-word-occurrence pos-db "<s>")
+  (add-word-occurrence pos-db "</s>")
   (add-bigram pos-db (list *sentence-start* *sentence-start*))
   (add-bigram pos-db (list *sentence-end* *sentence-end*))
   (add-observation pos-db "<s>" *sentence-start*)
@@ -138,18 +141,18 @@
 (defun train-tagger (file &optional pos-db)
   "Train the POS tagger against the corpus FILE. Augent unigrams with lexicon entries."
   (let ((pos-db (or pos-db (make-parts-of-speech)))
-	(sentence nil) (pos-seq nil))
+        (sentence nil) (pos-seq nil))
     (map-lexicon
      (lambda (word pos-list)
        (dolist (pos pos-list)
          (add-unigram pos-db pos)
-         (add-word-occurance pos-db word)
+         (add-word-occurrence pos-db word)
          (add-observation pos-db word pos)))
      pos-db)
     (map-tagged-corpus
      (lambda (word pos)
        (add-unigram pos-db pos)
-       (add-word-occurance pos-db word)
+       (add-word-occurrence pos-db word)
        (add-observation pos-db word pos)
        (push pos pos-seq)
        (push word sentence)
@@ -192,8 +195,8 @@
   (let ((states nil))
     (dolist (word words)
       (let ((w-states (lookup-pos word pos-db)))
-	(dolist (w-state w-states)
-	  (pushnew w-state states :test 'equal))))
+        (dolist (w-state w-states)
+          (pushnew w-state states :test 'equal))))
     states))
 
 (defun calculate-path (v words states)
@@ -201,46 +204,46 @@
   (let ((path nil))
     (dotimes (j (length words))
       (let ((max 0) (state nil))
-	(dotimes (i (length states))
-	  (when (> (aref v i j) max)
-	    (setq max (aref v i j)
-		  state (elt states i))))
-	(push state path)))
+        (dotimes (i (length states))
+          (when (> (aref v i j) max)
+            (setq max (aref v i j)
+                  state (elt states i))))
+        (push state path)))
     (nreverse path)))
 
 (defun possible-tags (text &key p?)
   "Get all possible tags for all words in TEXT. If P?, return probabilities too"
   (let ((words (if (stringp text) (tokenize text) text)))
     (if p?
-	(values (mapcar 'get-pos-probabilities words) words)
-	(values (mapcar 'lookup-pos words) words))))
+        (values (mapcar 'get-pos-probabilities words) words)
+        (values (mapcar 'lookup-pos words) words))))
 
 (defun tag-sentence (words &key (pos-db *pos-db*) debug)
   "POS tag an individual sentence"
   (let* ((words (if (stringp words) (tokenize words) words))
-	 (states (possible-states pos-db words))
-	 (viterbi (make-array (list (length states) (length words))
-			      :initial-element 0)))
+         (states (possible-states pos-db words))
+         (viterbi (make-array (list (length states) (length words))
+                              :initial-element 0)))
     (when debug (format t "Doing word '~A'~%" (elt words 0)))
     (dotimes (i (length states))
       (let ((p (* (trigram-probability pos-db (list *sentence-start*
-						    *sentence-start*
-						    (elt states i)))
-		  (get-observation pos-db
-				   (first words)
-				   (elt states i)))))
-	(when (and debug (> p 0))
-	  (format t "   ~A: trigram: (<s> <s> ~A): ~F~%"
-		  (elt words 0)
-		  (elt states i)
-		  (trigram-probability pos-db
-				       (list *sentence-start*
-					     *sentence-start*
-					     (elt states i)))))
-	(setf (aref viterbi i 0) p)))
+                                                    *sentence-start*
+                                                    (elt states i)))
+                  (get-observation pos-db
+                                   (first words)
+                                   (elt states i)))))
+        (when (and debug (> p 0))
+          (format t "   ~A: trigram: (<s> <s> ~A): ~F~%"
+                  (elt words 0)
+                  (elt states i)
+                  (trigram-probability pos-db
+                                       (list *sentence-start*
+                                             *sentence-start*
+                                             (elt states i)))))
+        (setf (aref viterbi i 0) p)))
     (loop for j from 1 to (1- (length words)) do
-	 (when debug (format t "Doing word '~A'~%" (elt words j)))
-	 (dotimes (i (length states))
+         (when debug (format t "Doing word '~A'~%" (elt words j)))
+         (dotimes (i (length states))
            ;; Efficiency hack;  improves accuracy when lexicon is integrated with
            ;; unigrams, kills accuracy when lexicon is not in use
            (when (or (null (lookup-pos (elt words j) pos-db))
@@ -278,38 +281,45 @@
             (nconc
              (multiple-value-list (tag-sentence sentence))
              (list sentence)))
-	  (split-sentences text)))
+          (split-sentences text)))
 
 (defun tag-as-text (text)
   "Tag text and return in WORD/TAG format"
   (let ((tags (tag text)))
     (format nil "~{~A~^ ~}"
-	    (mapcar (lambda (i)
+            (mapcar (lambda (i)
                       (format nil "~{~A~^ ~}"
                               (mapcar (lambda (tag word)
                                         (format nil "~A/~A" word tag))
                                       (first i) (second i))))
-		    tags))))
+                    tags))))
+
+(defun dump-unigrams (&optional (pos-db *pos-db*))
+  (let ((r nil))
+    (maphash (lambda (ngram p)
+               (push (cons ngram p) r))
+             (pos-unigrams pos-db))
+    r))
 
 (defun dump-bigrams (&optional (pos-db *pos-db*))
   (let ((r nil))
     (maphash (lambda (ngram p)
                (push (cons ngram p) r))
-	     (pos-bigrams pos-db))
+             (pos-bigrams pos-db))
     (sort r 'string> :key 'caar)))
 
 (defun dump-trigrams (&optional (pos-db *pos-db*))
   (let ((r nil))
     (maphash (lambda (ngram p)
                (push (cons ngram p) r))
-	     (pos-trigrams pos-db))
+             (pos-trigrams pos-db))
     (sort r 'string> :key 'caddar)))
 
 (defun dump-probabilities (&optional (pos-db *pos-db*))
   (let ((r nil))
     (maphash (lambda (ngram p)
                (push (cons ngram p) r))
-	     (pos-probabilities pos-db))
+             (pos-probabilities pos-db))
     (sort r '> :key 'cdr)))
 
 (defun dump-pos-observations (&optional (pos-db *pos-db*))
@@ -318,5 +328,5 @@
                (maphash (lambda (pos p)
                           (push `((,word ,pos) ,p) r))
                         table))
-	     (pos-observations pos-db))
+             (pos-observations pos-db))
     (sort r '> :key 'second)))

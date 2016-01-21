@@ -16,7 +16,7 @@
 (defun pcp-add-edge-to-chart (chart edge)
   "Add an edge to the chart"
   (unless (member edge (elt (chart-edge-vec chart) (right-vertex edge))
-		  :test 'edge-equalp)
+                  :test 'edge-equalp)
     ;;(format t "Adding ~A to chart~%" edge)
     (push edge (elt (chart-edge-vec chart) (right-vertex edge)))))
 
@@ -27,22 +27,22 @@
     (while (not (null (agenda-edge-list f-agenda)))
       ;; First, go through the exploration agenda
       (while (not (null (agenda-edge-list e-agenda)))
-	(let ((traversal (pop (agenda-edge-list e-agenda))))
-	  (explore-traversal f-agenda traversal)))
+        (let ((traversal (pop (agenda-edge-list e-agenda))))
+          (explore-traversal f-agenda traversal)))
       ;; Then go through the finishing agenda
       (setf (agenda-edge-list f-agenda)
-	    (sort (agenda-edge-list f-agenda) '> :key 'probability))
+            (sort (agenda-edge-list f-agenda) '> :key 'probability))
       (let ((edge (pop-agenda f-agenda)))
-	(finish-edge chart words f-agenda e-agenda edge))
+        (finish-edge chart words f-agenda e-agenda edge))
       (while (not (null (agenda-edge-list e-agenda)))
-	(let ((traversal (pop (agenda-edge-list e-agenda))))
-	  (explore-traversal f-agenda traversal)))
+        (let ((traversal (pop (agenda-edge-list e-agenda))))
+          (explore-traversal f-agenda traversal)))
       (dolist (edge (elt (chart-edge-vec chart) (length words)))
-	(when (and (eq :start (label edge))
-		   (= 0 (left-vertex edge))
-		   (= (length words) (right-vertex edge)))
-	  (return-from pcp-parse
-	    (values (p-find-trees-in-chart chart words) tags)))))
+        (when (and (eq :start (label edge))
+                   (= 0 (left-vertex edge))
+                   (= (length words) (right-vertex edge)))
+          (return-from pcp-parse
+            (values (p-find-trees-in-chart chart words) tags)))))
     (values (p-find-trees-in-chart chart words) tags)))
 
 (defun pcp-initialize (text)
@@ -53,24 +53,24 @@
                          (if (null tag)
                              (lookup-pos word)
                              (list tag)))
-		       tags words))
+                       tags words))
     (let ((chart (make-chart :edge-vec
-			     (make-array (1+ (length words))
-					 :initial-element nil)))
-	  (f-agenda (make-agenda :edge-list nil))
-	  (e-agenda (make-agenda :edge-list nil)))
+                             (make-array (1+ (length words))
+                                         :initial-element nil)))
+          (f-agenda (make-agenda :edge-list nil))
+          (e-agenda (make-agenda :edge-list nil)))
       (dotimes (i (length words))
-	(let ((word (nth i words)) (tags (nth i tags)))
-	  (dolist (pos tags)
-	    (format t "Adding edge for ~A/~A~%" word pos)
-	    (let ((edge (make-edge :left-vertex i
-				   :right-vertex (1+ i)
-				   :label pos
-				   :word word
-				   :to-find nil
-				   :found (list word)
-				   :probability 1)))
-	      (discover-edge f-agenda edge)))))
+        (let ((word (nth i words)) (tags (nth i tags)))
+          (dolist (pos tags)
+            (format t "Adding edge for ~A/~A~%" word pos)
+            (let ((edge (make-edge :left-vertex i
+                                   :right-vertex (1+ i)
+                                   :label pos
+                                   :word word
+                                   :to-find nil
+                                   :found (list word)
+                                   :probability 1)))
+              (discover-edge f-agenda edge)))))
       (values words tags chart f-agenda e-agenda))))
 
 (defun explore-traversal (f-agenda traversal)
@@ -84,7 +84,7 @@
   (if (to-find edge)
       ;; EDGE is an active edge
       (map nil
-	   (lambda (edge-list)
+           (lambda (edge-list)
              (dolist (p-edge edge-list)
                (when (and (null (to-find p-edge))
                           (= (right-vertex edge) (left-vertex p-edge))
@@ -108,9 +108,9 @@
                              (probability edge)))
                    (push (list edge p-edge new-edge)
                          (agenda-edge-list e-agenda))))))
-	   (chart-edge-vec chart))
+           (chart-edge-vec chart))
       (map nil
-	   (lambda (edge-list)
+           (lambda (edge-list)
              (dolist (a-edge edge-list)
                (when (and (to-find a-edge)
                           (or (= (right-vertex edge) (right-vertex a-edge))
@@ -135,15 +135,15 @@
                              (probability a-edge)))
                    (push (list a-edge edge new-edge)
                          (agenda-edge-list e-agenda))))))
-	   (chart-edge-vec chart))))
+           (chart-edge-vec chart))))
 
 (defun pcp-bottom-up-rule (f-agenda edge)
   "Bottom up rule for PCP"
   (let* ((pos (label edge))
-	 (productions (lookup-pos-productions pos)))
+         (productions (lookup-pos-productions pos)))
     (dolist (s productions)
       (let ((p-hash (gethash s (pos-pcfg *pos-db*))))
-	(maphash (lambda (production p)
+        (maphash (lambda (production p)
                    (if (listp production)
                        (when (eq (first production) pos)
                          (discover-edge
@@ -163,15 +163,15 @@
                                      :to-find (list production)
                                      :found nil
                                      :probability p)))))
-		 p-hash)))))
+                 p-hash)))))
 
 (defun pcp-top-down-rule (f-agenda words edge)
   "Top down rule for PCP"
   (when (to-find edge)
     (dolist (pos (to-find edge))
       (let ((table-or-word (gethash pos (pos-pcfg *pos-db*))))
-	(if (hash-table-p table-or-word)
-	    (maphash (lambda (prod p)
+        (if (hash-table-p table-or-word)
+            (maphash (lambda (prod p)
                        (when (or (listp prod)
                                  (member (symbol-name prod) words
                                          :test 'equal))
@@ -183,9 +183,9 @@
                                                                 prod
                                                                 (list prod))
                                                    :probability p))))
-		     table-or-word)
-	    (format t "pcp-top-down-rule got ~A when looking up ~A~%"
-		    table-or-word pos))))))
+                     table-or-word)
+            (format t "pcp-top-down-rule got ~A when looking up ~A~%"
+                    table-or-word pos))))))
 
 (defun finish-edge (chart words f-agenda e-agenda edge)
   (declare (ignore words))
